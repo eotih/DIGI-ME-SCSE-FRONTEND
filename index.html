@@ -16,6 +16,7 @@
             <p class="Roboto" id="datetime">Thứ, Ngày Tháng Năm</p>
             <img src="images/Topnav.png" width="100%">
         </div>
+<<<<<<< HEAD
         <div class="navbar" id="navbar">
             <nav role="navigation">
                 <ul>
@@ -44,17 +45,43 @@
                 </ul>
             </nav>
         </div>
+=======
+        <nav role="navigation">
+            <ul>
+                <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
+                <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
+                    <ul id="dropdown">
+                        <li><a class="Roboto" href="#">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="#">Câu chuyện</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="#News">Tin tức</a></li>
+                <li><a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
+                            class="fas fa-caret-down"></i></a>
+                    <ul id="dropdown">
+                        <li><a class="Roboto" href="#">Hoạt động thiện nguyện</a></li>
+                        <li><a class="Roboto" href="#">Dự án</a></li>
+                        <li><a class="Roboto" href="#">Hợp tác nguyên cứu</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="#Galleries">Thư viện</a></li>
+                <li><a class="Roboto" href="#Contact">Liên hệ</a></li>
+                <li><a class="fas fa-shopping-cart icon" href="#shopping"></a></li>
+                <li><a class="fas fa-search icon" href="#search"></a></li>
+            </ul>
+        </nav>
+>>>>>>> 243ed747004656c349a95784500972029b98d91d
     </div>
     <div class="slide-container">
         <div class="Slides">
-            <img src="images/slide-test.jpg" style="width: 100%;">
+            <img src="images/32171034926_7983733ab2_o.jpg" style="width: 100%;">
         </div>
     </div>
     <a class="prev">-</a>
     <a class="next">-</a>
 </body>
 <script>
-    window.addEventListener('load',getDateTime)
+    window.addEventListener('load', getDateTime)
     async function getDateTime() {
         var date = new Date();
         var current_day = date.getDay();
@@ -82,11 +109,15 @@
                 day_name = "THỨ BẢY";
         }
 
-        var today = new Date();
-        var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
-        var dateTime = day_name + ', ' + date + ' ' + time;
-        document.getElementById("datetime").innerHTML = dateTime;
+
+        var myVar = setInterval(function () {
+            var today = new Date();
+            var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+            var dateTime = day_name + ', ' + date + ' ' + time;
+            document.getElementById("datetime").innerHTML = dateTime;
+        }, 500);
+
     }
 </script>
 
