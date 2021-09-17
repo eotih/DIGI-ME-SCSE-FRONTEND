@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (min-width: 1920px){
+    body{
+        width: 1920px
+    }
+}
+.main{
+    
+}
+.header .topnav{
+}
+.conteent{
+
+}
+.footer{
+    width: 1920px;
+    height: 350px;
+}
+.top{
+    width: 1920px;
+    height: 254px;
+    position: relative;
+}
+.top .logo{
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+.footer .name{
+    position: absolute;
+width: 301px;
+height: 24px;
+left: 200px;
+top: 134px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+letter-spacing: -0.015em;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.footer h1{
+    position: absolute;
+    width: 190px;
+height: 24px;
+left: 570px;
+top: 78px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.015em;
+
+color: #000000;
+}
+.footer h2{
+    position: absolute;
+    width: 190px;
+    height: 24px;
+    left: 1000px;
+    top: 78px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    letter-spacing: -0.015em;
+    color: #000000;
+    
+}
+.footer h3{
+    position: absolute;
+    width: 210px;
+    height: 24px;
+    left: 1250px;
+    top: 78px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    letter-spacing: -0.015em;
+    color: #000000;
+    
+}
+.footer li{
+    list-style-type: none;
+left: 570px;
+top: 116px;
+width: 350px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+/* or 133% */
+letter-spacing: -0.015em;
+color: rgba(0, 0, 0, 0.8);
+}
+ .top .quyengop{
+    position: absolute;
+width: 239px;
+height: 100px;
+left: 1485px;
+top: 75px;
+}
+.photo{
+    position: absolute;
+width: 301px;
+height: 24px;
+left: 200px;
+top: 290px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+letter-spacing: -0.015em;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.footer .follow{
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 1086px;
+    top: 290px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.015em;
+    
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+.facebook{
+position: absolute;
+    top: 280px;
+    left: 1532px;
+}
+.youtube{
+    position: absolute;
+    top: 280px;
+    left: 1586px;
+}
