@@ -91,7 +91,10 @@ nav a.active {
     color: #1A94D0;
     border-radius: 20px;
 }
-
+.dropdown-menu{
+    transform-origin: top center;
+    animation: rotateX 300ms ease-in-out
+}
 .Topnav img {
     position: relative;
     z-index: 1;
@@ -147,3 +150,17 @@ div.Topnav p{
     right: 16%;
     position: absolute;
 }
+
+@keyframes rotateX {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+      transform: rotateX(-20deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
