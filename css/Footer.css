@@ -1,57 +1,60 @@
-*{
-    font-family:'Montserrat',sans-serif;
+* {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
 }
-.header .topnav{
-}
-.conteent{
 
-}
-.footer{
+.header .topnav {}
+
+.conteent {}
+
+.footer {
     width: 1920px;
     height: 350px;
 }
-.top{
+
+.top {
     width: 1920px;
     height: 254px;
     position: relative;
 }
-.top .logo{
+
+.top .logo {
     position: absolute;
     left: 200px;
     top: 30px;
 }
-.footer .name{
+
+.footer .name {
     position: absolute;
-width: 320px;
-height: 24px;
-left: 200px;
-top: 134px;
-
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 24px;
-letter-spacing: -0.015em;
-
-color: rgba(0, 0, 0, 0.8);
+    width: 320px;
+    height: 24px;
+    left: 200px;
+    top: 134px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
 }
-.footer h1{
+
+.footer h1 {
     position: absolute;
     width: 190px;
-height: 24px;
-left: 570px;
-top: 78px;
-font-family: 'Montserrat' sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 24px;
-letter-spacing: -0.015em;
-color: #000000;
+    height: 24px;
+    left: 570px;
+    top: 78px;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #000000;
 }
-.footer h2{
+
+.footer h2 {
     position: absolute;
     width: 230px;
     height: 24px;
@@ -64,9 +67,9 @@ color: #000000;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: #000000;
-    
 }
-.footer h3{
+
+.footer h3 {
     position: absolute;
     width: 230px;
     height: 24px;
@@ -79,50 +82,52 @@ color: #000000;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: #000000;
-    
 }
-.footer li{
-    list-style-type: none;
-left: 570px;
-top: 116px;
-width: 380px;
-font-family: 'Montserrat',sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 30px;
-letter-spacing: -0.015em;
-color: rgba(0, 0, 0, 0.8);
-}
- .top .quyengop{
-    position: absolute;
-width: 239px;
-height: 100px;
-left: 1485px;
-top: 75px;
-}
-.photo{
-    position: absolute;
-width: 301px;
-height: 24px;
-left: 200px;
-top: 290px;
-font-family: 'Montserrat' sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 24px;
-letter-spacing: -0.015em;
 
-color: rgba(0, 0, 0, 0.8);
+.footer li {
+    list-style-type: none;
+    left: 570px;
+    top: 116px;
+    width: 380px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
 }
-.footer .follow{
+
+.top .quyengop {
+    position: absolute;
+    width: 239px;
+    height: 100px;
+    left: 1485px;
+    top: 75px;
+}
+
+.photo {
+    position: absolute;
+    width: 301px;
+    height: 24px;
+    left: 200px;
+    top: 290px;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer .follow {
     position: absolute;
     width: 300px;
     height: 24px;
     left: 1086px;
     top: 290px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -131,12 +136,14 @@ color: rgba(0, 0, 0, 0.8);
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-.facebook{
-position: absolute;
+
+.facebook {
+    position: absolute;
     top: 280px;
     left: 1532px;
 }
-.youtube{
+
+.youtube {
     position: absolute;
     top: 280px;
     left: 1586px;
