@@ -2,17 +2,6 @@
     padding: 0;
     margin: 0;
 }
-@media only screen and (min-width: 1920px){
-    body{
-        width: 1920px
-    }
-}
-.Montserrat {
-    font-family: Montserrat, sans-serif;
-}
-.main{
-    
-}
 .header .topnav{
 }
 .conteent{
@@ -34,11 +23,11 @@
 }
 .footer .name{
     position: absolute;
-width: 301px;
+width: 320px;
 height: 24px;
 left: 200px;
 top: 134px;
-font-family: Montserrat;
+font-family:'Montserrat',sans-serif ;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
@@ -53,7 +42,7 @@ color: rgba(0, 0, 0, 0.8);
 height: 24px;
 left: 570px;
 top: 78px;
-font-family: Montserrat;
+font-family: 'Montserrat' sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -66,11 +55,11 @@ color: #000000;
 }
 .footer h2{
     position: absolute;
-    width: 190px;
+    width: 230px;
     height: 24px;
     left: 1000px;
     top: 78px;
-    font-family: Montserrat;
+    font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -82,11 +71,11 @@ color: #000000;
 }
 .footer h3{
     position: absolute;
-    width: 210px;
+    width: 230px;
     height: 24px;
     left: 1250px;
     top: 78px;
-    font-family: Montserrat;
+    font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -100,8 +89,8 @@ color: #000000;
     list-style-type: none;
 left: 570px;
 top: 116px;
-width: 350px;
-font-family: Montserrat;
+width: 380px;
+font-family: 'Montserrat',sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -123,7 +112,7 @@ width: 301px;
 height: 24px;
 left: 200px;
 top: 290px;
-font-family: Montserrat;
+font-family: 'Montserrat' sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
@@ -140,7 +129,7 @@ color: rgba(0, 0, 0, 0.8);
     height: 24px;
     left: 1086px;
     top: 290px;
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
