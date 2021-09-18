@@ -45,11 +45,14 @@
         </div>
     </div>
     <div class="slide-container">
-        <div class="Slides">
+        <div class="Slides fade">
             <img class="responsive" src="images/32171034926_7983733ab2_o.jpg">
         </div>
-        <a class="prev">-</a>
-        <a class="next">-</a>
+        <div class="Slides fade">
+            <img class="responsive" src="images/slide-test.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">-</a>
+        <a class="next" onclick="plusSlides(1)">-</a>
     </div>
     <hr style="background-color: #1A94D0;height: 16px; margin: 0; border: 0;">
     <div class="content">
@@ -156,7 +159,31 @@
             document.getElementById("datetime").innerHTML = dateTime;
         }, 500);
     }
+    var slideIndex = 1;
+        showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("Slides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+        slides[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 63cb1fd0c69634da60990287b562432a1deceebd
