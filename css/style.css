@@ -9,7 +9,6 @@ body, .slideshow-container {
 .Topnav {
     overflow: hidden;
 }
-
 .Topnav p{
     float: right;
     color: white;
@@ -19,7 +18,7 @@ body, .slideshow-container {
     text-decoration: none;
     font-size: 18px;
 }
-nav{
+.navbar{
     position: fixed;
     top: 93px;
     right: 200px;
@@ -27,7 +26,7 @@ nav{
     border-radius: 20px;
     padding: 10px 10px;
 }
-nav ul{
+.navbar ul{
     list-style: none;
     position: relative;
     float: left;
@@ -35,22 +34,22 @@ nav ul{
     margin: 0;
     display: inline-table;
 }
-nav ul li{
+.navbar ul li{
     float: left;
     margin-right: 10px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-nav ul li:hover{
+.navbar ul li:hover{
     background-color: #FFFFFF;
     border-radius: 20px;
 }
-nav ul li a:hover{
+.navbar ul li a:hover{
     color: #1A94D0;
 }
-nav ul li:hover > ul {display: block;}
-nav ul li a{
+.navbar ul li:hover > ul {display: block;}
+.navbar ul li a{
     display: block;
     padding: 16px 20px;
     color: #6B6B6B;
@@ -58,7 +57,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
   }
-  nav ul ul{
+  .navbar ul ul{
       display: none;
       background: white;
       border-radius: 20px;
@@ -66,28 +65,31 @@ nav ul li a{
       top: 100%;
       box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
   }
-  nav ul ul li{float: none;position: relative;margin: 0;}
-  nav ul ul li a {
+  .navbar ul ul li{float: none;position: relative;margin: 0;}
+  .navbar ul ul li a {
       min-width: 350px;
       margin: 10px;
       padding: 16px 20px;
   }
-  nav ul ul li a:hover{
+  .navbar ul ul li a:hover{
     background: #1A94D0;
     color: #FFFFFF;
     border-radius: 10px;
   }
-  nav ul ul ul {
+  .navbar ul ul ul {
       position: absolute;
       left: 100%;
       top: 0;
   }
-nav a.icon{
+.navbar a.icon{
     font-size: 24px;
     padding: 16px 10px;
     margin-right: 0px;
 }
-nav a.active {
+.navbar a.Icon{
+    display: none;
+}
+.navbar a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
     border-radius: 20px;
@@ -109,10 +111,18 @@ nav a.active {
     margin: auto;
     z-index: 0;
 }
+.Slides img{
+    height: 800px;
+    width: 1920px;
+}
+.Slides .responsive{
+    width: 100%;
+    height: auto;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -150,6 +160,11 @@ div.Topnav p{
     top:0;
     right: 16%;
     position: absolute;
+}
+@media screen and (max-width: 1300px) {
+    .navbar ul li{
+        float: none;
+    }    
 }
 @keyframes rotateX {
     0% {
