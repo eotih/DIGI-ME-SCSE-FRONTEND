@@ -1,4 +1,5 @@
 *{
+    font-family:'Montserrat',sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -27,7 +28,7 @@ width: 320px;
 height: 24px;
 left: 200px;
 top: 134px;
-font-family:'Montserrat',sans-serif ;
+
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
