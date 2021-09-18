@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,14 +21,15 @@
             <nav class="navbar" id="navbar" role="navigation">
                 <ul>
                     <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
-                    <li><a class="Roboto" href="#AboutUs" >Về SCSE <i class="fas fa-caret-down"></i></a>
+                    <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="Roboto" href="#">Ban Giám Đốc</a></li>
                             <li><a class="Roboto" href="#">Câu chuyện</a></li>
                         </ul>
                     </li>
                     <li><a class="Roboto" href="#News">Tin tức</a></li>
-                    <li><a class="Roboto" href="#Activities"  onclick="dropdown()">Hoạt động <i class="fas fa-caret-down"></i></a>
+                    <li><a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
+                                class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="Roboto" href="#">Hoạt động thiện nguyện</a></li>
                             <li><a class="Roboto" href="#">Dự án</a></li>
@@ -59,14 +59,16 @@
     <div class="content">
         <div class="Who">
             <h1> CHÚNG TÔI LÀ AI</h1>
-            <p>Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội, trực thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng
+            <p>Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động
+                trong lĩnh vực khoa học xã hội, trực thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc
+                Trăng
             </p>
             <img src="./images/Rectangle 597.png" alt="">
         </div>
 
     </div>
     <div class="footer">
-        <div class="top" >
+        <div class="top">
             <img class="logo" src="../../../images/image 110.png">
             <p class="name Montserrat">
                 Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn lực.
@@ -77,7 +79,7 @@
                 <ul>
                     <li>
                         <img src="../../../images/map-marker-alt1.png">
-                            <a class="Montserrat">20A An Đường An Dương Vương, Phường 10, Tp. Sóc Trăng</a>
+                        <a class="Montserrat">20A An Đường An Dương Vương, Phường 10, Tp. Sóc Trăng</a>
                     </li>
                     <li>
                         <img src="../../../images/envelope1.png">
@@ -88,37 +90,37 @@
                         +84 91 3817 988
                     </li>
                 </ul>
-            <h2>
-                Điều khoản sử dụng
-                <ul>
-                    <li><a href="">
-                            Chính sách bảo mật
-                        </a>
-                    </li>
-                </ul>
-            </h2>
-            <h3>
-                Cam kết tài chính
-                <ul>
-                    <li><a href="">
-                           Thông tin cam kết
-                        </a>
-                    </li>
-                    
-                </ul>
-            </h3>
-           <a class="quyengop" href=""><img src="../../../images/Group_399.png"></a>
+                <h2>
+                    Điều khoản sử dụng
+                    <ul>
+                        <li><a href="">
+                                Chính sách bảo mật
+                            </a>
+                        </li>
+                    </ul>
+                </h2>
+                <h3>
+                    Cam kết tài chính
+                    <ul>
+                        <li><a href="">
+                                Thông tin cam kết
+                            </a>
+                        </li>
+
+                    </ul>
+                </h3>
+                <a class="quyengop" href=""><img src="../../../images/Group_399.png"></a>
         </div>
         <hr style="margin-left: 200px ; margin-right: 200px;">
         <div class="bot">
-        <p class="photo">
-            © Photo, Inc. 2019. We love our users!
-        </p>
-        <p class="follow">
-            Follow us:
-        </p>
-        <img class="facebook" src="../../../images/image 75.png">
-        <img class="youtube" src="../../../images/image 74.png" alt="">
+            <p class="photo">
+                © Photo, Inc. 2019. We love our users!
+            </p>
+            <p class="follow">
+                Follow us:
+            </p>
+            <img class="facebook" src="../../../images/image 75.png">
+            <img class="youtube" src="../../../images/image 74.png" alt="">
         </div>
     </div>
 </body>
@@ -161,7 +163,7 @@
         }, 500);
     }
     var slideIndex = 1;
-        showSlides(slideIndex);
+    showSlides(slideIndex);
 
     function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -174,17 +176,13 @@
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("Slides");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-            }
-        slides[slideIndex-1].style.display = "block";
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
     }
 </script>
 
 </html>
-<<<<<<< HEAD
-
-=======
->>>>>>> 63cb1fd0c69634da60990287b562432a1deceebd
