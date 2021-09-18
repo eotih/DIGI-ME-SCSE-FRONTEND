@@ -151,7 +151,6 @@ div.Topnav p{
     right: 16%;
     position: absolute;
 }
-
 @keyframes rotateX {
     0% {
       opacity: 0;
