@@ -292,6 +292,73 @@ align-items: center;
 letter-spacing: -0.015em;
 color: #1A94D0;
 }
+.Register{
+    position: relative;
+    background-color: rgba(252, 213, 0, 0.2);
+    height: 400px;
+    width: 1920px;
+}
+.Donate img{
+    position: absolute;
+    left: 497px;
+    top: 69px;
+}
+.Donate p{
+    position: absolute;
+    left: 464px;
+    top: 249px;
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+
+}
+.Volunteers img{
+    position: absolute;
+    top: 69px;
+left: 905px;
+}
+.Volunteers p{
+    position: absolute;
+    top: 249px;
+    left: 861px;
+    width: 239px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+.Partner img{
+position: absolute;
+left: 1298px;
+top: 69px;
+}
+.Partner p{
+    position: absolute;
+    top: 249px;
+    left: 1281px;
+    width: 175px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
 .footer {
     width: 1920px;
     height: 350px;
@@ -323,14 +390,15 @@ color: #1A94D0;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
-.footer h1 {
+.Contact{
     position: absolute;
-    width: 190px;
-    height: 24px;
+
     left: 570px;
     top: 78px;
-    font-family: 'Montserrat' sans-serif;
+}
+.footer h1 {
+    width: 250px;
+    height: 24px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -338,14 +406,15 @@ color: #1A94D0;
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.footer h2 {
+.Terms{
     position: absolute;
-    width: 230px;
-    height: 24px;
+    
     left: 1000px;
     top: 78px;
-    font-family: 'Montserrat' sans-serif;
+}
+.footer h2 {
+    width: 230px;
+    height: 24px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -353,13 +422,15 @@ color: #1A94D0;
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.footer h3 {
+.Financial {
     position: absolute;
-    width: 230px;
-    height: 24px;
+
     left: 1250px;
     top: 78px;
+}
+.footer h3 {
+    width: 230px;
+    height: 24px;
     font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: bold;
