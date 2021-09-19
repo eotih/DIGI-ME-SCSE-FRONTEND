@@ -4,11 +4,11 @@
     margin: 0;
     font-family: 'Montserrat',sans-serif;
 }
-
-body, .slideshow-container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+#color-1{
+    background-color: #DE4439;
+}
+#color-2{
+    background-color: #FCD500;
 }
 
 .Topnav {
@@ -32,6 +32,7 @@ body, .slideshow-container {
     background-color: #E5E5E5;
     border-radius: 20px;
     padding: 10px 10px;
+    z-index: 3;
 }
 
 .navbar ul {
