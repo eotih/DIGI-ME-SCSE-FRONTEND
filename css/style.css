@@ -1,13 +1,14 @@
-
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-#color-1{
+
+#color-1 {
     background-color: #DE4439;
 }
-#color-2{
+
+#color-2 {
     background-color: #FCD500;
 }
 
@@ -224,10 +225,9 @@ div.Topnav p {
     color: #1A94D0;
 }
 
-.content p {
-    
-}
-.Who p{
+.content p {}
+
+.Who p {
     position: absolute;
     width: 438px;
     font-family: 'Montserrat', sans-serif;
@@ -241,7 +241,8 @@ div.Topnav p {
     letter-spacing: 0.015em;
     color: #000000;
 }
-.Who p{
+
+.Who p {
     left: 400px;
     top: 111px;
 }
@@ -251,22 +252,25 @@ div.Topnav p {
     left: 1170px;
     top: 121px;
 }
-.Purpose{
+
+.Purpose {
     position: relative;
     left: 775px;
     top: 386px;
 }
-.Purpose h2{
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 59px;
-display: flex;
-align-items: center;
-letter-spacing: -0.015em;
-color: #FCD500;
+
+.Purpose h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #FCD500;
 }
-.Purpose p{
+
+.Purpose p {
     position: absolute;
     width: 480px;
     font-family: 'Montserrat', sans-serif;
@@ -280,23 +284,25 @@ color: #FCD500;
     letter-spacing: 0.015em;
     color: #000000;
 }
-.Vision{
+
+.Vision {
     position: relative;
     left: 400px;
     top: 812px;
 }
-.Vision h3{
-    font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 59px;
-display: flex;
-align-items: center;
-letter-spacing: -0.015em;
 
-color: #E03030;
+.Vision h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #E03030;
 }
-.Vision p{
+
+.Vision p {
     position: absolute;
     width: 480px;
     font-family: 'Montserrat', sans-serif;
@@ -310,22 +316,25 @@ color: #E03030;
     letter-spacing: 0.015em;
     color: #000000;
 }
-.Mission{
+
+.Mission {
     position: relative;
     left: 1170px;
     top: 731px;
 }
-.Mission h4{
+
+.Mission h4 {
     font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 59px;
-display: flex;
-align-items: center;
-letter-spacing: -0.015em;
-color: #1A94D0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #1A94D0;
 }
-.Mission p{
+
+.Mission p {
     position: absolute;
     width: 480px;
     font-family: 'Montserrat', sans-serif;
@@ -339,7 +348,8 @@ color: #1A94D0;
     letter-spacing: 0.015em;
     color: #000000;
 }
-.activities{
+
+.activities {
     position: absolute;
     top: 1258px;
     width: 1120px;
@@ -347,13 +357,15 @@ color: #1A94D0;
     margin-left: auto;
     margin-right: auto;
 }
+
 .activities h1 {
     font-weight: bold;
     font-size: 72px;
     text-align: center;
     color: #1A94D0;
 }
-.activities p{
+
+.activities p {
     width: 222px;
     font-weight: bold;
     font-size: 20px;
@@ -362,20 +374,23 @@ color: #1A94D0;
     padding-left: 20px;
     padding-right: 20px;
 }
-.activities hr{
+
+.activities hr {
     background-color: #1A94D0;
     height: 20px;
     width: 265px;
     margin-top: -20px;
     margin-left: -2px;
 }
-.activities img{
+
+.activities img {
     width: 230px;
     height: 230px;
     border-radius: 20px;
     margin: 17px;
 }
-.activities button{
+
+.activities button {
     position: absolute;
     cursor: pointer;
     width: 208px;
@@ -390,13 +405,22 @@ color: #1A94D0;
     margin-right: 28px;
     bottom: 35px;
 }
-.activities .button1{background-color: #FCD500; color: #000000;}
-.activities .button2{background-color: #DE4439;}
-.activities .item-wrap{
+
+.activities .button1 {
+    background-color: #FCD500;
+    color: #000000;
+}
+
+.activities .button2 {
+    background-color: #DE4439;
+}
+
+.activities .item-wrap {
     position: relative;
     display: flex;
 }
-.activities .item-wrap .itembox{
+
+.activities .item-wrap .itembox {
     width: 266px;
     height: 412px;
     margin-top: 80px;
@@ -406,40 +430,43 @@ color: #1A94D0;
     margin-left: auto;
     margin-right: auto;
 }
-.Register{
+
+.Register {
     position: relative;
     top: 1650px;
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
     width: 1920px;
 }
-.Donate img{
+
+.Donate img {
     position: absolute;
     left: 497px;
     top: 69px;
 }
-.Donate p{
- position: absolute;
- left: 464px;
- top: 249px;
- font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
 
-color: #000000;
-
+.Donate p {
+    position: absolute;
+    left: 464px;
+    top: 249px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
 }
-.Volunteers img{
+
+.Volunteers img {
     position: absolute;
     top: 69px;
-left: 905px;
+    left: 905px;
 }
-.Volunteers p{
+
+.Volunteers p {
     position: absolute;
     top: 249px;
     left: 861px;
@@ -454,12 +481,14 @@ left: 905px;
     letter-spacing: -0.015em;
     color: #000000;
 }
-.Partner img{
-position: absolute;
-left: 1298px;
-top: 69px;
+
+.Partner img {
+    position: absolute;
+    left: 1298px;
+    top: 69px;
 }
-.Partner p{
+
+.Partner p {
     position: absolute;
     top: 249px;
     left: 1281px;
@@ -474,6 +503,7 @@ top: 69px;
     letter-spacing: -0.015em;
     color: #000000;
 }
+
 .footer {
     width: 1920px;
     height: 350px;
@@ -490,6 +520,7 @@ top: 69px;
     left: 200px;
     top: 30px;
 }
+
 .footer .name {
     position: absolute;
     width: 320px;
@@ -504,12 +535,13 @@ top: 69px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-.Contact{
-    position: absolute;
 
+.Contact {
+    position: absolute;
     left: 570px;
     top: 78px;
 }
+
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -520,12 +552,13 @@ top: 69px;
     letter-spacing: -0.015em;
     color: #000000;
 }
-.Terms{
+
+.Terms {
     position: absolute;
-    
     left: 1000px;
     top: 78px;
 }
+
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -536,12 +569,13 @@ top: 69px;
     letter-spacing: -0.015em;
     color: #000000;
 }
+
 .Financial {
     position: absolute;
-
     left: 1250px;
     top: 78px;
 }
+
 .footer h3 {
     width: 230px;
     height: 24px;
