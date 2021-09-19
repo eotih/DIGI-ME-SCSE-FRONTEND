@@ -420,14 +420,8 @@ div.Topnav p {
     position: relative;
     display: flex;
 }
-<<<<<<< HEAD
 .activities .item-wrap .itembox{
     width: 265px;
-=======
-
-.activities .item-wrap .itembox {
-    width: 266px;
->>>>>>> c580216c28b6268cb82be4247658d0c08aa58cd5
     height: 412px;
     margin-top: 80px;
     color: #FFFFFF;
@@ -436,7 +430,6 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-<<<<<<< HEAD
 .partners{
     width: 1000px;
     margin-left: auto;
@@ -467,7 +460,6 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-=======
 
 .Register {
     position: relative;
@@ -559,7 +551,6 @@ div.Topnav p {
     top: 30px;
 }
 
->>>>>>> c580216c28b6268cb82be4247658d0c08aa58cd5
 .footer .name {
     position: absolute;
     width: 320px;
