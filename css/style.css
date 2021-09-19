@@ -27,7 +27,7 @@
 }
 
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     top: 93px;
     right: 200px;
     background-color: #E5E5E5;
@@ -205,7 +205,7 @@ div.Topnav p {
 
 .content {
     width: 1120px;
-    height: 3000px;
+    height: 1156px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -394,80 +394,84 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .Register {
-    position: relative;
-    top: 1650px;
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
-    width: 1920px;
+    width: 100%;
+    margin-top: 60px;
 }
-
-.Donate img {
-    position: absolute;
-    left: 497px;
-    top: 69px;
+.item-content{
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.Donate p {
-    position: absolute;
-    left: 464px;
-    top: 249px;
-    font-style: normal;
+.item-content img {
+    margin-left: 44px;
+    margin-right: 44px;
+}
+.item-content p{
+    width: 216px;
+    margin-top: 30px;
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
+    color: black;
+    margin-left: 10px;
 }
-
-.Volunteers img {
-    position: absolute;
-    top: 69px;
-    left: 905px;
-}
-
-.Volunteers p {
-    position: absolute;
-    top: 249px;
-    left: 861px;
+.item-content .p1{
     width: 239px;
-    font-style: normal;
+    margin-top: 30px;
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
-    line-height: 29px;
+    color: black;
+    margin-left: -5px;
+}
+.item-content .item-wrap{
+    position: relative;
     display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
+}
+.item-content .item-wrap .itembox{
+    cursor: pointer;
+    margin-top: 70px;
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
 }
 
-.Partner img {
-    position: absolute;
-    left: 1298px;
-    top: 69px;
+.partners .icon {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #6B6B6B;
+    padding: 20px;
+    border-radius: 30px;
 }
 
-.Partner p {
-    position: absolute;
-    top: 249px;
-    left: 1281px;
-    width: 175px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+.partners img {
+    width: 200px;
+    height: 65px;
+}
+.partners .prev{
+    margin-left: 30px;
+}
+.partners .next{
+    margin-right: 30px;
+}
+.partners .partners-wraper {
+    position: relative;
     display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
 }
 
+.partners .partners-wraper .itembox {
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer {
     width: 100%;
     height: 350px;
@@ -608,7 +612,6 @@ margin-left: 1000px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .facebook {
     position: absolute;
     margin-top: 25px;
