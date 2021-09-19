@@ -420,7 +420,8 @@ div.Topnav p {
     position: relative;
     display: flex;
 }
-.activities .item-wrap .itembox{
+
+.activities .item-wrap .itembox {
     width: 265px;
     height: 412px;
     margin-top: 80px;
@@ -430,17 +431,20 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-.partners{
+
+.partners {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
 }
-.partners p{
+
+.partners p {
     margin-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .partners .icon {
     cursor: pointer;
     color: #FFFFFF;
@@ -448,15 +452,18 @@ div.Topnav p {
     padding: 20px;
     border-radius: 30px;
 }
-.partners img{
+
+.partners img {
     width: 200px;
     height: 65px;
 }
-.partners .partners-wraper{
+
+.partners .partners-wraper {
     position: relative;
     display: flex;
 }
-.partners .partners-wraper .itembox{
+
+.partners .partners-wraper .itembox {
     margin-left: auto;
     margin-right: auto;
 }
