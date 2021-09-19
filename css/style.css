@@ -4,10 +4,11 @@
     margin: 0;
     font-family: 'Montserrat',sans-serif;
 }
-body, .slideshow-container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+#color-1{
+    background-color: #DE4439;
+}
+#color-2{
+    background-color: #FCD500;
 }
 
 .Topnav {
@@ -31,6 +32,7 @@ body, .slideshow-container {
     background-color: #E5E5E5;
     border-radius: 20px;
     padding: 10px 10px;
+    z-index: 3;
 }
 
 .navbar ul {
@@ -142,14 +144,14 @@ body, .slideshow-container {
     z-index: 0;
 }
 
-.Slides img {
-    height: 800px;
-    width: 1920px;
+.Slides {
+    display: none;
 }
 
 .Slides .responsive {
     width: 100%;
     height: auto;
+    max-height: 800px;
 }
 
 .prev, .next {
@@ -202,7 +204,7 @@ div.Topnav p {
 
 .content {
     width: 1920px;
-    height: 2667px;
+    height: 3000px;
     top: 77px;
     position: relative;
 }
@@ -223,6 +225,9 @@ div.Topnav p {
 }
 
 .content p {
+    
+}
+.Who p{
     position: absolute;
     width: 438px;
     font-family: 'Montserrat', sans-serif;
@@ -261,6 +266,20 @@ align-items: center;
 letter-spacing: -0.015em;
 color: #FCD500;
 }
+.Purpose p{
+    position: absolute;
+    width: 480px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
 .Vision{
     position: relative;
     left: 400px;
@@ -277,6 +296,20 @@ letter-spacing: -0.015em;
 
 color: #E03030;
 }
+.Vision p{
+    position: absolute;
+    width: 480px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
 .Mission{
     position: relative;
     left: 1170px;
@@ -292,8 +325,90 @@ align-items: center;
 letter-spacing: -0.015em;
 color: #1A94D0;
 }
+.Mission p{
+    position: absolute;
+    width: 480px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
+.activities{
+    position: absolute;
+    top: 1258px;
+    width: 1120px;
+    left: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.activities h1 {
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+    color: #1A94D0;
+}
+.activities p{
+    width: 222px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.activities hr{
+    background-color: #1A94D0;
+    height: 20px;
+    width: 265px;
+    margin-top: -20px;
+    margin-left: -2px;
+}
+.activities img{
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    margin: 17px;
+}
+.activities button{
+    position: absolute;
+    cursor: pointer;
+    width: 208px;
+    height: 47px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1A94D0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    margin-left: 28px;
+    margin-right: 28px;
+    bottom: 35px;
+}
+.activities .button1{background-color: #FCD500; color: #000000;}
+.activities .button2{background-color: #DE4439;}
+.activities .item-wrap{
+    position: relative;
+    display: flex;
+}
+.activities .item-wrap .itembox{
+    width: 266px;
+    height: 412px;
+    margin-top: 80px;
+    color: #FFFFFF;
+    border: 2px solid #F0F0F0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
 .Register{
     position: relative;
+    top: 1650px;
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
     width: 1920px;
@@ -304,10 +419,10 @@ color: #1A94D0;
     top: 69px;
 }
 .Donate p{
-    position: absolute;
-    left: 464px;
-    top: 249px;
-    font-style: normal;
+ position: absolute;
+ left: 464px;
+ top: 249px;
+ font-style: normal;
 font-weight: bold;
 font-size: 24px;
 line-height: 29px;
@@ -375,7 +490,6 @@ top: 69px;
     left: 200px;
     top: 30px;
 }
-
 .footer .name {
     position: absolute;
     width: 320px;
@@ -530,5 +644,30 @@ top: 69px;
     100% {
         opacity: 1;
         transform: rotateX(0deg);
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
     }
 }
