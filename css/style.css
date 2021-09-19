@@ -167,6 +167,7 @@
     transition: 0.6s ease;
     border-radius: 20px;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
@@ -178,7 +179,7 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #6B6B6B
 }
 
 div.header {
@@ -364,12 +365,42 @@ color: #1A94D0;
     display: flex;
 }
 .activities .item-wrap .itembox{
-    width: 266px;
+    width: 265px;
     height: 412px;
     margin-top: 80px;
     color: #FFFFFF;
     border: 2px solid #F0F0F0;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+.partners p{
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.partners .icon {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #6B6B6B;
+    padding: 20px;
+    border-radius: 30px;
+}
+.partners img{
+    width: 200px;
+    height: 65px;
+}
+.partners .partners-wraper{
+    position: relative;
+    display: flex;
+}
+.partners .partners-wraper .itembox{
     margin-left: auto;
     margin-right: auto;
 }
