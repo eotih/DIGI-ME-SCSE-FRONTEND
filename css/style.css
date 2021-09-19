@@ -351,8 +351,6 @@ div.Topnav p {
 }
 
 .activities {
-    position: absolute;
-    top: 1258px;
     width: 1120px;
     left: 400px;
     margin-left: auto;
@@ -432,6 +430,50 @@ div.Topnav p {
     margin-right: auto;
 }
 
+.Register {
+    background-color: rgba(252, 213, 0, 0.2);
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+}
+.item-content{
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item-content img {
+    margin-left: 44px;
+    margin-right: 44px;
+}
+.item-content p{
+    width: 216px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-left: 10px;
+}
+.item-content .p1{
+    width: 239px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-left: -5px;
+}
+.item-content .item-wrap{
+    position: relative;
+    display: flex;
+}
+.item-content .item-wrap .itembox{
+    cursor: pointer;
+    margin-top: 70px;
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .partners {
     width: 1000px;
     margin-left: auto;
@@ -439,16 +481,11 @@ div.Topnav p {
     margin-top: 80px;
 }
 
-.partners p {
-    margin-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .partners .icon {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #6B6B6B;
+    margin-top: 5px;
     padding: 20px;
     border-radius: 30px;
 }
@@ -466,79 +503,6 @@ div.Topnav p {
 .partners .partners-wraper .itembox {
     margin-left: auto;
     margin-right: auto;
-}
-
-.Register {
-    position: relative;
-    top: 1650px;
-    background-color: rgba(252, 213, 0, 0.2);
-    height: 400px;
-    width: 1920px;
-}
-
-.Donate img {
-    position: absolute;
-    left: 497px;
-    top: 69px;
-}
-
-.Donate p {
-    position: absolute;
-    left: 464px;
-    top: 249px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
-
-.Volunteers img {
-    position: absolute;
-    top: 69px;
-    left: 905px;
-}
-
-.Volunteers p {
-    position: absolute;
-    top: 249px;
-    left: 861px;
-    width: 239px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
-
-.Partner img {
-    position: absolute;
-    left: 1298px;
-    top: 69px;
-}
-
-.Partner p {
-    position: absolute;
-    top: 249px;
-    left: 1281px;
-    width: 175px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
 }
 
 .footer {
