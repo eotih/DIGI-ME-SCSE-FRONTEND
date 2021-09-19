@@ -168,7 +168,6 @@
     transition: 0.6s ease;
     border-radius: 20px;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
@@ -180,7 +179,7 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: #6B6B6B
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 div.header {
@@ -205,94 +204,82 @@ div.Topnav p {
 }
 
 .content {
-    width: 1920px;
-    height: 3000px;
-    top: 77px;
-    position: relative;
+    width: 1120px;
+    height: 1156px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.content p{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+/* or 222% */
+width: 450px;
+margin-top: 44px;
+display: flex;
+align-items: center;
+text-align: justify;
+letter-spacing: 0.015em;
+color: #000000;
 
+}
 .Who h1 {
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
-    left: 400px;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 78px;
-    /* identical to box height */
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
     color: #1A94D0;
+    margin-top: 70px;
 }
-
-.content p {}
-
-.Who p {
-    position: absolute;
-    width: 438px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
-}
-
-.Who p {
-    left: 400px;
-    top: 111px;
-}
-
 .Who img {
     position: absolute;
-    left: 1170px;
-    top: 121px;
+    margin-left: 40%;
 }
-
-.Purpose {
-    position: relative;
-    left: 775px;
-    top: 386px;
+.hr1{
+    width: 70px;
+height: 20px;
+background: #FCD500;
+border-radius: 10px;
 }
-
+.Purpose{
+    width: 340px;
+    height: 240px;
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: auto;
+    box-sizing: border-box;
+}
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
-    display: flex;
     align-items: center;
     letter-spacing: -0.015em;
     color: #FCD500;
 }
-
-.Purpose p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
+.All{
     display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
 }
-
+.hr2{
+    width: 70px;
+height: 20px;
+background: #DE4439;
+border-radius: 10px;
+}
 .Vision {
-    position: relative;
-    left: 400px;
-    top: 812px;
+    width: 340px;
+    height: 240px;
+    margin-top: 5%;
+    margin-right: auto;
+    box-sizing: border-box;
 }
-
-.Vision h3 {
+.Vision h3{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -302,54 +289,32 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #E03030;
 }
-
-.Vision p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
+.hr3{
+    width: 70px;
+height: 20px;
+background: #1A94D0;
+border-radius: 10px;
 }
-
 .Mission {
-    position: relative;
-    left: 1170px;
-    top: 731px;
+    width: 340px;
+    height: 240px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-left: 430px;
 }
-
-.Mission h4 {
+.Mission h4{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
+    width: 300px;
     display: flex;
     align-items: center;
     letter-spacing: -0.015em;
     color: #1A94D0;
 }
-
-.Mission p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
-}
-
 .activities {
     width: 1120px;
     left: 400px;
@@ -420,7 +385,7 @@ div.Topnav p {
 }
 
 .activities .item-wrap .itembox {
-    width: 265px;
+    width: 266px;
     height: 412px;
     margin-top: 80px;
     color: #FFFFFF;
@@ -429,7 +394,6 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-
 .Register {
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
@@ -485,7 +449,6 @@ div.Topnav p {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #6B6B6B;
-    margin-top: 5px;
     padding: 20px;
     border-radius: 30px;
 }
@@ -494,7 +457,12 @@ div.Topnav p {
     width: 200px;
     height: 65px;
 }
-
+.partners .prev{
+    margin-left: 30px;
+}
+.partners .next{
+    margin-right: 30px;
+}
 .partners .partners-wraper {
     position: relative;
     display: flex;
@@ -504,31 +472,27 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-
 .footer {
-    width: 1920px;
+    width: 100%;
     height: 350px;
-}
 
+}
 .top {
-    width: 1920px;
-    height: 254px;
+    display: flex;
     position: relative;
+    height: 254px;
 }
-
 .top .logo {
     position: absolute;
-    left: 200px;
-    top: 30px;
+    margin-right: auto;
+    margin-left: 200px;
 }
-
 .footer .name {
     position: absolute;
     width: 320px;
     height: 24px;
-    left: 200px;
-    top: 134px;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 110px;
+    margin-left: 200px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -536,13 +500,13 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .Contact {
-    position: absolute;
-    left: 570px;
-    top: 78px;
+    width: 175px;
+    height: 86px;
+    margin-left: 570px;
+    margin-right: auto;
+    margin-top: 20px;
 }
-
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -553,13 +517,14 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #000000;
 }
-
 .Terms {
+    width: 175px;
+    height: 86px;
     position: absolute;
-    left: 1000px;
-    top: 78px;
+margin-left: 1000px;
+    margin-top: 20px;
+    
 }
-
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -573,10 +538,9 @@ div.Topnav p {
 
 .Financial {
     position: absolute;
-    left: 1250px;
-    top: 78px;
+    margin-left: 1250px;
+    margin-top: 20px;
 }
-
 .footer h3 {
     width: 230px;
     height: 24px;
@@ -588,13 +552,9 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.footer ul {
-    padding: 0;
-}
-
 .footer li {
     list-style-type: none;
+    margin-top: 14px;
     width: 380px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -604,18 +564,21 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .top .quyengop {
     position: absolute;
     width: 239px;
     height: 100px;
-    left: 1485px;
-    top: 75px;
+    margin-left: 1485px;
+    margin-top: 20px;
 }
-
+.footer hr{
+    width: 1360px;
+    margin-right: auto;
+    margin-left: 200px;
+}
 .bot {
     position: relative;
-    width: 1920px;
+    display: flex;
     height: 100px;
 }
 
@@ -623,8 +586,8 @@ div.Topnav p {
     position: absolute;
     width: 301px;
     height: 24px;
-    left: 200px;
-    top: 25px;
+    margin-left: 200px;
+    margin-top: 25px;
     font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -638,8 +601,8 @@ div.Topnav p {
     position: absolute;
     width: 300px;
     height: 24px;
-    left: 1086px;
-    top: 25px;
+    margin-left: 1086px;
+    margin-top: 25px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -649,23 +612,37 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .facebook {
     position: absolute;
-    top: 25px;
-    left: 1532px;
+    margin-top: 25px;
+    margin-left: 1532px;
 }
 
 .youtube {
     position: absolute;
-    top: 25px;
-    left: 1586px;
+    margin-top: 25px;
+    margin-left: 1586px;
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
     }
+} */
+@media only screen and (max-width: 1024px) {
+    .Who h1{
+        width: 90%;
+        left: 5%;
+    }
+    .Who p{
+        left: 5%;
+        width: 40%;
+    }
+    .Who img{
+        left: 50%;
+        top: 5%;
+    }
+
 }
 
 @keyframes rotateX {
