@@ -138,11 +138,11 @@
     z-index: 2;
 }
 
-
 .Slides {
     display: none;
 }
-.slideshow-container img{
+
+.slideshow-container img {
     width: 100%;
     height: 800px;
 }
@@ -197,21 +197,22 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-.content p{
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 40px;
-/* or 222% */
-width: 450px;
-margin-top: 44px;
-display: flex;
-align-items: center;
-text-align: justify;
-letter-spacing: 0.015em;
-color: #000000;
 
+.content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    width: 450px;
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
 }
+
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -224,17 +225,20 @@ color: #000000;
     color: #1A94D0;
     margin-top: 70px;
 }
+
 .Who img {
     position: absolute;
     margin-left: 40%;
 }
-.hr1{
+
+.hr1 {
     width: 70px;
-height: 20px;
-background: #FCD500;
-border-radius: 10px;
+    height: 20px;
+    background: #FCD500;
+    border-radius: 10px;
 }
-.Purpose{
+
+.Purpose {
     width: 340px;
     height: 240px;
     margin-top: 15%;
@@ -242,6 +246,7 @@ border-radius: 10px;
     margin-right: auto;
     box-sizing: border-box;
 }
+
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
@@ -251,15 +256,18 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #FCD500;
 }
-.All{
+
+.All {
     display: flex;
 }
-.hr2{
+
+.hr2 {
     width: 70px;
-height: 20px;
-background: #DE4439;
-border-radius: 10px;
+    height: 20px;
+    background: #DE4439;
+    border-radius: 10px;
 }
+
 .Vision {
     width: 340px;
     height: 240px;
@@ -267,7 +275,8 @@ border-radius: 10px;
     margin-right: auto;
     box-sizing: border-box;
 }
-.Vision h3{
+
+.Vision h3 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -277,12 +286,14 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #E03030;
 }
-.hr3{
+
+.hr3 {
     width: 70px;
-height: 20px;
-background: #1A94D0;
-border-radius: 10px;
+    height: 20px;
+    background: #1A94D0;
+    border-radius: 10px;
 }
+
 .Mission {
     width: 340px;
     height: 240px;
@@ -292,7 +303,8 @@ border-radius: 10px;
     box-sizing: border-box;
     margin-left: 430px;
 }
-.Mission h4{
+
+.Mission h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -398,22 +410,26 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .Register {
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
     width: 100%;
     margin-top: 60px;
 }
-.item-content{
+
+.item-content {
     width: 992px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .item-content img {
     margin-left: 44px;
     margin-right: 44px;
 }
-.item-content p{
+
+.item-content p {
     width: 216px;
     margin-top: 30px;
     text-align: center;
@@ -422,7 +438,8 @@ border-radius: 10px;
     color: black;
     margin-left: 10px;
 }
-.item-content .p1{
+
+.item-content .p1 {
     width: 239px;
     margin-top: 30px;
     text-align: center;
@@ -431,17 +448,20 @@ border-radius: 10px;
     color: black;
     margin-left: -5px;
 }
-.item-content .item-wrap{
+
+.item-content .item-wrap {
     position: relative;
     display: flex;
 }
-.item-content .item-wrap .itembox{
+
+.item-content .item-wrap .itembox {
     cursor: pointer;
     margin-top: 70px;
     width: 239px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .partners {
     width: 1000px;
     margin-left: auto;
@@ -461,12 +481,15 @@ border-radius: 10px;
     width: 200px;
     height: 65px;
 }
-.partners .prev{
+
+.partners .prev {
     margin-left: 30px;
 }
-.partners .next{
+
+.partners .next {
     margin-right: 30px;
 }
+
 .partners .partners-wraper {
     position: relative;
     display: flex;
@@ -481,6 +504,7 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .footer {
     width: 1920px;
     height: 350px;
@@ -625,6 +649,7 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .facebook {
     position: absolute;
     top: 25px;
