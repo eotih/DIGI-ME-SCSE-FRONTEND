@@ -192,10 +192,10 @@ div.Topnav p {
 }
 
 .content {
-    width: 1920px;
-    height: 3000px;
-    top: 77px;
-    position: relative;
+    width: 1120px;
+    height: 1156px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Who h1 {
@@ -416,7 +416,6 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-
 .Register {
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
@@ -496,6 +495,10 @@ div.Topnav p {
     margin-right: auto;
 }
 
+.partners .partners-wraper .itembox {
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer {
     width: 1920px;
     height: 350px;
@@ -640,7 +643,6 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .facebook {
     position: absolute;
     top: 25px;
