@@ -197,89 +197,77 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
+.content p{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+/* or 222% */
+width: 450px;
+margin-top: 44px;
+display: flex;
+align-items: center;
+text-align: justify;
+letter-spacing: 0.015em;
+color: #000000;
 
+}
 .Who h1 {
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
-    left: 400px;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 78px;
-    /* identical to box height */
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
     color: #1A94D0;
+    margin-top: 70px;
 }
-
-.content p {}
-
-.Who p {
-    position: absolute;
-    width: 438px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
-}
-
-.Who p {
-    left: 400px;
-    top: 111px;
-}
-
 .Who img {
     position: absolute;
-    left: 1170px;
-    top: 121px;
+    margin-left: 40%;
 }
-
-.Purpose {
-    position: relative;
-    left: 775px;
-    top: 386px;
+.hr1{
+    width: 70px;
+height: 20px;
+background: #FCD500;
+border-radius: 10px;
 }
-
+.Purpose{
+    width: 340px;
+    height: 240px;
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: auto;
+    box-sizing: border-box;
+}
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
-    display: flex;
     align-items: center;
     letter-spacing: -0.015em;
     color: #FCD500;
 }
-
-.Purpose p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
+.All{
     display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
 }
-
+.hr2{
+    width: 70px;
+height: 20px;
+background: #DE4439;
+border-radius: 10px;
+}
 .Vision {
-    position: relative;
-    left: 400px;
-    top: 812px;
+    width: 340px;
+    height: 240px;
+    margin-top: 5%;
+    margin-right: auto;
+    box-sizing: border-box;
 }
-
-.Vision h3 {
+.Vision h3{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -289,33 +277,27 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #E03030;
 }
-
-.Vision p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
+.hr3{
+    width: 70px;
+height: 20px;
+background: #1A94D0;
+border-radius: 10px;
 }
-
 .Mission {
-    position: relative;
-    left: 1170px;
-    top: 731px;
+    width: 340px;
+    height: 240px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-left: 430px;
 }
-
-.Mission h4 {
+.Mission h4{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
+    width: 300px;
     display: flex;
     align-items: center;
     letter-spacing: -0.015em;
