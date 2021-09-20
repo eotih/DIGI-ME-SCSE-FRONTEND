@@ -316,6 +316,7 @@ div.Topnav p {
     color: #1A94D0;
 }
 
+/* 
 .Mission p {
     position: absolute;
     width: 480px;
@@ -329,7 +330,7 @@ div.Topnav p {
     text-align: justify;
     letter-spacing: 0.015em;
     color: #000000;
-}
+} */
 
 .activities {
     width: 1120px;
@@ -510,18 +511,20 @@ div.Topnav p {
     height: 350px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 .top {
     display: flex;
     position: relative;
     height: 254px;
 }
+
 .top .logo {
     position: absolute;
     margin-right: auto;
     margin-left: 200px;
 }
+
 .footer .name {
     position: absolute;
     width: 320px;
@@ -535,6 +538,7 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .Contact {
     width: 175px;
     height: 86px;
@@ -542,6 +546,7 @@ div.Topnav p {
     margin-right: auto;
     margin-top: 20px;
 }
+
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -552,14 +557,15 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #000000;
 }
+
 .Terms {
     width: 175px;
     height: 86px;
     position: absolute;
-margin-left: 1000px;
+    margin-left: 1000px;
     margin-top: 20px;
-    
 }
+
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -576,6 +582,7 @@ margin-left: 1000px;
     margin-left: 1250px;
     margin-top: 20px;
 }
+
 .footer h3 {
     width: 230px;
     height: 24px;
@@ -587,6 +594,7 @@ margin-left: 1000px;
     letter-spacing: -0.015em;
     color: #000000;
 }
+
 .footer li {
     list-style-type: none;
     margin-top: 14px;
@@ -599,6 +607,7 @@ margin-left: 1000px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .top .quyengop {
     position: absolute;
     width: 239px;
@@ -606,11 +615,13 @@ margin-left: 1000px;
     margin-left: 1485px;
     margin-top: 20px;
 }
-.footer hr{
+
+.footer hr {
     width: 1360px;
     margin-right: auto;
     margin-left: 200px;
 }
+
 .bot {
     position: relative;
     display: flex;
@@ -658,6 +669,7 @@ margin-left: 1000px;
     margin-top: 25px;
     margin-left: 1586px;
 }
+
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
