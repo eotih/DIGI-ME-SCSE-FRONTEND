@@ -136,7 +136,7 @@
     <div class="partners">
         <div class="partners-wraper">
             <div class="itembox">
-                <img src="./images/partner.png">
+                <p class="prev fas fa-chevron-left icon" onclick="plusTest(-1)"></p>
             </div>
             <div class="itembox">
                 <img src="./images/partner.png">
@@ -146,10 +146,14 @@
             </div>
             <div class="itembox">
                 <img src="./images/partner.png">
+            </div>
+            <div class="itembox">
+                <img src="./images/partner.png">
+            </div>
+            <div class="itembox">
+                <p class="next fas fa-chevron-right icon" onclick="plusTest(1)"></p>
             </div>
         </div>
-        <p class="prev fas fa-chevron-left icon" onclick="plusTest(-1)"></p>
-        <p class="next fas fa-chevron-right icon" onclick="plusTest(1)"></p>
     </div>
     <img src="./images/wave-footer.png" style="width: 100%;">
     <div class="footer">
@@ -275,6 +279,7 @@
         }
         slides[slideIndex - 1].style.display = "block";
     }
+
 </script>
 
 </html>
