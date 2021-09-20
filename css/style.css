@@ -288,6 +288,7 @@ div.Topnav p {
     color: #1A94D0;
 }
 
+/* 
 .Mission p {
     position: absolute;
     width: 480px;
@@ -301,7 +302,7 @@ div.Topnav p {
     text-align: justify;
     letter-spacing: 0.015em;
     color: #000000;
-}
+} */
 
 .activities {
     width: 1120px;
@@ -474,18 +475,20 @@ div.Topnav p {
     width: 1920px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 .top {
     display: flex;
     position: relative;
     height: 254px;
 }
+
 .top .logo {
     position: absolute;
     margin-right: auto;
     margin-left: 100px;
 }
+
 .footer .name {
     position: absolute;
     width: 320px;
@@ -499,6 +502,7 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .Contact {
     width: 175px;
     height: 86px;
@@ -531,8 +535,8 @@ div.Topnav p {
     position: absolute;
 margin-left: 900px;
     margin-top: 20px;
-    
 }
+
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -549,6 +553,7 @@ margin-left: 900px;
     margin-left: 1150px;
     margin-top: 20px;
 }
+
 .footer h3 {
     width: 230px;
     height: 24px;
@@ -560,6 +565,7 @@ margin-left: 900px;
     letter-spacing: -0.015em;
     color: #000000;
 }
+
 .footer li {
     list-style-type: none;
     margin-top: 14px;
@@ -572,6 +578,7 @@ margin-left: 900px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .top .quyengop {
     position: absolute;
     width: 239px;
@@ -583,6 +590,7 @@ margin-left: 900px;
     width: 1560px;
     margin-left: 100px;
 }
+
 .bot {
     position: relative;
     display: flex;
@@ -630,6 +638,7 @@ margin-left: 900px;
     margin-top: 25px;
     margin-left: 950px;
 }
+
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
