@@ -139,24 +139,16 @@
     z-index: 2;
 }
 
-.slideshow-container {
-    max-width: 1920px;
-    position: relative;
-    margin: auto;
-    z-index: 0;
-}
-
 .Slides {
     display: none;
 }
 
-.Slides .responsive {
+.slideshow-container img {
     width: 100%;
-    height: auto;
-    max-height: 800px;
+    height: 800px;
 }
 
-.prev, .next {
+.slideshow-container .prev, .slideshow-container .next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -169,27 +161,23 @@
     transition: 0.6s ease;
     border-radius: 20px;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.prev {
+.slideshow-container .prev {
     left: 50px;
 }
 
-.next {
+.slideshow-container .next {
     right: 50px;
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #6B6B6B
 }
 
 div.header {
     position: relative;
-}
-
-div.slideshow-container {
-    top: 0;
-    position: absolute;
 }
 
 div.Topnav {
@@ -210,21 +198,22 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-.content p{
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 40px;
-/* or 222% */
-width: 450px;
-margin-top: 44px;
-display: flex;
-align-items: center;
-text-align: justify;
-letter-spacing: 0.015em;
-color: #000000;
 
+.content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    width: 450px;
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
 }
+
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -237,17 +226,20 @@ color: #000000;
     color: #1A94D0;
     margin-top: 70px;
 }
+
 .Who img {
     position: absolute;
     margin-left: 560px;
 }
-.hr1{
+
+.hr1 {
     width: 70px;
-height: 20px;
-background: #FCD500;
-border-radius: 10px;
+    height: 20px;
+    background: #FCD500;
+    border-radius: 10px;
 }
-.Purpose{
+
+.Purpose {
     width: 340px;
     height: 240px;
     margin-top: 15%;
@@ -255,6 +247,7 @@ border-radius: 10px;
     margin-right: auto;
     box-sizing: border-box;
 }
+
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
@@ -264,15 +257,18 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #FCD500;
 }
-.All{
+
+.All {
     display: flex;
 }
-.hr2{
+
+.hr2 {
     width: 70px;
-height: 20px;
-background: #DE4439;
-border-radius: 10px;
+    height: 20px;
+    background: #DE4439;
+    border-radius: 10px;
 }
+
 .Vision {
     width: 340px;
     height: 240px;
@@ -280,7 +276,8 @@ border-radius: 10px;
     margin-right: auto;
     box-sizing: border-box;
 }
-.Vision h3{
+
+.Vision h3 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -290,12 +287,14 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #E03030;
 }
-.hr3{
+
+.hr3 {
     width: 70px;
-height: 20px;
-background: #1A94D0;
-border-radius: 10px;
+    height: 20px;
+    background: #1A94D0;
+    border-radius: 10px;
 }
+
 .Mission {
     width: 340px;
     height: 240px;
@@ -305,7 +304,8 @@ border-radius: 10px;
     box-sizing: border-box;
     margin-left: 430px;
 }
-.Mission h4{
+
+.Mission h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -316,6 +316,22 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #1A94D0;
 }
+
+.Mission p {
+    position: absolute;
+    width: 480px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
+
 .activities {
     width: 1120px;
     left: 400px;
@@ -386,7 +402,7 @@ border-radius: 10px;
 }
 
 .activities .item-wrap .itembox {
-    width: 266px;
+    width: 265px;
     height: 412px;
     margin-top: 80px;
     color: #FFFFFF;
@@ -395,22 +411,26 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .Register {
     background-color: rgba(252, 213, 0, 0.2);
     height: 400px;
     width: 100%;
     margin-top: 60px;
 }
-.item-content{
+
+.item-content {
     width: 992px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .item-content img {
     margin-left: 44px;
     margin-right: 44px;
 }
-.item-content p{
+
+.item-content p {
     width: 216px;
     margin-top: 30px;
     text-align: center;
@@ -419,7 +439,8 @@ border-radius: 10px;
     color: black;
     margin-left: 10px;
 }
-.item-content .p1{
+
+.item-content .p1 {
     width: 239px;
     margin-top: 30px;
     text-align: center;
@@ -428,17 +449,20 @@ border-radius: 10px;
     color: black;
     margin-left: -5px;
 }
-.item-content .item-wrap{
+
+.item-content .item-wrap {
     position: relative;
     display: flex;
 }
-.item-content .item-wrap .itembox{
+
+.item-content .item-wrap .itembox {
     cursor: pointer;
     margin-top: 70px;
     width: 239px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .partners {
     width: 1000px;
     margin-left: auto;
@@ -458,12 +482,15 @@ border-radius: 10px;
     width: 200px;
     height: 65px;
 }
-.partners .prev{
+
+.partners .prev {
     margin-left: 30px;
 }
-.partners .next{
+
+.partners .next {
     margin-right: 30px;
 }
+
 .partners .partners-wraper {
     position: relative;
     display: flex;
@@ -473,6 +500,12 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.partners .partners-wraper .itembox {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
     width: 1920px;
     margin-left: auto;
@@ -508,6 +541,9 @@ border-radius: 10px;
     margin-left: 570px;
     margin-right: auto;
     margin-top: 20px;
+}
+.Contact p{
+    margin-left: 25px;
 }
 .footer h1 {
     width: 250px;
@@ -580,8 +616,7 @@ margin-left: 1000px;
     margin-top: 20px;
 }
 .footer hr{
-    width: 1360px;
-    margin-right: auto;
+    width: 1560px;
     margin-left: 200px;
 }
 .bot {
@@ -619,37 +654,21 @@ margin-left: 1000px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
+
 .facebook {
     position: absolute;
     margin-top: 25px;
-    margin-left: 1532px;
+    margin-left: 1000px;
 }
 
 .youtube {
     position: absolute;
     margin-top: 25px;
-    margin-left: 1586px;
+    margin-left: 1050px;
 }
-
-/* @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
-    }
-} */
-@media only screen and (max-width: 1024px) {
-    .Who h1{
-        width: 90%;
-        left: 5%;
-    }
-    .Who p{
-        left: 5%;
-        width: 30%;
-    }
-    .Who img{
-        left: 15%;
-    }
-    .Purpose h2{
-left: 40%;
     }
 }
 
