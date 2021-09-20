@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 #color-1 {
@@ -238,7 +239,7 @@ color: #000000;
 }
 .Who img {
     position: absolute;
-    margin-left: 40%;
+    margin-left: 560px;
 }
 .hr1{
     width: 70px;
@@ -473,8 +474,9 @@ border-radius: 10px;
     margin-right: auto;
 }
 .footer {
-    width: 100%;
-    height: 350px;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .top {
@@ -516,6 +518,12 @@ border-radius: 10px;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: #000000;
+}
+.Contact p{
+    margin-left: 25px;
+}
+.Adress{
+   margin-left: 5px;
 }
 .Terms {
     width: 175px;
@@ -583,7 +591,6 @@ margin-left: 1000px;
 }
 
 .photo {
-    position: absolute;
     width: 301px;
     height: 24px;
     margin-left: 200px;
@@ -636,13 +643,14 @@ margin-left: 1000px;
     }
     .Who p{
         left: 5%;
-        width: 40%;
+        width: 30%;
     }
     .Who img{
-        left: 50%;
-        top: 5%;
+        left: 15%;
     }
-
+    .Purpose h2{
+left: 40%;
+    }
 }
 
 @keyframes rotateX {
