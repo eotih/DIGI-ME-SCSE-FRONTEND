@@ -592,11 +592,11 @@ margin-left: 720px;
         float: none;
     }
 }
-/* @media only screen and (max-width: 1440px) {
-    body{
-        width: 100%;
-    } */
-
+@media (min-width: 1440px){
+    .swiper-2{
+        width: 1100px;
+    }
+}
 @keyframes rotateX {
     0% {
         opacity: 0;
