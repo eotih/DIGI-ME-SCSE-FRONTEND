@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSE - Trang Chủ</title>
-    <link rel="icon" sizes="192x192" href="./images/LogoSCSE_Favicon.png">
+    <link rel="icon" sizes="192x192" href="./images/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
-
     <div class="header">
         <div class="Topnav">
-            <p class="Roboto" id="datetime">Thứ, Ngày Tháng Năm</p>
+            <p class="Roboto" id="datetime">THỨ HAI, 20-9-2021 12:18:10</p>
             <img src="./images/Topnav.png" width="100%">
         </div>
         <div>
@@ -46,15 +46,13 @@
             </nav>
         </div>
     </div>
-    <div class="slideshow-container">
-        <div class="Slides fade">
-            <img src="./images/32171034926_7983733ab2_o.jpg">
+    <div class="swiper swiper-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="image" src="./images/32171034926_7983733ab2_o.jpg"></div>
+            <div class="swiper-slide"><img class="image" src="./images/slide-test.jpg"></div>
         </div>
-        <div class="Slides fade">
-            <img src="./images/slide-test.jpg">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     <hr style="background-color: #1A94D0;height: 16px;">
     <div class="content">
@@ -93,28 +91,26 @@
         <h1>LĨNH VỰC HOẠT ĐỘNG</h1>
         <div class="item-wrap">
             <div class="itembox">
-                <hr>
-                <img src="/images/gioivabinhdanggioi.jpg">
+                <hr class="line1">
+                <img src="./images/gioivabinhdanggioi.jpg">
                 <p>Giới và bình đẳng giới</p>
                 <button>XEM THÊM</button>
             </div>
             <div class="itembox">
-                <hr>
-                <hr id="color-2">
-                <img src="/images/biendoikhihau.jpg">
+                <hr class="line2">
+                <img src="./images/biendoikhihau.jpg">
                 <p>Môi trường - Biến đổi khí hậu</p>
                 <button class="button1">XEM THÊM</button>
             </div>
             <div class="itembox">
-                <hr>
-                <img src="/images/thuctapsinh.png">
+                <hr class="line1">
+                <img src="./images/thuctapsinh.png">
                 <p>Thực tập sinh</p>
                 <button>XEM THÊM</button>
             </div>
             <div class="itembox">
-                <hr>
-                <hr id="color-1">
-                <img src="/images/nghiencuu.jpg">
+                <hr class="line3">
+                <img src="./images/nghiencuu.jpg">
                 <p>Nghiên cứu đào tạo</p>
                 <button class="button2">XEM THÊM</button>
             </div>
@@ -129,7 +125,7 @@
                 </div>
                 <div class="itembox">
                     <img src="./images/Group 490.png" alt="">
-                    <p class="p1">ĐĂNG KÝ LÀM
+                    <p>ĐĂNG KÝ LÀM
                         TÌNH NGUYỆN VIÊN</p>
                 </div>
                 <div class="itembox">
@@ -140,27 +136,39 @@
             </div>
         </div>
     </div>
-    <div class="partners">
-        <div class="partners-wraper">
-            <div class="itembox">
-                <p class="prev fas fa-chevron-left icon" onclick="plusTest(-1)"></p>
+    <div class="swiper swiper-2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
             </div>
-            <div class="itembox">
-                <img src="./images/partner.png">
-            </div>
-            <div class="itembox">
-                <img src="./images/partner.png">
-            </div>
-            <div class="itembox">
-                <img src="./images/partner.png">
-            </div>
-            <div class="itembox">
-                <img src="./images/partner.png">
-            </div>
-            <div class="itembox">
-                <p class="next fas fa-chevron-right icon" onclick="plusTest(1)"></p>
+            <div class="swiper-slide">
+                <div class="itembox">
+                    <img src="./images/1.jpg">
+                </div>
+                <div class="itembox">
+                    <img src="./images/1.jpg">
+                </div>
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
+                <div class="itembox">
+                    <img src="./images/partner.png">
+                </div>
             </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     <img src="./images/wave-footer.png" style="width: 100%;">
     <div class="footer">
@@ -174,8 +182,8 @@
                 <ul>
                     <li>
                         <img src="./images/map-marker-alt1.png">
-                       20A An Đường An Dương Vương,
-                       <p> Phường 10, Tp. Sóc Trăng</p>
+                        20A An Đường An Dương Vương,
+                        <p> Phường 10, Tp. Sóc Trăng</p>
                     </li>
                     <li>
                         <img src="./images/envelope1.png">
@@ -189,12 +197,12 @@
                         <a href="https://www.facebook.com/scsevn/">
                             <img src="./images/image 75.png">
                         </a>
+                        
+                    </li>
+                    <li>
                         <a href="https://www.youtube.com/channel/UC5K0cnsITcj7cxIcpvWXnmQ">
                             <img src="./images/image 74.png">
                         </a>
-                    </li>
-                    <li>
-
                     </li>
                 </ul>
             </div>
@@ -220,7 +228,30 @@
                 © Photo, Inc. 2019. We love our users!
             </p>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const swiper1 = new Swiper('.partners', {
+            // Optional parameters
+            loop: true,
+            spaceBetween: 400,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
+
 <script>
     window.addEventListener('load', getDateTime)
     async function getDateTime() {
@@ -259,28 +290,6 @@
             document.getElementById("datetime").innerHTML = dateTime;
         }, 500);
     }
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("Slides");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-    }
-
 </script>
 
 </html>
