@@ -482,29 +482,28 @@ border-radius: 10px;
     margin-right: auto;
 }
 .footer {
-    width: 1920px;
+    width: 100%;
     height: 350px;
-}
+    margin-left: auto;
+    margin-right: auto;
 
+}
 .top {
-    width: 1920px;
-    height: 254px;
+    display: flex;
     position: relative;
+    height: 254px;
 }
-
 .top .logo {
     position: absolute;
-    left: 200px;
-    top: 30px;
+    margin-right: auto;
+    margin-left: 200px;
 }
-
 .footer .name {
     position: absolute;
     width: 320px;
     height: 24px;
-    left: 200px;
-    top: 134px;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 110px;
+    margin-left: 200px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -512,13 +511,13 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .Contact {
-    position: absolute;
-    left: 570px;
-    top: 78px;
+    width: 175px;
+    height: 86px;
+    margin-left: 570px;
+    margin-right: auto;
+    margin-top: 20px;
 }
-
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -529,13 +528,14 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #000000;
 }
-
 .Terms {
+    width: 175px;
+    height: 86px;
     position: absolute;
-    left: 1000px;
-    top: 78px;
+margin-left: 1000px;
+    margin-top: 20px;
+    
 }
-
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -549,10 +549,9 @@ border-radius: 10px;
 
 .Financial {
     position: absolute;
-    left: 1250px;
-    top: 78px;
+    margin-left: 1250px;
+    margin-top: 20px;
 }
-
 .footer h3 {
     width: 230px;
     height: 24px;
@@ -564,13 +563,9 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.footer ul {
-    padding: 0;
-}
-
 .footer li {
     list-style-type: none;
+    margin-top: 14px;
     width: 380px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -580,27 +575,29 @@ border-radius: 10px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .top .quyengop {
     position: absolute;
     width: 239px;
     height: 100px;
-    left: 1485px;
-    top: 75px;
+    margin-left: 1485px;
+    margin-top: 20px;
 }
-
+.footer hr{
+    width: 1360px;
+    margin-right: auto;
+    margin-left: 200px;
+}
 .bot {
     position: relative;
-    width: 1920px;
+    display: flex;
     height: 100px;
 }
 
 .photo {
-    position: absolute;
     width: 301px;
     height: 24px;
-    left: 200px;
-    top: 25px;
+    margin-left: 200px;
+    margin-top: 25px;
     font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -614,8 +611,8 @@ border-radius: 10px;
     position: absolute;
     width: 300px;
     height: 24px;
-    left: 1086px;
-    top: 25px;
+    margin-left: 1086px;
+    margin-top: 25px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -627,16 +624,15 @@ border-radius: 10px;
 }
 .facebook {
     position: absolute;
-    top: 25px;
-    left: 1532px;
+    margin-top: 25px;
+    margin-left: 1532px;
 }
 
 .youtube {
     position: absolute;
-    top: 25px;
-    left: 1586px;
+    margin-top: 25px;
+    margin-left: 1586px;
 }
-
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
