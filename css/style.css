@@ -212,7 +212,13 @@ div.Topnav p {
     letter-spacing: 0.015em;
     color: #000000;
 }
+.Who{
+    width: 1120px;
+    height: 500px;
+    position: relative;
+    padding-left: 4px;
 
+}
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -228,7 +234,8 @@ div.Topnav p {
 
 .Who img {
     position: absolute;
-    margin-left: 560px;
+    margin-left: 760px;
+    margin-top: 44px;
 }
 
 .hr1 {
@@ -236,12 +243,13 @@ div.Topnav p {
     height: 20px;
     background: #FCD500;
     border-radius: 10px;
+    border: 0;
 }
 
 .Purpose {
     width: 340px;
     height: 240px;
-    margin-top: 15%;
+    margin-top: 20px;
     margin-left: 30%;
     margin-right: auto;
     box-sizing: border-box;
@@ -266,14 +274,15 @@ div.Topnav p {
     height: 20px;
     background: #DE4439;
     border-radius: 10px;
+    border: 0;
 }
 
 .Vision {
     width: 340px;
     height: 240px;
     margin-top: 5%;
-    margin-right: auto;
-    box-sizing: border-box;
+    margin-right: 285px;
+    padding-left: 4px;
 }
 
 .Vision h3 {
@@ -292,16 +301,13 @@ div.Topnav p {
     height: 20px;
     background: #1A94D0;
     border-radius: 10px;
+    border: 0;
 }
 
 .Mission {
     width: 340px;
     height: 240px;
     margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    margin-left: 430px;
 }
 
 .Mission h4 {
@@ -488,24 +494,29 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
-
 .footer {
-    width: 1920px;
+    width: 1120px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 44px;
 }
+
 .top {
+    width: 1120px;
     display: flex;
     position: relative;
-    height: 254px;
+    height: 320px;
+}
+.footer .top hr{
+    width: 370px;
+    margin: 5px;
 }
 .top .logo {
     position: absolute;
     margin-right: auto;
-    margin-left: 100px;
 }
-.footer .name {
+
+/* .footer .name {
     position: absolute;
     width: 320px;
     height: 24px;
@@ -517,16 +528,20 @@ div.Topnav p {
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
-}
+} */
+
 .Contact {
     width: 175px;
     height: 86px;
-    margin-left: 470px;
+    margin-left: 270px;
     margin-right: auto;
     margin-top: 20px;
 }
 .Contact p{
     margin-left: 25px;
+}
+.Contact li{
+    width: 380px;
 }
 .footer h1 {
     width: 250px;
@@ -535,22 +550,25 @@ div.Topnav p {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
+    margin-left: 20px;
     letter-spacing: -0.015em;
     color: #000000;
-}
-.Contact p{
-    margin-left: 25px;
 }
 .Adress{
    margin-left: 5px;
 }
 .Terms {
-    width: 175px;
-    height: 86px;
+    width: 250px;
+    height: 220px;
     position: absolute;
-margin-left: 900px;
+margin-left: 720px;
     margin-top: 20px;
-    
+}
+.Terms li{
+    width: 250px;
+}
+.Terms img{
+    margin-top: 10px;
 }
 .footer h2 {
     width: 230px;
@@ -562,27 +580,9 @@ margin-left: 900px;
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.Financial {
-    position: absolute;
-    margin-left: 1150px;
-    margin-top: 20px;
-}
-.footer h3 {
-    width: 230px;
-    height: 24px;
-    font-family: 'Montserrat' sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
 .footer li {
     list-style-type: none;
     margin-top: 14px;
-    width: 380px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -591,69 +591,46 @@ margin-left: 900px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-.top .quyengop {
+/* .quyengop{
+    width: 250px;
+    height: 100px;
+    margin-top: 20px;
+}
+.top .quyengop img {
     position: absolute;
     width: 239px;
     height: 100px;
-    margin-left: 1385px;
-    margin-top: 20px;
-}
-.footer hr{
-    width: 1560px;
     margin-left: 100px;
+} */
+.footer hr{
+    width: 1120px;
 }
 .bot {
-    position: relative;
+    
     display: flex;
     height: 100px;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.photo {
-    width: 301px;
-    height: 24px;
-    margin-left: 100px;
-    margin-top: 25px;
-    font-family: 'Montserrat' sans-serif;
+.photo{
+    margin-top: 15px;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
-}
-
-.follow {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    margin-left: 986px;
-    margin-top: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.facebook {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 900px;
-}
-
-.youtube {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 950px;
 }
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
     }
 }
+/* @media only screen and (max-width: 1440px) {
+    body{
+        width: 100%;
+    } */
 
 @keyframes rotateX {
     0% {
@@ -676,6 +653,7 @@ margin-left: 900px;
     animation-duration: 0.5s;
 }
 
+}
 @-webkit-keyframes fade {
     from {
         opacity: .4
