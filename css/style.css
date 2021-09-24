@@ -428,7 +428,6 @@ nav a.active {
     margin: 17px;
     object-fit: cover;
 }
-
 .activities button {
     position: absolute;
     cursor: pointer;
@@ -458,7 +457,6 @@ nav a.active {
     position: relative;
     display: flex;
 }
-
 .activities .item-wrap .itembox {
     width: 265px;
     height: 412px;
@@ -566,11 +564,9 @@ nav a.active {
 
 .top .logo img {
     position: absolute;
-    margin-right: auto;
     width: 220px;
     height: 150px;
 }
-
 .Contact {
     width: 370px;
     height: 300px;
@@ -1031,6 +1027,9 @@ nav a.active {
     }
 }
 @media screen and (max-width:1024px) and (min-width:769px) {
+    hr{
+        width: 100%;
+    }
     .content {
         width: 100%;
     }
