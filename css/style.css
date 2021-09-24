@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -137,44 +138,15 @@
 .Topnav p {
     z-index: 2;
 }
-
-.Slides {
-    display: none;
-}
-
-.slideshow-container img {
+.swiper-1{
     width: 100%;
+    height: auto
+}
+.swiper-1 .image {
+    width: 1920px;
     height: 800px;
+    object-fit: cover;
 }
-
-.slideshow-container .prev, .slideshow-container .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 20px;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slideshow-container .prev {
-    left: 50px;
-}
-
-.slideshow-container .next {
-    right: 50px;
-}
-
-.prev:hover, .next:hover {
-    background-color: #6B6B6B
-}
-
 div.header {
     position: relative;
 }
@@ -182,7 +154,7 @@ div.header {
 div.Topnav {
     top: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 99;
 }
 
 div.Topnav p {
@@ -212,7 +184,13 @@ div.Topnav p {
     letter-spacing: 0.015em;
     color: #000000;
 }
+.Who{
+    width: 1120px;
+    height: 500px;
+    position: relative;
+    padding-left: 4px;
 
+}
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -228,7 +206,8 @@ div.Topnav p {
 
 .Who img {
     position: absolute;
-    margin-left: 560px;
+    margin-left: 760px;
+    margin-top: 44px;
 }
 
 .hr1 {
@@ -236,12 +215,13 @@ div.Topnav p {
     height: 20px;
     background: #FCD500;
     border-radius: 10px;
+    border: 0;
 }
 
 .Purpose {
     width: 340px;
     height: 240px;
-    margin-top: 15%;
+    margin-top: 20px;
     margin-left: 30%;
     margin-right: auto;
     box-sizing: border-box;
@@ -266,14 +246,15 @@ div.Topnav p {
     height: 20px;
     background: #DE4439;
     border-radius: 10px;
+    border: 0;
 }
 
 .Vision {
     width: 340px;
     height: 240px;
     margin-top: 5%;
-    margin-right: auto;
-    box-sizing: border-box;
+    margin-right: 285px;
+    padding-left: 4px;
 }
 
 .Vision h3 {
@@ -292,16 +273,13 @@ div.Topnav p {
     height: 20px;
     background: #1A94D0;
     border-radius: 10px;
+    border: 0;
 }
 
 .Mission {
     width: 340px;
     height: 240px;
     margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    margin-left: 430px;
 }
 
 .Mission h4 {
@@ -315,23 +293,6 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #1A94D0;
 }
-
-/* 
-.Mission p {
-    position: absolute;
-    width: 480px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.015em;
-    color: #000000;
-} */
-
 .activities {
     width: 1120px;
     left: 400px;
@@ -352,12 +313,29 @@ div.Topnav p {
     font-size: 20px;
     text-align: center;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.activities hr {
+.activities .line1 {
     background-color: #1A94D0;
+    border-style: solid;
+    height: 20px;
+    width: 265px;
+    margin-top: -20px;
+    margin-left: -2px;
+}
+.activities .line2 {
+    background-color: #FCD500;
+    border-style: solid;
+    height: 20px;
+    width: 265px;
+    margin-top: -20px;
+    margin-left: -2px;
+}
+.activities .line3 {
+    background-color: #DE4439;
+    border-style: solid;
     height: 20px;
     width: 265px;
     margin-top: -20px;
@@ -369,6 +347,7 @@ div.Topnav p {
     height: 230px;
     border-radius: 20px;
     margin: 17px;
+    object-fit: cover;
 }
 
 .activities button {
@@ -431,23 +410,12 @@ div.Topnav p {
 }
 
 .item-content p {
-    width: 216px;
     margin-top: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
     color: black;
     margin-left: 10px;
-}
-
-.item-content .p1 {
-    width: 239px;
-    margin-top: 30px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    color: black;
-    margin-left: -5px;
 }
 
 .item-content .item-wrap {
@@ -463,14 +431,13 @@ div.Topnav p {
     margin-right: auto;
 }
 
-.partners {
-    width: 1000px;
+.swiper-2 {
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
 }
 
-.partners .icon {
+.swiper-2 .icon {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #6B6B6B;
@@ -478,53 +445,43 @@ div.Topnav p {
     border-radius: 30px;
 }
 
-.partners img {
+.swiper-2 img {
     width: 200px;
     height: 65px;
 }
 
-.partners .prev {
-    margin-left: 30px;
-}
-
-.partners .next {
-    margin-right: 30px;
-}
-
-.partners .partners-wraper {
+.swiper-2 .swiper-wrapper .swiper-slide {
     position: relative;
     display: flex;
 }
 
-.partners .partners-wraper .itembox {
+.swiper-2 .swiper-wrapper .swiper-slide .itembox {
     margin-left: auto;
     margin-right: auto;
 }
-
-.partners .partners-wraper .itembox {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer {
-    width: 1920px;
+    width: 1120px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 44px;
 }
 
 .top {
+    width: 1120px;
     display: flex;
     position: relative;
-    height: 254px;
+    height: 320px;
 }
-
+.footer .top hr{
+    width: 370px;
+    margin: 5px;
+}
 .top .logo {
     position: absolute;
     margin-right: auto;
-    margin-left: 100px;
 }
 
-.footer .name {
+/* .footer .name {
     position: absolute;
     width: 320px;
     height: 24px;
@@ -536,12 +493,12 @@ div.Topnav p {
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .Contact {
     width: 175px;
     height: 86px;
-    margin-left: 470px;
+    margin-left: 270px;
     margin-right: auto;
     margin-top: 20px;
 }
@@ -549,7 +506,13 @@ div.Topnav p {
 .Contact p {
     margin-left: 25px;
 }
+<<<<<<< HEAD
 
+=======
+.Contact li{
+    width: 380px;
+}
+>>>>>>> 14023103d16a087a0918d1abab494537b5c18f71
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -557,9 +520,11 @@ div.Topnav p {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
+    margin-left: 20px;
     letter-spacing: -0.015em;
     color: #000000;
 }
+<<<<<<< HEAD
 
 .Contact p {
     margin-left: 25px;
@@ -567,16 +532,29 @@ div.Topnav p {
 
 .Adress {
     margin-left: 5px;
+=======
+.Adress{
+   margin-left: 5px;
+>>>>>>> 14023103d16a087a0918d1abab494537b5c18f71
 }
 
 .Terms {
-    width: 175px;
-    height: 86px;
+    width: 250px;
+    height: 220px;
     position: absolute;
+<<<<<<< HEAD
     margin-left: 900px;
+=======
+margin-left: 720px;
+>>>>>>> 14023103d16a087a0918d1abab494537b5c18f71
     margin-top: 20px;
 }
-
+.Terms li{
+    width: 250px;
+}
+.Terms img{
+    margin-top: 10px;
+}
 .footer h2 {
     width: 230px;
     height: 24px;
@@ -587,29 +565,9 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #000000;
 }
-
-.Financial {
-    position: absolute;
-    margin-left: 1150px;
-    margin-top: 20px;
-}
-
-.footer h3 {
-    width: 230px;
-    height: 24px;
-    font-family: 'Montserrat' sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
-
 .footer li {
     list-style-type: none;
     margin-top: 14px;
-    width: 380px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -618,74 +576,53 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
-.top .quyengop {
-    position: absolute;
-    width: 239px;
+/* .quyengop{
+    width: 250px;
     height: 100px;
-    margin-left: 1385px;
     margin-top: 20px;
 }
+<<<<<<< HEAD
 
 .footer hr {
     width: 1560px;
+=======
+.top .quyengop img {
+    position: absolute;
+    width: 239px;
+    height: 100px;
+>>>>>>> 14023103d16a087a0918d1abab494537b5c18f71
     margin-left: 100px;
+} */
+.footer hr{
+    width: 1120px;
 }
-
 .bot {
-    position: relative;
+    
     display: flex;
     height: 100px;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.photo {
-    width: 301px;
-    height: 24px;
-    margin-left: 100px;
-    margin-top: 25px;
-    font-family: 'Montserrat' sans-serif;
+.photo{
+    margin-top: 15px;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
-.follow {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    margin-left: 986px;
-    margin-top: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.facebook {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 900px;
-}
-
-.youtube {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 950px;
-}
-
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
     }
 }
-
+@media (min-width: 1440px){
+    .swiper-2{
+        width: 1100px;
+    }
+}
 @keyframes rotateX {
     0% {
         opacity: 0;
@@ -706,6 +643,7 @@ div.Topnav p {
     animation-name: fade;
     animation-duration: 0.5s;
 }
+
 
 @-webkit-keyframes fade {
     from {
