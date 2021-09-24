@@ -51,7 +51,14 @@
     text-decoration: none;
     font-size: 22px;
 }
-
+.header .logo{
+    position: absolute;
+    height: 150px;
+    z-index: 4;
+    margin-top: 60px;
+    margin-left: 200px ;
+    filter: drop-shadow(0 0 0.2rem black);
+}
 nav {
     position: absolute;
     top: 93px;
@@ -228,7 +235,14 @@ nav a.active {
     width: 100%;
     height: auto
 }
-
+.swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF !important;
+    margin: 30px !important;
+    margin-top: -80px !important;
+    padding: 50px;
+    border-radius: 50px;
+}
 .swiper-1 .image {
     width: 1920px;
     height: 800px;
@@ -455,6 +469,7 @@ nav a.active {
 .activities .item-wrap {
     position: relative;
     display: flex;
+    flex-direction: row;
 }
 
 .activities .item-wrap .itembox {
@@ -514,7 +529,16 @@ nav a.active {
     margin-right: auto;
     width: 1100px;
 }
-
+.swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
+    margin: -25px 30px 30px !important;
+}
+.swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF !important;
+    padding: 20px;
+    border-radius: 80px;
+}
 .swiper-2 .icon {
     cursor: pointer;
     color: #FFFFFF;
@@ -530,11 +554,12 @@ nav a.active {
 .swiper-2 .swiper-wrapper .swiper-slide {
     position: relative;
     display: flex;
+    justify-content: center;
 }
 
 .swiper-2 .swiper-wrapper .swiper-slide .itembox {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer {
@@ -713,6 +738,11 @@ margin-left: 720px;
         padding-bottom: 20px;
         font-size: 20px;
     }
+    .header .logo{
+        height: 120px;
+        margin-top: 60px;
+        margin-left: 100px ;
+    }
     nav {
         right: 100px;
         padding: 10px 10px;
@@ -777,6 +807,91 @@ margin-left: 720px;
         padding-bottom: 15px;
         line-height: 29px;
     }
+    .activities {
+        width: 840px;
+        left: 400px;
+    }
+    
+    .activities h1 {
+        font-weight: bold;
+        font-size: 56px;
+    }
+    
+    .activities p {
+        width: 160px;
+        font-size: 15px;
+    }
+    
+    .activities .line1 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities .line2 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities .line3 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities img {
+        width: 160px;
+        height: 160px;
+        border-radius: 10px;
+        margin: 16px;
+    }
+    
+    .activities button {
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-left: 17px;
+        margin-right: 17px;
+        bottom: 16px;
+    }
+    
+    .activities .item-wrap .itembox {
+        width: 195px;
+        height: 300px;
+        margin-top: 80px;
+        color: #FFFFFF;
+        border: 2px solid #F0F0F0;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-2 {
+        margin-top: 80px;
+        width: 840px;
+    }
+    .swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
+        margin: -20px 30px 30px !important;
+    }
+    .swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important;
+        padding: 15px;
+        border-radius: 80px;
+    }
+    .swiper-2 img {
+        height: 45px;
+    }
+    
+    .swiper-2 .swiper-wrapper .swiper-slide .itembox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .swiper-1 .image{
@@ -799,6 +914,14 @@ margin-left: 720px;
         padding: 10px;
         padding-bottom: 20px;
         font-size: 14px;
+    }
+    .header .logo{
+        height: 100px;
+        margin-top: 80px;
+        margin-left: 50px ;
+    }
+    nav {
+        right: 50px;
     }
     .slogan h1 {
         font-size: 96px;
@@ -835,6 +958,17 @@ margin-left: 720px;
     .swiper-1 .image{
         width: 768px;
         height: 400px;
+    }
+    .swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important;
+        margin: 15px !important;
+        margin-top: -30px !important;
+        padding: 25px;
+        border-radius: 50px;
+    }
+    .swiper-1 .swiper-button-next::after, .swiper-1 .swiper-button-prev::after{
+        font-size: 20px;
     }
     .Topnav .line {
         height: 14px;
@@ -919,11 +1053,108 @@ margin-left: 720px;
         padding-bottom: 10px;
         line-height: 23px;
     }
+    .activities {
+        width: 568px;
+        left: 200px;
+    }
+    
+    .activities h1 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+    
+    .activities p {
+        width: 110px;
+        font-size: 10px;
+    }
+    
+    .activities .line1 {
+        height: 14px;
+        width: 134px;
+        margin-top: -14px;
+        margin-left: -2px;
+    }
+    
+    .activities .line2 {
+        height: 14px;
+        width: 134px;
+        margin-top: -14px;
+        margin-left: -2px;
+    }
+    
+    .activities .line3 {
+        height: 14px;
+        width: 134px;
+        margin-top: -14px;
+        margin-left: -2px;
+    }
+    
+    .activities img {
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    
+    .activities button {
+        width: 110px;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 15px;
+        margin-left: 11px;
+        bottom: 11px;
+    }
+    
+    .activities .item-wrap .itembox {
+        width: 134px;
+        height: 205px;
+        margin-top: 50px;
+        color: #FFFFFF;
+        border: 2px solid #F0F0F0;
+        box-sizing: border-box ;
+    }
+    .swiper-2 {
+        margin-top: 60px;
+        width: 568px;
+        height: 60px;
+    }
+    .swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
+        margin: -20px 30px 30px !important;
+    }
+    .swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important;
+        padding: 15px;
+        border-radius: 80px;
+    }
+    
+    .swiper-2 img {
+        height: 30px;
+    }
+    .swiper-2 .swiper-wrapper .swiper-slide{
+        margin-top: 15px;
+    }
+    .swiper-2 .swiper-wrapper .swiper-slide .itembox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media screen and (max-width: 414px) {
     .swiper-1 .image{
         width: 414px;
         height: 200px;
+    }
+    .swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important;
+        margin: 5px !important;
+        margin-top: -25px !important;
+        padding: 20px;
+        border-radius: 50px;
+    }
+    .swiper-1 .swiper-button-next::after, .swiper-1 .swiper-button-prev::after{
+        font-size: 10px;
     }
     .Topnav .line {
         height: 10px;
@@ -941,6 +1172,11 @@ margin-left: 720px;
         padding: 10px;
         padding-bottom: 20px;
         font-size: 5px;
+    }
+    .header .logo{
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 50px ;
     }
     .slogan {
         margin-top: 60px;
@@ -977,6 +1213,98 @@ margin-left: 720px;
         padding-right: 5px;
         padding-bottom: 5px;
         line-height: 8px;
+    }
+    .activities {
+        width: 314px;
+        left: 100px;
+    }
+    
+    .activities h1 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .activities p {
+        width: 160px;
+        font-size: 15px;
+    }
+    
+    .activities .line1 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities .line2 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities .line3 {
+        height: 18px;
+        width: 195px;
+        margin-top: -18px;
+        margin-left: -2px;
+    }
+    
+    .activities img {
+        width: 160px;
+        height: 160px;
+        border-radius: 10px;
+        margin: 16px;
+    }
+    
+    .activities button {
+        position: relative;
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-top: 17px;
+    }
+    .activities .item-wrap {
+        flex-direction: column;
+    }
+    .activities .item-wrap .itembox {
+        width: 195px;
+        height: 300px;
+        margin-top: 30px;
+        color: #FFFFFF;
+        border: 2px solid #F0F0F0;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-2 {
+        margin-top: 60px;
+        width: 314px;
+        height: 40px;
+    }
+    .swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
+        margin: -20px 5px 5px !important;
+    }
+    .swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
+        font-size: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF !important;
+        padding: 10px;
+        border-radius: 80px;
+    }
+    
+    .swiper-2 img {
+        height: 15px;
+    }
+    .swiper-2 .swiper-wrapper .swiper-slide{
+        margin-top: 15px;
+    }
+    .swiper-2 .swiper-wrapper .swiper-slide .itembox {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 @keyframes rotateX {
