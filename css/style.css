@@ -13,18 +13,43 @@
     background-color: #FCD500;
 }
 
-.Topnav {
-    overflow: hidden;
+.header {
+    position: relative;
 }
 
-.Topnav p {
-    float: right;
+.Topnav {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 4;
+}
+
+.Topnav .line {
+    background-color: #1A94D0;
+    border-style: none;
+    height: 20px;
+}
+
+.Topnav .textholder {
+    position: absolute;
+    border-top: 60px solid #1A94D0;
+    border-left: 50px solid transparent;
+    height: 0px;
+    width: 650px;
+    top: 10px;
+    right: 0px;
+}
+
+.Topnav .overlay {
+    position: relative;
+    text-align: right;
+    margin-top: -5px;
+    margin-right: 13%;
     color: white;
-    text-align: center;
-    padding: 23px;
-    margin: 0;
+    padding: 10px;
+    padding-bottom: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .navbar {
@@ -34,10 +59,10 @@
     background-color: #E5E5E5;
     border-radius: 20px;
     padding: 10px 10px;
-    z-index: 3;
+    z-index: 99;
 }
 
-.navbar ul {
+nav li {
     list-style: none;
     position: relative;
     float: left;
@@ -46,7 +71,7 @@
     display: inline-table;
 }
 
-.navbar ul li {
+nav ul {
     float: left;
     margin-right: 10px;
     -webkit-transition: all .2s ease-in-out;
@@ -54,20 +79,20 @@
     transition: all .2s ease-in-out;
 }
 
-.navbar ul li:hover {
+nav ul li:hover {
     background-color: #FFFFFF;
     border-radius: 20px;
 }
 
-.navbar ul li a:hover {
+nav a:hover {
     color: #1A94D0;
 }
 
-.navbar ul li:hover>ul {
+nav ul li:hover>ul {
     display: block;
 }
 
-.navbar ul li a {
+nav a {
     display: block;
     padding: 16px 20px;
     color: #6B6B6B;
@@ -76,7 +101,7 @@
     font-weight: bold;
 }
 
-.navbar ul ul {
+nav ul ul {
     display: none;
     background: white;
     border-radius: 20px;
@@ -85,41 +110,50 @@
     box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
 }
 
-.navbar ul ul li {
+nav ul ul li {
     float: none;
     position: relative;
     margin: 0;
 }
 
-.navbar ul ul li a {
+nav ul ul li a {
     min-width: 350px;
     margin: 10px;
     padding: 16px 20px;
 }
 
-.navbar ul ul li a:hover {
+nav ul ul li a:hover {
     background: #1A94D0;
     color: #FFFFFF;
     border-radius: 10px;
 }
 
-.navbar ul ul ul {
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
-
-.navbar a.icon {
+nav .icon {
     font-size: 24px;
     padding: 16px 10px;
     margin-right: 0px;
 }
 
-.navbar a.Icon {
+nav label.burger {
+    display: none;
+    padding: 12px 16px;
+    color: #6B6B6B;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav label.burger:hover {
+    padding: 12px 16px;
+    color: #1A94D0;
+}
+
+#check {
     display: none;
 }
 
-.navbar a.active {
+nav a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
     border-radius: 20px;
@@ -138,29 +172,68 @@
 .Topnav p {
     z-index: 2;
 }
-.swiper-1{
+
+.slogan {
+    position: absolute;
+    margin-top: 200px;
+    right: 200px;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.slogan h1 {
+    font-size: 144px;
+    color: #1A94D0;
+}
+
+.slogan h2 {
+    font-size: 144px;
+    color: #FCD500;
+}
+
+.slogan h3 {
+    font-size: 144px;
+    color: #DE4439;
+}
+
+.slogan .flex {
+    display: flex;
+    padding-left: 40px;
+}
+
+.slogan .p1 {
+    font-size: 42px;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slogan .p2 {
+    width: 800px;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    line-height: 37px;
+    align-items: center;
+    text-align: justify;
+}
+
+.swiper-1 {
     width: 100%;
     height: auto
 }
+
 .swiper-1 .image {
     width: 1920px;
     height: 800px;
     object-fit: cover;
-}
-div.header {
-    position: relative;
-}
-
-div.Topnav {
-    top: 0;
-    position: absolute;
-    z-index: 99;
-}
-
-div.Topnav p {
-    top: 0;
-    right: 16%;
-    position: absolute;
+    object-position: right bottom;
 }
 
 .content {
@@ -183,15 +256,18 @@ div.Topnav p {
     letter-spacing: 0.015em;
     color: #000000;
 }
-.Who{
+
+.Who {
     width: 1120px;
     height: 500px;
     position: relative;
     padding-left: 4px;
 }
-.Who p{
+
+.Who p {
     width: 450px;
 }
+
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -203,11 +279,13 @@ div.Topnav p {
     color: #1A94D0;
     margin-top: 70px;
 }
+
 .Who img {
     position: absolute;
     margin-left: 760px;
     margin-top: 44px;
 }
+
 .hr1 {
     width: 70px;
     height: 20px;
@@ -291,6 +369,7 @@ div.Topnav p {
     letter-spacing: -0.015em;
     color: #1A94D0;
 }
+
 .activities {
     width: 1120px;
     left: 400px;
@@ -323,6 +402,7 @@ div.Topnav p {
     margin-top: -20px;
     margin-left: -2px;
 }
+
 .activities .line2 {
     background-color: #FCD500;
     border-style: solid;
@@ -331,6 +411,7 @@ div.Topnav p {
     margin-top: -20px;
     margin-left: -2px;
 }
+
 .activities .line3 {
     background-color: #DE4439;
     border-style: solid;
@@ -433,6 +514,7 @@ div.Topnav p {
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    width: 1100px;
 }
 
 .swiper-2 .icon {
@@ -444,7 +526,6 @@ div.Topnav p {
 }
 
 .swiper-2 img {
-    width: 200px;
     height: 65px;
 }
 
@@ -457,57 +538,55 @@ div.Topnav p {
     margin-left: auto;
     margin-right: auto;
 }
+
 .footer {
     width: 1120px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 44px;
+    background-color: #1A94D0;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
+    color: white;
 }
+
 .top {
     width: 100%;
     display: flex;
     position: relative;
     height: 320px;
 }
-.footer .top hr{
+
+.footer .top hr {
     width: auto;
     margin: 5px;
 }
-.top .logo {
+
+.top .logo img {
     position: absolute;
     margin-right: auto;
+    width: 220px;
+    height: 150px;
 }
 
-/* .footer .name {
-    position: absolute;
-    width: 320px;
-    height: 24px;
-    margin-top: 110px;
-    margin-left: 100px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
-} */
-
 .Contact {
-    width: 175px;
+    width: 370px;
     height: 300px;
     margin-left: 240px;
     margin-right: auto;
     margin-top: 20px;
 }
-.Contact p{
+
+.Contact p {
     margin-left: 25px;
 }
-.Contact li{
+
+.Contact li {
     width: 380px;
 }
+
 .footer h1 {
     width: 250px;
     height: 24px;
@@ -515,36 +594,30 @@ div.Topnav p {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-    margin-left: 20px;
     letter-spacing: -0.015em;
-    color: #000000;
+    color: white;
 }
-.Adress{
-   margin-left: 5px;
+
+.Adress {
+    margin-left: 5px;
 }
+
 .Terms {
     width: 250px;
     height: 220px;
     position: absolute;
-margin-left: 670px;
+    margin-left: 670px;
     margin-top: 20px;
 }
-.Terms li{
+
+.Terms li {
     width: 250px;
 }
-.Terms img{
+
+.Terms img {
     margin-top: 10px;
 }
-.footer h2 {
-    width: 230px;
-    height: 24px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
+
 .footer li {
     list-style-type: none;
     margin-top: 14px;
@@ -554,18 +627,27 @@ margin-left: 670px;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
-.Donate{
+
+.Donate {
     margin-top: 55px;
 }
-.footer hr{
+
+.Donate a img {
+    height: 85px;
+    width: 220px;
+}
+
+.footer hr {
     margin-top: 10px;
     width: 1120px;
 }
-.top a img{
+
+.Contact a img {
     height: 30px;
 }
+
 .bot {
     display: flex;
     height: 100px;
@@ -573,17 +655,19 @@ margin-left: 670px;
     margin-left: auto;
     margin-right: auto;
 }
-.bot .photo{
+
+.bot .photo {
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
     width: 400px;
 }
-.Follow{
+
+.Follow {
     margin-top: 15px;
     margin-left: 350px;
     margin-right: 20px;
@@ -593,18 +677,450 @@ margin-left: 670px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8)
+    color: white
 }
-.bot img{
+
+.bot img {
     margin-top: 15px;
     margin-right: 20px;
 }
-.top a img{
+
+.top a img {
     margin-right: 10px;
 }
-@media screen and (max-width: 1300px) {
-    .navbar ul li {
+
+@media screen and (max-width: 1440px) {
+    .swiper-1 .image {
+        width: 1440px;
+        height: 600px;
+    }
+    .Topnav .line {
+        height: 20px;
+    }
+    .Topnav .textholder {
+        border-top: 60px solid #1A94D0;
+        border-left: 50px solid transparent;
+        width: 600px;
+        top: 10px;
+    }
+    .Topnav .overlay {
+        margin-right: 18%;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    nav {
+        right: 100px;
+        padding: 10px 10px;
+        z-index: 99;
+    }
+    nav a {
+        font-size: 18px;
+        padding: 12px 16px;
+    }
+    nav ul li:hover {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+    nav ul ul li a {
+        padding: 12px 16px;
+    }
+    nav ul ul li a:hover {
+        border-radius: 5px;
+    }
+    nav a.icon {
+        font-size: 18px;
+        padding: 12px 10px;
+    }
+    nav a.active {
+        border-radius: 10px;
+    }
+    .swiper-2 {
+        width: 900px;
+    }
+    .slogan {
+        margin-top: 175px;
+        right: 100px;
+    }
+    .slogan h1 {
+        font-size: 124px;
+    }
+    .slogan h2 {
+        font-size: 124px;
+    }
+    .slogan h3 {
+        font-size: 124px;
+    }
+    .slogan .flex {
+        padding-left: 30px;
+    }
+    .slogan .p1 {
+        font-size: 36px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+    .slogan .p2 {
+        width: 650px;
+        font-size: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        line-height: 29px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    hr {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+    }
+    .content .Who {
+        margin-left: 5%;
+        width: 95%;
+        height: auto;
+    }
+    .Who h1{
+        font-size: 34px;
+    }
+    .Who p {
+        width: 50%;
+    }
+    .Who img {
+        width: 35%;
+        margin-left: 55%;
+    }
+    .Purpose {
+        margin-left: 5%;
+        width: 80%;
+        margin-top: 44px;
+    }
+    .All {
+        margin-top: 24px;
+        width: 100%;
+        display: block;
+        height: 700px;
+    }
+    .All .Vision {
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    .All .Mission {
+        width: 80%;
+        margin-top: 30%;
+        margin-left: 5%;
+    }
+    .footer {
+        width: 100%;
+        margin-top: 44px;
+    }
+    .top {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 650px;
+    }
+    .top .logo {
+        display: none;
+    }
+    .top .Contact {
+        width: auto;
+        margin-left: 5%;
+    }
+    .Contact h1 {
+        width: 350px;
+        text-align: center;
+    }
+    .Contact li{
+        text-align: center;
+    }
+    .top .Terms {
+        margin-top: 85%;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .top .Donate {
+        position: absolute;
+        margin-top: 500px;
+        margin-left: 25%;
+    }
+    .footer hr {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .bot {
+        width: 100%;
+        display: block;
+    }
+    .bot .photo {
+        width: 60%;
+        margin-left: 30%;
+    }
+    .bot .Follow {
+        margin-top: 20px;
+        margin-left: 40%;
+    }
+    .bot a img{
+        margin-left: 20%; 
+    }
+    
+}
+@media all and (max-width:768px) and (min-width: 415px) {
+    .swiper-1 .image {
+        width: 768px;
+        height: 400px;
+    }
+    .Topnav .line {
+        height: 14px;
+    }
+    .Topnav .textholder {
+        border-top: 60px solid #1A94D0;
+        border-left: 50px solid transparent;
+        width: 350px;
+        top: 10px;
+    }
+    .Topnav .overlay {
+        margin-right: 17%;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    nav {
+        top: 60px;
+        display: flex;
+        right: 0;
+    }
+    nav ul {
+        background-color: #E5E5E5;
+        position: fixed;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        top: 160px;
+        right: -200%;
+        transition: all .5s;
+    }
+    nav ul li {
         float: none;
+        display: block;
+    }
+    nav a.icon {
+        display: block;
+    }
+    nav a.active {
+        display: block;
+    }
+    nav label.burger {
+        float: right;
+        display: block;
+    }
+    .slogan {
+        border-radius: 10px;
+        margin-top: 100px;
+        right: 100px;
+    }
+    .slogan h1 {
+        font-size: 80px;
+    }
+    .slogan h2 {
+        font-size: 80px;
+    }
+    .slogan h3 {
+        font-size: 80px;
+    }
+    .slogan .flex {
+        padding-left: 30px;
+    }
+    .slogan .p1 {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .slogan .p2 {
+        width: 450px;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        line-height: 23px;
+    }
+    hr {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+    .content .Who {
+        margin-left: 5%;
+        width: 95%;
+        height: auto;
+    }
+    .Who p {
+        width: 45%;
+    }
+    .Who img {
+        width: 35%;
+        margin-left: 60%;
+    }
+    .Purpose {
+        margin-left: 15%;
+        width: 45%;
+        margin-top: 70px;
+    }
+    .All {
+        margin-top: 24px;
+        height: auto;
+    }
+    .Vision {
+        width: 35%;
+        margin-top: 50px;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .All .Mission {
+        width: 270px;
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .top {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 650px;
+    }
+    .top .logo {
+        display: none;
+    }
+    .top .Contact {
+        width: 50%;
+        margin-left: 193px;
+    }
+    .Contact h1 {
+        width: 350px;
+        text-align: center;
+    }
+    .Contact li{
+        text-align: center;
+    }
+    .top .Terms {
+        margin-top: 45%;
+        margin-left: 253px;
+        text-align: center;
+    }
+    .top .Donate {
+        position: absolute;
+        margin-top: 70%;
+        margin-left: 255px;
+    }
+    .footer hr {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .bot {
+        width: 100%;
+    }
+    .bot .photo {
+        width: 40%;
+        margin-left: 5%;
+    }
+    .bot .Follow {
+        margin-left: auto;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .content {
+        width: 100%;
+    }
+    .content .Who {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-left: 5%;
+    }
+    .Who p {
+        width: 40%;
+        margin-right: 30%;
+    }
+    .Who img {
+        width: 35%;
+        margin-left: 60%;
+    }
+    .Purpose {
+        margin-left: 15%;
+        margin-top: 70px;
+    }
+    .All {
+        margin-top: 24px;
+        height: auto;
+    }
+    .Vision {
+        width: 35%;
+        margin-top: 50px;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .Mission {
+        width: 35%;
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .top {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .top .logo {
+        display: none;
+    }
+    .Contact h1 {
+        width: 350px;
+    }
+    .footer h1 {
+        text-align: center;
+    }
+    .footer h2 {
+        text-align: center;
+    }
+    .Contact {
+        width: 35%;
+        margin-left: 5%;
+    }
+    .Contact hr{
+        width: 35%;
+    }
+
+    .Contact li{
+        text-align: center;
+    }
+    .Terms {
+        margin-left: 45%;
+    }
+    .Terms li {
+        text-align: center;
+    }
+    .Donate {
+        position: absolute;
+        margin-left: 70%;
+    }
+    .footer hr {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .bot {
+        width: 100%;
+    }
+    .bot .photo {
+        width: 40%;
+        margin-left: 5%;
+    }
+    .bot .Follow {
+        margin-left: auto;
     }
 }
 /* @media (min-width: 1440px){
@@ -612,91 +1128,7 @@ margin-left: 670px;
         width: 1100px;
     }
 } */
-@media screen and (max-width: 768px) {
-    hr{
-        width: 100%;
-    }
-    .content{
-        width: 100%;
 
-    }
-    .content .Who{
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        margin-left: 5%;
-    }
-    /* .content p{
-        width: 100%;
-    } */
-    .Who p{
-        width: 40%;
-        margin-right: 30%;
-    }
-    .Who img{
-        width: 35%;
-        margin-left: 60%;
-    }
-.Purpose{
-    margin-left: 15%;
-    width: 60%;
-    margin-top: 44px;
-}
-.All{
-    margin-top: 24px;
-    height: auto;
-}
-.Vision{
-    width: 35%;
-    margin-top: 50px;
-    margin-right: 0;
-    margin-left: 5%;
-}
-.Mission{
-    width: 37%;
-    margin-top: 50px;
-    margin-left: 20%;
-}
-.footer{
-    width: 100%;
-}
-.top{
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 650px;
-}
-.top .logo{
-    display: none;
-}
-.Contact{
-    width: 50%;
-    margin-left: 30%;
-}
-.Terms{
-    margin-top: 50%;
-    margin-left: 35%;
-}
-.Donate{
-    position: absolute;
-    margin-top: 70%;
-    margin-left: 35%;
-}
-.footer hr{
-    margin-top: 15px;
-    width: 100%;
-}
-.bot{
-    width: 100%;
-    margin-left: 5%;
-    
-}
-.bot .photo{
-    width: 40%;
-}
-.bot .Follow{
-    margin-left: auto;
-}
-}
 @keyframes rotateX {
     0% {
         opacity: 0;
@@ -710,13 +1142,13 @@ margin-left: 670px;
         transform: rotateX(0deg);
     }
 }
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.5s;
     animation-name: fade;
     animation-duration: 0.5s;
 }
-
 
 @-webkit-keyframes fade {
     from {
