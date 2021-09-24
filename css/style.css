@@ -28,7 +28,7 @@
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 93px;
     right: 200px;
     background-color: #E5E5E5;
@@ -173,11 +173,10 @@ div.Topnav p {
 .content p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 40px;
     /* or 222% */
-    width: 450px;
-    margin-top: 44px;
+    margin-top: 24px;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -189,7 +188,9 @@ div.Topnav p {
     height: 500px;
     position: relative;
     padding-left: 4px;
-
+}
+.Who p{
+    width: 450px;
 }
 .Who h1 {
     font-family: 'Montserrat', sans-serif;
@@ -197,19 +198,16 @@ div.Topnav p {
     font-weight: bold;
     font-size: 64px;
     line-height: 78px;
-    display: flex;
     align-items: center;
     letter-spacing: 0.1em;
     color: #1A94D0;
     margin-top: 70px;
 }
-
 .Who img {
     position: absolute;
     margin-left: 760px;
     margin-top: 44px;
 }
-
 .hr1 {
     width: 70px;
     height: 20px;
@@ -253,7 +251,7 @@ div.Topnav p {
     width: 340px;
     height: 240px;
     margin-top: 5%;
-    margin-right: 285px;
+    margin-right: 300px;
     padding-left: 4px;
 }
 
@@ -277,7 +275,7 @@ div.Topnav p {
 }
 
 .Mission {
-    width: 340px;
+    width: 450px;
     height: 240px;
     margin-top: 5%;
 }
@@ -465,15 +463,17 @@ div.Topnav p {
     margin-right: auto;
     margin-top: 44px;
 }
-
+.footer a{
+    text-decoration: none;
+}
 .top {
-    width: 1120px;
+    width: 100%;
     display: flex;
     position: relative;
     height: 320px;
 }
 .footer .top hr{
-    width: 370px;
+    width: auto;
     margin: 5px;
 }
 .top .logo {
@@ -497,8 +497,8 @@ div.Topnav p {
 
 .Contact {
     width: 175px;
-    height: 86px;
-    margin-left: 270px;
+    height: 300px;
+    margin-left: 240px;
     margin-right: auto;
     margin-top: 20px;
 }
@@ -526,7 +526,7 @@ div.Topnav p {
     width: 250px;
     height: 220px;
     position: absolute;
-margin-left: 720px;
+margin-left: 670px;
     margin-top: 20px;
 }
 .Terms li{
@@ -556,29 +556,24 @@ margin-left: 720px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-/* .quyengop{
-    width: 250px;
-    height: 100px;
-    margin-top: 20px;
+.Donate{
+    margin-top: 55px;
 }
-.top .quyengop img {
-    position: absolute;
-    width: 239px;
-    height: 100px;
-    margin-left: 100px;
-} */
 .footer hr{
+    margin-top: 10px;
     width: 1120px;
 }
+.top a img{
+    height: 30px;
+}
 .bot {
-    
     display: flex;
     height: 100px;
     width: 1120px;
     margin-left: auto;
     margin-right: auto;
 }
-.photo{
+.bot .photo{
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
@@ -586,16 +581,121 @@ margin-left: 720px;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+}
+.Follow{
+    margin-top: 15px;
+    margin-left: 350px;
+    margin-right: 20px;
+    width: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8)
+}
+.bot img{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.top a img{
+    margin-right: 10px;
 }
 @media screen and (max-width: 1300px) {
     .navbar ul li {
         float: none;
     }
 }
-@media (min-width: 1440px){
+/* @media (min-width: 1440px){
     .swiper-2{
         width: 1100px;
     }
+} */
+@media screen and (max-width: 768px) {
+    hr{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+
+    }
+    .content .Who{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-left: 5%;
+    }
+    /* .content p{
+        width: 100%;
+    } */
+    .Who p{
+        width: 40%;
+        margin-right: 30%;
+    }
+    .Who img{
+        width: 35%;
+        margin-left: 60%;
+    }
+.Purpose{
+    margin-left: 15%;
+    width: 60%;
+    margin-top: 44px;
+}
+.All{
+    margin-top: 24px;
+    height: auto;
+}
+.Vision{
+    width: 35%;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 5%;
+}
+.Mission{
+    width: 37%;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.footer{
+    width: 100%;
+}
+.top{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 650px;
+}
+.top .logo{
+    display: none;
+}
+.Contact{
+    width: 50%;
+    margin-left: 30%;
+}
+.Terms{
+    margin-top: 50%;
+    margin-left: 35%;
+}
+.Donate{
+    position: absolute;
+    margin-top: 70%;
+    margin-left: 35%;
+}
+.footer hr{
+    margin-top: 15px;
+    width: 100%;
+}
+.bot{
+    width: 100%;
+    margin-left: 5%;
+    
+}
+.bot .photo{
+    width: 40%;
+}
+.bot .Follow{
+    margin-left: auto;
+}
 }
 @keyframes rotateX {
     0% {
@@ -610,7 +710,6 @@ margin-left: 720px;
         transform: rotateX(0deg);
     }
 }
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.5s;
