@@ -1357,6 +1357,7 @@ nav a.active {
     }
     .item-content .item-wrap .itembox{
         width: 220px;
+        margin-left: 30px;
     }
     .item-content p{
         font-size: 18px;
