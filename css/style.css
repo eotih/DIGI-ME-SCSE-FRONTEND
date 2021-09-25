@@ -1061,6 +1061,9 @@ nav a.active {
     .item-content{
         width: 100%;
     }
+    .item-content .item-wrap .itembox{
+        margin-left: 50px;
+    }
     hr{
         width: 100%;
     }
@@ -1094,6 +1097,9 @@ nav a.active {
         margin-top: 50px;
         margin-right: 0;
         margin-left: 5%;
+    }
+    .Vision p{
+        width: 350px;
     }
     .Mission {
         width: 300px;
