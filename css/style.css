@@ -1062,6 +1062,9 @@ nav a.active {
     .item-content p{
         font-size: 20px;
     }
+    .item-content img{
+        margin-left: 54px;
+    }
     .item-content .item-wrap .itembox{
         margin-left: 50px;
     }
@@ -1086,7 +1089,7 @@ nav a.active {
         margin-left: 58%;
     }
     .Purpose {
-        margin-left: 15%;
+        margin-left: 25%;
         margin-top: 70px;
     }
     .All {
@@ -1364,7 +1367,8 @@ nav a.active {
         font-size: 15px;
     }
     .item-content img{
-        margin-right: 34px;
+        margin-right: 0;
+        margin-left: 44px;
         width: 120px;
         height: 120px;
     }
@@ -1628,6 +1632,7 @@ nav a.active {
     .Register{
         width: 100%;
         height: auto;
+        margin-top: 20px;
     }
     .item-content{
         width: 100%;
@@ -1638,14 +1643,14 @@ nav a.active {
         margin-right: 30px;
     }
     .item-content p{
-        font-size: 15px;
+        font-size: 10px;
         margin-top: 10px;
     }
     .item-content img{
         width: 60px;
         height: 60px;
-        margin-left: 34px;
-        margin-right: 0;
+        margin-left: 24px;
+        margin-right: 24px;
     }
     .item-content .item-wrap .itembox{
         margin-top: 20px;
@@ -1722,7 +1727,7 @@ nav a.active {
     .top .Contact {
         width: 100%;
         margin-left: 0;
-        margin-top: 40%;
+        margin-top: 230px;
     }
     .Contact li{
         margin-left: 10px;
@@ -1730,18 +1735,22 @@ nav a.active {
     .Contact h1 {
         width: 350px;
         text-align: center;
+        margin-left: 30px;
     }
     .Contact li{
         text-align: center;
     }
+    .top .Contact hr{
+        width: 100%;
+    }
     .top .Terms {
-        margin-top: 450px;
+        margin-top: 540px;
         margin-left: 74px;
         text-align: center;
     }
     .top .Donate {
         position: absolute;
-        margin-top: 600px;
+        margin-top: 680px;
         margin-left: 90px;
     }
     .footer hr {
