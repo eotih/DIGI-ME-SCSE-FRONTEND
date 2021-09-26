@@ -586,7 +586,7 @@ nav a.active {
 .top .logo img {
     position: absolute;
     width: 220px;
-    height: 150px;
+    height: 200px;
 }
 .Contact {
     width: 370px;
@@ -1074,7 +1074,7 @@ nav a.active {
         flex-direction: column;
         width: auto;
         height: auto;
-        margin-left: 5%;
+        margin-left: 80px;
     }
     .Who p {
         width: 40%;
@@ -1082,7 +1082,7 @@ nav a.active {
     }
     .Who img {
         width: 35%;
-        margin-left: 60%;
+        margin-left: 58%;
     }
     .Purpose {
         margin-left: 15%;
@@ -1096,7 +1096,7 @@ nav a.active {
         width: 35%;
         margin-top: 50px;
         margin-right: 0;
-        margin-left: 5%;
+        margin-left: 80px;
     }
     .Vision p{
         width: 350px;
@@ -1104,7 +1104,7 @@ nav a.active {
     .Mission {
         width: 300px;
         margin-top: 50px;
-        margin-left: 20%;
+        margin-left: 13%;
     }
     .Mission p{
         width: 350px;
@@ -1690,7 +1690,7 @@ nav a.active {
         margin-top: 24px;
         width: 100%;
         display: block;
-        height: 700px;
+        height: auto;
     }
     .All .Vision {
         width: 80%;
@@ -1702,7 +1702,7 @@ nav a.active {
     }
     .All .Mission {
         width: 80%;
-        margin-top: 30%;
+        margin-top: 50px;
         margin-left: 5%;
     }
     .Mission p{
