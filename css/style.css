@@ -904,21 +904,19 @@ nav a.active {
         height: auto;
     }
     .content .Who {
-        flex-direction: column;
         width: auto;
         height: auto;
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .Who p {
         width: 35%;
-        margin-right: 30%;
     }
     .Who img {
         width: 35%;
-        margin-left: 50%;
+        margin-left: 685px;
     }
     .Purpose {
-        margin-left: 15%;
+        margin-left: 20%;
         margin-top: 70px;
     }
     .All {
@@ -931,13 +929,13 @@ nav a.active {
         height: auto;
         margin-top: 50px;
         margin-right: 0;
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .Mission {
         width: 35%;
         height: auto;
         margin-top: 50px;
-        margin-left: 15%;
+        margin-left: 210px;
     }
     .footer {
         width: 100%;
@@ -1060,6 +1058,9 @@ nav a.active {
     }
     .item-content{
         width: 100%;
+    }
+    .item-content p{
+        font-size: 20px;
     }
     .item-content .item-wrap .itembox{
         margin-left: 50px;
@@ -1360,7 +1361,7 @@ nav a.active {
         margin-left: 30px;
     }
     .item-content p{
-        font-size: 18px;
+        font-size: 15px;
     }
     .item-content img{
         margin-right: 34px;
@@ -1386,7 +1387,7 @@ nav a.active {
         margin-left: 60%;
     }
     .Purpose {
-        margin-left: 15%;
+        margin-left: 20%;
         width: 45%;
         margin-top: 70px;
     }
@@ -1424,7 +1425,7 @@ nav a.active {
     }
     .top .Contact {
         width: 50%;
-        margin-top: 25%;
+        margin-top: 27%;
     }
     .Contact h1 {
         width: 350px;
@@ -1434,7 +1435,7 @@ nav a.active {
         text-align: center;
     }
     .top .Terms {
-        margin-top: 65%;
+        margin-top: 67%;
         margin-left: 253px;
         text-align: center;
     }
@@ -1674,9 +1675,8 @@ nav a.active {
     }
     .Who img {
         margin-top: 0;
-        width: 318px;
-        height: 198px;
-        margin-left: 5%;
+        width:280px;
+        margin-left: 10%;
     }
     .Purpose {
         margin-left: 5%;
@@ -1763,6 +1763,7 @@ nav a.active {
     .youtube img{
         margin-left: 20%;
     }
+    
 }
 @keyframes rotateX {
     0% {
