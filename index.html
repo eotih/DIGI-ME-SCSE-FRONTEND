@@ -23,7 +23,7 @@
             <p class="overlay" id="datetime">THỨ HAI, 20-9-2021 12:18:10</p>
         </div>
         <img class="logo" src="./images/icon.png">
-        <nav>
+        <div class="navbar">
             <ul id="nav">
                 <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
                 <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
@@ -46,8 +46,41 @@
                 <li><a class="fas fa-shopping-cart icon" href="#shopping"></a></li>
                 <li><a class="fas fa-search icon" href="#search"></a></li>
             </ul>
-            <input type="checkbox" id="check" onclick="togglenav()">
-            <label class="burger" for="check"><i class="fa fa-bars"></i></label>
+        </div>
+        <nav>
+            <img class="Logo" src="/images/LogoSCSE_Horizontal_Vietnamese.png">
+            <label for="btn" class="burger">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
+                <li>
+                    <label for="btn-1" class="show">Về SCSE +</label>
+                    <a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul class="dropdown-menu">
+                        <li><a class="Roboto" href="#">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="#">Câu chuyện</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="#News">Tin tức</a></li>
+                <li>
+                    <label for="btn-2" class="show">Hoạt động +</label>
+                    <a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
+                            class="fas fa-caret-down"></i></a>
+                    <input type="checkbox" id="btn-2">
+                    <ul class="dropdown-menu">
+                        <li><a class="Roboto" href="#">Hoạt động thiện nguyện</a></li>
+                        <li><a class="Roboto" href="#">Dự án</a></li>
+                        <li><a class="Roboto" href="#">Hợp tác nguyên cứu</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="#Galleries">Thư viện</a></li>
+                <li><a class="Roboto" href="#Contact">Liên hệ</a></li>
+                <li><a class="fas fa-shopping-cart icon" href="#shopping"></a></li>
+                <li><a class="fas fa-search icon" href="#search"></a></li>
+            </ul>
         </nav>
     </div>
     <div class="slogan">

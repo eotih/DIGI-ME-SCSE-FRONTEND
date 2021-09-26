@@ -59,7 +59,7 @@
     margin-left: 200px ;
     filter: drop-shadow(0 0 0.2rem black);
 }
-nav {
+.navbar {
     position: absolute;
     top: 93px;
     right: 200px;
@@ -69,7 +69,7 @@ nav {
     z-index: 99;
 }
 
-nav li {
+.navbar li {
     list-style: none;
     position: relative;
     float: left;
@@ -78,7 +78,7 @@ nav li {
     display: inline-table;
 }
 
-nav ul {
+.navbar ul {
     float: left;
     margin-right: 10px;
     -webkit-transition: all .2s ease-in-out;
@@ -86,20 +86,20 @@ nav ul {
     transition: all .2s ease-in-out;
 }
 
-nav ul li:hover {
+.navbar ul li:hover {
     background-color: #FFFFFF;
     border-radius: 20px;
 }
 
-nav a:hover {
+.navbar a:hover {
     color: #1A94D0;
 }
 
-nav ul li:hover>ul {
+.navbar ul li:hover>ul {
     display: block;
 }
 
-nav a {
+.navbar a {
     display: block;
     padding: 16px 20px;
     color: #6B6B6B;
@@ -108,7 +108,7 @@ nav a {
     font-weight: bold;
 }
 
-nav ul ul {
+.navbar ul ul {
     display: none;
     background: white;
     border-radius: 20px;
@@ -117,55 +117,107 @@ nav ul ul {
     box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
 }
 
-nav ul ul li {
+.navbar ul ul li {
     float: none;
     position: relative;
     margin: 0;
 }
 
-nav ul ul li a {
+.navbar ul ul li a {
     min-width: 350px;
     margin: 10px;
     padding: 16px 20px;
 }
 
-nav ul ul li a:hover {
+.navbar ul ul li a:hover {
     background: #1A94D0;
     color: #FFFFFF;
     border-radius: 10px;
 }
 
-nav .icon {
+.navbar .icon {
     font-size: 24px;
     padding: 16px 10px;
     margin-right: 0px;
 }
 
-nav label.burger {
-    display: none;
-    padding: 12px 16px;
-    color: #6B6B6B;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-nav label.burger:hover {
-    padding: 12px 16px;
-    color: #1A94D0;
-}
-
-#check {
-    display: none;
-}
-
-nav a.active {
+.navbar a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
     border-radius: 20px;
 }
-
+nav {
+    display: none;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+nav .active{
+    color: #FCD500;
+}
+nav .Logo{
+    height: 100px;
+    margin-left: 40px;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .icon{
+    line-height: 80px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: #FCD500;
+}
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul {
+    top: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: 350px;
+    float: none;
+    display: list-item;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+.show, .burger, input{
+    display: none;
+}
 .dropdown-menu {
     transform-origin: top center;
     animation: rotateX 300ms ease-in-out
@@ -737,30 +789,30 @@ nav a.active {
         margin-top: 60px;
         margin-left: 100px ;
     }
-    nav {
+    .navbar {
         right: 100px;
         padding: 10px 10px;
         z-index: 99;
     }
-    nav a {
+    .navbar a {
         font-size: 18px;
         padding: 12px 16px;
     }
-    nav ul li:hover {
+    .navbar ul li:hover {
         background-color: #FFFFFF;
         border-radius: 10px;
     }
-    nav ul ul li a {
+    .navbar ul ul li a {
         padding: 12px 16px;
     }
-    nav ul ul li a:hover {
+    .navbar ul ul li a:hover {
         border-radius: 5px;
     }
-    nav a.icon {
+    .navbar a.icon {
         font-size: 18px;
         padding: 12px 10px;
     }
-    nav a.active {
+    .navbar a.active {
         border-radius: 10px;
     }
     .swiper-2 {
@@ -914,8 +966,79 @@ nav a.active {
         margin-top: 80px;
         margin-left: 50px ;
     }
-    nav {
+    .navbar {
         right: 50px;
+    }
+    .navbar {
+        position: fixed;
+        top: 60px;
+        display: none;
+        right: 0;
+    }
+    .navbar ul {
+        background-color: #E5E5E5;
+        position: fixed;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        top: 160px;
+        transition: all .5s;
+    }
+    .navbar a.icon {
+        display: block;
+    }
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav .Logo{
+        margin-left: 10px;
+    }
+    nav .icon{
+        line-height: 50px;
+    }
+    nav ul li a{
+        line-height: 70px;
+    }
+    nav ul ul{
+        top: 70px; 
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility:visible;
+    }
+    .show{
+        cursor: pointer;
+        display: block;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+    }
+    .show:hover{
+        color: #FCD500;
+    }
+    .burger{
+        cursor: pointer;
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 40px;
+        line-height: 100px;
+        font-size: 25px;
+    }
+    .show + a,ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
     }
     .slogan h1 {
         font-size: 96px;
@@ -1074,36 +1197,7 @@ nav a.active {
         padding-bottom: 20px;
         font-size: 12px;
     }
-    nav {
-        top: 60px;
-        display: flex;
-        right: 0;
-    }
-    nav ul {
-        background-color: #E5E5E5;
-        position: fixed;
-        text-align: center;
-        padding: 20px;
-        border-radius: 10px;
-        width: 100%;
-        top: 160px;
-        right: -200%;
-        transition: all .5s;
-    }
-    nav ul li {
-        float: none;
-        display: block;
-    }
-    nav a.icon {
-        display: block;
-    }
-    nav a.active {
-        display: block;
-    }
-    nav label.burger {
-        float: right;
-        display: block;
-    }
+    
     .slogan {
         border-radius: 10px;
         margin-top: 100px;
