@@ -690,7 +690,6 @@ nav ul ul li a{
 .footer li {
     list-style-type: none;
     margin-top: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -991,6 +990,9 @@ nav ul ul li a{
     }
     .footer {
         width: 100%;
+    }
+    .footer ul{
+        display: block;
     }
     .top {
         box-sizing: border-box;
@@ -1823,16 +1825,13 @@ nav ul ul li a{
         margin-left: 0;
         margin-top: 230px;
     }
-    .Contact li{
-        margin-left: 10px;
-    }
     .Contact h1 {
         width: 350px;
         text-align: center;
         margin-left: 30px;
     }
     .Contact li{
-        text-align: center;
+        margin-left: 10px;
     }
     .top .Contact hr{
         width: 100%;
