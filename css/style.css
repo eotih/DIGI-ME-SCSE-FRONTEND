@@ -4,9 +4,11 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 html {
     font-size: 30px;
 }
+
 #color-1 {
     background-color: #DE4439;
 }
@@ -41,26 +43,33 @@ html {
     top: 0.3rem;
     right: 0px;
 }
-
-.Topnav .overlay {
+.Topnav .overlay{
+    display: flex;
+    justify-content: right;
+}
+.Topnav p {
     position: relative;
-    text-align: right;
     margin-top: -0.25rem;
-    margin-right: 13%;
+    margin-right: 5%;
     color: white;
     padding: 0.3rem;
     padding-bottom: 0.67rem;
     text-decoration: none;
     font-size: 0.73rem;
 }
-.header .logo{
+.Topnav .active{
+    color: #FCD500;
+    margin-right: 0;
+}
+.header .logo {
     position: absolute;
     height: 5rem;
     z-index: 4;
     margin-top: 2rem;
-    margin-left: 6.67rem ;
+    margin-left: 6.67rem;
     filter: drop-shadow(0 0 0.2rem black);
 }
+
 .navbar {
     position: absolute;
     top: 3.1rem;
@@ -68,6 +77,7 @@ html {
     background-color: #E5E5E5;
     border-radius: 0.67rem;
     padding: 0.3rem 0.3rem;
+    font-size: 20px;
     z-index: 99;
 }
 
@@ -105,7 +115,7 @@ html {
     display: block;
     padding: 0.53rem 0.67rem;
     color: #6B6B6B;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-decoration: none;
     font-weight: bold;
 }
@@ -138,7 +148,7 @@ html {
 }
 
 .navbar .icon {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     padding: 0.53rem 0.3rem;
     margin-right: 0px;
 }
@@ -146,80 +156,97 @@ html {
 .navbar a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
-    border-radius: 0.67rem;
+    border-radius: 0.67em;
 }
+
 nav {
     display: none;
     width: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 99;
+    font-size: 20px;
 }
-nav .active{
+
+nav .active {
     color: #FCD500;
 }
-nav .Logo{
-    height: 3.3rem;
-    margin-left: 1.3rem;
+
+nav .Logo {
+    height: 5em;
+    margin-left: 2em;
 }
-nav::after{
+
+nav::after {
     content: '';
     clear: both;
     display: table;
 }
-nav .icon{
-    line-height: 2.67rem;
-    font-size: 0.6rem;
-    padding: 0.26rem 0.5rem;
+
+nav .icon {
+    line-height: 4em;
+    font-size: 0.9em;
+    padding: 0.4em 0.75em;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
-    margin-right: 1.3rem;
+    margin-right: 2em;
     position: relative;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     display: inline-block;
-    margin: 0 0.16rem;
+    margin: 0 0.25rem;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    line-height: 3.3rem;
-    font-size: 0.6rem;
-    padding: 0.26rem 0.5rem;
+    line-height: 5em;
+    font-size: 0.9em;
+    padding: 0.4em 0.75em;
+    transition-duration: 0.3s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #FCD500;
 }
+
 nav ul ul {
     position: absolute;
-    top: 3rem;
+    top: 4.5em;
     opacity: 0;
     visibility: hidden;
     transition: top .3s;
 }
-nav ul li:hover > ul {
-    top: 3.3rem;
+
+nav ul li:hover>ul {
+    top: 5em;
     opacity: 1;
     visibility: visible;
 }
-nav ul ul li{
+
+nav ul ul li {
     position: relative;
     margin: 0;
-    width: 11.67rem;
+    width: 17.5em;
     float: none;
     display: list-item;
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-nav ul ul li a{
-    line-height: 1.67rem;
+
+nav ul ul li a {
+    line-height: 2.5em;
 }
-.show, .burger, input{
+
+.show, .burger, input {
     display: none;
 }
+
 .Topnav img {
     position: relative;
     z-index: 1;
@@ -282,9 +309,10 @@ nav ul ul li a{
 
 .swiper-1 {
     width: 100%;
-    height: auto
+    height: auto;
 }
-.swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
+
+.swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next {
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF !important;
     margin: 1rem !important;
@@ -292,14 +320,16 @@ nav ul ul li a{
     padding: 1.67rem;
     border-radius: 1.67rem;
 }
-.swiper-1 .swiper-button-prev:after, .swiper-1 .swiper-button-next:after{
-    font-size:1rem;
+
+.swiper-1 .swiper-button-prev:after, .swiper-1 .swiper-button-next:after {
+    font-size: 1rem;
 }
+
 .swiper-1 .image {
-    width: 64rem;
+    width: 100%;
     height: 26.67rem;
     object-fit: cover;
-    object-position: right bottom;
+    object-position: bottom;
 }
 
 .content {
@@ -435,6 +465,7 @@ nav ul ul li a{
 }
 
 .activities {
+    font-size: 30px;
     width: 37.3rem;
     left: 13.3rem;
     margin-left: auto;
@@ -461,39 +492,40 @@ nav ul ul li a{
 .activities .line1 {
     background-color: #1A94D0;
     border-style: solid;
-    height: 0.67rem;
-    width: 8.83rem;
-    margin-top: -0.67rem;
-    margin-left: -0.067rem;
+    height: 0.67em;
+    width: 8.83em;
+    margin-left: -0.067em;
 }
 
 .activities .line2 {
     background-color: #FCD500;
     border-style: solid;
-    height: 0.67rem;
-    width: 8.83rem;
-    margin-top: -0.67rem;
-    margin-left: -0.067rem;
+    height: 0.67em;
+    width: 8.83em;
+    margin-left: -0.067em;
 }
 
 .activities .line3 {
     background-color: #DE4439;
     border-style: solid;
-    height: 0.67rem;
-    width: 8.83rem;
-    margin-top: -0.67rem;
-    margin-left: -0.067rem;
+    height: 0.67em;
+    width: 8.83em;
+    margin-left: -0.067em;
 }
 
 .activities img {
-    width: 7.67rem;
-    height: 7.67rem;
+    width: 7.67em;
+    height: 7.67em;
     border-radius: 0.67rem;
-    margin: 0.567rem;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
 }
+.activities .btn-holder {
+    justify-content: flex-end;
+    display:flex;
+}
 .activities button {
-    position: absolute;
     cursor: pointer;
     width: 6.93rem;
     height: 1.56rem;
@@ -503,9 +535,9 @@ nav ul ul li a{
     color: #FFFFFF;
     border: none;
     border-radius: 1rem;
-    margin-left: 0.93rem;
-    margin-right: 0.93rem;
-    bottom: 1.167rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .activities .button1 {
@@ -521,14 +553,21 @@ nav ul ul li a{
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    
 }
+
 .activities .item-wrap .itembox {
-    width: 8.83rem;
-    height: 13.73rem;
-    margin-top: 2.67rem;
+    display: flex;
+    flex-direction: column;
+    width: 8.83em;
+    height: 13.73em;
+    margin-top: 2.67em!important;
     color: #FFFFFF;
     border: 2px solid #F0F0F0;
     box-sizing: border-box;
+    margin: 0.3em;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
@@ -579,13 +618,15 @@ nav ul ul li a{
     margin-right: auto;
     width: 36.67rem;
 }
-.swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
+
+.swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after {
     font-size: 0.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF !important;
     padding: 0.67rem;
     border-radius: 2.67rem;
 }
+
 .swiper-2 .icon {
     cursor: pointer;
     color: #FFFFFF;
@@ -617,7 +658,7 @@ nav ul ul li a{
 
 .footer a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .top {
@@ -637,6 +678,7 @@ nav ul ul li a{
     width: 220px;
     height: 200px;
 }
+
 .Contact {
     width: 370px;
     height: 300px;
@@ -661,7 +703,7 @@ nav ul ul li a{
     font-size: 24px;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color:black;
+    color: black;
 }
 
 .Adress {
@@ -754,95 +796,10 @@ nav ul ul li a{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 1440px) {
-    html{
-        font-size: 26px;
-    }
-    .header .logo{
-        margin-left: 3.3rem ;
-    }
+header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan{
+    transition: all 0.5s ease;
 }
-@media screen and (max-width: 1024px) {
-    html{
-        font-size: 20px;
-    }
-    .navbar {
-        display: none;
-    }
-    nav ul {
-        margin-right: 0px;
-        float: left;
-    }
-    nav ul li, nav ul ul li{
-        display: block;
-        width: 100%;
-    }
-    nav .Logo{
-        height: 5rem;
-        margin-left: 0.5rem;
-    }
-    nav .icon{
-        font-size: 0.9rem;
-        line-height: 2.5rem;
-        padding: 0.26rem 1rem;
-    }
-    nav ul li a{
-        font-size: 0.9rem;
-        line-height: 3.5rem;
-        padding: 0.26rem 1rem;
-    }
-    nav ul ul{
-        top: 3.5rem; 
-        position: static;
-        float: none;
-        display: none;
-        opacity: 1;
-        visibility:visible;
-    }
-    nav ul ul li a{
-        line-height: 3.5rem;
-    }
-    .show{
-        cursor: pointer;
-        display: block;
-        color: #FFFFFF;
-        font-size: 0.9rem;
-        padding: 0 1rem;
-        line-height: 3.5rem;
-    }
-    .show:hover{
-        color: #FCD500;
-    }
-    .burger{
-        cursor: pointer;
-        display: block;
-        color: white;
-        position: absolute;
-        top: 0px;
-        right: 2rem;
-        line-height: 5rem;
-        font-size: 1.25rem;
-    }
-    .show + a,ul{
-        display: none;
-    }
-    [id^=btn]:checked + ul{
-        display: block;
-    } 
-}
-@media screen and (max-width: 768px) {
-    html{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 414px) {
-    html{
-        font-size:10px;
-    }
-    .header .logo{
-        display: none;
-    }
-}
+
 @keyframes rotateX {
     0% {
         opacity: 0;

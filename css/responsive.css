@@ -1,0 +1,119 @@
+@media screen and (max-width: 1500px) {
+    html{
+        font-size: 26px;
+    }
+    .header .logo{
+        margin-left: 3.3rem ;
+    }
+    .activities{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:1200px){
+    html{
+        font-size: 24px;
+    }
+    .navbar {
+        display: none;
+    }
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav .Logo{
+        height: 5em;
+        margin-left: 0.5em;
+    }
+    nav .icon{
+        font-size: 0.9em;
+        line-height: 2.5em;
+        padding: 0.26em 1em;
+    }
+    nav ul li a{
+        font-size: 0.9em;
+        line-height: 3.5em;
+        padding: 0.26em 1em;
+    }
+    nav ul ul{
+        top: 3.5em; 
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility:visible;
+    }
+    nav ul ul li a{
+        line-height: 3.5em;
+    }
+    .show{
+        cursor: pointer;
+        display: block;
+        color: #FFFFFF;
+        font-size: 0.9em;
+        padding: 0 1em;
+        line-height: 3.5em;
+    }
+    .show:hover{
+        color: #FCD500;
+    }
+    .burger{
+        cursor: pointer;
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 2em;
+        line-height: 3.5em;
+        font-size: 1.25em;
+    }
+    .show + a,ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+        transition: all 0.5s ease;
+    }
+}
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 16px;
+    }
+    .activities .item-wrap {
+        flex-direction: column;
+    }
+    .activities{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:600px){
+    html{
+        font-size:14px;
+    }    
+}
+@media screen and (max-width: 420px) {
+    html{
+        font-size:10px;
+    }
+    .header .logo{
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    html{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:350px){
+    html{
+        font-size: 6px;
+    }    
+}
