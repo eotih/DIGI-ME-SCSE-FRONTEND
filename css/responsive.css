@@ -93,6 +93,22 @@
     .activities{
         font-size: 30px;
     }
+    .activities p {
+        width: 222px;
+        font-size: 20px;
+    }
+    .activities button {
+        width: 208px;
+        height: 47px;
+        font-size: 24px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+    .activities .item-wrap .itembox {
+        margin-top: 1em!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (max-width:600px){
     html{
@@ -111,9 +127,7 @@
     html{
         font-size: 8px;
     }
-}
-@media screen and (max-width:350px){
-    html{
-        font-size: 6px;
-    }    
+    .slogan .p2 {
+        width: 24rem;
+    }
 }

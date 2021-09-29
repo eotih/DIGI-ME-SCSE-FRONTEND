@@ -35,13 +35,14 @@ html {
 }
 
 .Topnav .textholder {
-    position: absolute;
-    border-top: 2rem solid #1A94D0;
-    border-left: 1.67rem solid transparent;
-    height: 0px;
-    width: 21.67rem;
-    top: 0.3rem;
-    right: 0px;
+    position: relative;
+    background-color: #1A94D0;
+    float: right;
+    top:-5px;
+    height: 2rem;
+    width: 17rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+    color: #FFFFFF;
 }
 .Topnav .overlay{
     display: flex;
@@ -49,7 +50,6 @@ html {
 }
 .Topnav p {
     position: relative;
-    margin-top: -0.25rem;
     margin-right: 5%;
     color: white;
     padding: 0.3rem;
@@ -568,8 +568,6 @@ nav ul ul li a {
     box-sizing: border-box;
     margin: 0.3em;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .Register {
