@@ -4,7 +4,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-html{
+html {
     font-size: 30px;
 }
 #color-1 {
@@ -29,45 +29,45 @@ html{
 .Topnav .line {
     background-color: #1A94D0;
     border-style: none;
-    height: 20px;
+    height: 0.67rem;
 }
 
 .Topnav .textholder {
     position: absolute;
-    border-top: 60px solid #1A94D0;
-    border-left: 50px solid transparent;
+    border-top: 2rem solid #1A94D0;
+    border-left: 1.67rem solid transparent;
     height: 0px;
-    width: 650px;
-    top: 10px;
+    width: 21.67rem;
+    top: 0.3rem;
     right: 0px;
 }
 
 .Topnav .overlay {
     position: relative;
     text-align: right;
-    margin-top: -5px;
+    margin-top: -0.25rem;
     margin-right: 13%;
     color: white;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 0.3rem;
+    padding-bottom: 0.67rem;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 0.73rem;
 }
 .header .logo{
     position: absolute;
-    height: 150px;
+    height: 5rem;
     z-index: 4;
-    margin-top: 60px;
-    margin-left: 200px ;
+    margin-top: 2rem;
+    margin-left: 6.67rem ;
     filter: drop-shadow(0 0 0.2rem black);
 }
 .navbar {
     position: absolute;
-    top: 93px;
-    right: 200px;
+    top: 3.1rem;
+    right: 6.67rem;
     background-color: #E5E5E5;
-    border-radius: 20px;
-    padding: 10px 10px;
+    border-radius: 0.67rem;
+    padding: 0.3rem 0.3rem;
     z-index: 99;
 }
 
@@ -82,7 +82,7 @@ html{
 
 .navbar ul {
     float: left;
-    margin-right: 10px;
+    margin-right: 0.3rem;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -90,7 +90,7 @@ html{
 
 .navbar ul li:hover {
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 0.67rem;
 }
 
 .navbar a:hover {
@@ -103,9 +103,9 @@ html{
 
 .navbar a {
     display: block;
-    padding: 16px 20px;
+    padding: 0.53rem 0.67rem;
     color: #6B6B6B;
-    font-size: 24px;
+    font-size: 0.8rem;
     text-decoration: none;
     font-weight: bold;
 }
@@ -113,7 +113,7 @@ html{
 .navbar ul ul {
     display: none;
     background: white;
-    border-radius: 20px;
+    border-radius: 0.67rem;
     position: absolute;
     top: 100%;
     box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
@@ -126,41 +126,41 @@ html{
 }
 
 .navbar ul ul li a {
-    min-width: 350px;
-    margin: 10px;
-    padding: 16px 20px;
+    min-width: 11.67rem;
+    margin: 0.3rem;
+    padding: 0.53rem 0.67rem;
 }
 
 .navbar ul ul li a:hover {
     background: #1A94D0;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 0.3rem;
 }
 
 .navbar .icon {
-    font-size: 24px;
-    padding: 16px 10px;
+    font-size: 0.8rem;
+    padding: 0.53rem 0.3rem;
     margin-right: 0px;
 }
 
 .navbar a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
-    border-radius: 20px;
+    border-radius: 0.67rem;
 }
 nav {
     display: none;
     width: 100%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 99;
 }
 nav .active{
     color: #FCD500;
 }
 nav .Logo{
-    height: 100px;
-    margin-left: 40px;
+    height: 3.3rem;
+    margin-left: 1.3rem;
 }
 nav::after{
     content: '';
@@ -168,63 +168,58 @@ nav::after{
     display: table;
 }
 nav .icon{
-    line-height: 80px;
-    font-size: 18px;
-    padding: 8px 15px;
+    line-height: 2.67rem;
+    font-size: 0.6rem;
+    padding: 0.26rem 0.5rem;
 }
 nav ul{
     float: right;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 1.3rem;
     position: relative;
 }
 nav ul li{
     float: left;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.16rem;
 }
 nav ul li a{
     color: white;
     text-decoration: none;
-    line-height: 100px;
-    font-size: 18px;
-    padding: 8px 15px;
+    line-height: 3.3rem;
+    font-size: 0.6rem;
+    padding: 0.26rem 0.5rem;
 }
 nav ul li a:hover{
     color: #FCD500;
 }
 nav ul ul {
     position: absolute;
-    top: 90px;
+    top: 3rem;
     opacity: 0;
     visibility: hidden;
     transition: top .3s;
 }
 nav ul li:hover > ul {
-    top: 100px;
+    top: 3.3rem;
     opacity: 1;
     visibility: visible;
 }
 nav ul ul li{
     position: relative;
     margin: 0;
-    width: 350px;
+    width: 11.67rem;
     float: none;
     display: list-item;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
 }
 nav ul ul li a{
-    line-height: 50px;
+    line-height: 1.67rem;
 }
 .show, .burger, input{
     display: none;
 }
-.dropdown-menu {
-    transform-origin: top center;
-    animation: rotateX 300ms ease-in-out
-}
-
 .Topnav img {
     position: relative;
     z-index: 1;
@@ -236,51 +231,51 @@ nav ul ul li a{
 
 .slogan {
     position: absolute;
-    margin-top: 200px;
-    right: 200px;
+    margin-top: 6.67rem;
+    right: 6.67rem;
     z-index: 4;
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    border-radius: 0.67rem;
 }
 
 .slogan h1 {
-    font-size: 144px;
+    font-size: 4.8rem;
     color: #1A94D0;
 }
 
 .slogan h2 {
-    font-size: 144px;
+    font-size: 4.8rem;
     color: #FCD500;
 }
 
 .slogan h3 {
-    font-size: 144px;
+    font-size: 4.8rem;
     color: #DE4439;
 }
 
 .slogan .flex {
     display: flex;
-    padding-left: 40px;
+    padding-left: 1.3rem;
 }
 
 .slogan .p1 {
-    font-size: 42px;
+    font-size: 1.4rem;
     color: #FFFFFF;
     font-weight: bold;
     letter-spacing: -0.015em;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 .slogan .p2 {
-    width: 800px;
-    font-size: 30px;
+    width: 26.67rem;
+    font-size: 1rem;
     color: #FFFFFF;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    line-height: 37px;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-bottom: 0.67rem;
+    line-height: 1.23rem;
     align-items: center;
     text-align: justify;
 }
@@ -292,14 +287,17 @@ nav ul ul li a{
 .swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF !important;
-    margin: 30px !important;
-    margin-top: -80px !important;
-    padding: 50px;
-    border-radius: 50px;
+    margin: 1rem !important;
+    margin-top: -2.6256rem !important;
+    padding: 1.67rem;
+    border-radius: 1.67rem;
+}
+.swiper-1 .swiper-button-prev:after, .swiper-1 .swiper-button-next:after{
+    font-size:1rem;
 }
 .swiper-1 .image {
-    width: 1920px;
-    height: 800px;
+    width: 64rem;
+    height: 26.67rem;
     object-fit: cover;
     object-position: right bottom;
 }
@@ -362,7 +360,7 @@ nav ul ul li a{
 
 .Purpose {
     width: 20.67rem;
-    height: 8rem;
+    height: auto;
     margin-top: 0.67rem;
     margin-left: 11rem;
     margin-right: auto;
@@ -440,23 +438,23 @@ nav ul ul li a{
 }
 
 .activities {
-    width: 1120px;
-    left: 400px;
+    width: 37.3rem;
+    left: 13.3rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .activities h1 {
     font-weight: bold;
-    font-size: 72px;
+    font-size: 2.4rem;
     text-align: center;
     color: #1A94D0;
 }
 
 .activities p {
-    width: 222px;
+    width: 7.4rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 0.67rem;
     text-align: center;
     color: black;
     margin-left: auto;
@@ -466,51 +464,51 @@ nav ul ul li a{
 .activities .line1 {
     background-color: #1A94D0;
     border-style: solid;
-    height: 20px;
-    width: 265px;
-    margin-top: -20px;
-    margin-left: -2px;
+    height: 0.67rem;
+    width: 8.83rem;
+    margin-top: -0.67rem;
+    margin-left: -0.067rem;
 }
 
 .activities .line2 {
     background-color: #FCD500;
     border-style: solid;
-    height: 20px;
-    width: 265px;
-    margin-top: -20px;
-    margin-left: -2px;
+    height: 0.67rem;
+    width: 8.83rem;
+    margin-top: -0.67rem;
+    margin-left: -0.067rem;
 }
 
 .activities .line3 {
     background-color: #DE4439;
     border-style: solid;
-    height: 20px;
-    width: 265px;
-    margin-top: -20px;
-    margin-left: -2px;
+    height: 0.67rem;
+    width: 8.83rem;
+    margin-top: -0.67rem;
+    margin-left: -0.067rem;
 }
 
 .activities img {
-    width: 230px;
-    height: 230px;
-    border-radius: 20px;
-    margin: 17px;
+    width: 7.67rem;
+    height: 7.67rem;
+    border-radius: 0.67rem;
+    margin: 0.567rem;
     object-fit: cover;
 }
 .activities button {
     position: absolute;
     cursor: pointer;
-    width: 208px;
-    height: 47px;
-    font-size: 24px;
+    width: 6.93rem;
+    height: 1.56rem;
+    font-size: 0.8rem;
     font-weight: bold;
     background-color: #1A94D0;
     color: #FFFFFF;
     border: none;
-    border-radius: 30px;
-    margin-left: 28px;
-    margin-right: 28px;
-    bottom: 35px;
+    border-radius: 1rem;
+    margin-left: 0.93rem;
+    margin-right: 0.93rem;
+    bottom: 1.167rem;
 }
 
 .activities .button1 {
@@ -528,9 +526,9 @@ nav ul ul li a{
     flex-direction: row;
 }
 .activities .item-wrap .itembox {
-    width: 265px;
-    height: 412px;
-    margin-top: 80px;
+    width: 8.83rem;
+    height: 13.73rem;
+    margin-top: 2.67rem;
     color: #FFFFFF;
     border: 2px solid #F0F0F0;
     box-sizing: border-box;
@@ -579,31 +577,28 @@ nav ul ul li a{
 }
 
 .swiper-2 {
-    margin-top: 80px;
+    margin-top: 2.67rem;
     margin-left: auto;
     margin-right: auto;
-    width: 1100px;
-}
-.swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
-    margin: -25px 30px 30px !important;
+    width: 36.67rem;
 }
 .swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
-    font-size: 15px;
+    font-size: 0.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF !important;
-    padding: 20px;
-    border-radius: 80px;
+    padding: 0.67rem;
+    border-radius: 2.67rem;
 }
 .swiper-2 .icon {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #6B6B6B;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 0.67rem;
+    border-radius: 1rem;
 }
 
 .swiper-2 img {
-    height: 65px;
+    height: 2.167rem;
 }
 
 .swiper-2 .swiper-wrapper .swiper-slide {
@@ -613,8 +608,8 @@ nav ul ul li a{
 }
 
 .swiper-2 .swiper-wrapper .swiper-slide .itembox {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 .footer {
@@ -658,11 +653,6 @@ nav ul ul li a{
 .Contact p {
     margin-left: 0.83rem;
 }
-
-.Contact li {
-    width: 12.67rem;
-}
-
 .footer h1 {
     width: 8.3rem;
     height: 0.8rem;
@@ -685,11 +675,6 @@ nav ul ul li a{
     margin-left: 22.3rem;
     margin-top: 0.67rem;
 }
-
-.Terms li {
-    width: 8.3rem;
-}
-
 .Terms img {
     margin-top: 0.3rem;
 }
@@ -739,7 +724,7 @@ nav ul ul li a{
     line-height: 24px;
     letter-spacing: -0.015em;
     color: black;
-    margin-right: 20rem;
+    margin-right: auto;
 }
 
 .Follow {
@@ -761,540 +746,6 @@ nav ul ul li a{
 
 .top a img {
     margin-right: 10px;
-}
-
-@media screen and (max-width: 1440px) {
-    html{
-        font-size: 26px;
-    }
-    
-    .navbar {
-        right: 100px;
-        padding: 10px 10px;
-        z-index: 99;
-    }
-    .navbar a {
-        font-size: 18px;
-        padding: 12px 16px;
-    }
-    .navbar ul li:hover {
-        background-color: #FFFFFF;
-        border-radius: 10px;
-    }
-    .navbar ul ul li a {
-        padding: 12px 16px;
-    }
-    .navbar ul ul li a:hover {
-        border-radius: 5px;
-    }
-    .navbar a.icon {
-        font-size: 18px;
-        padding: 12px 10px;
-    }
-    .navbar a.active {
-        border-radius: 10px;
-    }
-    .bot .photo{
-        margin-right: 18rem;
-    }
-}
-@media screen and (max-width: 1024px) {
-    html{
-        font-size: 20px;
-    }
-    .navbar {
-        right: 50px;
-    }
-    .navbar {
-        position: fixed;
-        top: 60px;
-        display: none;
-        right: 0;
-    }
-    .navbar ul {
-        background-color: #E5E5E5;
-        position: fixed;
-        text-align: center;
-        padding: 20px;
-        border-radius: 10px;
-        width: 100%;
-        top: 160px;
-        transition: all .5s;
-    }
-    .navbar a.icon {
-        display: block;
-    }
-    nav ul {
-        margin-right: 0px;
-        float: left;
-    }
-    nav ul li, nav ul ul li{
-        display: block;
-        width: 100%;
-    }
-    nav .Logo{
-        margin-left: 10px;
-    }
-    nav .icon{
-        line-height: 50px;
-    }
-    nav ul li a{
-        line-height: 70px;
-    }
-    nav ul ul{
-        top: 70px; 
-        position: static;
-        float: none;
-        display: none;
-        opacity: 1;
-        visibility:visible;
-    }
-    .bot .photo{
-        margin-right: 12rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    html{
-        font-size: 16px;
-    }
-    /* .Register{
-        width: 100%;
-        height: 300px;
-    }
-    .item-content{
-        width: 100%;
-    }
-    .item-content .item-wrap .itembox{
-        width: 220px;
-        margin-left: 30px;
-    }
-    .item-content p{
-        font-size: 15px;
-    }
-    .item-content img{
-        margin-right: 0;
-        margin-left: 44px;
-        width: 120px;
-        height: 120px;
-    } */
-    /* hr {
-        width: 100%;
-    }
-    .content {
-        width: 100%;
-    }
-    .content .Who {
-        margin-left: 5%;
-        width: 95%;
-        height: auto;
-    }
-    .Who p {
-        width: 45%;
-    }
-    .Who img {
-        width: 35%;
-        margin-left: 60%;
-    }
-    .Purpose {
-        margin-left: 20%;
-        width: 45%;
-        margin-top: 70px;
-    }
-    .All {
-        margin-top: 24px;
-        height: auto;
-    }
-    .Vision {
-        width: 35%;
-        margin-top: 50px;
-        margin-right: 0;
-        margin-left: 5%;
-    }
-    .Vision p {
-        width: 300px;
-    }
-    .All .Mission {
-        width: 270px;
-        margin-top: 50px;
-        margin-left: 15%;
-    }
-    .Mission p{
-        width: 300px;
-    } */
-    .footer {
-        width: 100%;
-    }
-    .footer li{
-        text-align: center;
-        font-size: 20px;
-        width: auto;
-        line-height: 2rem;
-    }
-    .footer h1{
-        font-size: 20px;
-        width: auto;
-    }
-    .top {
-        width: 100%;
-        height: 40rem;
-    }
-    .logo {
-       margin-left: 20rem;
-    }
-    .top .Contact {
-        margin-top: 8rem;
-        margin-left: 13rem;
-        width: 22rem;
-    }
-    .footer .top .Contact hr{
-        width: auto;
-    }
-    .Contact h1 {
-        width: 22rem;
-        text-align: center;
-    }
-    .top .Terms {
-        margin-top: 26rem;
-        margin-left: 18rem;
-        text-align: center;
-        width: auto;
-        height: auto;
-    }
-    .Terms h1{
-        text-align: center;
-    }
-    .top .Donate {
-        position: absolute;
-        margin-top: 34rem;
-        margin-left: 20rem;
-    }
-    .footer hr {
-        margin-top: 15px;
-        width: 100%;
-    }
-    .bot {
-        width: 100%;
-    }
-    .bot .photo {
-        width: 18rem;
-        margin-left: 5%;
-    }
-    .bot .Follow {
-        margin-left: 0;
-        width: 8rem;
-    }
-}
-@media screen and (max-width: 414px) {
-    html{
-        font-size: 12px;
-    }
-    /* .swiper-1 .image{
-        width: 414px;
-        height: 200px;
-    }
-    .swiper-1 .swiper-button-prev, .swiper-1 .swiper-button-next{
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #FFFFFF !important;
-        margin: 5px !important;
-        margin-top: -25px !important;
-        padding: 20px;
-        border-radius: 50px;
-    }
-    .swiper-1 .swiper-button-next::after, .swiper-1 .swiper-button-prev::after{
-        font-size: 10px;
-    }
-    .Topnav .line {
-        height: 10px;
-    }
-    
-    .Topnav .textholder {
-        border-top: 20px solid #1A94D0;
-        border-left: 15px solid transparent;
-        width: 150px;
-        top: 10px;
-    }
-    
-    .Topnav .overlay {
-        margin-right: 13%;
-        padding: 10px;
-        padding-bottom: 20px;
-        font-size: 5px;
-    }
-    .header .logo{
-        height: 50px;
-        margin-top: 20px;
-        margin-left: 50px ;
-    }
-    .slogan {
-        margin-top: 60px;
-        right: 40px;
-        border-radius: 5px;
-    }
-    
-    .slogan h1 {
-        font-size: 30px;
-    }
-    
-    .slogan h2 {
-        font-size: 30px;
-    }
-    
-    .slogan h3 {
-        font-size: 30px;
-    }
-    
-    .slogan .flex {
-        padding-left: 5px;
-    }
-    
-    .slogan .p1 {
-        font-size: 8px;
-        padding-left: 5px;
-        padding-right: 5px
-    }
-    
-    .slogan .p2 {
-        width: 135px;
-        font-size: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        line-height: 8px;
-    }
-    .activities {
-        width: 314px;
-        left: 100px;
-    }
-    
-    .activities h1 {
-        font-weight: bold;
-        font-size: 18px;
-    }
-    
-    .activities p {
-        width: 160px;
-        font-size: 15px;
-    }
-    
-    .activities .line1 {
-        height: 18px;
-        width: 195px;
-        margin-top: -18px;
-        margin-left: -2px;
-    }
-    
-    .activities .line2 {
-        height: 18px;
-        width: 195px;
-        margin-top: -18px;
-        margin-left: -2px;
-    }
-    
-    .activities .line3 {
-        height: 18px;
-        width: 195px;
-        margin-top: -18px;
-        margin-left: -2px;
-    }
-    
-    .activities img {
-        width: 160px;
-        height: 160px;
-        border-radius: 10px;
-        margin: 16px;
-    }
-    
-    .activities button {
-        position: relative;
-        width: 160px;
-        height: 40px;
-        font-size: 20px;
-        border-radius: 20px;
-        margin-left: 17px;
-        margin-right: 17px;
-        margin-top: 17px;
-    }
-    .activities .item-wrap {
-        flex-direction: column;
-    }
-    .activities .item-wrap .itembox {
-        width: 195px;
-        height: 300px;
-        margin-top: 30px;
-        color: #FFFFFF;
-        border: 2px solid #F0F0F0;
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .swiper-2 {
-        margin-top: 60px;
-        width: 314px;
-        height: 40px;
-    }
-    .swiper-2 .swiper-button-prev, .swiper-2 .swiper-button-next{
-        margin: -20px 5px 5px !important;
-    }
-    .swiper-2 .swiper-button-prev::after, .swiper-2 .swiper-button-next::after{
-        font-size: 5px;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #FFFFFF !important;
-        padding: 10px;
-        border-radius: 80px;
-    }
-    
-    .swiper-2 img {
-        height: 15px;
-    }
-    .swiper-2 .swiper-wrapper .swiper-slide{
-        margin-top: 15px;
-    }
-    .swiper-2 .swiper-wrapper .swiper-slide .itembox {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .Register{
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-    .item-content{
-        width: 100%;
-    }
-    .item-content .item-wrap .itembox{
-        width: 120px;
-        margin-left: 0;
-        margin-right: 30px;
-    }
-    .item-content p{
-        font-size: 10px;
-        margin-top: 10px;
-    }
-    .item-content img{
-        width: 60px;
-        height: 60px;
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-    .item-content .item-wrap .itembox{
-        margin-top: 20px;
-    } */
-    hr {
-        width: 100%;
-    }
-    .content {
-        width: 100%;
-        height: auto;
-    }
-    .content p{
-        margin-top: 0;
-    }
-    .content .Who {
-        margin-left: 5%;
-        width: 95%;
-        height: auto;
-    }
-    .Who h1{
-        font-size: 34px;
-        margin-top: 20px;
-    }
-    .Who p {
-        width: 90%;
-        margin-top: 12rem;
-    }
-    .Who img {
-        margin-top: 0;
-        width: 28.167rem;
-        height: 15rem;
-        margin-left: 10rem;
-    }
-    .Purpose {
-        margin-left: 5%;
-        width: 80%;
-        margin-top: 44px;
-    }
-    .Purpose p{
-        width: 350px;
-    }
-    .All {
-        margin-top: 24px;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .All .Vision {
-        width: 80%;
-        margin-top: 50px;
-        margin-left: 5%;
-    }
-    .Vision p{
-        width:350px;
-    }
-    .All .Mission {
-        width: 80%;
-        margin-top: 50px;
-        margin-left: 5%;
-    }
-    .Mission p{
-        width: 350px;
-    }
-    .footer {
-        width: 100%;
-    }
-    .top {
-        box-sizing: border-box;
-        width: 100%;
-        min-height: 650px;
-    }
-    .top .logo {
-        margin-left: 22%;
-    }
-    .top .Contact {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 230px;
-    }
-    .Contact h1 {
-        width: 350px;
-        text-align: center;
-        margin-left: 30px;
-    }
-    .Contact li{
-        margin-left: 10px;
-    }
-    .top .Contact hr{
-        width: 100%;
-    }
-    .top .Terms {
-        margin-top: 540px;
-        margin-left: 74px;
-        text-align: center;
-    }
-    .top .Donate {
-        position: absolute;
-        margin-top: 680px;
-        margin-left: 90px;
-    }
-    .footer hr {
-        margin-top: 15px;
-        width: 100%;
-    }
-    .bot {
-        width: 100%;
-        display: block;
-    }
-    .bot .photo {
-        width: 60%;
-        margin-left: 30%;
-    }
-    .bot .Follow {
-        margin-top: 20px;
-        margin-left: 40%;
-    }
-    .youtube img{
-        margin-left: 20%;
-    }
-    
 }
 @keyframes rotateX {
     0% {

@@ -1,0 +1,451 @@
+@media screen and (max-width: 1500px) {
+    html{
+        font-size: 26px;
+    }
+    .header .logo{
+        margin-left: 3.3rem ;
+    }
+    .item-content img{
+        width: 5.77rem;
+        height: 5.77rem;
+    }
+}
+@media screen and (max-width:1200px){
+    html{
+        font-size: 24px;
+    }
+    .navbar {
+        display: none;
+    }
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav .Logo{
+        height: 5em;
+        margin-left: 0.5em;
+    }
+    nav .icon{
+        font-size: 0.9em;
+        line-height: 2.5em;
+        padding: 0.26em 1em;
+    }
+    nav ul li a{
+        font-size: 0.9em;
+        line-height: 3.5em;
+        padding: 0.26em 1em;
+    }
+    nav ul ul{
+        top: 3.5em; 
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility:visible;
+    }
+    nav ul ul li a{
+        line-height: 3.5em;
+    }
+    .show{
+        cursor: pointer;
+        display: block;
+        color: #FFFFFF;
+        font-size: 0.9em;
+        padding: 0 1em;
+        line-height: 3.5em;
+    }
+    .show:hover{
+        color: #FCD500;
+    }
+    .burger{
+        cursor: pointer;
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 2em;
+        line-height: 3.5em;
+        font-size: 1.25em;
+    }
+    .show + a,ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+        transition: all 0.5s ease;
+    }
+}
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 16px;
+    }
+    .content {
+        margin-left: 3rem;
+        margin-right: auto;
+    }
+    .content p{
+        font-size: 1.1rem;
+    }
+    .Who{
+        width: 44rem;
+    }
+    .Who img{
+        margin-left: 28.375rem;
+    }
+    .Who p{
+        width: 18rem;
+    }
+    .Purpose p{
+        width: 18rem;
+    }
+    .Vision {
+        margin-right: 10.375rem;
+    }
+    .activities{
+        margin-top: 4.6rem;
+    }
+    .footer hr{
+        width: auto;
+    }
+    .top{
+        height: 16rem;
+        width: 44rem;
+    }
+    .top .Contact{
+        width: 18rem;
+        margin-left: 6rem;
+    }
+    .top li{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .top .Terms{
+        margin-left: 25rem;
+        width: 12rem;
+    }
+}
+@media screen and (max-width:600px){
+    html{
+        font-size:14px;
+    }
+    .Who img{
+        margin-left: 24rem;
+    }
+    .Vision{
+        margin-right: 4rem;
+    }
+    .top{
+        width: auto;
+    }
+    .footer{
+        margin-left: 3rem;
+    }
+    .footer hr{
+        width: 36rem;
+    }
+    .bot{
+        margin-left: 0;
+    }
+    .Donate{
+        margin-top: 8rem;
+        margin-right: 10rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    html{
+        font-size:10px;
+    }
+    .content{
+        width: auto;
+    }
+    .Who{
+        height: auto;
+        width: auto;
+    }
+    .Who h1{
+        margin-left: 8rem;
+    }
+    .Who img{
+        margin-left: 4rem;
+        width: 25rem;
+        height: 20rem;
+    }
+    .Who p{
+        margin-top: 25rem;
+        margin-left: 2rem;
+        width: 30rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .Purpose {
+        margin-left: 0;
+    }
+    .Purpose h2{
+        margin-left: 12rem;
+    }
+    .Purpose .hr1{
+        margin-left: 12rem;
+    }
+    .Purpose p {
+        margin-left: 2rem;
+        text-align: justify;
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+    .All{
+        flex-direction: column;
+    }
+    .All p{
+        margin-left: 2rem;
+        text-align: justify;
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+    .Vision{
+        height: auto;
+    }
+    .Vision h3{
+        margin-left: 12rem;
+    }
+    .Vision .hr2{
+        margin-left: 12rem;
+    }
+    .Mission{
+        margin-top: 2rem;
+    }
+    .Mission h4{
+        margin-left: 12rem;
+    }
+    .Mission .hr3{
+        margin-left: 12rem;
+    }
+    .activities{
+        margin-top: 38rem;
+    }
+    .footer{
+        width: auto;
+        margin-left: 3rem;
+    }
+    .footer hr{
+        width: 33.3rem;
+    }
+    .logo{
+        margin-left: 14rem;
+    }
+    .logo img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .top{
+        height: 60rem;
+        flex-direction: column;
+    }
+    .top li{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    .top .Contact{
+        margin-left: 0;
+        width: 35rem;
+        margin-top: 10rem;
+    }
+    .top .Contact h1{
+        font-size: 2rem;
+        width: 35rem;
+        text-align: center;
+    }
+    .top .Terms{
+        margin-top: 35rem;
+        margin-left: 4.5rem;
+        width: auto;
+    }
+    .top .Terms h1{
+        text-align: center;
+        font-size: 2rem;
+        width: 25rem;
+    }
+    .top .Donate{
+        margin-top: 25rem;
+        margin-left: 8rem;
+    }
+    .Donate a img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .bot{
+        flex-direction: column;
+        width: auto;
+    }
+    .photo{
+        font-size: 2rem;
+        margin-left: 9rem;
+    }
+    .Follow{
+        font-size: 2rem;
+        margin-left: 13rem;
+    }
+    .Web{
+        display: block;
+        margin-left: 8rem;
+    }
+}
+@media screen and (max-width:375px){
+    html{
+        font-size: 8px;
+    }
+    .content{
+        width: auto;
+    }
+    .Who{
+        height: auto;
+    }
+    .Who h1{
+        margin-left: 8rem;
+    }
+    .Who img{
+        margin-left: 6rem;
+        width: 25rem;
+        height: 20rem;
+    }
+    .Who p{
+        margin-top: 25rem;
+        margin-left: 2rem;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .Purpose {
+        margin-left: 0;
+    }
+    .Purpose h2{
+        margin-left: 12rem;
+    }
+    .Purpose .hr1{
+        margin-left: 12rem;
+    }
+    .Purpose p {
+        margin-left: 2rem;
+        text-align: center;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .All{
+        flex-direction: column;
+    }
+    .All p{
+        margin-left: 2rem;
+        text-align: center;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .Vision{
+        height: auto;
+    }
+    .Vision h3{
+        margin-left: 12rem;
+    }
+    .Vision .hr2{
+        margin-left: 12rem;
+    }
+    .Mission{
+        margin-top: 2rem;
+    }
+    .Mission h4{
+        margin-left: 12rem;
+    }
+    .Mission .hr3{
+        margin-left: 12rem;
+    }
+    .activities{
+        margin-top: 44rem;
+    }
+    .item-content p{
+        font-size: 1rem;
+    }
+    .footer{
+        width: auto;
+        margin-left: 5rem;
+    }
+    .footer hr{
+        width: 33.3rem;
+    }
+    .logo{
+        margin-left: 14rem;
+    }
+    .logo img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .top{
+        height: 60rem;
+        flex-direction: column;
+    }
+    .top li{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    .top .Contact{
+        margin-left: 0;
+        width: 35rem;
+        margin-top: 10rem;
+    }
+    .top .Contact h1{
+        font-size: 2rem;
+        width: 35rem;
+        text-align: center;
+    }
+    .top .Terms{
+        margin-top: 38rem;
+        margin-left: 6rem;
+        width: auto;
+    }
+    .top .Terms h1{
+        text-align: center;
+        font-size: 2rem;
+        width: 25rem;
+    }
+    .top .Donate{
+        margin-top: 28rem;
+        margin-left: 8rem;
+    }
+    .Donate a img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .bot{
+        flex-direction: column;
+        width: auto;
+    }
+    .photo{
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+    .Follow{
+        font-size: 2rem;
+        margin-left: 13rem;
+    }
+    .Web{
+        display: block;
+        margin-left: 6rem;
+    }
+}
+@media screen and (max-width:350px){
+    html{
+        font-size: 6px;
+    }    
+}
