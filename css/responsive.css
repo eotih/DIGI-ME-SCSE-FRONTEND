@@ -67,7 +67,7 @@
         position: absolute;
         top: 0px;
         right: 2em;
-        line-height: 3.5em;
+        line-height: 4em;
         font-size: 1.25em;
     }
     .show + a,ul{
@@ -86,6 +86,9 @@
 @media screen and (max-width: 800px) {
     html{
         font-size: 16px;
+    }
+    nav{
+        font-size:18px;
     }
     .activities .item-wrap {
         flex-direction: column;
@@ -113,7 +116,10 @@
 @media screen and (max-width:600px){
     html{
         font-size:14px;
-    }    
+    }
+    nav{
+        font-size:16px;
+    }
 }
 @media screen and (max-width: 420px) {
     html{
@@ -122,6 +128,9 @@
     .header .logo{
         display: none;
     }
+    nav{
+        font-size:14px;
+    }
 }
 @media screen and (max-width:375px){
     html{
@@ -129,5 +138,8 @@
     }
     .slogan .p2 {
         width: 24rem;
+    }
+    nav{
+        font-size:12px;
     }
 }
