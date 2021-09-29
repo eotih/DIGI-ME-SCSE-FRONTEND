@@ -1,6 +1,6 @@
 $(document).scroll(function(){
     var y = $(this).scrollTop();
-    if(y>170){
+    if(y>'2rem'){
         $('nav').fadeIn();
     }else{
         $('nav').fadeOut();
