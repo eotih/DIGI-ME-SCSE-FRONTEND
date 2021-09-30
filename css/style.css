@@ -9,6 +9,37 @@ html {
     font-size: 30px;
 }
 
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+
 #color-1 {
     background-color: #DE4439;
 }
@@ -38,16 +69,18 @@ html {
     position: relative;
     background-color: #1A94D0;
     float: right;
-    top:-5px;
+    top: -5px;
     height: 2rem;
     width: 19rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     color: #FFFFFF;
 }
-.Topnav .overlay{
+
+.Topnav .overlay {
     display: flex;
     justify-content: right;
 }
+
 .Topnav p {
     cursor: pointer;
     position: relative;
@@ -59,10 +92,12 @@ html {
     text-decoration: none;
     font-size: 0.73rem;
 }
-.Topnav .active{
+
+.Topnav .active {
     color: #FCD500;
     margin-right: 0;
 }
+
 .header .logo {
     position: absolute;
     height: 5rem;
@@ -94,7 +129,7 @@ html {
 
 .navbar ul {
     float: left;
-    margin-right: 0.3rem; 
+    margin-right: 0.3rem;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -523,10 +558,12 @@ nav ul ul li a {
     margin-right: auto;
     object-fit: cover;
 }
+
 .activities .btn-holder {
     justify-content: flex-end;
-    display:flex;
+    display: flex;
 }
+
 .activities button {
     cursor: pointer;
     width: 6.93rem;
@@ -556,7 +593,6 @@ nav ul ul li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 .activities .item-wrap .itembox {
@@ -796,7 +832,7 @@ nav ul ul li a {
     margin-right: 10px;
 }
 
-header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan{
+header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan {
     transition: all 0.5s ease;
 }
 
@@ -811,5 +847,40 @@ header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan{
     100% {
         opacity: 1;
         transform: rotateX(0deg);
+    }
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
     }
 }

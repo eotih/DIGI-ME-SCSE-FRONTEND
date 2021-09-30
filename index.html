@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div class="header">
         <div class="Topnav">
             <hr class="line">
@@ -50,7 +53,7 @@
                 <li><a class="Roboto" href="#Galleries">Thư viện</a></li>
                 <li><a class="Roboto" href="#Contact">Liên hệ</a></li>
                 <li><a class="fas fa-shopping-cart icon" href="#shopping"></a></li>
-                <li><a class="fas fa-search icon" href="#search"></a></li>
+                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </div>
         <nav>
@@ -85,7 +88,7 @@
                 <li><a class="Roboto" href="#Galleries">Thư viện</a></li>
                 <li><a class="Roboto" href="#Contact">Liên hệ</a></li>
                 <li><a class="fas fa-shopping-cart icon" href="#shopping"></a></li>
-                <li><a class="fas fa-search icon" href="#search"></a></li>
+                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </nav>
     </div>
@@ -325,8 +328,9 @@
     </script>
 </body>
 <script>
-    function togglenav() {
-    }
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
 </script>
 <script>
     window.addEventListener('load', getDateTime)
