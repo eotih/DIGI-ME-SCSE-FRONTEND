@@ -370,8 +370,8 @@ nav ul ul li a {
 }
 
 .content {
-    width: 1120px;
-    height: 1156px;
+    width: 37.3rem;
+    height: 38.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -379,125 +379,128 @@ nav ul ul li a {
 .content p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 40px;
-    /* or 222% */
-    width: 450px;
-    margin-top: 44px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    width: 20rem;
+    margin-top: 0.8rem;
     display: flex;
     align-items: center;
     text-align: justify;
-    letter-spacing: 0.015em;
+    letter-spacing: 0.015rem;
     color: #000000;
 }
 
 .Who {
-    width: 1120px;
-    height: 500px;
+    width: 37.3rem;
+    height: 14.3rem;
     position: relative;
-    padding-left: 4px;
 }
 
 .Who h1 {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 2.13rem;
+    line-height: 2.6rem;
     display: flex;
     align-items: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: #1A94D0;
-    margin-top: 70px;
+    margin-top: 2.3rem;
 }
 
 .Who img {
     position: absolute;
-    margin-left: 760px;
-    margin-top: 44px;
+    margin-left: 25.3rem;
+    margin-top: 1.5rem;
+    width: 11.67rem;
+    height: 10.3rem;
 }
 
 .hr1 {
-    width: 70px;
-    height: 20px;
+    width: 2.3rem;
+    height: 0.67rem;
     background: #FCD500;
-    border-radius: 10px;
+    border-radius: 0.3rem;
     border: 0;
+    margin-bottom: 0.3rem;
 }
 
 .Purpose {
-    width: 340px;
-    height: 240px;
-    margin-top: 20px;
-    margin-left: 30%;
+    width: 20.67rem;
+    height: auto;
+    margin-top: 0.67rem;
+    margin-left: 11rem;
     margin-right: auto;
     box-sizing: border-box;
 }
-
+.Purpose p{
+    width: 16rem;
+}
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     align-items: center;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.015rem;
     color: #FCD500;
 }
 
 .All {
     display: flex;
 }
-
 .hr2 {
-    width: 70px;
-    height: 20px;
+    width: 2.3rem;
+    height: 0.67rem;
     background: #DE4439;
-    border-radius: 10px;
+    border-radius: 0.3rem;
     border: 0;
+    margin-bottom: 0.3rem;
 }
 
 .Vision {
-    width: 340px;
-    height: 240px;
-    margin-top: 5%;
-    margin-right: 285px;
-    padding-left: 4px;
+    height: 16rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+.Vision p{
+    width: 16rem;
 }
 
 .Vision h3 {
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.015rem;
     color: #E03030;
 }
 
 .hr3 {
-    width: 70px;
-    height: 20px;
+    width: 2.3rem;
+    height: 0.67rem;
     background: #1A94D0;
-    border-radius: 10px;
+    border-radius: 0.3rem;
     border: 0;
+    margin-bottom: 0.3rem;
 }
 
 .Mission {
-    width: 340px;
-    height: 240px;
-    margin-top: 5%;
+    margin-top: 2rem;
 }
-
+.Mission p{
+    width: 16rem;
+}
 .Mission h4 {
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    width: 300px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.015rem;
     color: #1A94D0;
 }
 
@@ -610,29 +613,29 @@ nav ul ul li a {
 
 .Register {
     background-color: rgba(252, 213, 0, 0.2);
-    height: 400px;
+    height: 13.3rem;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 2rem;
 }
 
 .item-content {
-    width: 992px;
+    width: 30.067rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .item-content img {
-    margin-left: 44px;
-    margin-right: 44px;
+    margin-left: 1.467rem;
+    margin-right: 1.467rem;
 }
 
 .item-content p {
-    margin-top: 30px;
+    margin-top: 1rem;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 0.8rem;
     color: black;
-    margin-left: 10px;
+    margin-left: 0.33rem;
 }
 
 .item-content .item-wrap {
@@ -642,8 +645,8 @@ nav ul ul li a {
 
 .item-content .item-wrap .itembox {
     cursor: pointer;
-    margin-top: 70px;
-    width: 239px;
+    margin-top: 2.3rem;
+    width: 7.967rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -687,56 +690,56 @@ nav ul ul li a {
 }
 
 .footer {
-    width: 1120px;
+    width: 37.3rem;
     margin-left: auto;
     margin-right: auto;
 }
-
+.footer ul{
+    display: block;
+}
 .footer a {
     text-decoration: none;
     color: black;
 }
 
 .top {
-    width: 100%;
+    width: 37.3rem;
     display: flex;
     position: relative;
-    height: 320px;
+    height: 10.67rem;
 }
 
 .footer .top hr {
     width: auto;
-    margin: 5px;
+    margin-top:  15px;
 }
 
-.top .logo img {
+.logo img {
     position: absolute;
-    width: 220px;
-    height: 200px;
+    width: 5rem;
+    height: 5rem;
 }
 
 .Contact {
-    width: 370px;
-    height: 300px;
-    margin-left: 240px;
+    width: 12.3rem;
+    height: 10rem;
+    margin-left: 8rem;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 0.67rem;
 }
 
 .Contact p {
-    margin-left: 25px;
+    margin-left: 0.83rem;
 }
-
-.Contact li {
-    width: 380px;
-}
-
 .footer h1 {
-    width: 250px;
-    height: 24px;
+    width: 8.3rem;
+    height: 0.8rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    line-height: 0.8rem;
+    letter-spacing: -0.015rem;
+    color:black;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.015em;
     color: black;
@@ -747,19 +750,14 @@ nav ul ul li a {
 }
 
 .Terms {
-    width: 250px;
-    height: 220px;
+    width: 8.3rem;
+    height: 7.3rem;
     position: absolute;
-    margin-left: 670px;
-    margin-top: 20px;
+    margin-left: 22.3rem;
+    margin-top: 0.67rem;
 }
-
-.Terms li {
-    width: 250px;
-}
-
 .Terms img {
-    margin-top: 10px;
+    margin-top: 0.3rem;
 }
 
 .footer li {
@@ -767,34 +765,34 @@ nav ul ul li a {
     margin-top: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -0.015em;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: -0.015rem;
     color: black;
 }
 
 .Donate {
-    margin-top: 55px;
+    margin-top: 1.83rem;
 }
 
 .Donate a img {
-    height: 85px;
-    width: 220px;
+    height: 2.83rem;
+    width: 7.3rem;
 }
 
 .footer hr {
     margin-top: 10px;
-    width: 1120px;
+    width: 37.3rem;
 }
 
 .Contact a img {
-    height: 30px;
+    height: 1rem;
 }
 
 .bot {
     display: flex;
-    height: 100px;
-    width: 1120px;
+    height: 3.3rem;
+    width: 37.3rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -807,20 +805,19 @@ nav ul ul li a {
     line-height: 24px;
     letter-spacing: -0.015em;
     color: black;
-    width: 400px;
+    margin-right: auto;
 }
 
 .Follow {
     margin-top: 15px;
-    margin-left: 350px;
     margin-right: 20px;
-    width: 100px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: -0.015em;
-    color: black
+    letter-spacing: -0.015rem;
+    color: black;
+    
 }
 
 .bot img {
@@ -831,11 +828,14 @@ nav ul ul li a {
 .top a img {
     margin-right: 10px;
 }
+<<<<<<< HEAD
+=======
 
 header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan {
     transition: all 0.5s ease;
 }
 
+>>>>>>> 4ab4330cf63b067e4087d620b00fd8decca74d13
 @keyframes rotateX {
     0% {
         opacity: 0;
