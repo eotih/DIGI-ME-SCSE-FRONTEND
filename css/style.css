@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 html {
@@ -21,7 +21,11 @@ html {
     align-items: center;
     z-index: 1000;
 }
-
+:root{
+    --scse-blue: #1A94D0;
+    --scse-red: #DE4439;
+    --scse-yellow: #FCD500;
+}
 .loader {
     display: inline-block;
     width: 30px;
@@ -39,15 +43,34 @@ html {
     animation: loader-inner 2s infinite ease-in;
 }
 
-
-#color-1 {
-    background-color: #DE4439;
+.text-blue-scse{
+    color:var(--scse-blue);
+}
+.text-red-scse{
+    color:var(--scse-red);
+}
+.text-yellow-scse{
+    color:var(--scse-yellow);
 }
 
-#color-2 {
-    background-color: #FCD500;
+.bg-blue-scse{
+    background-color:var(--scse-blue);
 }
-
+.bg-red-scse{
+    background-color:var(--scse-red);
+}
+.bg-yellow-scse{
+    background-color:var(--scse-yellow);
+}
+.activity{
+    border:2px solid #F0F0F0;
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 .header {
     position: relative;
 }
@@ -63,6 +86,8 @@ html {
     background-color: #1A94D0;
     border-style: none;
     height: 0.67rem;
+    margin: 0;
+    opacity: 1;
 }
 
 .Topnav .textholder {
@@ -130,6 +155,7 @@ html {
 .navbar ul {
     float: left;
     margin-right: 0.3rem;
+    margin-bottom: 0;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -294,52 +320,56 @@ nav ul ul li a {
 }
 
 .slogan {
+    font-size:30px;
     position: absolute;
-    margin-top: 6.67rem;
-    right: 6.67rem;
+    margin-top: 6.67em;
+    right: 6.67em;
     z-index: 4;
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 0.67rem;
+    border-radius: 0.67em;
 }
 
 .slogan h1 {
-    font-size: 4.8rem;
+    font-size: 4.8em;
     color: #1A94D0;
+    margin-bottom: 0;
 }
 
 .slogan h2 {
-    font-size: 4.8rem;
+    font-size: 4.8em;
     color: #FCD500;
+    margin-bottom: 0;
 }
 
 .slogan h3 {
-    font-size: 4.8rem;
+    font-size: 4.8em;
     color: #DE4439;
+    margin-bottom: 0;
 }
 
 .slogan .flex {
     display: flex;
-    padding-left: 1.3rem;
+    padding-left: 1.3em;
 }
 
 .slogan .p1 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: #FFFFFF;
     font-weight: bold;
-    letter-spacing: -0.015em;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
 }
 
 .slogan .p2 {
-    width: 26.67rem;
-    font-size: 1rem;
+    width: 26.67em;
+    font-size: 1em;
     color: #FFFFFF;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-bottom: 0.67rem;
-    line-height: 1.23rem;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    padding-bottom: 0.67em;
+    line-height: 1.23em;
     align-items: center;
     text-align: justify;
 }
@@ -828,14 +858,11 @@ nav ul ul li a {
 .top a img {
     margin-right: 10px;
 }
-<<<<<<< HEAD
-=======
 
 header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan {
     transition: all 0.5s ease;
 }
 
->>>>>>> 4ab4330cf63b067e4087d620b00fd8decca74d13
 @keyframes rotateX {
     0% {
         opacity: 0;

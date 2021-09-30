@@ -9,6 +9,9 @@
         width: 5.77rem;
         height: 5.77rem;
     }
+    .slogan {
+        font-size: 24px;
+    }
     .activities {
         font-size: 22px;
     }
@@ -82,21 +85,27 @@
         display: block;
         transition: all 0.5s ease;
     }
+    .slogan {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     html {
         font-size: 20px;
     }
-    .footer h1{
+    .footer h1 {
         width: auto;
         font-size: 16px;
     }
-    .top{
+    .top {
         height: 12rem;
     }
-    .top a img{
+    .top a img {
         margin-top: 0.5rem;
+    }
+    .slogan {
+        font-size: 16px;
     }
 }
 
@@ -148,8 +157,8 @@
         margin-left: 25rem;
         width: 12rem;
     }
-    nav{
-        font-size:18px;
+    nav {
+        font-size: 18px;
     }
     .activities .item-wrap {
         flex-direction: column;
@@ -172,6 +181,10 @@
         margin-top: 1em!important;
         margin-left: auto;
         margin-right: auto;
+    }
+    .slogan {
+        font-size: 14px;
+        margin-top: 4em;
     }
 }
 
@@ -201,8 +214,11 @@
         margin-top: 8rem;
         margin-right: 5rem;
     }
-    nav{
-        font-size:16px;
+    nav {
+        font-size: 16px;
+    }
+    .slogan {
+        font-size: 12px;
     }
 }
 
@@ -212,6 +228,10 @@
     }
     html {
         font-size: 10px;
+    }
+    .slogan {
+        font-size: 9px;
+        margin-top: 3em;
     }
     .content {
         width: auto;
@@ -281,13 +301,13 @@
     .activities {
         margin-top: 38rem;
     }
-    .item-content p{
+    .item-content p {
         font-size: 10px;
     }
-    .item-content .item-wrap{
+    .item-content .item-wrap {
         width: 35rem;
     }
-    .item-content .item-wrap .itembox{
+    .item-content .item-wrap .itembox {
         width: 25rem;
         margin-right: 2rem;
     }
@@ -358,173 +378,177 @@
         display: block;
         margin-left: 8rem;
     }
-    nav{
-        font-size:14px;
+    nav {
+        font-size: 14px;
     }
 }
-    @media screen and (max-width:375px) {
-        html {
-            font-size: 8px;
-        }
-        .content {
-            width: auto;
-        }
-        .Who {
-            height: auto;
-        }
-        .Who h1 {
-            margin-left: 8rem;
-        }
-        .Who img {
-            margin-left: 6rem;
-            width: 25rem;
-            height: 20rem;
-        }
-        .Who p {
-            margin-top: 25rem;
-            margin-left: 2rem;
-            width: 34rem;
-            font-size: 1.8rem;
-            line-height: 2rem;
-            text-align: center;
-        }
-        .Purpose {
-            margin-left: 0;
-        }
-        .Purpose h2 {
-            margin-left: 12rem;
-        }
-        .Purpose .hr1 {
-            margin-left: 12rem;
-        }
-        .Purpose p {
-            margin-left: 2rem;
-            text-align: center;
-            width: 34rem;
-            font-size: 1.8rem;
-            line-height: 2rem;
-        }
-        .All {
-            flex-direction: column;
-        }
-        .All p {
-            margin-left: 2rem;
-            text-align: justify;
-            width: 34rem;
-            font-size: 1.8rem;
-            line-height: 2rem;
-        }
-        .Vision {
-            height: auto;
-        }
-        .Vision h3 {
-            margin-left: 12rem;
-        }
-        .Vision .hr2 {
-            margin-left: 12rem;
-        }
-        .Mission {
-            margin-top: 2rem;
-        }
-        .Mission h4 {
-            margin-left: 12rem;
-        }
-        .Mission .hr3 {
-            margin-left: 12rem;
-        }
-        .activities {
-            margin-top: 44rem;
-        }
-        .item-content{
-            margin-left: 5rem;
-        }
-        .item-content p{
-            font-size: 10px;
-        }
-        .item-content img{
-            margin-left: 3rem;
-        }
-        .item-content .item-wrap .itembox{
-            width: 20rem;
-            margin-right: auto;
-        }
-        .footer {
-            width: auto;
-            margin-left: 5rem;
-        }
-        .footer hr {
-            width: 33.3rem;
-        }
-        .logo {
-            margin-left: 14rem;
-        }
-        .logo img {
-            width: 8rem;
-            height: 8rem;
-        }
-        .top {
-            height: 60rem;
-            flex-direction: column;
-        }
-        .top li {
-            font-size: 2rem;
-            text-align: center;
-            line-height: 2.5rem;
-        }
-        .top .Contact {
-            margin-left: 0;
-            width: 35rem;
-            margin-top: 10rem;
-        }
-        .top .Contact h1 {
-            font-size: 2rem;
-            width: 35rem;
-            text-align: center;
-        }
-        .top .Terms {
-            margin-top: 38rem;
-            margin-left: 6rem;
-            width: auto;
-        }
-        .top .Terms h1 {
-            text-align: center;
-            font-size: 2rem;
-            width: 25rem;
-        }
-        .top .Donate {
-            margin-top: 28rem;
-            margin-left: 8rem;
-        }
-        .Donate a img {
-            width: 20rem;
-            height: 10rem;
-        }
-        .bot {
-            flex-direction: column;
-            width: auto;
-        }
-        .photo {
-            font-size: 2rem;
-            margin-left: 7rem;
-        }
-        .Follow {
-            font-size: 2rem;
-            margin-left: 13rem;
-        }
-        .Web {
-            display: block;
-            margin-left: 6rem;
-        }
+
+@media screen and (max-width:375px) {
+    html {
+        font-size: 8px;
     }
-    @media screen and (max-width:350px) {
-        html {
-            font-size: 6px;
-        }
-        .slogan .p2 {
-            width: 24rem;
-        }
-    
-    nav{
-        font-size:12px;
+    .slogan {
+        font-size: 8px;
+    }
+    .content {
+        width: auto;
+    }
+    .Who {
+        height: auto;
+    }
+    .Who h1 {
+        margin-left: 8rem;
+    }
+    .Who img {
+        margin-left: 6rem;
+        width: 25rem;
+        height: 20rem;
+    }
+    .Who p {
+        margin-top: 25rem;
+        margin-left: 2rem;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .Purpose {
+        margin-left: 0;
+    }
+    .Purpose h2 {
+        margin-left: 12rem;
+    }
+    .Purpose .hr1 {
+        margin-left: 12rem;
+    }
+    .Purpose p {
+        margin-left: 2rem;
+        text-align: center;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .All {
+        flex-direction: column;
+    }
+    .All p {
+        margin-left: 2rem;
+        text-align: justify;
+        width: 34rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .Vision {
+        height: auto;
+    }
+    .Vision h3 {
+        margin-left: 12rem;
+    }
+    .Vision .hr2 {
+        margin-left: 12rem;
+    }
+    .Mission {
+        margin-top: 2rem;
+    }
+    .Mission h4 {
+        margin-left: 12rem;
+    }
+    .Mission .hr3 {
+        margin-left: 12rem;
+    }
+    .activities {
+        margin-top: 44rem;
+    }
+    .item-content {
+        margin-left: 5rem;
+    }
+    .item-content p {
+        font-size: 10px;
+    }
+    .item-content img {
+        margin-left: 3rem;
+    }
+    .item-content .item-wrap .itembox {
+        width: 20rem;
+        margin-right: auto;
+    }
+    .footer {
+        width: auto;
+        margin-left: 5rem;
+    }
+    .footer hr {
+        width: 33.3rem;
+    }
+    .logo {
+        margin-left: 14rem;
+    }
+    .logo img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .top {
+        height: 60rem;
+        flex-direction: column;
+    }
+    .top li {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    .top .Contact {
+        margin-left: 0;
+        width: 35rem;
+        margin-top: 10rem;
+    }
+    .top .Contact h1 {
+        font-size: 2rem;
+        width: 35rem;
+        text-align: center;
+    }
+    .top .Terms {
+        margin-top: 38rem;
+        margin-left: 6rem;
+        width: auto;
+    }
+    .top .Terms h1 {
+        text-align: center;
+        font-size: 2rem;
+        width: 25rem;
+    }
+    .top .Donate {
+        margin-top: 28rem;
+        margin-left: 8rem;
+    }
+    .Donate a img {
+        width: 20rem;
+        height: 10rem;
+    }
+    .bot {
+        flex-direction: column;
+        width: auto;
+    }
+    .photo {
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+    .Follow {
+        font-size: 2rem;
+        margin-left: 13rem;
+    }
+    .Web {
+        display: block;
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    html {
+        font-size: 6px;
+    }
+    .slogan {
+        font-size: 6px;
+    }
+    nav {
+        font-size: 12px;
     }
 }
