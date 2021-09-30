@@ -89,7 +89,7 @@
             </ul>
         </nav>
     </div>
-    <div class="slogan">
+    <div id="slogan" class="slogan">
         <div class="flex">
             <h1>S</h1>
             <h2>C</h2>
@@ -302,6 +302,10 @@
             // Optional parameters
             loop: true,
             // Navigation arrows
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -312,6 +316,10 @@
             loop: true,
             spaceBetween: 400,
             // Navigation arrows
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

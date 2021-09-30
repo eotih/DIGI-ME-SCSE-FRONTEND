@@ -72,7 +72,7 @@
         position: absolute;
         top: 0px;
         right: 2em;
-        line-height: 3.5em;
+        line-height: 4em;
         font-size: 1.25em;
     }
     .show+a, ul {
@@ -87,6 +87,16 @@
 @media screen and (max-width: 1000px) {
     html {
         font-size: 20px;
+    }
+    .footer h1{
+        width: auto;
+        font-size: 16px;
+    }
+    .top{
+        height: 12rem;
+    }
+    .top a img{
+        margin-top: 0.5rem;
     }
 }
 
@@ -138,6 +148,9 @@
         margin-left: 25rem;
         width: 12rem;
     }
+    nav{
+        font-size:18px;
+    }
     .activities .item-wrap {
         flex-direction: column;
     }
@@ -186,7 +199,10 @@
     }
     .Donate {
         margin-top: 8rem;
-        margin-right: 10rem;
+        margin-right: 5rem;
+    }
+    nav{
+        font-size:16px;
     }
 }
 
@@ -342,6 +358,10 @@
         display: block;
         margin-left: 8rem;
     }
+    nav{
+        font-size:14px;
+    }
+}
     @media screen and (max-width:375px) {
         html {
             font-size: 8px;
@@ -503,4 +523,8 @@
         .slogan .p2 {
             width: 24rem;
         }
+    
+    nav{
+        font-size:12px;
     }
+}
