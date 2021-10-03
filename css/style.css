@@ -114,8 +114,8 @@ i{
     background-color: #1A94D0;
     float: right;
     top: -5px;
-    height: 4rem;
-    width: 40rem;
+    height: 4em;
+    width: 40em;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     color: #FFFFFF;
 }
@@ -128,13 +128,13 @@ i{
 .Topnav p {
     cursor: pointer;
     position: relative;
-    margin-top: 0.2rem;
+    margin-top: 0.2em;
     margin-right: 5%;
     color: white;
-    padding: 0.3rem;
-    padding-bottom: 0.67rem;
+    padding: 0.3em;
+    padding-bottom: 0.67em;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .Topnav .active {

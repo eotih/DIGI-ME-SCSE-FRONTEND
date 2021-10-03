@@ -1,75 +1,70 @@
 @media screen and (max-width: 1500px) {
-    html {
-        font-size: 16px;
-    }
     .slogan {
         font-size: 24px;
+    }
+    .Topnav {
+        font-size:14px;
     }
 }
 
 @media screen and (max-width:1200px) {
-    html {
-        font-size: 14px;
-    }
     .navbar {
         display: none;
     }
     .slogan {
         font-size: 18px;
     }
+    .Topnav {
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    html {
-        font-size: 12px;
-    }
     .slogan {
         font-size: 16px;
+    }
+    .Topnav {
+        font-size:10px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    html {
-        font-size: 10px;
-    }
     .slogan {
         font-size: 14px;
         margin-top: 4em;
     }
+    .Topnav {
+        font-size:8px;
+    }
 }
 
 @media screen and (max-width:600px) {
-    html {
-        font-size: 8px;
-    }
     .slogan {
         font-size: 12px;
+    }
+    .Topnav {
+        font-size:6px;
     }
 }
 
 @media screen and (max-width: 420px) {
-    html {
-        font-size: 6px;
-    }
     .slogan {
         font-size: 9px;
         margin-top: 3em;
     }
+    .Topnav {
+        font-size:4px;
+    }
 }
 
 @media screen and (max-width:375px) {
-    html {
-        font-size: 4px;
-    }
     .slogan {
         font-size: 8px;
     }
+    
 }
 
 @media screen and (max-width:350px) {
-    html {
-        font-size: 6px;
-    }
     .slogan {
         font-size: 6px;
     }
