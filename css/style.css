@@ -4,9 +4,15 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif !important;
 }
+
 i{
     font-family: "Font Awesome 5 Free" !important;
 }
+i .icon{
+    font-family: "Font Awesome 5 Brands"!important;
+}
+
+
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -19,11 +25,13 @@ i{
     align-items: center;
     z-index: 1000;
 }
-:root{
+
+:root {
     --scse-blue: #1A94D0;
     --scse-red: #DE4439;
     --scse-yellow: #FCD500;
 }
+
 .loader {
     display: inline-block;
     width: 30px;
@@ -41,55 +49,65 @@ i{
     animation: loader-inner 2s infinite ease-in;
 }
 
-.text-blue-scse{
-    color:var(--scse-blue);
-}
-.text-red-scse{
-    color:var(--scse-red);
-}
-.text-yellow-scse{
-    color:var(--scse-yellow);
+.text-blue-scse {
+    color: var(--scse-blue);
 }
 
-.bg-blue-scse{
-    background-color:var(--scse-blue);
+.text-red-scse {
+    color: var(--scse-red);
 }
-.bg-red-scse{
-    background-color:var(--scse-red);
+
+.text-yellow-scse {
+    color: var(--scse-yellow);
 }
-.bg-yellow-scse{
-    background-color:var(--scse-yellow);
+
+.bg-blue-scse {
+    background-color: var(--scse-blue);
 }
-.activity{
-    border:2px solid #F0F0F0;
-    height:100%;
+
+.bg-red-scse {
+    background-color: var(--scse-red);
+}
+
+.bg-yellow-scse {
+    background-color: var(--scse-yellow);
+}
+
+.activity {
+    border: 2px solid #F0F0F0;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
-#partner .carousel-inner .carousel-item.active,
-#partner .carousel-inner .carousel-item-next,
-#partner .carousel-inner .carousel-item-prev {
-  display: flex;
+
+#partner .carousel-inner .carousel-item.active, #partner .carousel-inner .carousel-item-next, #partner .carousel-inner .carousel-item-prev {
+    display: flex;
 }
-#partner .fa-angle-double-right,
-#partner .fa-angle-double-left{
-    font-size:1.5rem;
+
+#partner .fa-angle-double-right, #partner .fa-angle-double-left {
+    font-size: 1.5rem;
 }
-#partner .carousel-control-prev,
-#partner .carousel-control-next {
-    top:-4.5rem;
-    width:3rem;
-    height:3rem;
+
+#partner .carousel-control-prev, #partner .carousel-control-next {
+    top: -4.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
 }
-#partner .carousel-control-prev{
-    right:4rem;
+
+#partner .carousel-control-prev {
+    right: 4rem;
     left: auto;
 }
+
+#partner img {
+    height: 4em;
+}
+
 .header {
     position: relative;
 }
@@ -332,7 +350,7 @@ nav ul ul li a {
 }
 
 .slogan {
-    font-size:30px;
+    font-size: 30px;
     position: absolute;
     margin-top: 6.67em;
     right: 6.67em;
@@ -475,9 +493,11 @@ nav ul ul li a {
     margin-right: auto;
     box-sizing: border-box;
 }
-.Purpose p{
+
+.Purpose p {
     width: 16rem;
 }
+
 .Purpose h2 {
     font-style: normal;
     font-weight: bold;
@@ -491,6 +511,7 @@ nav ul ul li a {
 .All {
     display: flex;
 }
+
 .hr2 {
     width: 2.3rem;
     height: 0.67rem;
@@ -505,7 +526,8 @@ nav ul ul li a {
     margin-top: 2rem;
     margin-right: 5rem;
 }
-.Vision p{
+
+.Vision p {
     width: 16rem;
 }
 
@@ -532,9 +554,11 @@ nav ul ul li a {
 .Mission {
     margin-top: 2rem;
 }
-.Mission p{
+
+.Mission p {
     width: 16rem;
 }
+
 .Mission h4 {
     font-style: normal;
     font-weight: bold;
@@ -747,6 +771,7 @@ header .logo, .activities .navbar .swiper-1 .swiper-2 .slogan {
         transform: rotateX(0deg);
     }
 }
+
 @keyframes loader {
     0% {
         transform: rotate(0deg);

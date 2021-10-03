@@ -5,6 +5,9 @@
     .Topnav {
         font-size:14px;
     }
+    #partner .carousel-inner{
+        font-size:14px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -17,6 +20,9 @@
     .Topnav {
         font-size:12px;
     }
+    #partner .carousel-inner{
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -24,6 +30,9 @@
         font-size: 16px;
     }
     .Topnav {
+        font-size:10px;
+    }
+    #partner .carousel-inner{
         font-size:10px;
     }
 }
@@ -39,21 +48,37 @@
 }
 
 @media screen and (max-width:600px) {
+    .display-3{
+        font-size: 3rem;
+    }
+    .display-4{
+        font-size: 3rem;
+    }
     .slogan {
         font-size: 12px;
     }
     .Topnav {
         font-size:6px;
     }
+    
 }
 
 @media screen and (max-width: 420px) {
+    .display-3{
+        font-size: 2rem;
+    }
+    .display-4{
+        font-size: 2rem;
+    }
     .slogan {
         font-size: 9px;
         margin-top: 3em;
     }
     .Topnav {
         font-size:4px;
+    }
+    #partner .carousel-inner{
+        font-size:6px;
     }
 }
 
@@ -70,5 +95,8 @@
     }
     nav {
         font-size: 12px;
+    }
+    #partners .display-3{
+        font-size: 1.5rem;
     }
 }
