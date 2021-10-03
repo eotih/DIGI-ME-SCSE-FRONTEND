@@ -104,7 +104,7 @@ i{
 .Topnav .line {
     background-color: #1A94D0;
     border-style: none;
-    height: 0.67rem;
+    height: 1rem;
     margin: 0;
     opacity: 1;
 }
@@ -114,8 +114,8 @@ i{
     background-color: #1A94D0;
     float: right;
     top: -5px;
-    height: 2rem;
-    width: 19rem;
+    height: 4em;
+    width: 40em;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     color: #FFFFFF;
 }
@@ -128,13 +128,13 @@ i{
 .Topnav p {
     cursor: pointer;
     position: relative;
-    margin-top: 0.2rem;
+    margin-top: 0.2em;
     margin-right: 5%;
     color: white;
-    padding: 0.3rem;
-    padding-bottom: 0.67rem;
+    padding: 0.3em;
+    padding-bottom: 0.67em;
     text-decoration: none;
-    font-size: 0.73rem;
+    font-size: 1.5em;
 }
 
 .Topnav .active {
@@ -153,12 +153,11 @@ i{
 
 .navbar {
     position: absolute;
-    top: 3.1rem;
-    right: 6.67rem;
+    top: 6rem;
+    right: 6.25rem;
     background-color: #E5E5E5;
-    border-radius: 0.67rem;
-    padding: 0.3rem 0.3rem;
-    font-size: 20px;
+    border-radius: 1rem;
+    padding: 0.6rem 0.6rem;
     z-index: 99;
 }
 
@@ -182,7 +181,7 @@ i{
 
 .navbar ul li:hover {
     background-color: #FFFFFF;
-    border-radius: 0.67rem;
+    border-radius: 1rem;
 }
 
 .navbar a:hover {
@@ -195,9 +194,9 @@ i{
 
 .navbar a {
     display: block;
-    padding: 0.53rem 0.67rem;
+    padding: 1rem 1.25rem;
     color: #6B6B6B;
-    font-size: 0.9em;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
 }
@@ -205,7 +204,7 @@ i{
 .navbar ul ul {
     display: none;
     background: white;
-    border-radius: 0.67rem;
+    border-radius: 1rem;
     position: absolute;
     top: 100%;
     box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
@@ -214,31 +213,25 @@ i{
 .navbar ul ul li {
     float: none;
     position: relative;
-    margin: 0;
+    margin: 0.2rem;
 }
 
 .navbar ul ul li a {
-    min-width: 11.67rem;
+    min-width: 20rem;
     margin: 0.3rem;
-    padding: 0.53rem 0.67rem;
+    padding: 1rem 1.25rem;
 }
 
 .navbar ul ul li a:hover {
     background: #1A94D0;
     color: #FFFFFF;
-    border-radius: 0.3rem;
-}
-
-.navbar .icon {
-    font-size: 0.8em;
-    padding: 0.53rem 0.3rem;
-    margin-right: 0px;
+    border-radius: 0.5rem;
 }
 
 .navbar a.active {
     background-color: #FFFFFF;
     color: #1A94D0;
-    border-radius: 0.67em;
+    border-radius: 1rem;
 }
 
 nav {
