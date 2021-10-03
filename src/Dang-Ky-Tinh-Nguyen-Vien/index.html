@@ -111,40 +111,97 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
+                        <div class="card-header py-3 ">
                             <hr class="bg-red-scse m-0" style="flex: 1;
                             height: 80px;
                         width: 70px;
                         border-radius: 10px;
                         ">
-                            <h1 class="m-0 font-weight-bold">ĐĂNG KÝ TÌNH NGUYỆN VIÊN</h1>
+                            <h1 class="m-0 font-weight-bold text-end">ĐĂNG KÝ TÌNH NGUYỆN VIÊN</h1>
                         </div>
                         <div class="card-body">
                             <form method="POST" action="/post/store">
-                                <div class="mb-3">
-                                    <label for="title" class="form-label">Tiêu đề</label>
-                                    <input type="text" class="form-control" id="title" name="title">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="description" class="form-label">Mô tả blog</label>
-                                    <textarea type="text" class="form-control" id="description"
-                                        name="description"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="content" class="form-label">Nội dung</label>
+                                <div class="row g-3">
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Họ" class="form-label">Họ</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Họ" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Họ.
+                                        </div>
+                                    </div>
 
-                                    <textarea type="text" class="form-control" id="content" name="content"></textarea>
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Tên" class="form-label">Tên</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Tên" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Tên.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="phone" class="form-label">Số điện thoại</label>
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Vui lòng nhập Số điện thoại." value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Số điện thoại.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Ngày sinh" class="form-label">Ngày sinh</label>
+                                        <input type="date" class="form-control" id="firstName" value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng chọn Ngày sinh.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for=">Địa chỉ" class="form-label">Địa chỉ</label>
+                                        <input type="text" class="form-control" id="lastName"
+                                            placeholder="Vui lòng nhập Địa chỉ" value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Địa chỉ.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="email"
+                                            placeholder="Vui lòng nhập Email." value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Email.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="username" class="form-label">Chủ đề</label>
+                                        <div class="input-group has-validation">
+                                            <input type="text" class="form-control" id="username" placeholder="Chủ đề"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập Chủ đề.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="content" class="form-label">Nội dung</label>
+                                        <div class="input-group has-validation">
+                                            <textarea type="text" class="form-control" id="content"
+                                                placeholder="Vui lòng nhập Nội dung." required></textarea>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập Nội dung.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="image" class="form-label">Ảnh thumbnail</label>
-                                    <input type="text" class="form-control" id="image" name="image">
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button style="height: 60px;
+                                    width: 150px;
+                                    border-radius: 10px;
+                                    " class=" bg-red-scse btn btn-danger me-md-2" type="button">GỬI NGAY</button>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="published" class="form-label">published</label>
-                                    <input type="text" class="form-control" id="published" name="published">
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-user btn-block col-xl-12">Thêm
-                                    blog</button>
                             </form>
                         </div>
                     </div>
