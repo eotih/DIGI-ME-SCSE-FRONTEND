@@ -332,10 +332,6 @@ nav ul ul li a {
     line-height: 2.5em;
 }
 
-.show, .burger, input {
-    display: none;
-}
-
 .Topnav img {
     position: relative;
     z-index: 1;
