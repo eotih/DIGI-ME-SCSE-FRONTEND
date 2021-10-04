@@ -8,7 +8,6 @@
 i{
     font-family: "Font Awesome 5 Free" !important;
 }
-<<<<<<< HEAD
 .auto::before {
     content: '';
     width: 70%;
@@ -47,9 +46,6 @@ i{
     top: -2.5rem;
     transition: all 0.2s ease-in-out;
 }
-=======
-
->>>>>>> 564bfa5ff2703111386ea8deea25867ab4781fdd
 .loader-wrapper {
     width: 100%;
     height: 100%;
