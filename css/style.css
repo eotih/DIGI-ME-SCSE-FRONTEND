@@ -8,7 +8,44 @@
 i{
     font-family: "Font Awesome 5 Free" !important;
 }
-
+.auto::before {
+    content: '';
+    width: 70%;
+    height: 50%;
+    padding-bottom: 0;
+    display: block;
+    padding-bottom: 30%;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    background: red;
+    border-radius: .25rem;
+    z-index: -1;
+}
+.auto1::before{
+    content: '';
+    width: 50%;
+    height: 70%;
+    padding-bottom: 0;
+    display: block;
+    padding-bottom: 30%;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: red;
+    border-radius: .25rem;
+    z-index: -1;
+}
+.testimonial-item:after {
+    content:",,";
+    color: #1A94D0;
+    font-size: 6.25rem;
+    position: absolute;
+    line-height: 24px;
+    right: 0.9375rem;
+    top: -2.5rem;
+    transition: all 0.2s ease-in-out;
+}
 .loader-wrapper {
     width: 100%;
     height: 100%;
