@@ -109,7 +109,7 @@
     <div class="container">
         <div class="mt-4 mb-4">
             <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
-                <p class="my-auto" style="color: #FFFFFF;margin-left: 1rem;">Trang chủ > Hoạt động > 
+                <p class="my-auto" style="color: #FFFFFF;margin-left: 1rem;">Trang chủ > Hoạt động >
                 <p class=" my-auto font-weight-bold" style="color: #FFFFFF"> Hoạt động thiện nguyện</p>
                 </p>
             </div>
@@ -123,45 +123,8 @@
             </div>
 
         </div>
-        <div class="row">
-            <div class="card mb-3" style="width:100%; border-radius: 10px">
-                <div class="row g-0" style="background-color: #F0F0F0">
-                    <div class="col-lg-4 p-0">
-                        <div class="d-flex justify-content">
-                            <div class="bg-red-scse" style="
-                            margin-right:30px;
-                                height: 400px;
-                                width: 30px;
-                            "></div>
-                            <img src="../../images/gioivabinhdanggioi.jpg" style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
-                                class="img-fluid my-3" alt="...">
-                        </div>
-                    </div>
+        <div id="tbody"></div>
 
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h3 class="card-title">Tặng gạo cho người bị ảnh hưởng bởi dịch covid</h3>
-                            <p class="card-text"><small class="text-muted">Tháng 8 năm 2021</small></p>
-                            <p class="card-text" style="text-align: justify; text-justify: inter-word">Lorem Ipsum is
-                                simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                book. It has survived not only five centuries, but also the leap into electronic
-                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                                desktop publishing software likeAldus PageMaker including versions of Lorem Ipsum.</p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"
-                                    class="btn bg-red-scse btn-danger lg">Đăng ký</a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary bg-blue-scse btn-user btn-block col-xl-12">Xem thêm</button>
-        </div>
 
     </div>
 
@@ -295,6 +258,60 @@
 
     </footer>
     <!-- Footer -->
+    <script>
+        window.addEventListener('load', loadData)
+
+        async function loadData() {
+            fetch("http://localhost:59360/Management/GetByIdCategory?idcat=1")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                    var html = response.map(function (response) {
+                        console.table(response)
+                        const { IDPost, Title, Slug, Details, Image } = response
+                        return `
+                        <div class="row">
+            <div class="card mb-3" style="width:100%; border-radius: 10px">
+                <div class="row g-0" style="background-color: #F0F0F0">
+                    <div class="col-lg-4 p-0">
+                        <div class="d-flex justify-content">
+                            <div class="bg-red-scse" style="
+                            margin-right:30px;
+                                height: 400px;
+                                width: 30px;
+                            "></div>
+                            <img src="${Image}"
+                                style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
+                                class="img-fluid my-3" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <a href="./chi-tiet-bai-viet.html?slug=${Slug}">
+                            <h3 class="card-title">${Title}</h3>
+                            </a>
+                            <p class="card-text"><small class="text-muted">Tháng 8 năm 2021</small></p>
+                            <p class="card-text" style="text-align: justify; text-justify: inter-word">.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"
+                                    class="btn bg-red-scse btn-danger lg">Đăng ký</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary bg-blue-scse btn-user btn-block col-xl-12">Xem thêm</button>
+        </div>`;
+                    })
+                    $('#tbody').html(html);
+                })
+        }
+
+    </script>
 </body>
 
 </html>
