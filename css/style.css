@@ -443,7 +443,16 @@ nav ul ul li a {
     margin-top: 2rem;
 }
 
-
+#btn-back-to-top {
+    position: fixed;
+    background-color: var(--scse-red);
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    display: none;
+    z-index: 99;
+  }
 @keyframes rotateX {
     0% {
         opacity: 0;
