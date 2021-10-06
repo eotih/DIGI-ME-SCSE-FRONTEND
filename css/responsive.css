@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width:1200px) {
-    .navbar {
+    .nav-bar {
         display: none;
     }
     .slogan {
@@ -80,6 +80,12 @@
     #partner .carousel-inner{
         font-size:6px;
     }
+    .nav-bar{
+        opacity: 1;
+    }
+    .navbar img{
+        width: 200px;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -92,9 +98,6 @@
 @media screen and (max-width:350px) {
     .slogan {
         font-size: 6px;
-    }
-    nav {
-        font-size: 12px;
     }
     #partners .display-3{
         font-size: 1.5rem;

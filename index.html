@@ -27,6 +27,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -41,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="navbar">
+        <div class="nav-bar">
             <ul id="nav">
                 <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
                 <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
@@ -55,7 +58,7 @@
                             class="fas fa-caret-down"></i></a>
                     <ul>
                         <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
-                        <li><a class="Roboto" href="#">Dự án</a></li>
+                        <li><a class="Roboto" href="./src/Du-An/">Dự án</a></li>
                         <li><a class="Roboto" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
@@ -65,6 +68,60 @@
                 <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </div>
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="img-fluid"
+                        src="../../images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Về
+                                SCSE</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="./src/Ban-Giam-Doc/">Ban Giám Đốc</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="./src/Cau-Chuyen/">Câu chuyện</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./src/Tin-Tuc/">Tin tức</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Hoạt
+                                động</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="./src/Du-An/">Dự án</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./src/ThuVien/">Thư viện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./src/Lien-He/">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href=""><i class="fas fa-shopping-cart icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
         <div id="slogan" class="slogan">
             <div class="flex">
                 <h1 class="font-weight-bold">S</h1>
@@ -376,9 +433,9 @@
                 <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
                     <!--Copyright-->
                     <p>Follow us:</p>
-                    <a href="https://www.facebook.com/scsevn"><img src="./images/image 74.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UC5K0cnsITcj7cxIcpvWXnmQ"><img src="./images/image 75.png"
+                    <a href="https://www.youtube.com/channel/UC5K0cnsITcj7cxIcpvWXnmQ"><img src="./images/image 74.png"
                             alt=""></a>
+                    <a href="https://www.facebook.com/scsevn"><img src="./images/image 75.png" alt=""></a>
 
                 </div>
                 <!-- Grid column -->
@@ -424,4 +481,5 @@
     </footer>
     <!-- Footer -->
 </body>
+
 </html>

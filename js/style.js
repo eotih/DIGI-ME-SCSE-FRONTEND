@@ -1,14 +1,22 @@
-$(document).scroll(function () {
-    var elem = document.getElementById("slogan");
-    var x = elem.offsetTop - 10;
-    var y = $(this).scrollTop();
-    if (y > x) {
-        $('nav').fadeIn();
-    } else {
-        $('nav').fadeOut();
-    }
-});
+//loader
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
 
+//2nd-navbar
+document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 80) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          document.getElementById('navbar_top').style.opacity=1;
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+           // remove padding top from body
+          document.getElementById('navbar_top').style.opacity=0;
+        } 
+    });
+  });
+//getdatetime
 window.addEventListener('load', getDateTime)
 async function getDateTime() {
     var date = new Date();
@@ -46,7 +54,7 @@ async function getDateTime() {
         document.getElementById("datetime").innerText = dateTime;
     }, 500);
 }
-
+//back to top
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 20) {
