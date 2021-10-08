@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
         if (window.scrollY > 80) {
           document.getElementById('navbar_top').classList.add('fixed-top');
           document.getElementById('navbar_top').style.opacity=1;
+          document.getElementById('navbar_top').style.top="0px";
         } else {
           document.getElementById('navbar_top').classList.remove('fixed-top');
            // remove padding top from body
-          document.getElementById('navbar_top').style.opacity=0;
+          document.getElementById('navbar_top').style.opacity=0;  
+          document.getElementById('navbar_top').style.top="-100px";
         } 
     });
   });

@@ -285,6 +285,7 @@ i{
 }
 
 .navbar {
+    top:-100px;
     opacity: 0;
     width: 100%;
     position: fixed;
