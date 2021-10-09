@@ -58,7 +58,7 @@ i{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #242f3f;
+    background-color: var(--scse-blue);
     display: flex;
     justify-content: center;
     align-items: center;
