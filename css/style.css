@@ -299,6 +299,9 @@ i{
     z-index: 99;
     font-size: 20px;
 }
+.navbar li{
+    cursor: pointer;
+}
 .navbar img{
     width: 320px;
 }
