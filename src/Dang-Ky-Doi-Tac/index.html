@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCSE - Thư viện</title>
+    <title>SCSE - Đăng kí tình nguyện viên</title>
     <link rel="icon" sizes="192x192" href="../../images/LogoSCSE_Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -34,7 +34,6 @@
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <!-- HEADER -->
     <div class="header">
         <div class="Topnav">
             <hr class="line">
@@ -48,31 +47,35 @@
         </div>
         <div class="nav-bar">
             <ul id="nav">
-                <li><a class="" href="../../index.html">Trang Chủ</a></li>
-                <li><a class="" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
+                <li><a class="Roboto" href="../../index.html">Trang Chủ</a></li>
+                <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
                     <ul>
-                        <li><a class="" href="../Ban-Giam-Doc/">Ban Giám Đốc</a></li>
-                        <li><a class="" href="../Cau-Chuyen/">Câu chuyện</a></li>
+                        <li><a class="Roboto" href="../Ban-Giam-Doc/">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="../Cau-Chuyen/">Câu chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="" href="../Tin-Tuc/">Tin tức</a></li>
-                <li><a class="" href="#Activities" onclick="dropdown()">Hoạt động <i
+                <li><a class="Roboto" href="../Tin-Tuc/">Tin tức</a></li>
+                <li><a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
                             class="fas fa-caret-down"></i></a>
                     <ul>
                         <li><a class="Roboto" href="../Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
-                        <li><a class="Roboto" href="#">Dự án</a></li>
+                        <li><a class="Roboto" href="../Du-An/">Dự án</a></li>
                         <li><a class="Roboto" href="../Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="../ThuVien/">Thư viện</a></li>
-                <li><a class="" href="../Lien-He/">Liên hệ</a></li>
-                <li><a href="#shopping"><i class="fas fa-shopping-cart icon"></i></a></li>
-                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
+                <li><a class="Roboto" href="">Thư viện <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a class="Roboto" href="../ThuVien/Hinh-Anh/">Hình ảnh</a></li>
+                        <li><a class="Roboto" href="../ThuVien/video/">Video</a></li>
+                        <li><a class="Roboto" href="../ThuVien/Tai-Lieu/">Tài liệu</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="../Lien-He/">Liên hệ</a></li>
             </ul>
         </div>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="img-fluid"
+                <a class="navbar-brand" href="../../index.html"><img class="img-fluid"
                         src="../../images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
                     <span class="navbar-toggler-icon"></span>
@@ -112,14 +115,22 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../ThuVien/">Thư viện</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Thư viện</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Hinh-Anh/">Hình ảnh</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/video/">video</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Tai-Lieu/">Tài liệu</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Lien-He/">Liên hệ</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href=""><i class="fas fa-shopping-cart icon"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -154,133 +165,107 @@
     <hr style="background-color: #1A94D0;height: 0.67rem;margin-top:0;">
     <!-- BODY -->
 
-
-    <div class="mt-5">
-        <div class="container">
-            <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
-                <p class="my-auto" style="color: #FFFFFF;margin-left: 1rem;">Trang chủ >
-                <p class=" my-auto font-weight-bold" style="color: #FFFFFF"> Thư viện</p>
-                </p>
-            </div>
-            <br>
+    <div class="container">
+        <div class="mt-4 mb-4">
             <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3 d-flex justify-content-start">
+                            <div class="bg-red-scse mx-2" style="height: 80px;width: 70px; border-radius: 10px;"></div>
+                            <h1 class="m-0 font-weight-bold my-auto text-end">ĐĂNG KÝ ĐỐI TÁC</h1>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" action="/post/store">
+                                <div class="row g-3">
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Họ" class="form-label">Họ</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Họ" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Họ.
+                                        </div>
+                                    </div>
 
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Tên" class="form-label">Tên</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Tên" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Tên.
+                                        </div>
+                                    </div>
 
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="phone" class="form-label">Số điện thoại</label>
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Vui lòng nhập Số điện thoại." value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Số điện thoại.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="Ngày sinh" class="form-label">Tổ chức/Đơn Vị</label>
+                                        <input type="text" class="form-control" id="Organization"
+                                            placeholder="Vui lòng nhập tổ chức" value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập tên tổ chức
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for=">Địa chỉ" class="form-label">Địa chỉ</label>
+                                        <input type="text" class="form-control" id="lastName"
+                                            placeholder="Vui lòng nhập Địa chỉ" value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Địa chỉ.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 mb-2">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="email"
+                                            placeholder="Vui lòng nhập Email." value="" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập Email.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="username" class="form-label">Chủ để</label>
+                                        <div class="input-group has-validation">
+                                            <input type="text" class="form-control" id="username" placeholder="Dự án"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập chủ đề.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="content" class="form-label">Nội dung mong muốn hợp tác</label>
+                                        <div>
+                                            <input type="file" id="file" name="file" multiple>
+                                          </div>
+                                        <div class="input-group has-validation">
+                                            <textarea style="min-height: 325px" type="text" class="form-control" id="content"
+                                                placeholder="Vui lòng nhập Nội dung." required></textarea>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập Nội dung.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button style="height: 60px;
+                                    width: 150px;
+                                    border-radius: 10px;
+                                    " class=" bg-red-scse btn btn-danger me-md-2" type="button">GỬI NGAY</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="mb-5">
-                        <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                            <a href="#">
-                                <img src="../../images/32171034926_7983733ab2_o.jpg"
-                                    class="card-img-top my-2 px-2" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</h5>
-                                </a>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Nghiên cứu - Đào tạo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button style="box-shadow: 4px 4px 0px #93DBFF;" type="submit" class="btn btn-primary bg-blue-scse btn-user btn-block col-xl-12">Xem thêm</button>
-
             </div>
         </div>
     </div>
@@ -365,7 +350,7 @@
                 <div class="col-lg-6">
 
                     <!--Copyright-->
-                    <p class="text-center text-md-left">©2017 SCSE. All rights reserved. Serviced by SCSE
+                    <p class="text-center text-md-left">©2020 SCSE. All rights reserved. Serviced by SCSE
 
                     </p>
 

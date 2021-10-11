@@ -54,7 +54,7 @@
                     </ul>
                 </li>
                 <li><a class="Roboto" href="./src/Tin-Tuc/">Tin tức</a></li>
-                <li><a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
+                <li><a class="Roboto" href="#Activities">Hoạt động <i
                             class="fas fa-caret-down"></i></a>
                     <ul>
                         <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
@@ -62,10 +62,14 @@
                         <li><a class="Roboto" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="./src/ThuVien/">Thư viện</a></li>
+                <li><a class="Roboto" href="">Thư viện <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a class="Roboto" href="./src/ThuVien/Hinh-Anh/">Hình ảnh</a></li>
+                        <li><a class="Roboto" href="./src/ThuVien/video/">Video</a></li>
+                        <li><a class="Roboto" href="./src/ThuVien/Tai-Lieu/">Tài liệu</a></li>
+                    </ul>
+                </li>
                 <li><a class="Roboto" href="./src/Lien-He/">Liên hệ</a></li>
-                <li><a href="#shopping"><i class="fas fa-shopping-cart icon"></i></a></li>
-                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </div>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
@@ -111,14 +115,22 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/ThuVien/">Thư viện</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Thư viện</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="./src/ThuVien/Hinh-Anh/">Hình ảnh</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="./src/ThuVien/video/">video</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="./src/ThuVien/Tai-Lieu/">Tài liệu</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./src/Lien-He/">Liên hệ</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href=""><i class="fas fa-shopping-cart icon"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -284,8 +296,10 @@
                     </a>
                 </div>
                 <div class="col-lg-4 mb-3 mb-lg-0">
-                    <img class="img-fluid mb-3" src="./images/Group 491.png" style="width:9.735rem;height:9.735rem">
-                    <p class="h4 font-weight-bold text-uppercase mb-0">ĐĂNG KÝ LÀM<br>ĐỐI TÁC</p>
+                    <a href="./src/Dang-Ky-Doi-Tac/" style="text-decoration: none;color: black;">
+                        <img class="img-fluid mb-3" src="./images/Group 491.png" style="width:9.735rem;height:9.735rem">
+                        <p class="h4 font-weight-bold text-uppercase mb-0">ĐĂNG KÝ LÀM<br>ĐỐI TÁC</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -429,7 +443,7 @@
                 <div class="col-lg-6">
 
                     <!--Copyright-->
-                    <p class="text-center text-md-left">©2017 SCSE. All rights reserved. Serviced by SCSE
+                    <p class="text-center text-md-left">©2020 SCSE. All rights reserved. Serviced by SCSE
 
                     </p>
 
