@@ -1,15 +1,15 @@
 const WEB_API = "http://localhost:59360/";
-        window.addEventListener('load', loadData)
-        async function loadData() {
-            fetch(WEB_API + "API/Management/GetByIdCategory?idcat=2")
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                    var html = response.map(function (response) {
-                        console.table(response)
-                        const { IDPost, Title, Slug, Details, Image, CreatedByDate  } = response
-                        return `
+window.addEventListener('load', loadData)
+async function loadData() {
+    fetch(WEB_API + "API/Management/GetByIdCategory?idcat=2")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            var html = response.map(function (response) {
+                console.table(response)
+                const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
+                return `
                         <div class="row">
             <div class="card mb-3" style="width:100%; border-radius: 10px">
                 <div class="row g-0" style="background-color: #F0F0F0">
@@ -46,7 +46,7 @@ const WEB_API = "http://localhost:59360/";
             
         </div>
         <button type="submit" class="btn btn-primary bg-blue-scse btn-user btn-block col-xl-12">Xem thêm</button>`;
-                    })
-                    $('#tbody').html(html);
-                })
-        }
+            })
+            $('#tbody').html(html);
+        })
+}

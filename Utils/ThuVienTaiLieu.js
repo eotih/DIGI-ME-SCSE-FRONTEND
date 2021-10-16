@@ -46,7 +46,7 @@ async function loadData() {
                     <div class="mb-5">
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4">
                             <div class="card-body">
-                                <a href="#">
+                                <a href="../../Chi-Tiet-Bai-Viet/tailieu.html?slug=${Slug}">
                                     <img src="../../../images/PDF.jpg"
                                         class="card-img-top my-1 px-1" alt="...">
                                 </a>
