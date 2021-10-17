@@ -1,7 +1,7 @@
 const WEB_API = "http://localhost:59360/";
 window.addEventListener('load', loadData)
 async function loadData() {
-    fetch(WEB_API + "API/Management/GetByIdCategory?idcat=4")
+    fetch(WEB_API + "API/Management/GetByIdCategory?idcat=3")
         .then(function (response) {
             return response.json();
         })
