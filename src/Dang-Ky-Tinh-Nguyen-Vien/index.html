@@ -178,8 +178,8 @@
                             <form method="POST" action="/post/store">
                                 <div class="row g-3">
                                     <div class="col-sm-4 mb-2">
-                                        <label for="Họ" class="form-label">Họ</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="Họ" value=""
+                                        <label for="FirstName" class="form-label">Họ</label>
+                                        <input type="text" class="form-control" id="FirstName" placeholder="Họ" value=""
                                             required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Họ.
@@ -187,8 +187,8 @@
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="Tên" class="form-label">Tên</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Tên" value=""
+                                        <label for="LastName" class="form-label">Tên</label>
+                                        <input type="text" class="form-control" id="LastName" placeholder="Tên" value=""
                                             required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Tên.
@@ -196,8 +196,8 @@
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="phone" class="form-label">Số điện thoại</label>
-                                        <input type="text" class="form-control" id="phone"
+                                        <label for="Phone" class="form-label">Số điện thoại</label>
+                                        <input type="text" class="form-control" id="Phone"
                                             placeholder="Vui lòng nhập Số điện thoại." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Số điện thoại.
@@ -205,16 +205,16 @@
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="Ngày sinh" class="form-label">Ngày sinh</label>
-                                        <input type="date" class="form-control" id="firstName" value="" required>
+                                        <label for="DOB" class="form-label">Ngày sinh</label>
+                                        <input type="date" class="form-control" id="DOB" value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng chọn Ngày sinh.
                                         </div>
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for=">Địa chỉ" class="form-label">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="lastName"
+                                        <label for="Address" class="form-label">Địa chỉ</label>
+                                        <input type="text" class="form-control" id="Address"
                                             placeholder="Vui lòng nhập Địa chỉ" value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Địa chỉ.
@@ -222,17 +222,17 @@
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="text" class="form-control" id="email"
+                                        <label for="Email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="Email"
                                             placeholder="Vui lòng nhập Email." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Email.
                                         </div>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <label for="username" class="form-label">Dự án muốn tham gia</label>
+                                        <label for="Project" class="form-label">Dự án muốn tham gia</label>
                                         <div class="input-group has-validation">
-                                            <input type="text" class="form-control" id="username" placeholder="Dự án"
+                                            <input type="text" class="form-control" id="Project" placeholder="Dự án"
                                                 required>
                                             <div class="invalid-feedback">
                                                 Vui lòng nhập dự án.
@@ -240,9 +240,9 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <label for="content" class="form-label">Lí do muốn tham gia</label>
+                                        <label for="Purpose" class="form-label">Lí do muốn tham gia</label>
                                         <div class="input-group has-validation">
-                                            <textarea style="min-height: 325px" type="text" class="form-control" id="content"
+                                            <textarea style="min-height: 325px" type="text" class="form-control" id="Purpose"
                                                 placeholder="Vui lòng nhập Nội dung." required></textarea>
                                             <div class="invalid-feedback">
                                                 Vui lòng nhập Nội dung.
@@ -252,7 +252,9 @@
                                 </div>
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button style="height: 60px;
+                                    <button 
+                                    onclick="addVolunteer()"
+                                    style="height: 60px;
                                     width: 150px;
                                     border-radius: 10px;
                                     " class=" bg-red-scse btn btn-danger me-md-2" type="button">GỬI NGAY</button>
@@ -398,6 +400,7 @@
         <!-- Footer Links -->
 
     </footer>
+    <script src="../../Utils/DangKyTinhNguyenVien.js"></script>
     <!-- Footer -->
 </body>
 
