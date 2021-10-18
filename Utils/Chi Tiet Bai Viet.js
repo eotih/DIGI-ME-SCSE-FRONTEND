@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const WEB_API = "http://localhost:59360/";
 // window.addEventListener('load', getBySlug)
 async function getBySlug(numb) {
@@ -90,6 +91,44 @@ async function getBySlug(numb) {
                     var html = random.map(function (response) {
                         const { IDPostEN, Title, SlugEN, Details, Image } = response
                         return `
+=======
+const WEB_API = "http://localhost:59360/API/";
+window.addEventListener('load', getBySlug)
+function getBySlug() {
+    getBaiViet()
+    const urlParams = new URLSearchParams(window.location.search);
+    const slugResult = urlParams.get('slug');
+    fetch(WEB_API + "Interface/GetPostBySlug?slug=" + slugResult)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            var html = response.map(function (response) {
+                const { IDPost, Title, Slug, Details, Image } = response
+                return `
+                <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                <section>
+                    <div>${Details}</div>
+                    <img src="${Image}" style="width:30rem; height:25rem;" class="rounded mx-auto d-block"/>
+                </section>
+               `;
+            })
+            // đây là hàm trả ra tbody
+            $('#tbody').html(html);
+        })
+}
+function getBaiViet() {
+    fetch(WEB_API + "Management/ShowAllPost")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            const tron = response.sort(() => 0.5 - Math.random())
+            let random = tron.slice(0, 2)
+            var html = random.map(function (response) {
+                const { IDPost, Title, Slug, Details, Image } = response
+                return `
+>>>>>>> 7e427e5eb388bd20ec9f087ef6711bd69cc21560
                     <div class="col-md-6">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -99,8 +138,13 @@ async function getBySlug(numb) {
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">${Title}</h3>
                                 <div class="mb-1 text-muted">Nov 12</div>
+<<<<<<< HEAD
                                 <p class="mb-auto">${Details.slice(0, 500)}</p>
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">Continue reading</a>
+=======
+                                <p class="mb-auto">${Details.slice(0, 200)}</p>
+                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
+>>>>>>> 7e427e5eb388bd20ec9f087ef6711bd69cc21560
                             </div>
 
                         </div>

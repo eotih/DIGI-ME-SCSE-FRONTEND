@@ -1,7 +1,7 @@
 const WEB_API = "http://localhost:59360/API/";
 window.addEventListener('load', loadData)
 async function loadData() {
-    fetch(WEB_API + "Interface/ListImageTitle")
+    fetch(WEB_API + "Management/ListImageTitle")
         .then(function (response) {
             return response.json();
         })
@@ -63,7 +63,7 @@ async function loadData() {
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
                             <a href="#">
                                 <img src="${Image}"
-                                    class="card-img-top my-2 px-2" alt="...">
+                                    class="card-img-top my-2 px-2" style="width:350px; height:250px" alt="...">
                             </a>
                             <div class="card-body">
                                 <a style="text-decoration: none; color:black" href="#">
