@@ -1,7 +1,9 @@
-const WEB_API = "https://api.scse-vietnam.org/API/";
-window.addEventListener('load', loadData)
-async function loadData() {
-    fetch(WEB_API + "Management/GetByIdCategory?idcat=1")
+const WEB_API = "https://api.scse-vietnam.org/";
+// window.addEventListener('load', loadData)
+async function loadDA(numb) {
+    if(numb == 1)
+    {
+        fetch(WEB_API + "API/Management/GetByIdCategory?idcat=1")
         .then(function (response) {
             return response.json();
         })
