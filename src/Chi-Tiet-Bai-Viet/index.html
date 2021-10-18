@@ -24,6 +24,8 @@
         crossorigin="anonymous"></script>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../../../js/style.js"></script>
+    <script src="/js/mutilangCTBV.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
 <body>
@@ -33,35 +35,122 @@
             <div class="textholder">
                 <div class="overlay">
                     <p class="ps-2" id="datetime"></p>
-                    <p class="active">VI</p>
-                    <p>EN</p>
+                    <p class="vietnam" onclick="getslug(1)">VI</p>
+                    <p class="english" onclick="getslug(2)">EN</p>
                 </div>
             </div>
         </div>
-        <div class="navbar">
+        <div class="nav-bar">
             <ul id="nav">
-                <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
-                <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                        <li><a class="Roboto" href="./src/Ban-Giam-Doc/">Ban Giám Đốc</a></li>
-                        <li><a class="Roboto" href="./src/Cau-Chuyen/">Câu chuyện</a></li>
-                    </ul>
-                </li>
-                <li><a class="Roboto" href="./src/Tin-Tuc/">Tin tức</a></li>
-                <li><a class="Roboto" href="#Activities" onclick="dropdown()">Hoạt động <i
+                <li><a class="" href="../../index.html" data-i18n="header.home">Trang Chủ</a></li>
+                <li><a class="active" href="#AboutUs" data-i18n="header.Dropmenuheader1.AboutSCSE">Về SCSE <i
                             class="fas fa-caret-down"></i></a>
                     <ul>
-                        <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
-                        <li><a class="Roboto" href="#">Dự án</a></li>
-                        <li><a class="Roboto" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
+                        <li><a class="Roboto" href="../Ban-Giam-Doc/"
+                                data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="../Cau-Chuyen/" data-i18n="header.Dropmenuheader1.Story">Câu
+                                chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="./src/ThuVien/">Thư viện</a></li>
-                <li><a class="Roboto" href="./src/Lien-He/">Liên hệ</a></li>
-                <li><a href="#shopping"><i class="fas fa-shopping-cart icon"></i></a></li>
-                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
+                <li><a class="Roboto" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a></li>
+                <li><a class="Roboto" href="#Activities" onclick="dropdown()"
+                        data-i18n="header.Dropmenuheader2.Activities">Hoạt động <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a class="Roboto" href="../Hoat-Dong-Thien-Nguyen/"
+                                data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện nguyện</a></li>
+                        <li><a class="Roboto" href="../Du-An/" data-i18n="header.Dropmenuheader2.Project">Dự án</a></li>
+                        <li><a class="Roboto" href="../Hop-Tac-Nghien-Cuu/"
+                                data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="" data-i18n="header.Dropmenuheader3.Library">Thư viện <i
+                            class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a class="Roboto" href="../ThuVien/Hinh-Anh/" data-i18n="header.Dropmenuheader3.Image">Hình
+                                ảnh</a></li>
+                        <li><a class="Roboto" href="../ThuVien/video/"
+                                data-i18n="header.Dropmenuheader3.Video">Video</a></li>
+                        <li><a class="Roboto" href="../ThuVien/Tai-Lieu/"
+                                data-i18n="header.Dropmenuheader3.Document">Tài liệu</a></li>
+                    </ul>
+                </li>
+                <li><a class="Roboto" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a></li>
             </ul>
         </div>
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><img class="img-fluid" id="LogoNav"
+                        src="../../images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html" data-i18n="header.home">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader1.AboutSCSE">Về
+                                SCSE</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../Ban-Giam-Doc/"
+                                        data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Cau-Chuyen/"
+                                        data-i18n="header.Dropmenuheader1.Story">Câu chuyện</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader2.Activities">Hoạt
+                                động</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../Hoat-Dong-Thien-Nguyen/"
+                                        data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện
+                                        nguyện</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Du-An/"
+                                        data-i18n="header.Dropmenuheader2.Project">Dự án</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Hop-Tac-Nghien-Cuu/"
+                                        data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader3.Library">Thư viện</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Hinh-Anh/"
+                                        data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/video/"
+                                        data-i18n="header.Dropmenuheader3.Video">video</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Tai-Lieu/"
+                                        data-i18n="header.Dropmenuheader3.Document">Tài liệu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
         <div id="slogan" class="slogan">
             <div class="flex">
                 <h1 class="font-weight-bold">S</h1>
@@ -116,11 +205,7 @@
                 <div style="background-color: #1A94D0; height:0.5rem;width: 12rem; margin-top:0;"
                     class="d-flex justify-content-start"></div>
                 <div id="content" class="row mb-2 mt-3">
-
-
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -135,14 +220,17 @@
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img class="img-fluid" src="../../images/LogoSCSE_Horizontal_Vietnamese.png" alt="">
-                    <p>Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
+                    <img class="img-fluid" id="LogoFooterEN" src="../../images/LogoSCSE_Horizontal_Vietnamese.png"
+                        alt="">
+                    <p data-i18n="Footer.content1">Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo
+                        ra sự kết nối các nguồn
                         lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
                 </div>
                 <!-- Grid column -->
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">THÔNG TIN LIÊN HỆ</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.ContactInfomation">THÔNG TIN LIÊN
+                        HỆ</h6>
                     <p class="text-capitalize">
                         <i class="fas fa-home mr-3 text-capitalize"></i>20A An dương vương, Phường 10, TP. Sóc trăng.
                     </p>
@@ -166,12 +254,13 @@
 
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Điều khoản sử dụng</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.TermsOfUse">Điều khoản sử dụng
+                    </h6>
                     <p>
-                        <a href="./src/Chinh-Sach-Bao-Mat/">Chính sách bảo mật</a>
+                        <a href="../../src/Chinh-Sach-Bao-Mat/" data-i18n="Footer.PrivacyPolicy">Chính sách bảo mật</a>
                     </p>
                     <p>
-                        <a href="#!">Thông tin cam kết</a>
+                        <a href="#!" data-i18n="Footer.Commitment">Thông tin cam kết</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -180,7 +269,7 @@
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <a href="./src/Donate" style="text-decoration: none;">
+                    <a href="../../src/Donate" style="text-decoration: none;">
                         <img class="img-fluid" src="../../images/Group_399.png">
                     </a>
                 </div>
@@ -261,4 +350,48 @@
     <!-- Footer -->
     <!-- Footer -->
     <script src="../../Utils/Chi Tiet Bai Viet.js"> </script>
+    <script src="../../Utils/Hop Tac Ngien Cuu.js"> </script>
+    <script>
+        function getslug(numb) {
+            if (numb == 1) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const slugResult = urlParams.get('slug');
+                console.log(slugResult)
+                fetch(WEB_API + "API/Management/GetBySlugPostEN?slugen=" + slugResult)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                    console.log(response)
+                        fetch(WEB_API + "API/Management/GetByIdPosts?ID="+response.IDPostEN)
+                        .then(function (response) {
+                            return response.json();
+                        })
+                        .then(function (response) {
+                            console.log(response)
+                            window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.Slug
+                        })
+                    })
+            }
+            else {
+                const urlParams = new URLSearchParams(window.location.search);
+                const slugResult = urlParams.get('slug');
+                fetch(WEB_API + "Api/Interface/GetPostBySlug?slug=" + slugResult)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                        fetch(WEB_API + "API/Management/GetByIdPostsEN?ID="+response[0].IDPost)
+                        .then(function (response) {
+                            return response.json();
+                        })
+                        .then(function (response) {
+                            window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.SlugEN
+                        })
+                    })
+                
+            }
+
+        }
+    </script>
 </body>

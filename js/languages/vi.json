@@ -1,0 +1,88 @@
+{
+    
+    "header": {
+        "home": "Trang chủ",
+        "Dropmenuheader1": {
+            "AboutSCSE": "Về SCSE",
+            "ExecutiveBoard": "Ban Giám Đốc",
+            "Story": "Câu Chuyện"
+        },
+        "News": "Tin Tức",
+        "Dropmenuheader2": {
+            "Activities": "Hoạt Động",
+            "VoluntaryActivities": "Hoạt động thiện nguyện",
+            "Project": "Dự Án",
+            "PartnerForResearch": "Hợp tác và nghiên cứu"
+        },
+        "Dropmenuheader3": {
+            "Library": "Thư Viện",
+            "Image": "Hình Anh",
+            "Video": "Video",
+            "Document": "Tài Liệu"
+        },
+        "Contact": "Liên Hệ",
+        "EngageForDevelopment": "GẮN KẾT CÙNG PHÁT TRIỂN",
+        "contentHeader": "Chúng tôi tin rằng kết nối sẽ tạo ra những thay đổi tích cực trong xã hội, thúc đẩy sự công bằng trong tiếp cận nguộn lực vào góp phần phát triển bền vững."
+    },
+    "Body": {
+        "AboutUs": "CHÚNG TÔI LÀ AI",
+        "contentAboutUs": "Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội, trực thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng.",
+        "Goal": "MỤC ĐÍCH",
+        "contentGoal": "Chúng tôi tin rằng kết nối sẽ tạo ra những thay đổi tích cực trong xã hội, thúc đẩy sự công bằng trong tiếp cận nguộn lực vào góp phần phát triển bền vững.",
+        "Vision": "TẦM NHÌN",
+        "contentVision": "SCSE tin rằng sự kết nối phù hợp sẽ tạo ra những thay đổi tích cực trong xã hội, thúc đẩy sức mạnh nội lực và tăng cường cơ hội tiếp cận các nguồn lực và góp phần phát triển cộng đồng bền vững.",
+        "MissionStatement": "Sứ Mệnh",
+        "contentMission": "Sứ mệnh của SCSE là kết nối các nguồn lực trong xã hội nhằm đảm bảo công bằng về cơ hội tiếp cận và phát triển cho nhóm người yếu thế trong xã hội dựa trên cơ sở khoa học và trợ giúp chuyên nghiệp.",
+        "FieldOperations": "LĨNH VỰC HOẠT ĐỘNG",
+        "GenderAndGenderEquality": "Giới và bình đăng giới",
+        "EnvironmentClimateChange": "Biến đổi khí hậu",
+        "EnvironmentClimateChange1": "Môi trường",
+        "Internship": "Thực tập sinh",
+        "ResearchTraining": "Nghiên cứu - Đào tạo",
+        "MoreInfo": "XEM THÊM",
+        "DonateNow": "ĐÓNG GÓP NGAY",
+        "SIGNUPFORINTERNSHIP": "ĐĂNG KÝ LÀM TÌNH NGUYỆN VIÊN",
+        "SIGNUPFORPARTNERSHIP": "ĐĂNG KÝ LÀM ĐỐI TÁC",
+        "Sponsors": "NHÀ TÀI TRỢ"
+    },
+    "Footer": {
+        "content1": "Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.",
+        "ContactInfomation": "THÔNG TIN LIÊN HỆ",
+        "TermsOfUse": "ĐIỀU KHOẢN SỬ DỤNG",
+        "PrivacyPolicy": "Chính sách bảo mật",
+        "Commitment": "Thông tin cam kết"
+    },
+    "ThanhMauXanh":{
+        "HTNC": {
+            "Home": "Trang Chủ> Hoạt Động>",
+            "PFR": " Hợp tác nghiên cứu",
+            "LoadMore": "Xem Thêm"
+        },
+        "DA": {
+            "Home": "Trang Chủ> Hoạt Động>",
+            "Project": " Dự Án",
+            "LoadMore": "Xem Thêm"
+        },
+        "HDTN": {
+            "Home": "Trang Chủ> Hoạt Động>",
+            "VA": " Hoạt động thiện nguyện",
+            "LoadMore": "Xem Thêm"
+        }
+    },
+    "Contact": {
+        "Home": "Trang Chủ>",
+        "Contact": "Liên Hệ",
+        "FN": "Họ Và Tên",
+        "PLSFN": "Vui lòng nhập Họ và Tên",
+        "Phone": "Số điện thoại",
+        "PLSP": "Vui lòng nhập Số điện thoại",
+        "Email": "Email",
+        "PLSEMail": "Vui lòng nhập Email",
+        "Address": "Địa Chỉ",
+        "PLSAddress": "Vui lòng nhập Địa Chỉ",
+        "Topic": "Chủ đề",
+        "PLSTopic": "Vui lòng nhập Chủ đề",
+        "Content": "Nội dung",
+        "PLSContent": "Vui lòng nhập Nội dung"
+    }
+}
