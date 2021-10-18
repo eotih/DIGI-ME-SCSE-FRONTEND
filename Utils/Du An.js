@@ -29,7 +29,7 @@ async function loadData() {
                                 <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                     <h4 class="card-title font-weight-bold" style="text-align: justify; text-justify: inter-word font-size:24px">${Title}</h4>
                                 </a>
-                                <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 500)}</p>
+                                <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}</p>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <a style="text-decoration: none; color:white; padding-left:2rem;padding-right:2rem; padding-top:0.5rem;padding-bottom:0.5rem"
                                         class="bg-red-scse btn btn-danger me-md-2 font-weight-bold" type="button">Ủng
@@ -58,7 +58,7 @@ async function loadData() {
                             <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                 <h4 class="card-title font-weight-bold" style="text-align: justify; text-justify: inter-word font-size:24px">${Title}</h4>
                             </a>
-                            <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 500)}</p>
+                            <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                 <a style="text-decoration: none; color:white; padding-left:2rem;padding-right:2rem; padding-top:0.5rem;padding-bottom:0.5rem"
                                     class="bg-red-scse btn btn-danger me-md-2 font-weight-bold" type="button">Ủng

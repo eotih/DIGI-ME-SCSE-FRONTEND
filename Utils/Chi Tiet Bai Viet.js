@@ -1,10 +1,10 @@
-const WEB_API = "http://localhost:59360/";
+const WEB_API = "http://localhost:59360/API/";
 window.addEventListener('load', getBySlug)
 function getBySlug() {
     getBaiViet()
     const urlParams = new URLSearchParams(window.location.search);
     const slugResult = urlParams.get('slug');
-    fetch(WEB_API + "Api/Interface/GetPostBySlug?slug=" + slugResult)
+    fetch(WEB_API + "Interface/GetPostBySlug?slug=" + slugResult)
         .then(function (response) {
             return response.json();
         })
@@ -12,19 +12,19 @@ function getBySlug() {
             var html = response.map(function (response) {
                 const { IDPost, Title, Slug, Details, Image } = response
                 return `
-                                                <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
-                                            <section>
-                                                <div>${Details}</div>
-                                                <img src="${Image}" style="width:30rem; height:25rem;" class="rounded mx-auto d-block"/>
-                                            </section>
-                                        `;
+                <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                <section>
+                    <div>${Details}</div>
+                    <img src="${Image}" style="width:30rem; height:25rem;" class="rounded mx-auto d-block"/>
+                </section>
+               `;
             })
             // đây là hàm trả ra tbody
             $('#tbody').html(html);
         })
 }
 function getBaiViet() {
-    fetch(WEB_API + "API/Management/ShowAllPost")
+    fetch(WEB_API + "Management/ShowAllPost")
         .then(function (response) {
             return response.json();
         })
@@ -43,7 +43,7 @@ function getBaiViet() {
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">${Title}</h3>
                                 <div class="mb-1 text-muted">Nov 12</div>
-                                <p class="mb-auto">${Details.slice(0, 500)}</p>
+                                <p class="mb-auto">${Details.slice(0, 200)}</p>
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                             </div>
 
