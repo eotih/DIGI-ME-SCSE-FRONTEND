@@ -21,12 +21,12 @@ async function loadData() {
                     <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
                         <div class="card" style="width:100%; height:100%;">
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                            <a href="../Chi-Tiet-Bai-Vied/index.html?slug=${Slug}">
                                 <img src="${Image}" 
                                     class="card-img-top mt-3 px-3" style="border-radius: 2rem;" alt="...">
                             </a>
                             <div class="card-body">
-                                <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                                <a style="text-decoration: none; color:black;" href="../Chi-Tint-Bai-Viet/index.html?slug=${Slug}">
                                     <h4 class="card-title font-weight-bold" style="text-align: justify; text-justify: inter-word font-size:24px">${Title}</h4>
                                 </a>
                                 <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}</p>
@@ -72,3 +72,40 @@ async function loadData() {
             $('#tbody').html(html);
         })
 }
+const VanHoaGD = $('#VHGD')
+VanHoaGD.on('click',function(e) {
+    fetch(WEB_API + "Management/ShowAllNewsVN")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            var postApproved = response.filter(e => e.IDState === 2)
+            var vanHoaGiaoDuc = response.filter(e => e.IdField === 1)
+            var html = vanHoaGiaoDuc.map(function (response) {
+                const { IDPost, Title, Slug, Details, Image } = response
+                return `
+                <div class="col-md-4 d-flex align-items-stretch">
+                <div class="mt-5 mb-5">
+                <div class="card" style="width:100%; height:100%;">
+                    <hr class="mt-0 bg-blue-scse" style="height:1rem">
+                    <a href="#">
+                        <img src="${Image}"
+                            class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a style="text-decoration: none; color:black" href="../Bai-Dang/index.html">
+                            <h5 class="card-title font">${Title}</h5>
+                        </a>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Từ thiện</small>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+            `;
+            })
+            $('#tbody').html(html);
+        })
+})
