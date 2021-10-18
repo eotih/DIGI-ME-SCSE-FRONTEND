@@ -24,6 +24,8 @@
         crossorigin="anonymous"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/style.js"></script>
+    <script src="./js/multilang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
 <body>
@@ -39,42 +41,44 @@
             <div class="textholder">
                 <div class="overlay">
                     <p class="ps-2" id="datetime"></p>
-                    <p class="active">VI</p>
-                    <p>EN</p>
+                        <p class="vietnam" onclick="test()">VI</p>
+                        <p class="english" onclick="test()">EN</p>
                 </div>
             </div>
         </div>
         <div class="nav-bar">
             <ul id="nav">
-                <li><a class="active Roboto" href="#Home">Trang Chủ</a></li>
-                <li><a class="Roboto" href="#AboutUs">Về SCSE <i class="fas fa-caret-down"></i></a>
+                <li><a class="active Roboto" href="#Home" data-i18n="header.home">Trang Chủ</a></li>
+                <li><a class="Roboto" href="#AboutUs"  data-i18n="header.Dropmenuheader1.AboutSCSE">Về SCSE <i class="fas fa-caret-down"></i></a>
                     <ul>
-                        <li><a class="Roboto" href="./src/Ban-Giam-Doc/">Ban Giám Đốc</a></li>
-                        <li><a class="Roboto" href="./src/Cau-Chuyen/">Câu chuyện</a></li>
+                        <li><a class="Roboto" href="./src/Ban-Giam-Doc/" data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="./src/Cau-Chuyen/" data-i18n="header.Dropmenuheader1.Story">Câu chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="./src/Tin-Tuc/">Tin tức</a></li>
-                <li><a class="Roboto" href="#Activities">Hoạt động <i
+                <li><a class="Roboto" href="./src/Tin-Tuc/"  data-i18n="header.News">Tin tức</a></li>
+                <li><a class="Roboto" href="#Activities" onclick="dropdown()"  data-i18n ="header.Dropmenuheader2.Activities">Hoạt động <i
                             class="fas fa-caret-down"></i></a>
                     <ul>
-                        <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
-                        <li><a class="Roboto" href="./src/Du-An/">Dự án</a></li>
-                        <li><a class="Roboto" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
+                        <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/" data-i18n ="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện nguyện</a></li>
+                        <li><a class="Roboto" href="./src/Du-An/" data-i18n ="header.Dropmenuheader2.Project">Dự án</a></li>
+                        <li><a class="Roboto" href="./src/Hop-Tac-Nghien-Cuu/" data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="">Thư viện <i class="fas fa-caret-down"></i></a>
+                <li><a class="Roboto" href="" data-i18n="header.Dropmenuheader3.Library">Thư viện <i class="fas fa-caret-down"></i></a>
                     <ul>
-                        <li><a class="Roboto" href="./src/ThuVien/Hinh-Anh/">Hình ảnh</a></li>
-                        <li><a class="Roboto" href="./src/ThuVien/video/">Video</a></li>
-                        <li><a class="Roboto" href="./src/ThuVien/Tai-Lieu/">Tài liệu</a></li>
+                        <li><a class="Roboto" href="./src/ThuVien/Hinh-Anh/" data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a></li>
+                        <li><a class="Roboto" href="./src/ThuVien/video/" data-i18n="header.Dropmenuheader3.Video">Video</a></li>
+                        <li><a class="Roboto" href="./src/ThuVien/Tai-Lieu/" data-i18n="header.Dropmenuheader3.Document">Tài liệu</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="./src/Lien-He/">Liên hệ</a></li>
+                <li><a class="Roboto" href="./src/Lien-He/" data-i18n="header.Contact">Liên hệ</a></li>
+                <li><a href="#shopping"><i class="fas fa-shopping-cart icon"></i></a></li>
+                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </div>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="img-fluid"
+                <a class="navbar-brand" href="#"><img class="img-fluid" id="LogoNav"
                         src="./images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
                     <span class="navbar-toggler-icon"></span>
@@ -82,55 +86,58 @@
                 <div class="collapse navbar-collapse" id="navbar1">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="">Trang Chủ</a>
+                            <a class="nav-link" href="" data-i18n="header.home">Trang Chủ</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Về
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" data-i18n="header.Dropmenuheader1.AboutSCSE">Về
                                 SCSE</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="./src/Ban-Giam-Doc/">Ban Giám Đốc</a>
+                                    <a class="dropdown-link" href="./src/Ban-Giam-Doc/" data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="./src/Cau-Chuyen/">Câu chuyện</a>
+                                    <a class="dropdown-link" href="./src/Cau-Chuyen/" data-i18n="header.Dropmenuheader1.Story">Câu chuyện</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/Tin-Tuc/">Tin tức</a>
+                            <a class="nav-link" href="./src/Tin-Tuc/" data-i18n="header.News">Tin tức</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Hoạt
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" data-i18n ="header.Dropmenuheader2.Activities">Hoạt
                                 động</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="./src/Hoat-Dong-Thien-Nguyen/">Hoạt động thiện
+                                    <a class="dropdown-link" href="./src/Hoat-Dong-Thien-Nguyen/" data-i18n ="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện
                                         nguyện</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="./src/Du-An/">Dự án</a>
+                                    <a class="dropdown-link" href="./src/Du-An/" data-i18n ="header.Dropmenuheader2.Project">Dự án</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="./src/Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a>
+                                    <a class="dropdown-link" href="./src/Hop-Tac-Nghien-Cuu/" data-i18n ="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Thư viện</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" data-i18n="header.Dropmenuheader3.Library">Thư viện</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="./src/ThuVien/Hinh-Anh/">Hình ảnh</a>
+                                    <a class="dropdown-link" href="./src/ThuVien/Hinh-Anh/" data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="./src/ThuVien/video/">video</a>
+                                    <a class="dropdown-link" href="./src/ThuVien/video/" data-i18n="header.Dropmenuheader3.Video">video</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="./src/ThuVien/Tai-Lieu/">Tài liệu</a>
+                                    <a class="dropdown-link" href="./src/ThuVien/Tai-Lieu/" data-i18n="header.Dropmenuheader3.Document">Tài liệu</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/Lien-He/">Liên hệ</a>
+                            <a class="nav-link" href="./src/Lien-He/" data-i18n="header.Contact">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href=""><i class="fas fa-shopping-cart icon"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -142,8 +149,8 @@
                 <h1 class="font-weight-bold">S</h1>
                 <h3 class="font-weight-bold">E</h3>
             </div>
-            <p class="p1">GẮN KẾT CÙNG PHÁT TRIỂN</p>
-            <p class="p2" style="text-align: justify; text-justify: inter-word;">Chúng tôi tin rằng kết nối sẽ tạo ra
+            <p class="p1"  data-i18n="header.EngageForDevelopment">GẮN KẾT CÙNG PHÁT TRIỂN</p>
+            <p class="p2" style="text-align: justify; text-justify: inter-word;" data-i18n="header.contentHeader">Chúng tôi tin rằng kết nối sẽ tạo ra
                 những thay đổi tích cực trong xã hội, thúc đẩy sự công bằng trong tiếp cận nguồn lực vào góp phần phát
                 triển bền vững.</p>
         </div>
@@ -174,62 +181,59 @@
             </a>
         </div>
     </div>
-    <hr style="background-color: #1A94D0;height: 1rem;margin:0;">
-    <div class="bg-img">
-
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-xl-8 text-lg-left text-center">
-                    <h1 class="font-weight-bold text-blue-scse display-3">CHÚNG TÔI LÀ AI</h1>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;">Trung tâm Kết
-                                nối Dịch vụ Khoa học xã hội
-                                Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội,
-                                trực
-                                thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng.</p>
-                        </div>
+    <hr style="background-color: #1A94D0;height: 1rem;margin-top:0;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-8 text-lg-left text-center">
+                <h1 class="font-weight-bold text-blue-scse display-3" data-i18n="Body.AboutUs">CHÚNG TÔI LÀ AI</h1>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;" data-i18n="Body.contentAboutUs">Trung tâm Kết
+                            nối Dịch vụ Khoa học xã hội
+                            Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội,
+                            trực
+                            thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng.</p>
                     </div>
                 </div>
-                <div class="col-xl-4  text-lg-left text-center">
-                    <img src="./images/Rectangle 597.png" style="width:18rem;height:18rem;" alt="Chúng tôi là ai">
-                </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-4">
-                    <hr class="bg-yellow-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
-                    <h1 class="display-4 font-weight-bold text-yellow-scse text-uppercase">MỤC ĐÍCH</h3>
-                        <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;">Chúng tôi tin
-                            rằng kết nối sẽ tạo ra những thay
-                            đổi tích cực trong xã hội, thúc đẩy sự công bằng trong tiếp cận nguộn lực vào góp phần phát
-                            triển
-                            bền vững.</p>
-                </div>
+            <div class="col-xl-4  text-lg-left text-center">
+                <img src="./images/Rectangle 597.png" style="width:18rem;height:18rem;" alt="Chúng tôi là ai">
             </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-4">
-                    <hr class="bg-red-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
-                    <h1 class="display-4 font-weight-bold text-red-scse text-uppercase">TẦM NHÌN</h3>
-                        <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;"> SCSE tin rằng sự
-                            kết nối phù hợp sẽ tạo ra những
-                            thay đổi tích cực trong xã hội, thúc đẩy sức mạnh nội lực và tăng cường cơ hội tiếp cận các
-                            nguồn
-                            lực và góp phần phát triển cộng đồng bền vững.</p>
-                </div>
-                <div class="col-lg-4 mr-3">
-                    <hr class="bg-blue-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
-                    <h1 class="display-4 font-weight-bold text-blue-scse text-uppercase">SỨ MỆNH</h3>
-                        <p class="h-50 h4" style=" text-align: justify; text-justify: inter-word;">Sứ mệnh của SCSE
-                            là kết nối các nguồn lực trong xã
-                            hội nhằm đảm bảo công bằng về cơ hội tiếp cận và phát triển cho nhóm người yếu thế trong xã hội
-                            dựa
-                            trên cơ sở khoa học và trợ giúp chuyên nghiệp.</p>
-                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-4">
+                <hr class="bg-yellow-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
+                <h1 class="display-4 font-weight-bold text-yellow-scse text-uppercase" data-i18n="Body.Goal">MỤC ĐÍCH</h3>
+                    <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;" data-i18n="Body.contentGoal">Chúng tôi tin
+                        rằng kết nối sẽ tạo ra những thay
+                        đổi tích cực trong xã hội, thúc đẩy sự công bằng trong tiếp cận nguộn lực vào góp phần phát
+                        triển
+                        bền vững.</p>
+            </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+                <hr class="bg-red-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
+                <h1 class="display-4 font-weight-bold text-red-scse text-uppercase" data-i18n="Body.Vision">TẦM NHÌN</h3>
+                    <p class="h-50 h4" style="text-align: justify; text-justify: inter-word;" data-i18n="Body.contentVision"> SCSE tin rằng sự
+                        kết nối phù hợp sẽ tạo ra những
+                        thay đổi tích cực trong xã hội, thúc đẩy sức mạnh nội lực và tăng cường cơ hội tiếp cận các
+                        nguồn
+                        lực và góp phần phát triển cộng đồng bền vững.</p>
+            </div>
+            <div class="col-lg-4 mr-3">
+                <hr class="bg-blue-scse" style="height: 1.25rem; width: 4.375rem;border-radius: 0.67rem;">
+                <h1 class="display-4 font-weight-bold text-blue-scse text-uppercase" data-i18n="Body.MissionStatement">SỨ MỆNH</h3>
+                    <p class="h-50 h4" style=" text-align: justify; text-justify: inter-word;" data-i18n="Body.contentMission">Sứ mệnh của SCSE
+                        là kết nối các nguồn lực trong xã
+                        hội nhằm đảm bảo công bằng về cơ hội tiếp cận và phát triển cho nhóm người yếu thế trong xã hội
+                        dựa
+                        trên cơ sở khoa học và trợ giúp chuyên nghiệp.</p>
             </div>
         </div>
     </div>
     <div class="container mb-5">
-        <h1 class="display-3 mt-5 mb-4 font-weight-bold text-blue-scse text-center text-uppercase">lĩnh vực hoạt động
+        <h1 class="display-3 mt-5 mb-4 font-weight-bold text-blue-scse text-center text-uppercase" data-i18n="Body.FieldOperations">lĩnh vực hoạt động
         </h1>
         <div class="row justify-content-center">
             <div class="col-sm-auto mb-3 mb-lg-0">
@@ -237,10 +241,10 @@
                     <hr class="bg-blue-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class="img-fluid mx-2" src="./images/gioivabinhdanggioi.jpg"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center">Giới và bình đăng giới</p>
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.GenderAndGenderEquality">Giới và bình đăng giới</p>
                     <button type="button"
                         class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
-                        style="border-radius: 3rem;width: 13rem;">xem thêm</button>
+                        style="border-radius: 3rem;width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                 </div>
             </div>
             <div class="col-sm-auto mb-3 mb-lg-0">
@@ -248,11 +252,11 @@
                     <hr class="bg-yellow-scse m-0 mb-0 mb-lg-2" style="height:0.67rem;width: 100%;">
                     <img class=" img-fluid mx-2" src="./images/biendoikhihau.jpg"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center">Biến đổi khí hậu<br>Môi
-                        trường</p>
+                        <p class="h5 font-weight-bold my-2 text-center"  data-i18n="Body.EnvironmentClimateChange">Biến đổi khí hậu </p><p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.EnvironmentClimateChange1">Môi
+                            trường</p>
                     <button type="button"
                         class="btn btn-warning btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-yellow-scse"
-                        style="border-radius: 3rem; width: 13rem;">xem thêm</button>
+                        style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                 </div>
             </div>
             <div class="col-sm-auto mb-3 mb-lg-0">
@@ -260,10 +264,10 @@
                     <hr class="bg-blue-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class="img-fluid mx-2" src="./images/thuctapsinh.png"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center">Thực tập sinh</p>
+                    <p class="h5 font-weight-bold my-2 text-center"  data-i18n="Body.Internship">Thực tập sinh</p>
                     <button type="button"
                         class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
-                        style="border-radius: 3rem; width: 13rem;">xem thêm</button>
+                        style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                 </div>
             </div>
             <div class="col-sm-auto mb-3 mb-lg-0">
@@ -271,10 +275,10 @@
                     <hr class="bg-red-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class=" img-fluid mx-2" src="./images/nghiencuu.jpg"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center">Nghiên cứu - Đào tạo</p>
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.ResearchTraining">Nghiên cứu - Đào tạo</p>
                     <button type="button"
                         class="btn btn-danger btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-red-scse"
-                        style="border-radius: 3rem; width: 13rem;">xem thêm</button>
+                        style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                 </div>
             </div>
         </div>
@@ -285,27 +289,25 @@
                 <div class="col-lg-4 mb-3 mb-lg-0">
                     <a href="./src/Donate/" style="text-decoration: none; color:black">
                         <img class="img-fluid mb-3" src="./images/Group 488.png" style="width:9.375rem;height:9.375rem">
-                        <p class="h4 font-weight-bold text-uppercase mb-0">Đóng góp ngay</p>
+                        <p class="h4 font-weight-bold text-uppercase mb-0"  data-i18n="Body.DonateNow">Đóng góp ngay</p>
                     </a>
                 </div>
                 <div class="col-lg-4 mb-3 mb-lg-0">
                     <a href="./src/Dang-Ky-Tinh-Nguyen-Vien/" style="text-decoration:none; color:black;">
                         <img class="img-fluid mb-3" src="./images/Group 490.png" style="width:9.375rem;height:9.735rem">
-                        <p class="h4 font-weight-bold text-uppercase mb-0">ĐĂNG KÝ LÀM<br>TÌNH NGUYỆN
+                        <p class="h4 font-weight-bold text-uppercase mb-0" data-i18n="Body.SIGNUPFORINTERNSHIP">ĐĂNG KÝ LÀM<br>TÌNH NGUYỆN
                             VIÊN</p>
                     </a>
                 </div>
                 <div class="col-lg-4 mb-3 mb-lg-0">
-                    <a href="./src/Dang-Ky-Doi-Tac/" style="text-decoration: none;color: black;">
-                        <img class="img-fluid mb-3" src="./images/Group 491.png" style="width:9.735rem;height:9.735rem">
-                        <p class="h4 font-weight-bold text-uppercase mb-0">ĐĂNG KÝ LÀM<br>ĐỐI TÁC</p>
-                    </a>
+                    <img class="img-fluid mb-3" src="./images/Group 491.png" style="width:9.735rem;height:9.735rem">
+                    <p class="h4 font-weight-bold text-uppercase mb-0" data-i18n="Body.SIGNUPFORPARTNERSHIP">ĐĂNG KÝ LÀM<br>ĐỐI TÁC</p>
                 </div>
             </div>
         </div>
     </div>
     <div id="partners" class="container mt-5">
-        <h1 class="display-3 font-weight-bold text-uppercase text-blue-scse">Nhà tài trợ</h1>
+        <h1 class="display-3 font-weight-bold text-uppercase text-blue-scse" data-i18n="Body.Sponsors">Nhà tài trợ</h1>
         <div class="row-fluid">
             <div id="partner" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" id="partner" role="listbox">
@@ -375,14 +377,14 @@
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img class="img-fluid" src="./images/LogoSCSE_Horizontal_Vietnamese.png" alt="">
-                    <p>Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
+                    <img class="img-fluid" id="LogoFooterEN" src="./images/LogoSCSE_Horizontal_Vietnamese.png" alt="">
+                    <p  data-i18n="Footer.content1">Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
                         lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
                 </div>
                 <!-- Grid column -->
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">THÔNG TIN LIÊN HỆ</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.ContactInfomation">THÔNG TIN LIÊN HỆ</h6>
                     <p class="text-capitalize">
                         <i class="fas fa-home mr-3 text-capitalize"></i>20A An dương vương, Phường 10, TP. Sóc trăng.
                     </p>
@@ -406,12 +408,12 @@
 
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Điều khoản sử dụng</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.TermsOfUse">Điều khoản sử dụng</h6>
                     <p>
-                        <a href="./src/Chinh-Sach-Bao-Mat/">Chính sách bảo mật</a>
+                        <a href="./src/Chinh-Sach-Bao-Mat/" data-i18n="Footer.PrivacyPolicy">Chính sách bảo mật</a>
                     </p>
                     <p>
-                        <a href="#!">Thông tin cam kết</a>
+                        <a href="#!" data-i18n="Footer.Commitment">Thông tin cam kết</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -443,7 +445,7 @@
                 <div class="col-lg-6">
 
                     <!--Copyright-->
-                    <p class="text-center text-md-left">©2020 SCSE. All rights reserved. Serviced by SCSE
+                    <p class="text-center text-md-left">©2017 SCSE. All rights reserved. Serviced by SCSE
 
                     </p>
 
@@ -498,6 +500,48 @@
 
     </footer>
     <!-- Footer -->
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 
 </html>
+<script>
+    function test(){
+        alert("Được cái nịt!!!")
+    }
+</script>

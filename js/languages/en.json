@@ -1,0 +1,87 @@
+{
+    "header": {
+        "home": "Home",
+        "Dropmenuheader1": {
+            "AboutSCSE": "About SCSE",
+            "ExecutiveBoard": "Executive board",
+            "Story": "Story"
+        },
+        "News": "News",
+        "Dropmenuheader2": {
+            "Activities": "Activities",
+            "VoluntaryActivities": "Voluntary activities",
+            "Project": "Project",
+            "PartnerForResearch": "Partner for research"
+        },
+        "Dropmenuheader3": {
+            "Library": "Library",
+            "Image": "Image",
+            "Video": "Video",
+            "Document": "Document"
+        },
+        "Contact": "Contact",
+        "EngageForDevelopment": "ENGAGE FOR DEVELOPMENT",
+        "contentHeader": "We believe that engagement will create positive changes in society, impulse justice in the reach of resources to create a sustainable development."
+    },
+    "Body": {
+        "AboutUs": "ABOUT US",
+        "contentAboutUs": "Soc Trang Center For Social Science Engagement (SCSE) is a non-governmental organization operating in social science, under Soc Trang Union of Science and Technology Associations.",
+        "Goal": "GOAL",
+        "contentGoal": "We believe that connectivity will create positive changes in society, impulse fairness in access to resources, and contribute to sustainable development.",
+        "Vision": "VISION",
+        "contentVision": "SCSE tin rằng sự kết nối phù hợp sẽ tạo ra những thay đổi tích cực trong xã hội, thúc đẩy sức mạnh nội lực và tăng cường cơ hội tiếp cận các nguồn lực và góp phần phát triển cộng đồng bền vững.",
+        "MissionStatement": "MISSION",
+        "contentMission": "Sứ mệnh của SCSE là kết nối các nguồn lực trong xã hội nhằm đảm bảo công bằng về cơ hội tiếp cận và phát triển cho nhóm người yếu thế trong xã hội dựa trên cơ sở khoa học và trợ giúp chuyên nghiệp.",
+        "FieldOperations": "FIELD OPERATIONS",
+        "GenderAndGenderEquality": "Gender and gender equality",
+        "EnvironmentClimateChange": "Climate change",
+        "EnvironmentClimateChange1": "Environment",
+        "Internship": "Internship",
+        "ResearchTraining": "Research - Training",
+        "MoreInfo": "More Info",
+        "DonateNow": "DONATE NOW",
+        "SIGNUPFORINTERNSHIP": "SIGN UP FOR INTERNSHIP",
+        "SIGNUPFORPARTNERSHIP": "SIGN UP FOR PARTNERSHIP",
+        "Sponsors": "SPONSORS"
+    },
+    "Footer": {
+        "content1": "We are not the ones who make change, but we can engage different resources. This can contribute to the change in society, and create a better life.",
+        "ContactInfomation": "CONTACT INFORMATION",
+        "TermsOfUse": "TERMS OF USE",
+        "PrivacyPolicy": "Privacy policy",
+        "Commitment": "Commitment"
+    },
+    "ThanhMauXanh":{
+        "HTNC": {
+            "Home": "Home> Activities>",
+            "PFR": " Partner for research",
+            "LoadMore": "Load More"
+        },
+        "DA": {
+            "Home": "Home> Activities>",
+            "Project": " Project",
+            "LoadMore": "Load More"
+        },
+        "HDTN": {
+            "Home": "Home> Activities>",
+            "VA": " Voluntary Activities",
+            "LoadMore": "Load More"
+        }
+    },
+        "Contact": {
+            "Home": "Home>",
+            "Contact1": "Contact",
+            "FN": "Full Name",
+            "PLSFN": "Please fill your name",
+            "Phone": "Phone",
+            "PLSP": "Please fill your phone number",
+            "Email": "Email",
+            "PLSEMail": "Please fill your Email",
+            "Address": "Address",
+            "PLSAddress": "Please fill your Address",
+            "Topic": "Topic",
+            "PLSTopic": "Please fill your Topic",
+            "Content": "Content",
+            "PLSContent": "Please fill your Content"
+        }
+}
