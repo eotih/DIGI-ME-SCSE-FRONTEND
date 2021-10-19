@@ -84,5 +84,17 @@
         "PLSTopic": "Vui lòng nhập Chủ đề",
         "Content": "Nội dung",
         "PLSContent": "Vui lòng nhập Nội dung"
+    },
+    "News": {
+        "Home": "Trang Chủ >",
+        "News": "Tin Tức",
+        "Filter": "Bộ lọc danh mục",
+        "ByField": "Theo lĩnh vực:",
+        "ResearchTraining": "Đào Tạo - Nghiên Cứu",
+        "EnvironmentClimateChange": "Khí hậu - Môi trường",
+        "GenderAndGenderEquality": "Giới - Bình đẳng giới",
+        "Internship": "Thực tập sinh",
+        "LATESTNEWS": "TIN TỨC MỚI NHẤT",
+        "LoadMore": "Xem Thêm"
     }
 }

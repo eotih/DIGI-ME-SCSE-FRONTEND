@@ -1,11 +1,12 @@
-const WEB_API = "http://localhost:59360/";
+const WEB_API = "https://api.scse-vietnam.org/API/";
 // window.addEventListener('load', getBySlug)
+
 async function getBySlug(numb) {
     if (numb == 1) {
         getBaiViet()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
-        fetch(WEB_API + "Api/Interface/GetPostBySlug?slug=" + slugResult)
+        fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
             .then(function (response) {
                 return response.json();
             })
@@ -24,7 +25,7 @@ async function getBySlug(numb) {
                 $('#tbody').html(html);
             })
         function getBaiViet() {
-            fetch(WEB_API + "API/Management/ShowAllPost")
+            fetch(WEB_API + "Management/ShowAllPost")
                 .then(function (response) {
                     return response.json();
                 })
@@ -56,11 +57,13 @@ async function getBySlug(numb) {
         }
     }
     else {
+        
         getBaiVietEN()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
         // urlParams.get('slug');
-        fetch(WEB_API + "API/Interface/GetPostBySlugEN?slug=" + slugResult)
+        fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult,
+        )
             .then(function (response) {
                 return response.json();
             })
@@ -80,7 +83,7 @@ async function getBySlug(numb) {
             })
 
         function getBaiVietEN() {
-            fetch(WEB_API + "API/Management/ShowAllPostEN")
+            fetch(WEB_API + "Management/ShowAllPostEN")
                 .then(function (response) {
                     return response.json();
                 })
@@ -100,7 +103,7 @@ async function getBySlug(numb) {
                                 <h3 class="mb-0">${Title}</h3>
                                 <div class="mb-1 text-muted">Nov 12</div>
                                 <p class="mb-auto">${Details.slice(0, 200)}</p>
-                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
+                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">Continue reading</a>
                             </div>
 
                         </div>

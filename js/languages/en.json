@@ -83,5 +83,17 @@
             "PLSTopic": "Please fill your Topic",
             "Content": "Content",
             "PLSContent": "Please fill your Content"
+        },
+        "News": {
+            "Home": "Home >",
+            "News": "News",
+            "Filter": "Filter",
+            "ByField": "By Field",
+            "ResearchTraining": "Research - Training",
+            "EnvironmentClimateChange": "Environment - Climate",
+            "GenderAndGenderEquality": "Gender - GenderEquality",
+            "Internship": "Internship",
+            "LATESTNEWS": "LATEST NEWS",
+            "LoadMore": "Load More"
         }
 }
