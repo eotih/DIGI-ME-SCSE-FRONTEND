@@ -112,5 +112,4 @@ async function getBySlug(numb) {
                 })
         }
     }
-
 }
