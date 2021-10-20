@@ -19,8 +19,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 // Change language in dropdown
-                filterDataEN(0)
-                document.title = "SCSE - News";
+                document.title = "SCSE - Executive Board";
             }
             // Vietnam
             if(i18n.lng() === "vi") {
@@ -30,8 +29,7 @@ window.addEventListener('load',multilang)
                 // Change language in dropdown
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.title = "SCSE - Tin Tức";
-                filterData(0)
+                document.title = "SCSE - Ban Giám Đốc";
             }
             
             // Change languages when click
@@ -46,8 +44,7 @@ window.addEventListener('load',multilang)
                 $('.english').parent().addClass('active');
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.title = "SCSE - News";
-                filterDataEN(0)
+                document.title = "SCSE - Executive Board";
                 // Change name language in dropdown
             });
             // Vietnam
@@ -62,8 +59,7 @@ window.addEventListener('load',multilang)
                 // Change name language in dropdown
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.title = "SCSE - Tin Tức";
-                filterData(0)
+                document.title = "SCSE - Ban Giám Đốc";
             });
         };
         

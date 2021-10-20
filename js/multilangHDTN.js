@@ -20,7 +20,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 // Change language in dropdown
                 loadHDTN(2)
-                document.title = "SCSE - Home";
+                document.title = "SCSE - Voluntary Activities";
             }
             // Vietnam
             if(i18n.lng() === "vi") {
@@ -46,7 +46,7 @@ window.addEventListener('load',multilang)
                 $('.english').parent().addClass('active');
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.title = "SCSE - Home";
+                document.title = "SCSE - SCSE - Voluntary Activities";
                 loadHDTN(2)
                 // Change name language in dropdown
             });
@@ -62,7 +62,7 @@ window.addEventListener('load',multilang)
                 // Change name language in dropdown
                 document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.title = "SCSE - Trang Chủ";
+                document.title = "SCSE - Hoạt Động Thiện Nguyện";
                 loadHDTN(1)
             });
         };
