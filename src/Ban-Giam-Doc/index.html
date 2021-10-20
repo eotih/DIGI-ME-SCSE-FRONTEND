@@ -186,43 +186,7 @@
                     </div>
                 </div>
                 <div class="col-lg  text-lg-right text-center">
-                    <div class="ml-5">
-                        <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
-                        <h3 class="text-uppercase">NGUYỄN THỊ KIM HƯƠNG</h3>
-                        <p>Giám đốc</p>
-                        <p class="" style="text-align: justify; text-justify: inter-word; font-size:medium ;">Cô Hương
-                            tham
-                            gia công tác
-                            Hội khá lâu, có 31 năm tuổi nghề với nhiều kinh nghiệm làm công tác vận động phụ nữ, bản
-                            thân cô
-                            từng điều hành và quản lý 24 dự án lớn nhỏ tại cộng đồng. Lợi thế của cô chính là sự gần gũi
-                            và
-                            thân thiện với cộng đồng, có kỹ năng huấn luyện theo phương pháp mọi người cùng tham gia, có
-                            nhiều kinh nghiệm trong hoạt động tập hợp và xây dựng mạng lưới nhất là mạng lưới tình
-                            nguyện
-                            viên cơ sở. Là người trực tiếp điều hành Trung tâm kết nối dịch vụ khoa học xã hội và từng
-                            là
-                            giám đốc Trung tâm Tư vấn hỗ trợ kết hôn đặc biệt kết hôn có yếu tố nước ngoài, với cương vị
-                            giám đốc Trung tâm, cô đã tư vấn hỗ trợ trên 2.000 trường hợp phụ nữ có nhu cầu kết hôn với
-                            người nước ngoài giúp chị em có kiến thức, kỹ năng từ đó suy nghĩ và cân nhắc kỹ hơn khi
-                            quyết
-                            định kết hôn với người nước ngoài, góp phần hạn chế tình trạng bị dụ dỗ mua bán người và
-                            giúp PN
-                            có được cuộc sống tươi đẹp nơi xứ người, cô từng là báo cáo viên của hơn 300 lớp kiến thức
-                            giới
-                            và Luật Bình đẳng giới, Bạo lực gia đình, mua bán người, Biến đổi khí hậu và các lĩnh vực
-                            khác
-                            liên quan đến phụ nữ trẻ em và gia đình, kiến thức về tín dụng tiết nghiệp, hỗ trợ phụ nữ
-                            khởi
-                            sự kinh doanh tăng thu nhập gia đình cải thiện cuộc sống. Quá trình công tác cô đã tiếp cận
-                            và
-                            hỗ trợ hơn 20,000 phụ nữ ở cộng đồng về kiến thức , kỹ năng và hoạt động tăng thu nhập, giúp
-                            chị
-                            em nâng cao chất lượng cuộc sống.</p>
-                        <a href="#"><img src="../../images/image 19.png"></a>
-                        <a href="#"><img src="../../images/image 18.png"></a>
-                        <a href="#"><img src="../../images/image 17.png"></a>
-                    </div>
+                    <div id="tbody"></div>
                 </div>
             </div>
         </div>
@@ -467,6 +431,42 @@
 
     </footer>
     <!-- Footer -->
+    <script>
+        const WEB_API = "https://api.scse-vietnam.org/API/";
+
+window.addEventListener('load', loadData)
+async function loadData() {
+    fetch(WEB_API + "Interface/ShowAllPorfolio")
+        .then(function (response) {
+            return response.json();
+            
+        })
+        .then(function (response) {
+            var html = response.map(function (response) {
+                let { ID, FullName, Hinhanh, Position, Details } = response;
+                // document.getElementById("LogoFooterEN").src = response.Hi;
+                console.log(response.Hinhanh[0].ImagePortfolio)
+                const Hinh = Hinhanh.filter(v => v.ImagePortfolio)
+                const HinhA = Hinh.map(function (response) {
+                    return response.ImagePortfolio
+                })
+              return `
+              <div class="mx-5">
+                    <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
+                    <h3>${FullName}</h3>
+                    <p>${Position}</p>
+                    <p class="" style="text-align: justify; text-justify: inter-word; font-size:medium ;">${Details}
+                    </p>
+                    <a href="#"><img src="../../images/image 19.png"></a>
+                    <a href="#"><img src="../../images/image 18.png"></a>
+                    <a href="#"><img src="../../images/image 17.png"></a>
+                </div>
+              `;
+            })
+            $('#tbody').html(html);
+        })
+}
+    </script>
 </body>
 
 </html>
