@@ -3,7 +3,7 @@ window.addEventListener('load',multilang)
             // Configuration
             // Add options
             i18n.init({
-                resGetPath: '/js/languages/__lng__.json',
+                resGetPath: '/./js/languages/__lng__.json',
                 debug: true,
                 fallbackLng: false,
                 load: 'unspecific'
