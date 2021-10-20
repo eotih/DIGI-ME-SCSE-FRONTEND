@@ -6,7 +6,8 @@ async function getBySlug(numb) {
         getBaiViet()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
-        fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
+        console.log(slugResult);
+        fetch(WEB_API + "Interface/GetPostBySlug?slug=" + slugResult)
             .then(function (response) {
                 return response.json();
             })
@@ -57,19 +58,17 @@ async function getBySlug(numb) {
         }
     }
     else {
-        
         getBaiVietEN()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
         // urlParams.get('slug');
-        fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult,
-        )
+        fetch(WEB_API + "Interface/GetPostBySlugEN?slug=" + slugResult)
             .then(function (response) {
                 return response.json();
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN,Title, Details, Image } = response
+                    const { IDPostEN, Title, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                             <section>
