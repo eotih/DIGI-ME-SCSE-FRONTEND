@@ -59,7 +59,7 @@ function executeData(data) {
                 <div class="card" style="width:100%; height:100%;">
                     <hr class="mt-0 bg-blue-scse" style="height:1rem">
                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                        <img src="${Image}"
+                        <img style="width:275px;height:155px;object-fit:cover;" src="${Image}"
                             class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
                     </a>
                     <div class="card-body">
@@ -139,7 +139,7 @@ function executeDataEN(data) {
                 <div class="card" style="width:100%; height:100%;">
                     <hr class="mt-0 bg-blue-scse" style="height:1rem">
                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
-                        <img src="${Image}"
+                    <img style="width:275px;height:155px;object-fit:cover;" src="${Image}"
                             class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
                     </a>
                     <div class="card-body">
