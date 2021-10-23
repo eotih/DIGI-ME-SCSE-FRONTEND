@@ -6,9 +6,9 @@ async function loadData() {
             return response.json();
         })
         .then(function (response) {
-           
+
             const loadMore = $('#loadMore')
-            loadMore.on('click',function (e) {
+            loadMore.on('click', function (e) {
                 e.preventDefault();
                 var html = response.map(function (response) {
                     let { IDCat, Title, Slug, Details, Image } = response
@@ -27,7 +27,7 @@ async function loadData() {
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
                             <a href="#">
                                 <img src="${Image}"
-                                    class="card-img-top my-2 px-2" alt="...">
+                                    class="card-img-top my-2 px-2" style="width:350px; height:250px;object-fit:cover" alt="...">
                             </a>
                             <div class="card-body">
                                 <a style="text-decoration: none; color:black" href="#">
@@ -45,7 +45,7 @@ async function loadData() {
                 })
                 $('#tbody').html(html);
             })
-            const get6NewestPostedDate = response.slice(0, 6) 
+            const get6NewestPostedDate = response.slice(0, 6)
             var html = get6NewestPostedDate.map(function (response) {
                 let { IDCat, Title, Slug, Details, Image } = response
                 if (IDCat === 1) {
