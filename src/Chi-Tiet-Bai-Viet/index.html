@@ -337,48 +337,5 @@
     <!-- Footer -->
     <script src="../../Utils/Chi Tiet Bai Viet.js"> </script>
     <script src="../../Utils/Hop Tac Ngien Cuu.js"> </script>
-    <script>
-        const WEB_API = "https://api.scse-vietnam.org/API/";
-        function getslug(numb) {
-            if (numb == 1) {
-                const urlParams = new URLSearchParams(window.location.search);
-                const slugResult = urlParams.get('slug');
-                console.log(slugResult)
-                fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                    console.log(response)
-                        fetch(WEB_API + "Management/GetByIdPosts?ID="+response.IDPostEN)
-                        .then(function (response) {
-                            return response.json();
-                        })
-                        .then(function (response) {
-                            console.log(response)
-                            window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.Slug
-                        })
-                    })
-            }
-            else {
-                const urlParams = new URLSearchParams(window.location.search);
-                const slugResult = urlParams.get('slug');
-                fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                        fetch(WEB_API + "Management/GetByIdPostsEN?ID="+response[0].IDPost)
-                        .then(function (response) {
-                            return response.json();
-                        })
-                        .then(function (response) {
-                            window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.SlugEN
-                        })
-                    })
-                
-            }
-
-        }
-    </script>
+  
 </body>
