@@ -8,7 +8,7 @@ const loadPartner = async () => {
         console.log(response)
         return `
               <div class="item">
-                  <img src="${response.Image}" class="d-block img-fluid" alt="...">
+                  <img src="${response.Image}" style="height: 120px;object-fit:cover"class="img-fluid" alt="...">
               </div>
       `;
     })
@@ -18,7 +18,17 @@ const loadPartner = async () => {
     $owl.find('.owl-stage-outer').children().unwrap();
     $owl.removeClass("owl-center owl-loaded owl-text-select-on");
 
-    $owl.owlCarousel();
+    $owl.owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+        }
+    });
 
 }
 loadPartner();
