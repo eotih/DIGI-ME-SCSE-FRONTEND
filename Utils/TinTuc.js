@@ -1,5 +1,25 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 
+const getFieldBySlug = async () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const slugResult = urlParams.get('Field');
+    if(slugResult === 'Nghiên cứu - Đào tạo'){
+        $('#NCDT').prop('checked', true);
+        filterData(4)
+    }
+    if(slugResult === 'Thực tập sinh'){
+        $('#TTS').prop('checked', true);
+        filterData(3)
+    }
+    if(slugResult === 'Biến đổi khí hậu - Môi trường'){
+        $('#KHMT').prop('checked', true);
+        filterData(2)
+    }
+    if(slugResult === 'Giới và bình đăng giới'){
+        $('#GBDG').prop('checked', true);
+        filterData(1)
+    }
+}
 
 $('#GBDG').on('click', function (e) {
     filterData(1)
@@ -98,7 +118,6 @@ function filterDataEN(IdFieldEN) {
             return response.json();
         })
         .then(function (response) {
-            console.log(response)
             const postApproved = response.filter(e => e.IDState === 2)
             if (IdFieldEN === 0) {
                 const sortByNewDate = postApproved.sort(function (a, b) {

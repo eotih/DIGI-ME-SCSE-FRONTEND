@@ -1,22 +1,17 @@
-const loadBanner = async () => {
-    const res = await fetch("https://api.scse-vietnam.org/API/Interface/ListBanner")
-    const json = await res.json();
-    const filterData = json.filter(v => v.Image)
-    const data = filterData.slice(0,4).map(function(response){
-        return `
-        <div class="carousel-item">
-                    <img class="d-block w-100" src="${response.Image}" alt="Five slide">
-                </div>
-        `;
-    })
-    const html = filterData.slice(4).map(function(response){
-        return `
-        <div class="carousel-item active">
-                    <img class="d-block w-100" src="${response.Image}" alt="Fist slide">
-                </div>
-        `;
-    })
-    const arr = await Promise.all([html,data])
-    $('#dulieu').html(arr)
-}
-loadBanner()
+const Url = "https://api.scse-vietnam.org/API/";
+// đây là hàm khi vào trang sẽ auto chạy hàm loadData đầu tiên
+window.addEventListener('load', loadData)
+async function loadData() {
+    fetch(Url + "Interface/ListBanner")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+                document.getElementById('pic1').src = response[0].Image;
+                document.getElementById('pic2').src = response[1].Image;
+                document.getElementById('pic3').src = response[2].Image;
+                document.getElementById('pic4').src = response[3].Image;
+                document.getElementById('pic5').src = response[4].Image;
+            // đây là hàm trả ra tbody
+        })
+} 
