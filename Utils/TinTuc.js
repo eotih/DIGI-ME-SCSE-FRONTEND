@@ -1,6 +1,5 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 
-
 $('#GBDG').on('click', function (e) {
     filterData(1)
 })
