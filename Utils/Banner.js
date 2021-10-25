@@ -12,7 +12,7 @@ const loadBanner = async () => {
     const html = filterData.slice(4).map(function(response){
         return `
         <div class="carousel-item active">
-                    <img class="d-block w-100" src="${response.Image}" alt="Five slide">
+                    <img class="d-block w-100" src="${response.Image}" alt="Fist slide">
                 </div>
         `;
     })
