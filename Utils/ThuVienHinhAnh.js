@@ -11,7 +11,7 @@ async function loadData() {
             loadMore.on('click', function (e) {
                 e.preventDefault();
                 var html = response.map(function (response) {
-                    let { IDCat, Title, Slug, Details, Image } = response
+                    let { ID, IDCat, Title, Slug, Details, Image } = response
                     if (IDCat === 1) {
                         IDCat = 'Tin tức'
                     }
@@ -25,7 +25,7 @@ async function loadData() {
                     <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
                     <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                    <img id="ImgAlbum" src="${Image}"
+                    <img id="ImgAlbum" onclick="getImage(${ID})" src="${Image}"
                     class="card-img-top my-2 px-2" style="width:350px; height:250px;object-fit:cover" alt="...">
                     <div class="card-body">
                     <a style="text-decoration: none; color:black" href="#">
@@ -45,7 +45,7 @@ async function loadData() {
             })
             const get6NewestPostedDate = response.slice(0, 6)
             var html = get6NewestPostedDate.map(function (response) {
-                let { ID,IDCat, Title, Slug, Details, Image } = response
+                let { ID, IDCat, Title, Slug, Details, Image } = response
                 if (IDCat === 1) {
                     IDCat = 'Tin tức'
                 }
