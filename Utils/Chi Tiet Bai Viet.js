@@ -15,9 +15,10 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPost, Title, Slug, Details, Image } = response
+                    const { IDPost, Title, CreatedByDate, Slug, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>
@@ -67,9 +68,10 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title, Details, Image } = response
+                    const { IDPostEN, Title,  CreatedByDate, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>

@@ -11,9 +11,10 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Slug, Details, Image } = response
+                const { Title, Slug, CreatedByDate, Details, Image } = response
                 $('#tbody').html(`
                     <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                    <p>${CreatedByDate}<p>
                 <section>
                     <div>${Details}</div>
                 </section>
@@ -60,9 +61,10 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Details, Image } = response
+                const { Title, Details, CreatedByDate, Image } = response
                 $('#tbody').html(`
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                <p>${CreatedByDate}</p>
             <section>
                 <div>${Details}</div>
             </section>
