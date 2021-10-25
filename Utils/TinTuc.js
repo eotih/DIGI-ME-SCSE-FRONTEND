@@ -7,8 +7,20 @@ const getFieldBySlug = async () => {
         $('#NCDT').prop('checked', true);
         filterData(4)
     }
+    if(slugResult === 'Thực tập sinh'){
+        $('#TTS').prop('checked', true);
+        filterData(3)
+    }
+    if(slugResult === 'Biến đổi khí hậu - Môi trường'){
+        $('#GBDG').prop('checked', true);
+        filterData(2)
+    }
+    if(slugResult === 'Giới và bình đăng giới'){
+        $('#GBDG').prop('checked', true);
+        filterData(1)
+    }
 }
-getFieldBySlug()
+
 $('#GBDG').on('click', function (e) {
     filterData(1)
 })

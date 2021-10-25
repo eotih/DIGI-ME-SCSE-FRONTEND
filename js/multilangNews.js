@@ -29,6 +29,7 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
         document.title = "SCSE - Tin Tức";
         filterData(0)
+        getFieldBySlug()
     }
 
     // Change languages when click
