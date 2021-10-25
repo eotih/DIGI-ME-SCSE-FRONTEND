@@ -22,7 +22,7 @@ async function loadData() {
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4">
                             <div class="card-body">
                                 <a href="#">
-                                    <img src="../../../images/PDF.jpg"
+                                    <img src="../../../images/pdf.jpg"
                                         class="card-img-top my-1 px-1" alt="...">
                                 </a>
                                 <a style="text-decoration: none; color:black" href="../../Chi-Tiet-Bai-Viet/tailieu.html?slug=${Slug}">
@@ -47,7 +47,7 @@ async function loadData() {
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4">
                             <div class="card-body">
                                 <a href="../../Chi-Tiet-Bai-Viet/tailieu.html?slug=${Slug}">
-                                    <img src="../../../images/PDF.jpg"
+                                    <img src="../../../images/pdf.jpg"
                                         class="card-img-top my-1 px-1" alt="...">
                                 </a>
                                 <a style="text-decoration: none; color:black" href="../../Chi-Tiet-Bai-Viet/tailieu.html?slug=${Slug}">

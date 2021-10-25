@@ -25,12 +25,11 @@ async function loadHDTN(numb) {
                             <div class="col-lg-4 p-0">
                                 <div class="d-flex justify-content">
                                     <div class="bg-red-scse" style="
-                                    margin-right:30px;
+                                    padding-right:20px;
                                         height: 400px;
-                                        width: 30px;
                                     "></div>
                                     <img src="${Image}"
-                                        style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
+                                        style="width: 350px;height: 370px;border-radius: 10px;object-fit: cover;"
                                         class="img-fluid my-3" alt="...">
                                 </div>
                             </div>
@@ -65,12 +64,11 @@ async function loadHDTN(numb) {
                     <div class="col-lg-4 p-0">
                         <div class="d-flex justify-content">
                             <div class="bg-red-scse" style="
-                            margin-right:30px;
+                            padding-right:20px;
                                 height: 400px;
-                                width: 30px;
                             "></div>
                             <img src="${Image}"
-                                style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
+                                style="margin-left: 20px;width: 350px;height: 370px;border-radius: 10px;object-fit: cover;"
                                 class="img-fluid my-3" alt="...">
                         </div>
                     </div>
@@ -120,12 +118,11 @@ async function loadHDTN(numb) {
                             <div class="col-lg-4 p-0">
                                 <div class="d-flex justify-content">
                                     <div class="bg-red-scse" style="
-                                    margin-right:30px;
+                                    padding-right:20px;
                                         height: 400px;
-                                        width: 30px;
                                     "></div>
                                     <img src="${Image}"
-                                        style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
+                                        style="margin-left: 20px;width: 350px;height: 370px;border-radius: 10px;object-fit: cover;"
                                         class="img-fluid my-3" alt="...">
                                 </div>
                             </div>
@@ -165,7 +162,7 @@ async function loadHDTN(numb) {
                                 width: 30px;
                             "></div>
                             <img src="${Image}"
-                                style="width: 400px;height: 370px;border-radius: 10px;object-fit: cover;"
+                                style="margin-left: 20px;width: 350px;height: 370px;border-radius: 10px;object-fit: cover;"
                                 class="img-fluid my-3" alt="...">
                         </div>
                     </div>

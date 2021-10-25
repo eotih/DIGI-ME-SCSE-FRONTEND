@@ -6,7 +6,6 @@ async function getBySlug(numb) {
         getBaiViet()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
-        console.log(slugResult);
         fetch(WEB_API + "Interface/GetPostBySlug?slug=" + slugResult)
             .then(function (response) {
                 return response.json();
@@ -48,7 +47,6 @@ async function getBySlug(numb) {
                                             <p class="mb-auto">${Details.slice(0, 500)}</p>
                                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
-            
                                     </div>
                                 </div> `;
                     })
@@ -61,7 +59,6 @@ async function getBySlug(numb) {
         getBaiVietEN()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
-        // urlParams.get('slug');
         fetch(WEB_API + "Interface/GetPostBySlugEN?slug=" + slugResult)
             .then(function (response) {
                 return response.json();
@@ -114,4 +111,44 @@ async function getBySlug(numb) {
                 })
         }
     }
+}   
+function getslug(numb) {
+    if (numb == 1) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const slugResult = urlParams.get('slug');
+        fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            console.log(response)
+                fetch(WEB_API + "Management/GetByIdPosts?ID="+response.IDPostEN)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                    console.log(response)
+                    window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.Slug
+                })
+            })
+    }
+    else {
+        const urlParams = new URLSearchParams(window.location.search);
+        const slugResult = urlParams.get('slug');
+        fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+                fetch(WEB_API + "Management/GetByIdPostsEN?ID="+response.IDPost)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                    window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.SlugEN
+                })
+            })
+        
+    }
+
 }

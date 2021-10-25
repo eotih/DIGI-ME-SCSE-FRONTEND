@@ -16,7 +16,7 @@
         },
         "Dropmenuheader3": {
             "Library": "Thư Viện",
-            "Image": "Hình Anh",
+            "Image": "Hình ảnh",
             "Video": "Video",
             "Document": "Tài Liệu"
         },
@@ -41,8 +41,8 @@
         "ResearchTraining": "Nghiên cứu - Đào tạo",
         "MoreInfo": "XEM THÊM",
         "DonateNow": "ĐÓNG GÓP NGAY",
-        "SIGNUPFORINTERNSHIP": "ĐĂNG KÝ LÀM TÌNH NGUYỆN VIÊN",
-        "SIGNUPFORPARTNERSHIP": "ĐĂNG KÝ LÀM ĐỐI TÁC",
+        "SIGNUPFORINTERNSHIP": "ĐĂNG KÝ TÌNH NGUYỆN VIÊN",
+        "SIGNUPFORPARTNERSHIP": "ĐĂNG KÝ ĐỐI TÁC",
         "Sponsors": "NHÀ TÀI TRỢ"
     },
     "Footer": {
