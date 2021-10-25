@@ -21,17 +21,18 @@ function executeDataInformationGiamDoc(input) {
     const html = input.map(function (response) {
         const { Details, FullName, Position,Hinhanh } = response;
         // Lấy hình ảnh đưa vào slide
-        document.getElementById('pic1').src = Hinhanh[0].ImagePortfolio;
-        document.getElementById('pic2').src = Hinhanh[1].ImagePortfolio;
-        document.getElementById('pic3').src = Hinhanh[2].ImagePortfolio;
+        document.getElementById('picgd1').src = Hinhanh[0].ImagePortfolio;
+        document.getElementById('picgd2').src = Hinhanh[1].ImagePortfolio;
+        document.getElementById('picgd3').src = Hinhanh[2].ImagePortfolio;
         // Lấy dữ liệu ra
         return `
-        <div class="col-lg text-lg-right text-center">
-                    <div class="ml-5">
+       
+        <div class="text-lg-right text-center">
+                    <div class="ml-5 mb-5">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
-                        <p class="" style="text-align: justify; text-justify: inter-word; font-size:medium;"> ${Details}</p>
+                        <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;">${Details}</p>
                         <a href="#"><img src="../../images/image 19.png"></a>
                         <a href="#"><img src="../../images/image 18.png"></a>
                         <a href="#"><img src="../../images/image 17.png"></a>
@@ -43,14 +44,18 @@ function executeDataInformationGiamDoc(input) {
 }
 function executeDataInformationPhoGiamDoc(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position } = response;
+        const { Details, FullName, Position,Hinhanh } = response;
+        console.log(Hinhanh)
+        document.getElementById('pic01').src = Hinhanh[0].ImagePortfolio;
+        document.getElementById('pic02').src = Hinhanh[1].ImagePortfolio;
+        document.getElementById('pic03').src = Hinhanh[2].ImagePortfolio;
         return `
-        <div class="col-lg text-lg-right text-center">
-                    <div class="ml-5">
+        <div class="text-lg-right text-center">
+                    <div class="mr-5">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
-                        <p class="" style="text-align: justify; text-justify: inter-word; font-size:medium;"> ${Details}</p>
+                        <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;"> ${Details}</p>
                         <a href="#"><img src="../../images/image 19.png"></a>
                         <a href="#"><img src="../../images/image 18.png"></a>
                         <a href="#"><img src="../../images/image 17.png"></a>

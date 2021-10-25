@@ -54,23 +54,38 @@
     },
     "ThanhMauXanh":{
         "HTNC": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "PFR": " Hợp tác nghiên cứu",
             "LoadMore": "Xem Thêm"
         },
         "DA": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "Project": " Dự Án",
             "LoadMore": "Xem Thêm"
         },
         "HDTN": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "VA": " Hoạt động thiện nguyện",
+            "LoadMore": "Xem Thêm"
+        },
+        "Hinhanh": {
+            "Home": "Trang Chủ >",
+            "Images": "Hình ảnh ",
+            "LoadMore": "Xem Thêm"
+        },
+        "Video": {
+            "Home": "Trang Chủ >",
+            "Videos": "Video",
+            "LoadMore": "Xem Thêm"
+        },
+        "Tailieu": {
+            "Home": "Trang Chủ >",
+            "Files": "Tài liệu",
             "LoadMore": "Xem Thêm"
         }
     },
     "Contact": {
-        "Home": "Trang Chủ>",
+        "Home": "Trang Chủ >",
         "Contact": "Liên Hệ",
         "FN": "Họ Và Tên",
         "PLSFN": "Vui lòng nhập Họ và Tên",
