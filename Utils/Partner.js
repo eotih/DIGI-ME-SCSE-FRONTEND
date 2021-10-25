@@ -5,7 +5,6 @@ const loadPartner = async () => {
     const json = await res.json();
     const filterData = json.filter(v => v.Image)
     const data = filterData.map(function (response) {
-        console.log(response)
         return `
               <div class="item">
                   <img src="${response.Image}" style="height: 120px;object-fit:cover"class="img-fluid" alt="...">

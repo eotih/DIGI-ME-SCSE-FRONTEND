@@ -8,7 +8,6 @@ async function loadHDNC(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 var postApproved = response.filter(e => e.IDState === 2)
                 const sortByNewDate = postApproved.sort(function (a, b) {
                     a = new Date(a.UpdatedByDate);
@@ -78,7 +77,6 @@ async function loadHDNC(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 var postApproved = response.filter(e => e.IDState === 2)
                 const sortByNewDate = postApproved.sort(function (a, b) {
                     a = new Date(a.UpdatedByDate);

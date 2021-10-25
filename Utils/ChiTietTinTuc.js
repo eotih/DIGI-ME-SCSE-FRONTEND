@@ -111,7 +111,6 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 fetch(WEB_API + "Management/GetByIdNewsVN?ID=" + response.IDNewsEN)
                     .then(function (response) {
                         return response.json();
@@ -129,7 +128,6 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 fetch(WEB_API + "Management/GetByIdNewsEN?ID=" + response.IDNews)
                     .then(function (response) {
                         return response.json();
