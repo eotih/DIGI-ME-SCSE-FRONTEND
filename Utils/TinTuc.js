@@ -11,7 +11,6 @@ const getFieldBySlug = async () => {
     }
     if (slugResult === 'Thực tập sinh') {
         $('#TTS').prop('checked', true);
-<<<<<<< HEAD
         var labels = document.getElementById('lblTTS').textContent;
         if (labels === 'Thực tập sinh') { filterData(3) }
         else { filterDataEN(3) }
@@ -26,17 +25,6 @@ const getFieldBySlug = async () => {
             if (labels === 'Giới - Bình đẳng giới') { filterData(1) }
             else { filterDataEN(1) }
         }
-=======
-        filterData(3)
-    }
-    if(slugResult === 'Biến đổi khí hậu - Môi trường'){
-        $('#KHMT').prop('checked', true);
-        filterData(2)
-    }
-    if(slugResult === 'Giới và bình đăng giới'){
-        $('#GBDG').prop('checked', true);
-        filterData(1)
->>>>>>> b2f01b8ca72804a0fa2cdf2134614f7ccf7a36cf
     }
 }
 
