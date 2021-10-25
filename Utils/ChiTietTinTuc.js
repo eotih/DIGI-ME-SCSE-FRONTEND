@@ -111,7 +111,6 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 fetch(WEB_API + "Management/GetByIdNewsVN?ID=" + response.IDNewsEN)
                     .then(function (response) {
                         return response.json();
@@ -129,12 +128,15 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                console.log(response)
                 fetch(WEB_API + "Management/GetByIdNewsEN?ID=" + response.IDNews)
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (response) {
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                        if(response === null){
+                            alert("Bài viết chưa có bản tiếng anh!")
+                            window.location.href = "../Tin-Tuc/"
+                        }
                         window.location.href = "../Chi-Tiet/index.html?slug=" + response.SlugEN
                     })
             })

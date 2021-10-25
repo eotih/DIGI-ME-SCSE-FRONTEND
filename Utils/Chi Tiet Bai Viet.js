@@ -143,6 +143,10 @@ function getslug(numb) {
                     return response.json();
                 })
                 .then(function (response) {
+                    if(response === null){
+                        alert("Bài viết chưa có bản tiếng anh!")
+                        window.location.href = "../Chi-Tiet-Bai-Viet/"
+                    }
                     window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.SlugEN
                 })
             })
