@@ -14,17 +14,21 @@ const getFieldBySlug = async () => {
         var labels = document.getElementById('lblTTS').textContent;
         if (labels === 'Thực tập sinh') { filterData(3) }
         else { filterDataEN(3) }
-        if (slugResult === 'Biến đổi khí hậu - Môi trường') {
-            $('#GBDG').prop('checked', true);
-            var labels = document.getElementById('lblKHMT').textContent;
-            if (labels === 'Khí hậu - Môi trường') { filterData(2) }
-            else { filterDataEN(2) }
-        }
-        if (slugResult === 'Giới và bình đăng giới') {
-            $('#GBDG').prop('checked', true);
-            if (labels === 'Giới - Bình đẳng giới') { filterData(1) }
-            else { filterDataEN(1) }
-        }
+    }
+    if (slugResult === 'Biến đổi khí hậu - Môi trường') {
+<<<<<<< HEAD
+        $('#GBDG').prop('checked', true);
+=======
+        $('#KHMT').prop('checked', true);
+>>>>>>> 50d6585810b5b648eb1e731d3e279af3cb7a6140
+        var labels = document.getElementById('lblKHMT').textContent;
+        if (labels === 'Khí hậu - Môi trường') { filterData(2) }
+        else { filterDataEN(2) }
+    }
+    if (slugResult === 'Giới và bình đăng giới') {
+        $('#GBDG').prop('checked', true);
+        if (labels === 'Giới - Bình đẳng giới') { filterData(1) }
+        else { filterDataEN(1) }
     }
 }
 
