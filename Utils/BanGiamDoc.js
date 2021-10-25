@@ -45,7 +45,6 @@ function executeDataInformationGiamDoc(input) {
 function executeDataInformationPhoGiamDoc(input) {
     const html = input.map(function (response) {
         const { Details, FullName, Position,Hinhanh } = response;
-        console.log(Hinhanh)
         document.getElementById('pic01').src = Hinhanh[0].ImagePortfolio;
         document.getElementById('pic02').src = Hinhanh[1].ImagePortfolio;
         document.getElementById('pic03').src = Hinhanh[2].ImagePortfolio;
@@ -68,18 +67,18 @@ function executeDataInformationPhoGiamDoc(input) {
 
 function executeDataInformationMember(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position } = response;
+        const { Details, FullName, Position,Hinhanh } = response;
         return `
         <div class="col">
                     <div class="testimonial-item">
                         <div class="card mb-4 rounded-3 shadow-sm"
                             style="background-color: #F6F6F6;border-radius: 1.875rem;">
                             <div class="py-3">
-                                <img src="../../images/image 22.png" alt="">
+                                <img src="${Hinhanh[0].ImagePortfolio}" style="width: 320px;height:320px">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title pricing-card-title">${FullName}</h4>
-                                <h5 class="text-blue-scse">P${Position}</h5>
+                                <h5 class="text-blue-scse">${Position}</h5>
                                 <p>${Details}</p>
                             </div>
                         </div>
