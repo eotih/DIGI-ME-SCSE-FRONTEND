@@ -17,6 +17,7 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
         // Change language in dropdown
         filterDataEN(0)
+        getFieldBySlug()
         document.title = "SCSE - News";
     }
     // Vietnam
@@ -46,6 +47,7 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
         document.title = "SCSE - News";
         filterDataEN(0)
+        getFieldBySlug()
         // Change name language in dropdown
     });
     // Vietnam
@@ -62,5 +64,6 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
         document.title = "SCSE - Tin Tức";
         filterData(0)
+        getFieldBySlug()
     });
 };
