@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../../../js/style.js"></script>
-    <script src="/js/mutilangCTBV.js"></script>
+    <script src="../../js/mutilangCTBV.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
@@ -347,18 +347,19 @@
     <script src="../../Utils/Chi Tiet Bai Viet.js"> </script>
     <script src="../../Utils/Hop Tac Ngien Cuu.js"> </script>
     <script>
+        const WEB_API = "https://api.scse-vietnam.org/API/";
         function getslug(numb) {
             if (numb == 1) {
                 const urlParams = new URLSearchParams(window.location.search);
                 const slugResult = urlParams.get('slug');
                 console.log(slugResult)
-                fetch(WEB_API + "API/Management/GetBySlugPostEN?slugen=" + slugResult)
+                fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult)
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (response) {
                     console.log(response)
-                        fetch(WEB_API + "API/Management/GetByIdPosts?ID="+response.IDPostEN)
+                        fetch(WEB_API + "Management/GetByIdPosts?ID="+response.IDPostEN)
                         .then(function (response) {
                             return response.json();
                         })
@@ -371,12 +372,12 @@
             else {
                 const urlParams = new URLSearchParams(window.location.search);
                 const slugResult = urlParams.get('slug');
-                fetch(WEB_API + "Api/Interface/GetPostBySlug?slug=" + slugResult)
+                fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (response) {
-                        fetch(WEB_API + "API/Management/GetByIdPostsEN?ID="+response[0].IDPost)
+                        fetch(WEB_API + "Management/GetByIdPostsEN?ID="+response[0].IDPost)
                         .then(function (response) {
                             return response.json();
                         })

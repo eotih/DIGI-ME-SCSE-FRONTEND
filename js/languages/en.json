@@ -53,23 +53,38 @@
     },
     "ThanhMauXanh":{
         "HTNC": {
-            "Home": "Home> Activities>",
+            "Home": "Home >",
             "PFR": " Partner for research",
             "LoadMore": "Load More"
         },
         "DA": {
-            "Home": "Home> Activities>",
+            "Home": "Home >",
             "Project": " Project",
             "LoadMore": "Load More"
         },
         "HDTN": {
-            "Home": "Home> Activities>",
+            "Home": "Home >",
             "VA": " Voluntary Activities",
             "LoadMore": "Load More"
+        },
+        "Hinhanh": {
+            "Home": "Home >",
+            "Images": "Images ",
+            "LoadMore": "Xem Thêm"
+        },
+        "Video": {
+            "Home": "Home >",
+            "Videos": "Videos",
+            "LoadMore": "Xem Thêm"
+        },
+        "Tailieu": {
+            "Home": "Home >",
+            "Files": "Files",
+            "LoadMore": "Xem Thêm"
         }
     },
         "Contact": {
-            "Home": "Home>",
+            "Home": "Home >",
             "Contact1": "Contact",
             "FN": "Full Name",
             "PLSFN": "Please fill your name",
@@ -83,5 +98,17 @@
             "PLSTopic": "Please fill your Topic",
             "Content": "Content",
             "PLSContent": "Please fill your Content"
+        },
+        "News": {
+            "Home": "Home >",
+            "News": "News",
+            "Filter": "Filter",
+            "ByField": "By Field",
+            "ResearchTraining": "Research - Training",
+            "EnvironmentClimateChange": "Environment - Climate",
+            "GenderAndGenderEquality": "Gender - GenderEquality",
+            "Internship": "Internship",
+            "LATESTNEWS": "LATEST NEWS",
+            "LoadMore": "Load More"
         }
 }

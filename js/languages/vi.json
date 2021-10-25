@@ -54,23 +54,38 @@
     },
     "ThanhMauXanh":{
         "HTNC": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "PFR": " Hợp tác nghiên cứu",
             "LoadMore": "Xem Thêm"
         },
         "DA": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "Project": " Dự Án",
             "LoadMore": "Xem Thêm"
         },
         "HDTN": {
-            "Home": "Trang Chủ> Hoạt Động>",
+            "Home": "Trang Chủ >",
             "VA": " Hoạt động thiện nguyện",
+            "LoadMore": "Xem Thêm"
+        },
+        "Hinhanh": {
+            "Home": "Trang Chủ >",
+            "Images": "Hình ảnh ",
+            "LoadMore": "Xem Thêm"
+        },
+        "Video": {
+            "Home": "Trang Chủ >",
+            "Videos": "Video",
+            "LoadMore": "Xem Thêm"
+        },
+        "Tailieu": {
+            "Home": "Trang Chủ >",
+            "Files": "Tài liệu",
             "LoadMore": "Xem Thêm"
         }
     },
     "Contact": {
-        "Home": "Trang Chủ>",
+        "Home": "Trang Chủ >",
         "Contact": "Liên Hệ",
         "FN": "Họ Và Tên",
         "PLSFN": "Vui lòng nhập Họ và Tên",
@@ -84,5 +99,17 @@
         "PLSTopic": "Vui lòng nhập Chủ đề",
         "Content": "Nội dung",
         "PLSContent": "Vui lòng nhập Nội dung"
+    },
+    "News": {
+        "Home": "Trang Chủ >",
+        "News": "Tin Tức",
+        "Filter": "Bộ lọc danh mục",
+        "ByField": "Theo lĩnh vực:",
+        "ResearchTraining": "Đào Tạo - Nghiên Cứu",
+        "EnvironmentClimateChange": "Khí hậu - Môi trường",
+        "GenderAndGenderEquality": "Giới - Bình đẳng giới",
+        "Internship": "Thực tập sinh",
+        "LATESTNEWS": "TIN TỨC MỚI NHẤT",
+        "LoadMore": "Xem Thêm"
     }
 }

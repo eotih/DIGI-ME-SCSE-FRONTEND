@@ -1,9 +1,9 @@
-const WEB_API = "http://localhost:59360/";
+const WEB_API = "https://api.scse-vietnam.org/API/";
 // window.addEventListener('load', loadData)
 
 async function loadHDNC(numb) {
     if (numb == 1) {
-        fetch(WEB_API + "API/Management/GetByIdCategory?idcat=2")
+        fetch(WEB_API + "Management/GetByIdCategory?idcat=2")
             .then(function (response) {
                 return response.json();
             })
@@ -75,7 +75,7 @@ async function loadHDNC(numb) {
             })
     }
     else {
-        fetch(WEB_API + "API/Management/GetByIdCategoryEN?idcat=2")
+        fetch(WEB_API + "Management/GetByIdCategoryEN?idcat=2")
             .then(function (response) {
                 return response.json();
             })

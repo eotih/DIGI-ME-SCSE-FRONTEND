@@ -24,9 +24,10 @@
         crossorigin="anonymous"></script>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/style.js"></script>
+    <script src="../../Utils/Banner.js"></script>
     
     
-    <script src="/js/multilangStory.js"></script>
+    <script src="../../js/multilangStory.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
@@ -143,16 +144,24 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="../../images/32171034926_7983733ab2_o.jpg" alt="First slide" style="object-fit:cover;max-height: 600px;">
+                    <img class="d-block w-100" id="pic1" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../../images/slide-test.jpg" alt="Second slide"style="object-fit:cover;max-height: 600px;">
+                    <img class="d-block w-100" id="pic2" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../../images/1.jpg" alt="Third slide"style="object-fit:cover;max-height: 600px;">
+                    <img class="d-block w-100" id="pic3" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="pic4" alt="Four slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="pic5" alt="Five slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -166,6 +175,12 @@
         </div>
     </div>
     <hr style="background-color: #1A94D0;height: 1rem;margin-top:0;">
+    <div class="container">
+        <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
+           <a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;" data-i18n="News.Home"> Trang chủ ></a>
+            <p class=" my-auto font-weight-bold" style="color: #FFFFFF"> Về SCSE</p>
+        </div>
+    </div>
     <div class="container">
         <div class="row justify-content-lg-end mt-5">
             <div class="col-lg-6">
@@ -224,7 +239,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <img class="img-fluid" id="LogoFooterEN" src="../../images/LogoSCSE_Horizontal_Vietnamese.png" alt="">
-                    <p  data-i18n="Footer.content1">Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
+                    <p  data-i18n="Footer.content1" style=" text-align: justify; text-justify: inter-word;">Chúng ta không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
                         lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
                 </div>
                 <!-- Grid column -->
@@ -292,16 +307,14 @@
 
                     <!--Copyright-->
                     <p class="text-center text-md-left">©2017 SCSE. All rights reserved. Serviced by SCSE
-
                     </p>
-
                 </div>
                 <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
                     <!--Copyright-->
                     <p>Follow us:</p>
-                    <a href="https://www.youtube.com/channel/UC5K0cnsITcj7cxIcpvWXnmQ"><img src="./images/image 74.png"
+                    <a href="https://www.youtube.com/channel/UC5K0cnsITcj7cxIcpvWXnmQ"><img src="../../images/image 74.png"
                             alt=""></a>
-                    <a href="https://www.facebook.com/scsevn"><img src="./images/image 75.png" alt=""></a>
+                    <a href="https://www.facebook.com/scsevn"><img src="../../images/image 75.png" alt=""></a>
 
                 </div>
                 <!-- Grid column -->
