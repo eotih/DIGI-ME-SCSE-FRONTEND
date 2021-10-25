@@ -12,7 +12,7 @@ const getFieldBySlug = async () => {
         filterData(3)
     }
     if(slugResult === 'Biến đổi khí hậu - Môi trường'){
-        $('#GBDG').prop('checked', true);
+        $('#KHMT').prop('checked', true);
         filterData(2)
     }
     if(slugResult === 'Giới và bình đăng giới'){
