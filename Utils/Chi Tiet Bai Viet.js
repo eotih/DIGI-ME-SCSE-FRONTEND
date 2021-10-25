@@ -121,13 +121,11 @@ function getslug(numb) {
             return response.json();
         })
         .then(function (response) {
-            console.log(response)
                 fetch(WEB_API + "Management/GetByIdPosts?ID="+response.IDPostEN)
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (response) {
-                    console.log(response)
                     window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.Slug
                 })
             })
