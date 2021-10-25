@@ -11,21 +11,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/style.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/trangChinh.js"></script>
+        <script src="./js/style.js"></script>
     <script src="../js/multilang.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
@@ -51,7 +53,8 @@
         <div class="nav-bar">
             <ul id="nav">
                 <li><a class="active Roboto" href="#Home" data-i18n="header.home">Trang Chủ</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="#AboutUs"  data-i18n="header.Dropmenuheader1.AboutSCSE">Về SCSE</a>
+                <li class="dropdown"><a class="dropdown-toggle" href="#AboutUs"
+                        data-i18n="header.Dropmenuheader1.AboutSCSE">Về SCSE</a>
                     <ul>
                         <li><a class="Roboto" href="./src/Ban-Giam-Doc/"
                                 data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a></li>
@@ -59,8 +62,9 @@
                                 chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="./src/Tin-Tuc/"  data-i18n="header.News">Tin tức</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="#Activities" data-i18n ="header.Dropmenuheader2.Activities">Hoạt động</a>
+                <li><a class="Roboto" href="./src/Tin-Tuc/" data-i18n="header.News">Tin tức</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#Activities"
+                        data-i18n="header.Dropmenuheader2.Activities">Hoạt động</a>
                     <ul>
                         <li><a class="Roboto" href="./src/Hoat-Dong-Thien-Nguyen/"
                                 data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện nguyện</a></li>
@@ -70,7 +74,8 @@
                                 data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a class="dropdown-toggle" href="" data-i18n="header.Dropmenuheader3.Library">Thư viện</a>
+                <li class="dropdown"><a class="dropdown-toggle" href="" data-i18n="header.Dropmenuheader3.Library">Thư
+                        viện</a>
                     <ul>
                         <li><a class="Roboto" href="./src/ThuVien/Hinh-Anh/"
                                 data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a></li>
@@ -268,7 +273,7 @@
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
                     <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.GenderAndGenderEquality">Giới và
                         bình đăng giới</p>
-                    <a href="./src/Tin-Tuc/index.html">
+                        <a href="./src/Tin-Tuc/index.html?Field=Giới và bình đăng giới">
                         <button type="button"
                             class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
                             style="border-radius: 3rem;width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
@@ -284,7 +289,7 @@
                         khí hậu </p>
                     <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.EnvironmentClimateChange1">Môi
                         trường</p>
-                    <a href="./src/Tin-Tuc/index.html">
+                        <a href="./src/Tin-Tuc/index.html?Field=Biến đổi khí hậu - Môi trường">
                         <button type="button"
                             class="btn btn-warning btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-yellow-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
@@ -297,7 +302,7 @@
                     <img class="img-fluid mx-2" src="./images/thuctapsinh.png"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
                     <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.Internship">Thực tập sinh</p>
-                    <a href="./src/Tin-Tuc/index.html">
+                    <a href="./src/Tin-Tuc/index.html?Field=Thực tập sinh">
                         <button type="button"
                             class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
@@ -311,7 +316,7 @@
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
                     <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.ResearchTraining">Nghiên cứu - Đào
                         tạo</p>
-                    <a href="./src/Tin-Tuc/index.html">
+                    <a href="./src/Tin-Tuc/index.html?Field=Nghiên cứu - Đào tạo">
                         <button type="button"
                             class="btn btn-danger btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-red-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
@@ -347,54 +352,39 @@
             </div>
         </div>
     </div>
-    <div id="partners" class="container mt-5">
-        <h1 class="display-3 font-weight-bold text-uppercase text-blue-scse" data-i18n="Body.Sponsors">Nhà tài trợ</h1>
-        <div class="row-fluid">
-            <div id="partner" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="partner" role="listbox">
-                    <div class="carousel-item active justify-content-center">
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic01" class="d-block img-fluid" alt="..." style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic02" class="d-block img-fluid" alt="..." style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic03" class="d-block img-fluid" alt="..." style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
+    <div class="container mt-5">
+        <div class="row grid-margin">
+            <div class="col-lg-12">
+              <div class="card" style = "border: none;">
+                <div class="card-body">
+                    <h1 class="display-3 font-weight-bold text-uppercase text-blue-scse" data-i18n="Body.Sponsors">Nhà tài trợ</h1>
+                  <div class="owl-carousel owl-theme loop">
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
                     </div>
-                    <div class="carousel-item justify-content-center">
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic04" class="d-block img-fluid" alt="..." style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic05" class="d-block img-fluid" alt="..." style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
-                        <div class="span2">
-                            <div class="thumbnail">
-                                <img id="pic06" class="d-block img-fluid" alt="..."style="width: 380px;height: 200px ">
-                            </div>
-                        </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
                     </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./images/partner.png" class="d-block img-fluid" alt="...">
+                    </div>
+                  </div>
                 </div>
-                <a class="carousel-control-prev p-2" href="#partner" role="button" data-slide="prev">
-                    <i class="fas fa-angle-double-left"></i>
-                </a>
-                <a class="carousel-control-next p-2" href="#partner" role="button" data-slide="next">
-                    <i class="fas fa-angle-double-right"></i>
-                </a>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
 
     <img src="./images/wave-footer.png" style="width: 100%;">
