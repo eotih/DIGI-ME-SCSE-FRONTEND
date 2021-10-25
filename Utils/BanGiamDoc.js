@@ -74,7 +74,7 @@ function executeDataInformationMember(input) {
                         <div class="card mb-4 rounded-3 shadow-sm"
                             style="background-color: #F6F6F6;border-radius: 1.875rem;">
                             <div class="py-3">
-                                <img src="${Hinhanh[0].ImagePortfolio}" style="width: 320px;height:320px">
+                                <img src="${Hinhanh[0].ImagePortfolio}" style="width: 320px;height:320px;border-radius: 1.875rem;">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title pricing-card-title">${FullName}</h4>
