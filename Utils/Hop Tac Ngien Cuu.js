@@ -21,26 +21,26 @@ async function loadHDNC(numb) {
                     var html = sortByNewDate.map(function (response) {
                         const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
                         return `
-            <div class="card mb-3" style="width:100%;">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                                <h5 class="card-title font-weight-bold">${Title}</h5>
-                            </a>
-                            <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
-                            <p class="card-text">${Details.slice(0, 500)}</p>
+                    <div class="card mb-3" style="width:100%;">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                                        <h5 class="card-title font-weight-bold">${Title}</h5>
+                                    </a>
+                                    <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
+                                    <p class="card-text">${Details.slice(0, 500)}</p>
 
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
+                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img style="width:300px;height:220px" src="${Image}" 
+                                        class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img style="width:300px;height:220px" src="${Image}" 
-                                class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                    </div>
-                </div>
-            </div>
-            `;
+                    `;
                     })
                     $('#tbody').html(html);
                 })

@@ -1,16 +1,18 @@
-window.addEventListener('load', loadData)
-        async function loadData() {
-            fetch(WEB_API + "Interface/ListPartner")
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                        document.getElementById('pic01').src = response[0].Image;
-                        document.getElementById('pic02').src = response[1].Image;
-                        document.getElementById('pic03').src = response[2].Image;
-                        document.getElementById('pic04').src = response[3].Image;
-                        document.getElementById('pic05').src = response[3].Image;
-                        document.getElementById('pic06').src = response[3].Image;
-                    // đây là hàm trả ra tbody
-                })
-        }
+
+const loadPartner = async () => {
+    const res = await fetch("https://api.scse-vietnam.org/API/Interface/ListPartner")
+    const json = await res.json();
+    const filterData = json.filter(v => v.Image)
+    const data = filterData.map(function (response) {
+        console.log(response)
+        return `
+            <div class="item">
+                <img src="${response.Image}" class="d-block img-fluid" alt="...">
+            </div>
+    `;
+    })
+    $('#partner').html(data)
+    
+
+}
+loadPartner();
