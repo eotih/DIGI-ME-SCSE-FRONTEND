@@ -28,7 +28,7 @@
     <script src="./js/trangChinh.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/style.js"></script>
-    <script src="../js/multilang.js"></script>
+    <script src="./js/multilang.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
@@ -86,8 +86,6 @@
                     </ul>
                 </li>
                 <li><a class="Roboto" href="./src/Lien-He/" data-i18n="header.Contact">Liên hệ</a></li>
-                <li><a href="#shopping"><i class="fas fa-shopping-cart icon"></i></a></li>
-                <!-- <li><a class="fas fa-search icon" href="#search"></a></li> -->
             </ul>
         </div>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
@@ -160,9 +158,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./src/Lien-He/" data-i18n="header.Contact">Liên hệ</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href=""><i class="fas fa-shopping-cart icon"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -548,7 +543,6 @@
                     else if (msg.data == 'refreshcss') refreshCSS();
                 };
                 if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
                     sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
                 }
             })();

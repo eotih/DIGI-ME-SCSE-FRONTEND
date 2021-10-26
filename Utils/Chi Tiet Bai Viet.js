@@ -1,6 +1,9 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 // window.addEventListener('load', getBySlug)
-
+function convertDate(input) {
+    var result = new Date(input)
+    return result.toLocaleDateString()
+}
 async function getBySlug(numb) {
     if (numb == 1) {
         getBaiViet()
@@ -12,12 +15,12 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPost, Title, Slug, Details, Image } = response
+                    const { IDPost, Title, CreatedByDate, Slug, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
-                                                <img src="${Image}" style="width:30rem; height:25rem;" class="rounded mx-auto d-block"/>
                                             </section>
                                         `;
                 })
@@ -33,7 +36,7 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { IDPost, Title, Slug, Details, Image } = response
+                        const { IDPost, Title, Slug, Details, Image,CreatedByDate } = response
                         return `
                                 <div class="col-md-6">
                                     <div
@@ -42,9 +45,11 @@ async function getBySlug(numb) {
                                             <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
                                         </div>
                                         <div class="col p-4 d-flex flex-column position-static">
+                                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                             <h3 class="mb-0">${Title}</h3>
-                                            <div class="mb-1 text-muted">Nov 12</div>
-                                            <p class="mb-auto">${Details.slice(0, 500)}</p>
+                                            </a>
+                                            <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
+                                            <p class="mb-auto">${Details.slice(0, 300)+"..."}</p>
                                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
@@ -65,12 +70,12 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title, Details, Image } = response
+                    const { IDPostEN, Title,  CreatedByDate, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
-                                                <img src="${Image}" style="width:30rem; height:25rem;" class="rounded mx-auto d-block"/>
                                             </section>
                                         `;
                 })
@@ -97,7 +102,6 @@ async function getBySlug(numb) {
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">${Title}</h3>
-                                <div class="mb-1 text-muted">Nov 12</div>
                                 <p class="mb-auto">${Details.slice(0, 200)}</p>
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">Continue reading</a>
                             </div>

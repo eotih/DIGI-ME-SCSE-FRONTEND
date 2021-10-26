@@ -11,9 +11,10 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Slug, Details, Image } = response
+                const { Title, Slug, CreatedByDate, Details, Image } = response
                 $('#tbody').html(`
                     <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                    <p>${CreatedByDate}<p>
                 <section>
                     <div>${Details}</div>
                 </section>
@@ -38,9 +39,11 @@ async function getBySlug(numb) {
                                             <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
                                         </div>
                                         <div class="col p-4 d-flex flex-column position-static">
+                                            <a href="../Chi-Tiet/index.html?slug=${Slug}">
                                             <h3 class="mb-0">${Title}</h3>
+                                            </a>
                                             <div class="mb-1 text-muted">Nov 12</div>
-                                            <p class="mb-auto">${Details.slice(0, 500)}</p>
+                                            <p class="mb-auto">${Details.slice(0, 500)+"..."}</p>
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
@@ -60,9 +63,10 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Details, Image } = response
+                const { Title, Details, CreatedByDate, Image } = response
                 $('#tbody').html(`
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                <p>${CreatedByDate}</p>
             <section>
                 <div>${Details}</div>
             </section>
