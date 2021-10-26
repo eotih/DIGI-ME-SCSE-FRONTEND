@@ -218,11 +218,24 @@
                 <!-- The Close Button -->
                 <span class="close">&times;</span>
 
+                <div id="modalImage" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id="tImg">
+                    </div>
+                    <a class="carousel-control-prev" href="#modalImage" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#modalImage" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
                 <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
 
                 <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
+                <div id="caption">
+
+                </div>
             </div>
             <button id="loadMore" style="box-shadow: 4px 4px 0px #93DBFF;" type="submit"
                 class="btn btn-primary bg-blue-scse btn-user btn-block col-xl-12">Xem thêm</button>
@@ -246,15 +259,18 @@
                         alt="">
                     <p data-i18n="Footer.content1" style=" text-align: justify; text-justify: inter-word;">Chúng ta
                         không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
-                        lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
+                        lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.
+                    </p>
                 </div>
                 <!-- Grid column -->
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.ContactInfomation">THÔNG TIN LIÊN
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.ContactInfomation">THÔNG TIN
+                        LIÊN
                         HỆ</h6>
                     <p class="text-capitalize">
-                        <i class="fas fa-home mr-3 text-capitalize"></i>20A An dương vương, Phường 10, TP. Sóc trăng.
+                        <i class="fas fa-home mr-3 text-capitalize"></i>20A An dương vương, Phường 10, TP. Sóc
+                        trăng.
                     </p>
                     <p>
                         <i class="fas fa-envelope mr-3"></i>admin@scse-vietnam.org
@@ -276,7 +292,8 @@
 
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.TermsOfUse">Điều khoản sử dụng
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.TermsOfUse">Điều khoản sử
+                        dụng
                     </h6>
                     <p>
                         <a href="./src/Chinh-Sach-Bao-Mat/" class="text-muted" data-i18n="Footer.PrivacyPolicy">Chính
@@ -372,6 +389,11 @@
     </footer>
     <script src="../../../Utils/ThuVienHinhAnh.js"></script>
     <!-- Footer -->
+    <script>
+        $('#modalImage').carousel({
+            interval: false,
+        })
+    </script>
 </body>
 
 </html>

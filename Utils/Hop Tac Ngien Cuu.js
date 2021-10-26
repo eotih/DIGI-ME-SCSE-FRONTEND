@@ -20,8 +20,12 @@ async function loadHDNC(numb) {
                     var html = sortByNewDate.map(function (response) {
                         const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
                         return `
-                    <div class="card mb-3" style="width:100%;">
+                        <div class="card mb-3" style="width:100%;">
                         <div class="row g-0">
+                        <div class="col-md-4">
+                                <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
+                                        class=" mt-3 mx-3" alt="...">
+                            </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
@@ -29,14 +33,12 @@ async function loadHDNC(numb) {
                                     </a>
                                     <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
                                     <p class="card-text">${Details.slice(0, 500)}</p>
-
-                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
+        
+                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                                    <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <img style="width:300px;height:220px" src="${Image}" 
-                                        class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                            </div>
+                            
                         </div>
                     </div>
                     `;
@@ -49,6 +51,10 @@ async function loadHDNC(numb) {
                     return `
             <div class="card mb-3" style="width:100%;">
                 <div class="row g-0">
+                <div class="col-md-4">
+                        <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
+                                class=" mt-3 mx-3" alt="...">
+                    </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
@@ -57,13 +63,11 @@ async function loadHDNC(numb) {
                             <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
                             <p class="card-text">${Details.slice(0, 500)}</p>
 
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
+                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                            <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img style="width:300px;height:220px" src="${Image}" 
-                                class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                    </div>
+                    
                 </div>
             </div>
             `;
@@ -91,6 +95,10 @@ async function loadHDNC(numb) {
                         return `
                 <div class="card mb-3" style="width:100%;">
                     <div class="row g-0">
+                    <div class="col-md-4">
+                            <img style="width:300px;height:220px" src="${Image}" 
+                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
+                        </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
@@ -102,10 +110,7 @@ async function loadHDNC(numb) {
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <img style="width:300px;height:220px" src="${Image}" 
-                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                        </div>
+                        
                     </div>
                 </div>
                 `;
@@ -116,8 +121,12 @@ async function loadHDNC(numb) {
                 var html = get6NewestPostedDate.map(function (response) {
                     const { IDPostEN, Title, SlugEN, Details, Image, CreatedByDate } = response
                     return `
-                <div class="card mb-3" style="width:100%;">
+                    <div class="card mb-3" style="width:100%;">
                     <div class="row g-0">
+                    <div class="col-md-4">
+                            <img style="width:300px;height:220px" src="${Image}" 
+                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
+                        </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
@@ -125,16 +134,11 @@ async function loadHDNC(numb) {
                                 </a>
                                 <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
                                 <p class="card-text">${Details.slice(0, 500)}</p>
-
-                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
-                                <button class="btn bg-blue-scse btn-primary lg">Details</button>
-                                </a>
+    
+                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <img style="width:300px;height:220px" src="${Image}" 
-                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                        </div>
+                        
                     </div>
                 </div>
                 `;
