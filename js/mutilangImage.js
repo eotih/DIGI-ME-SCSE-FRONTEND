@@ -44,7 +44,7 @@ window.addEventListener('load',multilang)
                 $('.english').parent().addClass('active');
                 document.getElementById("LogoFooterEN").src = "../../../images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "../../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.title = "SCSE - Executive Board";
+                document.title = "SCSE - Images";
                 // Change name language in dropdown
             });
             // Vietnam
