@@ -6,6 +6,9 @@
             "ExecutiveBoard": "Executive board",
             "Story": "Story"
         },
+        "title":{
+            "Home": "SCSE-Home"
+        },
         "News": "News",
         "Dropmenuheader2": {
             "Activities": "Activities",

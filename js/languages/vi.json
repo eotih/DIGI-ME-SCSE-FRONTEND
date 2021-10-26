@@ -7,6 +7,9 @@
             "ExecutiveBoard": "Ban Giám Đốc",
             "Story": "Câu Chuyện"
         },
+        "title":{
+            "Home": "SCSE-Trang Chủ"
+        },
         "News": "Tin Tức",
         "Dropmenuheader2": {
             "Activities": "Hoạt Động",
