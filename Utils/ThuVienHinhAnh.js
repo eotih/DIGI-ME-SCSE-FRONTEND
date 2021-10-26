@@ -1,4 +1,7 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
+// $(window).on('load',function(){
+//     $(".loader-wrapper").fadeOut("slow");
+//   });
 window.addEventListener('load', loadData)
 async function loadData() {
     fetch(WEB_API + "Management/ListImageTitle")
@@ -11,7 +14,7 @@ async function loadData() {
             loadMore.on('click', function (e) {
                 e.preventDefault();
                 var html = response.map(function (response) {
-                    let { ID, IDCat, Title, Slug, Details, Image } = response
+                    let { IDCat, Title, Slug, Details, Image } = response
                     if (IDCat === 1) {
                         IDCat = 'Tin tức'
                     }
@@ -49,7 +52,7 @@ async function loadData() {
             })
             const get6NewestPostedDate = response.slice(0, 6)
             var html = get6NewestPostedDate.map(function (response) {
-                let { ID, IDCat, Title, Slug, Details, Image } = response
+                let { IDCat, Title, Slug, Details, Image } = response
                 if (IDCat === 1) {
                     IDCat = 'Tin tức'
                 }
@@ -63,7 +66,7 @@ async function loadData() {
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                                <img id="ImgAlbum" onclick="getImage(${ID})" src="${Image}"
+                                <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${Image}"
                                     class="card-img-top my-2 px-2" style="width:350px; height:250px;object-fit:cover" alt="...">
                             <div class="card-body">
                                 <a style="text-decoration: none; color:black" href="#">
@@ -80,18 +83,35 @@ async function loadData() {
             `;
             })
             $('#tbody').html(html);
+            $(".loader-wrapper").fadeOut("slow");
         })
 }
-function getImage(ID) {
+function getImage(Slug) {
     var modal = document.getElementById('myModal');
-    fetch(WEB_API + "Interface/GetByIDPhotoGallery?ID=" + ID)
-        .then(function (response) {
-            return response.json();
+
+    const loadImage = async () => {
+        const res = await fetch(WEB_API + "Interface/GetBySlugPhotoGallery?slug=" + Slug)
+        const json = await res.json();
+        const filterData = json.filter(v => v.Image)
+
+        const data = filterData.slice(0, filterData.length-1).map(function (response) {
+            return `
+                <div class="carousel-item">
+                            <img class="d-block mx-auto" src="${response.Image}">
+                        </div>
+                `;
         })
-        .then(function (response) {
-            const { Image } = response;
-            document.getElementById("img01").src = Image;
+        const html = filterData.slice(filterData.length-1).map(function (response) {
+            return `
+                <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="${response.Image}">
+                        </div>
+                `;
         })
+        const arr = await Promise.all([html, data])
+        $('#tImg').html(arr)
+    }
+    loadImage()
     modal.style.opacity = 1;
     modal.style.display = "block";
 

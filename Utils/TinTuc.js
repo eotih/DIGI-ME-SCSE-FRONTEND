@@ -112,6 +112,7 @@ const getFieldBySlug = async () => {
             `;
         })
         $('#tbody').html(html);
+        $(".loader-wrapper").fadeOut("slow");
     }
     function changeIdField(id) {
         if (id === 1) {
@@ -191,6 +192,7 @@ const getFieldBySlug = async () => {
             `;
         })
         $('#tbody').html(html);
+        $(".loader-wrapper").fadeOut("slow");
     }
     function changeIdFieldEN(id) {
         if (id === 1) {

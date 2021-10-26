@@ -51,6 +51,7 @@ async function getBySlug(numb) {
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
+                    $(".loader-wrapper").fadeOut("slow");
                 })
         }
     }
@@ -102,6 +103,7 @@ async function getBySlug(numb) {
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
+                    $(".loader-wrapper").fadeOut("slow");
                 })
         }
     }

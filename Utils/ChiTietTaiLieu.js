@@ -20,6 +20,7 @@ function getBySlug() {
             })
             // đây là hàm trả ra tbody
             $('#tbody').html(html);
+            $(".loader-wrapper").fadeOut("slow");
         })
 }
 function getBaiViet() {

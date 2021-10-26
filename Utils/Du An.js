@@ -44,6 +44,7 @@ async function loadDA(numb) {
                 `;
                 })
                 $('#tbody').html(html);
+                $(".loader-wrapper").fadeOut("slow");
             })
             const get6NewestPostedDate = sortByNewDate.slice(0, 6)
             var html = get6NewestPostedDate.map(function (response) {
@@ -117,6 +118,7 @@ async function loadDA(numb) {
                 `;
                 })
                 $('#tbody').html(html);
+                $(".loader-wrapper").fadeOut("slow");
             })
             const get6NewestPostedDate = sortByNewDate.slice(0, 6)
             var html = get6NewestPostedDate.map(function (response) {
