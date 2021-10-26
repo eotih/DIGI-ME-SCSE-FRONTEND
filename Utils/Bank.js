@@ -7,14 +7,14 @@ const loadImage = async () => {
     const data = filterData.slice(0, filterData.length-1).map(function (response) {
         return `
             <div class="carousel-item">
-                        <img class="" style="width:360px;border-radius:20px" src="${response.ImageQR}">
+                        <img class="d-block mx-auto"" style="width:360px;border-radius:20px" src="${response.ImageQR}">
                     </div>
             `;
     })
     const html = filterData.slice(filterData.length-1).map(function (response) {
         return `
             <div class="carousel-item active">
-                        <img class="" style="width:360px;border-radius:20px" src="${response.ImageQR}">
+                        <img class="d-block mx-auto"" style="width:360px;border-radius:20px" src="${response.ImageQR}">
                     </div>
             `;
     })
