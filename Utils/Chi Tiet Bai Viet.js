@@ -15,9 +15,10 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPost, Title, Slug, Details, Image } = response
+                    const { IDPost, Title, CreatedByDate, Slug, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>
@@ -44,9 +45,11 @@ async function getBySlug(numb) {
                                             <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
                                         </div>
                                         <div class="col p-4 d-flex flex-column position-static">
+                                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                             <h3 class="mb-0">${Title}</h3>
+                                            </a>
                                             <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
-                                            <p class="mb-auto">${Details.slice(0, 300)}</p>
+                                            <p class="mb-auto">${Details.slice(0, 300)+"..."}</p>
                                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
@@ -67,9 +70,10 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title, Details, Image } = response
+                    const { IDPostEN, Title,  CreatedByDate, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                                                <p>${CreatedByDate}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>

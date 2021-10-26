@@ -22,7 +22,7 @@ function addVolunteer(){
     })
         .then(function (data) {
             if (data.Status === 'Success') {
-                alert('Thêm Thành Công')
+                alert('Đã Gửi Thông Tin!')
                 window.location.reload();
             }
             else {
