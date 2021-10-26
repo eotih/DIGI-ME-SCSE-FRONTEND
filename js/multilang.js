@@ -16,7 +16,7 @@ window.addEventListener('load',multilang)
                 // Set active class
                 $('li').removeClass('active');
                 $('.english').parent().addClass('active');
-                document.getElementById("LogoFooterEN").src = "../images/LogoSCSE_Horizontal_English_Transparent.png";
+                document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 // Change language in dropdown
                 document.title = "SCSE - Home";
