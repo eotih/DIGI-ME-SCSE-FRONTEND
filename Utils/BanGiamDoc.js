@@ -41,6 +41,7 @@ function executeDataInformationGiamDoc(input) {
         `;
     })
     $('#tbody').html(html)
+    $(".loader-wrapper").fadeOut("slow");
 }
 function executeDataInformationPhoGiamDoc(input) {
     const html = input.map(function (response) {

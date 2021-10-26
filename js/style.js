@@ -1,7 +1,7 @@
 //loader
-$(window).on("load",function(){
-    $(".loader-wrapper").fadeOut("slow");
-  });
+// $(window).on('load',function(){
+//     $(".loader-wrapper").fadeOut("slow");
+//   });
 
 //2nd-navbar
 document.addEventListener("DOMContentLoaded", function(){

@@ -26,6 +26,7 @@ async function getBySlug(numb) {
                 })
                 // đây là hàm trả ra tbody
                 $('#tbody').html(html);
+                $(".loader-wrapper").fadeOut("slow");
             })
         function getBaiViet() {
             fetch(WEB_API + "Management/ShowAllPost")
@@ -57,6 +58,7 @@ async function getBySlug(numb) {
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
+                    
                 })
         }
     }
@@ -81,6 +83,7 @@ async function getBySlug(numb) {
                 })
                 // đây là hàm trả ra tbody
                 $('#tbody').html(html);
+                $(".loader-wrapper").fadeOut("slow");
             })
 
         function getBaiVietEN() {

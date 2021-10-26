@@ -1,4 +1,7 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
+// $(window).on('load',function(){
+//     $(".loader-wrapper").fadeOut("slow");
+//   });
 window.addEventListener('load', loadData)
 async function loadData() {
     fetch(WEB_API + "Management/ListImageTitle")
@@ -80,6 +83,7 @@ async function loadData() {
             `;
             })
             $('#tbody').html(html);
+            $(".loader-wrapper").fadeOut("slow");
         })
 }
 function getImage(Slug) {

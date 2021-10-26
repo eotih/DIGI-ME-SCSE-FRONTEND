@@ -51,6 +51,7 @@ async function loadData() {
                 `;
                 })
                 $('#tbody').html(html);
+                $(".loader-wrapper").fadeOut("slow");
             })
             const get6NewestPostedDate = sortByNewDate.slice(0, 6) 
             var html = get6NewestPostedDate.map(function (response) {

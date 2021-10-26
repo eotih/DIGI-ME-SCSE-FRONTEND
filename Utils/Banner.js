@@ -13,5 +13,7 @@ async function loadData() {
                 document.getElementById('pic4').src = response[3].Image;
                 document.getElementById('pic5').src = response[4].Image;
             // đây là hàm trả ra tbody
+            $(".loader-wrapper").fadeOut("slow");
         })
+        
 } 

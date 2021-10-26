@@ -20,5 +20,6 @@ const loadImage = async () => {
     })
     const arr = await Promise.all([html, data])
     $('#tImg').html(arr)
+    $(".loader-wrapper").fadeOut("slow");
 }
 loadImage()
