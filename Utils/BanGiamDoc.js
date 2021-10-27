@@ -64,6 +64,7 @@ function executeDataInformationPhoGiamDoc(input) {
         `;
     })
     $('#pgd').html(html)
+    $(".loader-wrapper").fadeOut("slow");
 }
 
 function executeDataInformationMember(input) {
@@ -88,4 +89,5 @@ function executeDataInformationMember(input) {
         `;
     })
     $('#members').html(html)
+    $(".loader-wrapper").fadeOut("slow");
 }
