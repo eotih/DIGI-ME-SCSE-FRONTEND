@@ -7,7 +7,7 @@ const loadPartner = async () => {
     const data = filterData.map(function (response) {
         return `
               <div class="item">
-                  <a href="${response.Link}">
+                  <a href="${response.Link}"target="_blank">
                   <img src="${response.Image}" style="height: 120px;object-fit:cover"class="img-fluid" alt="...">
                   </a>
               </div>

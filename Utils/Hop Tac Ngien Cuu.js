@@ -1,6 +1,9 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 // window.addEventListener('load', loadData)
-
+function convertDate(input) {
+    var result = new Date(input)
+    return result.toLocaleDateString()
+}
 async function loadHDNC(numb) {
     if (numb == 1) {
         fetch(WEB_API + "Management/GetByIdCategory?idcat=2")
@@ -31,7 +34,7 @@ async function loadHDNC(numb) {
                                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                         <h5 class="card-title font-weight-bold">${Title}</h5>
                                     </a>
-                                    <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
+                                    <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
                                     <p class="card-text">${Details.slice(0, 500)}</p>
         
                                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
@@ -61,8 +64,8 @@ async function loadHDNC(numb) {
                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                 <h5 class="card-title font-weight-bold">${Title}</h5>
                             </a>
-                            <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
-                            <p class="card-text">${Details.slice(0, 500)}</p>
+                            <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
+                            <p class="card-text">${Details.slice(0, 300)}...</p>
 
                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                             <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
@@ -106,7 +109,7 @@ async function loadHDNC(numb) {
                                 <h5 class="card-title font-weight-bold">${Title}</h5>
                                 </a>
                                 <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
-                                <p class="card-text">${Details.slice(0, 500)}</p>
+                                <p class="card-text">${Details.slice(0, 300)}...</p>
     
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
                             </div>
@@ -134,8 +137,8 @@ async function loadHDNC(numb) {
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
                                 <h5 class="card-title font-weight-bold">${Title}</h5>
                                 </a>
-                                <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
-                                <p class="card-text">${Details.slice(0, 500)}</p>
+                                <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
+                                <p class="card-text">${Details.slice(0, 300)}...</p>
     
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
                             </div>
