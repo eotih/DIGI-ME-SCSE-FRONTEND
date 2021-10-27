@@ -3,13 +3,13 @@
         font-size: 24px;
     }
     .Topnav {
-        font-size:14px;
+        font-size: 14px;
     }
-    #partner .carousel-inner{
-        font-size:14px;
+    #partner .carousel-inner {
+        font-size: 14px;
     }
-    .bg-img{
-        background-position:top calc(-400px) right calc(-300px);
+    .bg-img {
+        background-position: top calc(-400px) right calc(-300px);
     }
 }
 
@@ -17,18 +17,22 @@
     .nav-bar {
         display: none;
     }
+    .navbar {
+        top: 0px;
+        opacity: 1;
+    }
     .slogan {
         font-size: 18px;
     }
     .Topnav {
-        font-size:12px;
+        font-size: 12px;
     }
-    #partner .carousel-inner{
-        font-size:12px;
+    #partner .carousel-inner {
+        font-size: 12px;
     }
-    .bg-img{
+    .bg-img {
         padding-top: 0px;
-        background-position:top calc(-400px) right calc(-1000px);
+        background-position: top calc(-400px) right calc(-1000px);
     }
 }
 
@@ -37,10 +41,10 @@
         font-size: 16px;
     }
     .Topnav {
-        font-size:10px;
+        font-size: 10px;
     }
-    #partner .carousel-inner{
-        font-size:10px;
+    #partner .carousel-inner {
+        font-size: 10px;
     }
 }
 
@@ -50,31 +54,30 @@
         margin-top: 4em;
     }
     .Topnav {
-        font-size:8px;
+        font-size: 8px;
     }
 }
 
 @media screen and (max-width:600px) {
-    .display-3{
+    .display-3 {
         font-size: 3rem;
     }
-    .display-4{
+    .display-4 {
         font-size: 3rem;
     }
     .slogan {
         font-size: 12px;
     }
     .Topnav {
-        font-size:6px;
+        font-size: 6px;
     }
-    
 }
 
 @media screen and (max-width: 420px) {
-    .display-3{
+    .display-3 {
         font-size: 2rem;
     }
-    .display-4{
+    .display-4 {
         font-size: 2rem;
     }
     .slogan {
@@ -82,15 +85,15 @@
         margin-top: 3em;
     }
     .Topnav {
-        font-size:4px;
+        font-size: 4px;
     }
-    #partner .carousel-inner{
-        font-size:6px;
+    #partner .carousel-inner {
+        font-size: 6px;
     }
-    .nav-bar{
+    .nav-bar {
         opacity: 1;
     }
-    .navbar img{
+    .navbar img {
         width: 200px;
     }
 }
@@ -99,14 +102,13 @@
     .slogan {
         font-size: 8px;
     }
-    
 }
 
 @media screen and (max-width:350px) {
     .slogan {
         font-size: 6px;
     }
-    #partners .display-3{
+    #partners .display-3 {
         font-size: 1.5rem;
     }
 }
