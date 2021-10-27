@@ -31,7 +31,7 @@ async function loadData() {
                                 <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${Image}"
                                     class="card-img-top my-2 px-2" style="width:350px; height:250px;object-fit:cover" alt="...">
                             <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
+                                <a style="text-decoration: none; color:black;cursor:pointer" onclick="getImage('${Slug}')">
                                     <h5 class="card-title">${Title}</h5>
                                 </a>
 
@@ -65,7 +65,7 @@ async function loadData() {
                                 <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${Image}"
                                     class="card-img-top my-2 px-2" style="width:350px; height:250px;object-fit:cover" alt="...">
                             <div class="card-body">
-                                <a style="text-decoration: none; color:black" href="#">
+                                <a style="text-decoration: none; color:black;cursor:pointer" onclick="getImage('${Slug}')">
                                     <h5 class="card-title">${Title}</h5>
                                 </a>
 
