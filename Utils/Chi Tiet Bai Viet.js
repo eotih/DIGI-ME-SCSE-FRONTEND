@@ -18,7 +18,7 @@ async function getBySlug(numb) {
                     const { IDPost, Title, CreatedByDate, Slug, Details, Image } = response
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
-                                                <p>${CreatedByDate}</p>
+                                                <p>${convertDate(CreatedByDate)}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>
