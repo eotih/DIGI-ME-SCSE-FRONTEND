@@ -98,7 +98,7 @@ async function loadDA(numb) {
             loadMore.on('click',function (e) {
                 e.preventDefault();
                 var html = sortByNewDate.map(function (response) {
-                    const { IDPost, Title, Slug, Details, Image,CreatedByDate } = response
+                    const { IDPost, Title, SlugEN, Details, Image,CreatedByDate } = response
                     return `
                     <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
