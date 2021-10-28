@@ -54,19 +54,19 @@ const getFieldBySlug = async () => {
     const slugResult = urlParams.get('Field');
     if (slugResult === 'Nghiên cứu - Đào tạo') {
         $('#NCDT').prop('checked', true);
-        filterData(4);
+        getNewsIdField(4);
     }
     if (slugResult === 'Thực tập sinh') {
         $('#TTS').prop('checked', true);
-        filterData(3);
+        getNewsIdField(3);
     }
     if (slugResult === 'Biến đổi khí hậu - Môi trường') {
         $('#KHMT').prop('checked', true);
-        filterData(2);
+        getNewsIdField(2);
     }
     if (slugResult === 'Giới và bình đăng giới') {
         $('#GBDG').prop('checked', true);
-        filterData(1);
+        getNewsIdField(1);
     }
 }
 
@@ -129,6 +129,7 @@ const executeData = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 6,
+        className: 'paginationjs-theme-blue',
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
