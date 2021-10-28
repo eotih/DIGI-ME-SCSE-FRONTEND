@@ -80,7 +80,6 @@ const executeData = (data) => {
         </div>                         
             `;
     });
-
     $('#list').pagination({
         dataSource: html,
         pageSize: 3,
