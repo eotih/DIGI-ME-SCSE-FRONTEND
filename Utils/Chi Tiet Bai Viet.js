@@ -15,7 +15,8 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPost, Title, CreatedByDate, Slug, Details, Image } = response
+                    const { IDPost, Title, CreatedByDate, Slug, Details, Image, IDState } = response
+                    if(IDState === 2){
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${convertDate(CreatedByDate)}</p>
@@ -23,6 +24,10 @@ async function getBySlug(numb) {
                                                 <div>${Details}</div>
                                             </section>
                                         `;
+                                    }
+                                    else {
+                                        Alert("Bài viết chưa có bản tiếng anh!")
+                                    }
                 })
                 // đây là hàm trả ra tbody
                 $('#tbody').html(html);
@@ -37,7 +42,8 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { IDPost, Title, Slug, Details, Image,CreatedByDate } = response
+                        const { IDPost, Title, Slug, Details, Image,CreatedByDate, IDState } = response
+                        if(IDState === 2){
                         return `
                                 <div class="col-md-6">
                                     <div
@@ -55,6 +61,7 @@ async function getBySlug(numb) {
                                         </div>
                                     </div>
                                 </div> `;
+                        }
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
@@ -72,7 +79,8 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title,  CreatedByDate, Details, Image } = response
+                    const { IDPostEN, Title,  CreatedByDate, Details, Image, IDState } = response
+                    if(IDState === 2){
                     return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${CreatedByDate}</p>
@@ -80,6 +88,10 @@ async function getBySlug(numb) {
                                                 <div>${Details}</div>
                                             </section>
                                         `;
+                    }
+                    else { 
+                        alert("Bài viết chưa có bản tiếng anh!")
+                    }
                 })
                 // đây là hàm trả ra tbody
                 $('#tbody').html(html);
@@ -95,7 +107,8 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { IDPostEN, Title, SlugEN, Details, Image } = response
+                        const { IDPostEN, Title, SlugEN, Details, Image,IDState } = response
+                        if(IDState === 2){
                         return `
                     <div class="col-md-6">
                         <div
@@ -111,6 +124,7 @@ async function getBySlug(numb) {
 
                         </div>
                     </div> `;
+                }
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);

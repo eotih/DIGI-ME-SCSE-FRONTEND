@@ -11,14 +11,19 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Slug, CreatedByDate, Details, Image } = response
-                $('#tbody').html(`
+                const { Title, Slug, CreatedByDate, Details, Image, IDState } = response
+                if (IDState === 2) {
+                    $('#tbody').html(`
                     <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                     <p>${CreatedByDate}<p>
                 <section>
                     <div>${Details}</div>
                 </section>
             `)
+                }
+                else {
+                    alert("Bải viết chưa có bản tiếng anh!")
+                }
             })
         // đây là hàm trả ra tbody
         function getBaiViet() {
@@ -30,8 +35,9 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { Title, Slug, Details, Image } = response
-                        return `
+                        const { Title, Slug, Details, Image, IDState } = response
+                        if (IDState === 2) {
+                            return `
                                 <div class="col-md-6">
                                     <div
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -43,11 +49,12 @@ async function getBySlug(numb) {
                                             <h3 class="mb-0">${Title}</h3>
                                             </a>
                                             <div class="mb-1 text-muted">Nov 12</div>
-                                            <p class="mb-auto">${Details.slice(0, 500)+"..."}</p>
+                                            <p class="mb-auto">${Details.slice(0, 500) + "..."}</p>
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
                                 </div> `;
+                        }
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
@@ -64,14 +71,19 @@ async function getBySlug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                const { Title, Details, CreatedByDate, Image } = response
-                $('#tbody').html(`
+                const { Title, Details, CreatedByDate, Image, IDState } = response
+                if (IDState === 2) {
+                    $('#tbody').html(`
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                 <p>${CreatedByDate}</p>
             <section>
                 <div>${Details}</div>
             </section>
         `);
+                }
+                else {
+                    alert("Bải viết chưa có bản tiếng anh!")
+                }
             })
         // đây là hàm trả ra tbody
         function getBaiVietEN() {
@@ -83,8 +95,9 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { Title, SlugEN, Details, Image } = response
-                        return `
+                        const { Title, SlugEN, Details, Image, IDState } = response
+                        if (IDState === 2) {
+                            return `
                     <div class="col-md-6">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -100,6 +113,7 @@ async function getBySlug(numb) {
 
                         </div>
                     </div> `;
+                        }
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
@@ -122,7 +136,7 @@ function getslug(numb) {
                         return response.json();
                     })
                     .then(function (response) {
-                        if(response === null){
+                        if (response === null) {
                             alert("Bài viết chưa có bản tiếng anh!")
                             window.location.href = "../Tin-Tuc/"
                         }
@@ -140,11 +154,11 @@ function getslug(numb) {
             })
             .then(function (response) {
                 fetch(WEB_API + "Management/GetByIdNewsEN?ID=" + response.IDNews)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                        if(response === null){
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (response) {
+                        if (response === null) {
                             alert("Bài viết chưa có bản tiếng anh!")
                             window.location.href = "../Tin-Tuc/"
                         }
