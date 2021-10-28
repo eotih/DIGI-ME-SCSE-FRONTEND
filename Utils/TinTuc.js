@@ -126,7 +126,7 @@ const executeData = (data) => {
     });
     $('#list').pagination({
         dataSource: html,
-        pageSize: 3,
+        pageSize: 6,
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
