@@ -24,8 +24,7 @@ function executeDataInformationGiamDoc(input) {
         document.getElementById('picgd1').src = Hinhanh[0].ImagePortfolio;
         document.getElementById('picgd2').src = Hinhanh[1].ImagePortfolio;
         document.getElementById('picgd3').src = Hinhanh[2].ImagePortfolio;
-        // Lấy dữ liệu ra
-        // Chỉnh sửa link của ban giám đôc chỉnh trực tiếp trong đây
+        // Chỉnh sửa link của ban giám đôc chỉnh trực tiếp trong đây 
         return `
        
         <div class="text-lg-right text-center">
@@ -34,8 +33,9 @@ function executeDataInformationGiamDoc(input) {
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
                         <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;">${Details}</p>
-                        <a href="https://www.facebook.com/profile.php?id=100054480739834"target="_blank"><img src="../../images/image 18.png"></a>
-                        <a href="https://zalo.me/84913817988"target="_blank"><img src="../../images/image 17.png"></a>
+                        <a href="#"><img src="../../images/image 19.png"></a>
+                        <a href="#"><img src="../../images/image 18.png"></a>
+                        <a href="#"><img src="../../images/image 17.png"></a>
                     </div>
                 </div>
         `;
@@ -56,14 +56,14 @@ function executeDataInformationPhoGiamDoc(input) {
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
                         <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;"> ${Details}</p>
-                        <a href="https://www.facebook.com/nguyenquocgiang1308" target="_blank"><img src="../../images/image 18.png"></a>
-                        <a href="https://zalo.me/84977860008" target="_blank"><img src="../../images/image 17.png"></a>
+                        <a href="#"><img src="../../images/image 19.png"></a>
+                        <a href="#"><img src="../../images/image 18.png"></a>
+                        <a href="#"><img src="../../images/image 17.png"></a>
                     </div>
                 </div>
         `;
     })
     $('#pgd').html(html)
-    $(".loader-wrapper").fadeOut("slow");
 }
 
 function executeDataInformationMember(input) {
@@ -88,5 +88,4 @@ function executeDataInformationMember(input) {
         `;
     })
     $('#members').html(html)
-    $(".loader-wrapper").fadeOut("slow");
 }
