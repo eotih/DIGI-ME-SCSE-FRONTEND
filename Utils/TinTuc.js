@@ -165,6 +165,9 @@ const executeData = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 6,
+        className: 'paginationjs-theme-blue',
+<<<<<<< HEAD
+=======
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
@@ -204,6 +207,7 @@ const executeDataEN = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 6,
+>>>>>>> 2934c878a0c2df6f0c4dc728bce6f5865ded72d4
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
