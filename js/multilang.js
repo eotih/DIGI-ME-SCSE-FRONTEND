@@ -18,6 +18,7 @@ window.addEventListener('load',multilang)
                 $('.english').parent().addClass('active');
                 document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_English_Transparent_white.png";
+                document.getElementById("donateimg").src = "./images/Donate.png";
                 // Change language in dropdown
                 document.title = "SCSE - Home";
             }
@@ -29,6 +30,7 @@ window.addEventListener('load',multilang)
                 // Change language in dropdown
                 document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_Vietnamese.png";
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_Vietnamese_white.png";
+                document.getElementById("donateimg").src = "./images/Group_399.png";
                 document.title = "SCSE - Trang Chủ";
             }
             
@@ -44,6 +46,7 @@ window.addEventListener('load',multilang)
                 $('.english').parent().addClass('active');
                 document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_English_Transparent.png";
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_English_Transparent_white.png";
+                document.getElementById("donateimg").src = "./images/Donate.png";
                 document.title = "SCSE - Home";
                 // Change name language in dropdown
             });
@@ -59,6 +62,7 @@ window.addEventListener('load',multilang)
                 // Change name language in dropdown
                 document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_Vietnamese.png";
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_Vietnamese_white.png";
+                document.getElementById("donateimg").src = "./images/Group_399.png";
                 document.title = "SCSE - Trang Chủ";
             });
             
