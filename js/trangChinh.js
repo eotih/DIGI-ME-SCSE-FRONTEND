@@ -37,4 +37,20 @@
       });
     }
   
+    if ($('.loop').length) {
+      $('.loop').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 8500,
+        responsive: {
+          600: {
+            items: 4
+          }
+        }
+      });
+    }
+  
   })(jQuery);
