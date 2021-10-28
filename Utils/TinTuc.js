@@ -69,6 +69,7 @@ const getFieldBySlug = async () => {
         filterData(1);
     }
 }
+
 const getNewsIdField = (IdField) => {
     fetch(WEB_API + "Management/ShowAllNewsVN")
         .then(function (response) {
@@ -94,6 +95,7 @@ const getNewsIdField = (IdField) => {
             }
         })
 }
+getNewsIdField(0)
 const unChecked = (input) => {
     input.prop('checked', false);
 }
@@ -126,7 +128,7 @@ const executeData = (data) => {
     });
     $('#list').pagination({
         dataSource: html,
-        pageSize: 3,
+        pageSize: 6,
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
