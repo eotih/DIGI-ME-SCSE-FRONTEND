@@ -89,7 +89,7 @@ function executeDataInformationMember(input) {
         `;
     })
     $('#members').html(html)
-    var $owl = $('.owl-carousel');
+    var $owl = $('#members');
     $owl.trigger('destroy.owl.carousel');
     $owl.find('.owl-stage-outer').children().unwrap();
     $owl.removeClass("owl-center owl-loaded owl-text-select-on");
