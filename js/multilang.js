@@ -61,5 +61,6 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_Vietnamese_white.png";
                 document.title = "SCSE - Trang Chủ";
             });
+            
         };
         
