@@ -36,5 +36,4 @@
         navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"]
       });
     }
-  
   })(jQuery);
