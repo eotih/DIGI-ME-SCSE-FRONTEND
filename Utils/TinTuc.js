@@ -178,7 +178,7 @@ const executeData = (data) => {
 const executeDataEN = (data) => {
     const html = data.map(function (response) {
         const { Title, SlugEN, Image, IdField } = response;
-        const LinhVuc = changeIdField(IdField)
+        const LinhVuc = changeIdFieldEN(IdField)
         return `
         <div class="col-md-4 d-flex align-items-stretch">
             <div class="mt-5 mb-5">
@@ -205,6 +205,7 @@ const executeDataEN = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 6,
+        className: 'paginationjs-theme-blue',
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
@@ -225,6 +226,20 @@ const changeIdField = (id) => {
     }
     if (id === 4) {
         return 'Nghiên cứu Đào tạo'
+    }
+}
+function changeIdFieldEN(id) {
+    if (id === 1) {
+        return 'Gender and gender equality'
+    }
+    if (id === 2) {
+        return 'Climate change - Environment'
+    }
+    if (id === 3) {
+        return 'Internship'
+    }
+    if (id === 4) {
+        return 'Research - Training'
     }
 }
 
