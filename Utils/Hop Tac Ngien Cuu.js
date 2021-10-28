@@ -17,66 +17,43 @@ async function loadHDNC(numb) {
                     b = new Date(b.UpdatedByDate);
                     return a > b ? -1 : a < b ? 1 : 0;
                 })
-                const loadMore = $('#loadMore')
-                loadMore.on('click', function (e) {
-                    e.preventDefault();
-                    var html = sortByNewDate.map(function (response) {
-                        const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
-                        return `
-                        <div class="card mb-3" style="width:100%;">
-                        <div class="row g-0">
-                        <div class="col-md-4">
-                                <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
-                                        class=" mt-3 mx-3" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                                        <h5 class="card-title font-weight-bold">${Title}</h5>
-                                    </a>
-                                    <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                                    <p class="card-text">${Details.slice(0, 500)}</p>
-        
-                                    <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                                    <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    `;
-                    })
-                    $('#tbody').html(html);
-                    $(".loader-wrapper").fadeOut("slow");
-                })
-                const get6NewestPostedDate = sortByNewDate.slice(0, 6)
-                var html = get6NewestPostedDate.map(function (response) {
+                const html = sortByNewDate.map(function (response) {
                     const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
                     return `
-            <div class="card mb-3" style="width:100%;">
-                <div class="row g-0">
-                <div class="col-md-4">
-                        <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
-                                class=" mt-3 mx-3" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                                <h5 class="card-title font-weight-bold">${Title}</h5>
-                            </a>
-                            <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                            <p class="card-text">${Details.slice(0, 300)}...</p>
+                        <div class="card mb-3" style="width:100%;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
+                                            class=" mt-3 mx-3" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                                            <h5 class="card-title font-weight-bold">${Title}</h5>
+                                        </a>
+                                        <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
+                                        <p class="card-text">${Details.slice(0, 300)}...</p>
 
-                            <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                            <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
+                                        <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
+                                        <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
-                    </div>
-                    
-                </div>
-            </div>
-            `;
+                        `;
                 })
-                $('#tbody').html(html);
+                $('#list').pagination({
+                    dataSource: html,
+                    pageSize: 6,
+                    className: 'paginationjs-theme-blue',
+                    callback: function (data, pagination) {
+                        $(".loader-wrapper").fadeOut("slow");
+                        $('#tbody').html(data);
+
+                    }
+                })
+             
             })
     }
     else {
@@ -91,39 +68,7 @@ async function loadHDNC(numb) {
                     b = new Date(b.UpdatedByDate);
                     return a > b ? -1 : a < b ? 1 : 0;
                 })
-                const loadMore = $('#loadMore')
-                loadMore.on('click', function (e) {
-                    e.preventDefault();
-                    var html = sortByNewDate.map(function (response) {
-                        const { IDPostEN, Title, SlugEN, Details, Image, CreatedByDate } = response
-                        return `
-                <div class="card mb-3" style="width:100%;">
-                    <div class="row g-0">
-                    <div class="col-md-4">
-                            <img style="width:300px;height:220px" src="${Image}" 
-                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
-                                <h5 class="card-title font-weight-bold">${Title}</h5>
-                                </a>
-                                <p class="card-text"><small class="text-muted">${CreatedByDate}</small></p>
-                                <p class="card-text">${Details.slice(0, 300)}...</p>
-    
-                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                `;
-                    })
-                    $('#tbody').html(html);
-                    $(".loader-wrapper").fadeOut("slow");
-                })
-                const get6NewestPostedDate = sortByNewDate.slice(0, 6)
-                var html = get6NewestPostedDate.map(function (response) {
+                const html = sortByNewDate.map(function (response) {
                     const { IDPostEN, Title, SlugEN, Details, Image, CreatedByDate } = response
                     return `
                     <div class="card mb-3" style="width:100%;">
@@ -148,7 +93,16 @@ async function loadHDNC(numb) {
                 </div>
                 `;
                 })
-                $('#tbody').html(html);
+                $('#list').pagination({
+                    dataSource: html,
+                    pageSize: 6,
+                    className: 'paginationjs-theme-blue',
+                    callback: function (data, pagination) {
+                        $(".loader-wrapper").fadeOut("slow");
+                        $('#tbody').html(data);
+
+                    }
+                })
             })
     }
 
