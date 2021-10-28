@@ -41,7 +41,7 @@ async function getBySlug(numb) {
                         const { Title, Slug, Details, Image, IDState } = response
                         if (IDState === 2) {
                             return `
-                                <div class="col-md-6">
+                                <div class="col-md-6 d-flex align-items-stretch">
                                     <div
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                         <div class="col-auto d-none d-lg-block">
@@ -49,7 +49,7 @@ async function getBySlug(numb) {
                                         </div>
                                         <div class="col p-4 d-flex flex-column position-static">
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">
-                                            <h3 class="mb-0">${Title}</h3>
+                                            <h4 class="mb-0">${Title}</h4>
                                             </a>
                                             <div class="mb-1 text-muted">Nov 12</div>
                                             <p class="mb-auto">${Details.slice(0, 500) + "..."}</p>
@@ -101,14 +101,14 @@ async function getBySlug(numb) {
                         const { Title, SlugEN, Details, Image, IDState } = response
                         if (IDState === 2) {
                             return `
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-flex align-items-stretch">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                             <div class="col-auto d-none d-lg-block">
                                 <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
-                                <h3 class="mb-0">${Title}</h3>
+                                <h4 class="mb-0">${Title}</h4>
                                 <div class="mb-1 text-muted">Nov 12</div>
                                 <p class="mb-auto">${Details.slice(0, 200)}</p>
                                 <a href="../Chi-Tiet/index.html?slug=${SlugEN}">Continue reading</a>

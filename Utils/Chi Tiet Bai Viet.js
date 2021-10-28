@@ -45,7 +45,7 @@ async function getBySlug(numb) {
                         const { IDPost, Title, Slug, Details, Image,CreatedByDate, IDState } = response
                         if(IDState === 2){
                         return `
-                                <div class="col-md-6">
+                                <div class="col-md-6 d-flex align-items-stretch">
                                     <div
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                         <div class="col-auto d-none d-lg-block">
@@ -110,7 +110,7 @@ async function getBySlug(numb) {
                         const { IDPostEN, Title, SlugEN, Details, Image,IDState } = response
                         if(IDState === 2){
                         return `
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-flex align-items-stretch">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                             <div class="col-auto d-none d-lg-block">
