@@ -122,7 +122,12 @@ function getslug(numb) {
                         return response.json();
                     })
                     .then(function (response) {
+                        if(response === null){
+                            alert("Bài viết chưa có bản tiếng anh!")
+                            window.location.href = "../Tin-Tuc/"
+                        }
                         window.location.href = "../Chi-Tiet/index.html?slug=" + response.Slug
+
                     })
             })
     }

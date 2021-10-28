@@ -77,8 +77,8 @@ const getFieldBySlug = async () => {
         dataGBDG();
     }
 }
-function checkdata(){
-    return 
+function checkdata() {
+    return
 }
 const getNewsIdField = (IdField) => {
     fetch(WEB_API + "Management/ShowAllNewsVN")
@@ -229,18 +229,18 @@ const changeIdField = (id) => {
 
 const dataNCDT = () => {
     var labels = document.getElementById('lblNCDT').textContent;
-        if (labels === 'Đào Tạo - Nghiên Cứu') { getNewsIdField(4) }
-        else { getNewsIdFieldEN(4) }
+    if (labels === 'Đào Tạo - Nghiên Cứu') { getNewsIdField(4) }
+    else { getNewsIdFieldEN(4) }
 }
 const dataTTS = () => {
     var labels = document.getElementById('lblTTS').textContent;
-        if (labels === 'Thực tập sinh') { getNewsIdField(3) }
-        else { getNewsIdFieldEN(3) }
+    if (labels === 'Thực tập sinh') { getNewsIdField(3) }
+    else { getNewsIdFieldEN(3) }
 }
 const dataKHMT = () => {
     var labels = document.getElementById('lblKHMT').textContent;
-        if (labels === 'Khí hậu - Môi trường') { getNewsIdField(2) }
-        else { getNewsIdFieldEN(2) }
+    if (labels === 'Khí hậu - Môi trường') { getNewsIdField(2) }
+    else { getNewsIdFieldEN(2) }
 }
 const dataGBDG = () => {
     var labels = document.getElementById('lblGBDG').textContent;
