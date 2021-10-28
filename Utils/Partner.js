@@ -8,7 +8,7 @@ const loadPartner = async () => {
         return `
               <div class="item">
                   <a href="${response.Link}"target="_blank">
-                  <img src="${response.Image}" style="height: auto;object-fit:cover"class="img-fluid" alt="...">
+                  <img src="${response.Image}" style="height: 350px;object-fit:contain"class="img-fluid" alt="...">
                   </a>
               </div>
       `;

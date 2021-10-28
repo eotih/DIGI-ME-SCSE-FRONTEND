@@ -37,33 +37,4 @@
       });
     }
   
-    if ($('.loop').length) {
-      $('.loop').owlCarousel({
-        center: true,
-        items: 2,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 8500,
-        responsive: {
-          600: {
-            items: 4
-          }
-        }
-      });
-    }
-  
   })(jQuery);
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        loop : true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        responsive: {
-            0:{ items:1},
-            600:{ items:2},
-            1000:{ items:3},
-        }
-    });
-  });
