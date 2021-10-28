@@ -205,6 +205,7 @@ const executeDataEN = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 6,
+        className: 'paginationjs-theme-blue',
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);

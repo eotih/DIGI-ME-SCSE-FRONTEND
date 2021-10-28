@@ -1,6 +1,9 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 // window.addEventListener('load', getBySlug)
-
+function convertDate(input) {
+    var result = new Date(input)
+    return result.toLocaleDateString()
+}
 async function getBySlug(numb) {
     if (numb == 1) {
         getBaiViet()
@@ -15,14 +18,14 @@ async function getBySlug(numb) {
                 if (IDState === 2) {
                     $('#tbody').html(`
                     <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
-                    <p>${CreatedByDate}<p>
+                    <p>${convertDate(CreatedByDate)}<p>
                 <section>
                     <div>${Details}</div>
                 </section>
             `)
                 }
                 else {
-                    alert("Bải viết chưa có bản tiếng anh!")
+                    alert("Bài viết chưa có bản tiếng anh!")
                 }
             })
         // đây là hàm trả ra tbody
