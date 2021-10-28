@@ -89,7 +89,6 @@ function getImage(Slug) {
         const res = await fetch(WEB_API + "Interface/GetBySlugPhotoGallery?slug=" + Slug)
         const json = await res.json();
         const filterData = json.filter(v => v.Image)
-        console.log(filterData)
 
         const data = filterData.slice(0, filterData.length-1).map(function (response) {
             return `
