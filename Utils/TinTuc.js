@@ -4,28 +4,71 @@ const NCDT = $('#NCDT');
 const GBDG = $('#GBDG');
 const WEB_API = "https://api.scse-vietnam.org/API/";
 
-KHMT.on('click', function (e) {
-    unChecked(TTS);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
-TTS.on('click', function (e) {
-    unChecked(KHMT);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
 NCDT.on('click', function (e) {
-    getNewsIdField(1);
+    if (this.checked) {
+        getNewsIdField(1)
+    }
+    else {
+        getNewsIdField(0)
+    }
     unChecked(KHMT);
     unChecked(TTS);
+    unChecked(GBDG);
+})
+KHMT.change(function (e) {
+    if (this.checked) {
+        getNewsIdField(2)
+    }
+    else {
+        getNewsIdField(0)
+    }
+    unChecked(TTS);
+    unChecked(NCDT);
     unChecked(GBDG);
 })
 GBDG.on('click', function (e) {
+    if (this.checked) {
+        getNewsIdField(3)
+    }
+    else {
+        getNewsIdField(0)
+    }
     unChecked(KHMT);
     unChecked(TTS);
     unChecked(NCDT);
 })
+TTS.on('click', function (e) {
+    if (this.checked) {
+        getNewsIdField(4)
+    }
+    else {
+        getNewsIdField(0)
+    }
+    unChecked(KHMT);
+    unChecked(NCDT);
+    unChecked(GBDG);
+})
 
+const getFieldBySlug = async () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const slugResult = urlParams.get('Field');
+    if (slugResult === 'Nghiên cứu - Đào tạo') {
+        $('#NCDT').prop('checked', true);
+        filterData(4);
+    }
+    if (slugResult === 'Thực tập sinh') {
+        $('#TTS').prop('checked', true);
+        filterData(3);
+    }
+    if (slugResult === 'Biến đổi khí hậu - Môi trường') {
+        $('#KHMT').prop('checked', true);
+        filterData(2);
+    }
+    if (slugResult === 'Giới và bình đăng giới') {
+        $('#GBDG').prop('checked', true);
+        filterData(1);
+    }
+}
 const getNewsIdField = (IdField) => {
     fetch(WEB_API + "Management/ShowAllNewsVN")
         .then(function (response) {
@@ -39,6 +82,7 @@ const getNewsIdField = (IdField) => {
                     b = new Date(b.UpdatedByDate);
                     return a > b ? -1 : a < b ? 1 : 0;
                 })
+                executeData(sortByNewDate);
             } else {
                 const filterFields = postApproved.filter(e => e.IdField === IdField)
                 const sortByNewDate = filterFields.sort(function (a, b) {
@@ -83,15 +127,15 @@ const executeData = (data) => {
     $('#list').pagination({
         dataSource: html,
         pageSize: 3,
-        callback: function(data, pagination) {
+        callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
-            
+
         }
     })
-    
+
 }
-const changeIdField = (id) =>{
+const changeIdField = (id) => {
     if (id === 1) {
         return 'Giới và bình đẳng giới'
     }
