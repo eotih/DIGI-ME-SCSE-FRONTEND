@@ -33,7 +33,6 @@ function executeDataInformationGiamDoc(input) {
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
                         <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;">${Details}</p>
-                        <a href="#"><img src="../../images/image 19.png"></a>
                         <a href="#"><img src="../../images/image 18.png"></a>
                         <a href="#"><img src="../../images/image 17.png"></a>
                     </div>
@@ -56,7 +55,6 @@ function executeDataInformationPhoGiamDoc(input) {
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
                         <p class="" style="text-align: justify; text-justify: inter-word; font-size:1rem;"> ${Details}</p>
-                        <a href="#"><img src="../../images/image 19.png"></a>
                         <a href="#"><img src="../../images/image 18.png"></a>
                         <a href="#"><img src="../../images/image 17.png"></a>
                     </div>
