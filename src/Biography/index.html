@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCSE - Tin tức</title>
+    <title>SCSE - Trang Chủ</title>
     <link rel="icon" sizes="192x192" href="../../images/LogoSCSE_Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,25 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
-    <link rel="stylesheet" href="../../css/paginationjs.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta name="description"
         content='Với quan niệm " kết nối- phát triển- bình đẳng", chúng tôi tin rằng sự kết nối sẽ tạo ra những thay đổi tích cực, thúc đẩy sự công bằng trong tiếp cận nguồn lực và góp phần phát triển xã hội' />
     <meta name="keywords" content="Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng,SCSE " />
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    
 </head>
 
 <body>
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- HEADER -->
     <div class="header">
         <div class="Topnav">
             <hr class="line">
@@ -55,8 +48,8 @@
                                 chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href=""
+                <li><a class="Roboto" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#Activities"
                         data-i18n="header.Dropmenuheader2.Activities">Chương trình</a>
                     <ul>
                         <li><a class="Roboto" href="../Hoat-Dong-Thien-Nguyen/"
@@ -108,7 +101,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a>
+                            <a class="nav-link" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
@@ -194,82 +187,14 @@
             </a>
         </div>
     </div>
-    <hr style="background-color: #1A94D0;height: 0.67rem;margin-top:0;">
-    <!-- BODY -->
-    <div class="container">
-        <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
-            <a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;" data-i18n="News.Home">
-                Trang chủ ></a>
-            <p class=" my-auto font-weight-bold" style="color: #FFFFFF" data-i18n="News.News"> Tin Tức</p>
-        </div>
-    </div>
+    <hr style="background-color: #1A94D0;height: 1rem;margin-top:0;">
     <div class="mt-5">
-
         <div class="container">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="grid search">
-                        <div class="grid-body">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <h3 class="grid-title"><i class="fa fa-filter" data-i18n="News.Filter">Bộ lọc
-                                        tìm kiếm</i></h3>
-                                    <hr>
-                                    <h5 data-i18n="News.ByField">Theo danh mục:</h5>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="NCDT">
-                                        <label class="form-check-label" for="NCDT" data-i18n="News.ResearchTraining"
-                                            id="lblNCDT">
-                                            Nghiên cứu Đào tạo
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="KHMT">
-                                        <label class="form-check-label" for="KHMT"
-                                            data-i18n="News.EnvironmentClimateChange" id="lblKHMT">
-                                            Khí hậu - môi trường
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="GBDG">
-                                        <label class="form-check-label" for="GBDG"
-                                            data-i18n="News.GenderAndGenderEquality" id="lblGBDG">
-                                            Giới và bình đẳng giới
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="TTS">
-                                        <label class="form-check-label" for="TTS" data-i18n="News.Internship"
-                                            id="lblTTS">
-                                            Thực tập sinh
-                                        </label>
-                                    </div>
-                                    <div class="padding"></div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-header py-3 d-flex justify-content-start">
-                                        <div class="bg-red-scse mx-2"
-                                            style="height: 80px;width: 70px; border-radius: 10px;"></div>
-                                        <h1 class="m-0 font-weight-bold my-auto text-end text-uppercase"
-                                            data-i18n="News.LATESTNEWS">Tin tức mới
-                                            nhất</h1>
-                                    </div>
-                                    <div class="row" id="tbody"></div>
-                                    <div id="list"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="tbody">
             </div>
         </div>
     </div>
-    </div>
-
-
     <img src="../../images/wave-footer.png" style="width: 100%;">
-    <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
 
         <!-- Footer Links -->
@@ -283,7 +208,8 @@
                     <img class="img-fluid" id="LogoFooterEN" src="../../images/LogoSCSE_Horizontal_Vietnamese.png"
                         alt="">
                     <p data-i18n="Footer.content1" style=" text-align: justify; text-justify: inter-word;">Chúng ta
-                        không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
+                        không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo
+                        ra sự kết nối các nguồn
                         lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
                 </div>
                 <!-- Grid column -->
@@ -397,16 +323,9 @@
                     </div>
 
                 </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
     </footer>
-    <!-- Footer -->
+    <script src="../../Utils/ChiTietTinTuc.js"> </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -418,13 +337,8 @@
         crossorigin="anonymous"></script>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/style.js"></script>
-    <script src="../../Utils/Banner.js"></script>
-
-    <script src="../../Utils/TinTuc.js"></script>
-    <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script>
-    <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
-    <script src="../../js/multilangNews.js"></script>
+    <script src="../../js/MultilangBio.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
+    <script src="../../Utils/Banner.js"></script>
+    <script src="../../Utils/Biography.js"></script>
 </body>
-
-</html>

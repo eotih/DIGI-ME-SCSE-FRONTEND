@@ -77,7 +77,7 @@ function executeDataInformationMember(input) {
                         style="width: 300px;height:300px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:contain">
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title pricing-card-title text-center">${FullName}</h4>
+                <a href="../Biography/index.html?slug=${FullName}">${FullName}</a>
                     <h5 class="text-blue-scse text-center">${Position}</h5>
                 </div>
             </div>
