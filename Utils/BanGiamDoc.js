@@ -68,6 +68,7 @@ function executeDataInformationMember(input) {
     const html = input.map(function (response) {
         const { Details, FullName, Position, Hinhanh } = response;
         return `
+    <a href="#">
     <div class="item">
         <div class="col-lg-4">
             <div class="card mb-4 rounded-3 shadow-sm"
@@ -83,7 +84,7 @@ function executeDataInformationMember(input) {
             </div>
         </div>
     </div>
-
+    </a>
         `;
     })
     $('#members').html(html)
