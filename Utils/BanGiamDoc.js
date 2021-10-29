@@ -68,8 +68,8 @@ function executeDataInformationMember(input) {
     const html = input.map(function (response) {
         const { Details, FullName, Position, Hinhanh } = response;
         return `
-    <a href="#">
-    <div class="item">
+        <div class="item">
+        <a href="../Biography/index.html?slug=${FullName}">
         <div class="col-lg-4">
             <div class="card mb-4 rounded-3 shadow-sm"
                 style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
@@ -78,13 +78,13 @@ function executeDataInformationMember(input) {
                         style="width: 300px;height:300px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:contain">
                 </div>
                 <div class="card-body">
-                <a href="../Biography/index.html?slug=${FullName}">${FullName}</a>
+                <h4 class="card-title pricing-card-title text-center">${FullName}</h4>
                     <h5 class="text-blue-scse text-center">${Position}</h5>
                 </div>
             </div>
         </div>
+        </a>
     </div>
-    </a>
         `;
     })
     $('#members').html(html)
