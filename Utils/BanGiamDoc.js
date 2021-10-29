@@ -170,7 +170,7 @@ const getThongTin = () => {
                             style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
                             <div class="pt-3">
                                 <img src="${volunteer.image}"
-                                    style="width: 300px;height:300px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
+                                    style="width: 300px;height:400px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
                             </div>
                             <div class="card-body">
                                 <div class="mb-1"
