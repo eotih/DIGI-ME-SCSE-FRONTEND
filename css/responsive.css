@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 1500px) {
     .slogan {
         font-size: 24px;
@@ -7,9 +9,6 @@
     }
     #partner .carousel-inner {
         font-size: 14px;
-    }
-    .bg-img {
-        background-position: top calc(-400px) right calc(-500px);
     }
 }
 
@@ -32,7 +31,6 @@
     }
     .bg-img {
         padding-top: 0px;
-        background-position: top calc(-400px) right calc(-1000px);
     }
 }
 
