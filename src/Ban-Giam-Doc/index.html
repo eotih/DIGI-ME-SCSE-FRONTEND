@@ -255,6 +255,12 @@
             <div class="owl-carousel owl-theme loop" id="members">
             </div>
         </div>
+        <div class="mt-5">
+            <h3>TÌNH NGUYỆN VIÊN</h3>
+            <hr style="background-color: #1A94D0;width: 7rem; height: 0.5rem;">
+            <div class="owl-carousel owl-theme loop" id="volunteers">
+            </div>
+        </div>
     </div>
     <img src="../../images/wave-footer.png" style="width: 100%;">
     <!-- Footer -->
@@ -410,6 +416,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
     <script src="../../Utils/BanGiamDoc.js"></script>
     <script src="../../Utils/Banner.js"></script>
+    <script>
+        (function ($) {
+            'use strict';
+            $.fn.andSelf = function () {
+                return this.addBack.apply(this, arguments);
+            }
+            $('#volunteers').owlCarousel({
+                loop: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 },
+                }
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>
