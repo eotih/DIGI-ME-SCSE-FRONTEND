@@ -60,21 +60,26 @@ TTS.on('click', function (e) {
 const getFieldBySlug = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const slugResult = urlParams.get('Field');
-    if (slugResult === 'Nghiên cứu - Đào tạo') {
+    if (slugResult === 'Nghiên cứu - Đào tạo' || slugResult === 'Research - Training') {
         $('#NCDT').prop('checked', true);
-        dataNCDT();
+        if (slugResult === 'Nghiên cứu Đào tạo') { getNewsIdField(4) }
+        else { getNewsIdFieldEN(4) }
     }
-    if (slugResult === 'Thực tập sinh') {
+    if (slugResult === 'Thực tập sinh' || slugResult === 'Internship') {
         $('#TTS').prop('checked', true);
-        dataTTS();
+        if (slugResult === 'Thực tập sinh') { getNewsIdField(3) }
+        else { getNewsIdFieldEN(3) }
     }
-    if (slugResult === 'Biến đổi khí hậu - Môi trường') {
+    if (slugResult === 'Biến đổi khí hậu - Môi trường' || slugResult === 'Environment') {
         $('#KHMT').prop('checked', true);
-        dataKHMT();
+        if (slugResult === 'Biến đổi khí hậu - Môi trường') { getNewsIdField(2) }
+        else { getNewsIdFieldEN(2) }
     }
-    if (slugResult === 'Giới và bình đẳng giới') {
+    if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
         $('#GBDG').prop('checked', true);
-        dataGBDG();
+        if (slugResult === 'Giới và bình đẳng giới') { 
+            getNewsIdField(1) }
+        else { getNewsIdFieldEN(1) }
     }
 }
 function checkdata() {
@@ -245,7 +250,6 @@ function changeIdFieldEN(id) {
 
 const dataNCDT = () => {
     var labels = document.getElementById('lblNCDT').textContent;
-    console.log(labels);
     if (labels === 'Nghiên cứu Đào tạo') { getNewsIdField(4) }
     else { getNewsIdFieldEN(4) }
 }
