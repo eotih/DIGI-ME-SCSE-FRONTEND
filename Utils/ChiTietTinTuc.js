@@ -38,7 +38,7 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { Title, Slug, Details, Image, IDState } = response
+                        const { Title, Slug, Details, Image, IDState, CreatedByDate } = response
                         if (IDState === 2) {
                             return `
                                 <div class="col-md-6 d-flex align-items-stretch">
@@ -51,7 +51,7 @@ async function getBySlug(numb) {
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">
                                             <h4 class="mb-0">${Title}</h4>
                                             </a>
-                                            <div class="mb-1 text-muted">Nov 12</div>
+                                            <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
                                             <p class="mb-auto">${Details.slice(0, 500) + "..."}</p>
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
@@ -78,7 +78,7 @@ async function getBySlug(numb) {
                 if (IDState === 2) {
                     $('#tbody').html(`
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
-                <p>${CreatedByDate}</p>
+                <p>${convertDate(CreatedByDate)}</p>
             <section>
                 <div>${Details}</div>
             </section>
@@ -98,7 +98,7 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { Title, SlugEN, Details, Image, IDState } = response
+                        const { Title, SlugEN, Details, Image, IDState,CreatedByDate } = response
                         if (IDState === 2) {
                             return `
                     <div class="col-md-6 d-flex align-items-stretch">
@@ -109,7 +109,7 @@ async function getBySlug(numb) {
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h4 class="mb-0">${Title}</h4>
-                                <div class="mb-1 text-muted">Nov 12</div>
+                                <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
                                 <p class="mb-auto">${Details.slice(0, 200)}</p>
                                 <a href="../Chi-Tiet/index.html?slug=${SlugEN}">Continue reading</a>
                             </div>

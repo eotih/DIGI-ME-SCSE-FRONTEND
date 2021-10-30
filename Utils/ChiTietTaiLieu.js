@@ -1,5 +1,9 @@
 const WEB_API = "https://api.scse-vietnam.org/API/";
 window.addEventListener('load', getBySlug)
+function convertDate(input) {
+    var result = new Date(input)
+    return result.toLocaleDateString()
+}
 function getBySlug() {
     getBaiViet()
     const urlParams = new URLSearchParams(window.location.search);
@@ -24,7 +28,7 @@ function getBySlug() {
         })
 }
 function getBaiViet() {
-    fetch(WEB_API + "Management/ShowAllPost")
+    fetch(WEB_API + "Interface/ListDocument")
         .then(function (response) {
             return response.json();
         })
@@ -32,7 +36,7 @@ function getBaiViet() {
             const tron = response.sort(() => 0.5 - Math.random())
             let random = tron.slice(0, 2)
             var html = random.map(function (response) {
-                const { IDPost, Title, Slug, Details, Image } = response
+                const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
                 return `
                     <div class="col-md-6">
                         <div
@@ -42,8 +46,7 @@ function getBaiViet() {
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">${Title}</h3>
-                                <div class="mb-1 text-muted">Nov 12</div>
-                                <p class="mb-auto">${Details.slice(0, 500)}</p>
+                                <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                             </div>
 

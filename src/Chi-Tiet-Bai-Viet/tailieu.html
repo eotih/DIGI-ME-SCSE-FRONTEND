@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCSE - Trang Chủ</title>
+    <title>SCSE - Tài liệu</title>
     <link rel="icon" sizes="192x192" href="../../images/LogoSCSE_Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -21,18 +21,12 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../../../js/style.js"></script>
-    <script src="../../Utils/Banner.js"></script>
+    <style>
+        iframe{
+        max-width: 100%;
+        height:auto;
+    }
+    </style>
 </head>
 
 <body>
@@ -82,14 +76,87 @@
                     </ul>
                 </li>
                 <li><a class="Roboto" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" class="vietnam">VI</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" class="english">EN</a>
-                </li>
             </ul>
         </div>
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><img class="img-fluid" id="LogoNav"
+                        src="../../images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html" data-i18n="header.home">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader1.AboutSCSE">Về
+                                SCSE</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../Ban-Giam-Doc/"
+                                        data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Cau-Chuyen/"
+                                        data-i18n="header.Dropmenuheader1.Story">Câu chuyện</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader2.Activities">Chương trình</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../Hoat-Dong-Thien-Nguyen/"
+                                        data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện
+                                        nguyện</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Du-An/"
+                                        data-i18n="header.Dropmenuheader2.Project">Dự án</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../Hop-Tac-Nghien-Cuu/"
+                                        data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader3.Library">Thư viện</a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Hinh-Anh/"
+                                        data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/video/"
+                                        data-i18n="header.Dropmenuheader3.Video">video</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-link" href="../ThuVien/Tai-Lieu/"
+                                        data-i18n="header.Dropmenuheader3.Document">Tài liệu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" class="vietnam" onclick="getslug(1)">VI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" class="english" onclick="getslug(1)">EN</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -128,11 +195,6 @@
     <hr style="background-color: #1A94D0;height: 1rem;margin-top:0;">
     <div class="mt-5">
         <div class="container">
-            <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
-                <p class="my-auto" style="color: #FFFFFF;margin-left: 1rem;">Trang chủ > Chương trình >
-                <p class=" my-auto font-weight-bold" style="color: #FFFFFF"> Dự án</p>
-                </p>
-            </div>
             <div id="tbody">
             </div>
             <div class="mt-5">
@@ -285,5 +347,18 @@
 
     <!-- Footer -->
     <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../../../js/style.js"></script>
+    <script src="../../Utils/Banner.js"></script>
     <script src="../../Utils/ChiTietTaiLieu.js"> </script>
+    
 </body>
