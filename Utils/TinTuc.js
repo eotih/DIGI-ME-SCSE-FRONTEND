@@ -4,13 +4,20 @@ const NCDT = $('#NCDT');
 const GBDG = $('#GBDG');
 const WEB_API = "https://api.scse-vietnam.org/API/";
 
+function Uncheck() {
+    unChecked(KHMT);
+    unChecked(TTS);
+    unChecked(GBDG);
+    unChecked(NCDT);
+}
+
 NCDT.on('click', function (e) {
     if (this.checked) {
         dataNCDT();
     }
     else {
         var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Nghiên cứu - Đào tạo') { getNewsIdField(0) }
+        if (labels === 'Nghiên cứu Đào tạo') { getNewsIdField(0) }
         else { getNewsIdFieldEN(0) }
     }
     unChecked(KHMT);
@@ -23,7 +30,7 @@ KHMT.change(function (e) {
     }
     else {
         var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Biến đổi khí hậu - Môi trường') { getNewsIdField(0) }
+        if (labels === 'Khí hậu - môi trường') { getNewsIdField(0) }
         else { getNewsIdFieldEN(0) }
     }
     unChecked(TTS);
@@ -36,7 +43,7 @@ GBDG.on('click', function (e) {
     }
     else {
         var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Giới - Bình đẳng giới') { getNewsIdField(0) }
+        if (labels === 'Giới và bình đẳng giới') { getNewsIdField(0) }
         else { getNewsIdFieldEN(0) }
     }
     unChecked(KHMT);
@@ -57,12 +64,20 @@ TTS.on('click', function (e) {
     unChecked(GBDG);
 })
 
-const getFieldBySlug = async () => {
+const getFieldBySlug = async (numb) => {
     const urlParams = new URLSearchParams(window.location.search);
     const slugResult = urlParams.get('Field');
+    if (slugResult === null) {
+        if (numb === 1) {
+            getNewsIdField(0)
+        }
+        else {
+            getNewsIdFieldEN(0)
+        }
+    }
     if (slugResult === 'Nghiên cứu - Đào tạo' || slugResult === 'Research - Training') {
         $('#NCDT').prop('checked', true);
-        if (slugResult === 'Nghiên cứu Đào tạo') { getNewsIdField(4) }
+        if (slugResult === 'Nghiên cứu - Đào tạo') { getNewsIdField(4) }
         else { getNewsIdFieldEN(4) }
     }
     if (slugResult === 'Thực tập sinh' || slugResult === 'Internship') {
@@ -70,20 +85,18 @@ const getFieldBySlug = async () => {
         if (slugResult === 'Thực tập sinh') { getNewsIdField(3) }
         else { getNewsIdFieldEN(3) }
     }
-    if (slugResult === 'Biến đổi khí hậu - Môi trường' || slugResult === 'Environment') {
+    if (slugResult === 'Môi trường' || slugResult === 'Environment') {
         $('#KHMT').prop('checked', true);
-        if (slugResult === 'Biến đổi khí hậu - Môi trường') { getNewsIdField(2) }
+        if (slugResult === 'Môi trường') { getNewsIdField(2) }
         else { getNewsIdFieldEN(2) }
     }
     if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
         $('#GBDG').prop('checked', true);
-        if (slugResult === 'Giới và bình đẳng giới') { 
-            getNewsIdField(1) }
+        if (slugResult === 'Giới và bình đẳng giới') {
+            getNewsIdField(1)
+        }
         else { getNewsIdFieldEN(1) }
     }
-}
-function checkdata() {
-    return
 }
 const getNewsIdField = (IdField) => {
     fetch(WEB_API + "Management/ShowAllNewsVN")
@@ -265,7 +278,8 @@ const dataKHMT = () => {
 }
 const dataGBDG = () => {
     var labels = document.getElementById('lblGBDG').textContent;
-    if (labels === 'Giới và bình đẳng giới') { 
-        getNewsIdField(1) }
+    if (labels === 'Giới và bình đẳng giới') {
+        getNewsIdField(1)
+    }
     else { getNewsIdFieldEN(1) }
 }
