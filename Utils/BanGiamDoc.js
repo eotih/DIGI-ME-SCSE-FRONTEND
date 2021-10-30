@@ -124,6 +124,7 @@ function executeDataInformationPhoGiamDocEN(input) {
         `;
     })
     $('#pgd').html(html)
+    $(".loader-wrapper").fadeOut("slow");
 }
 
 function executeDataInformationMember(input) {
