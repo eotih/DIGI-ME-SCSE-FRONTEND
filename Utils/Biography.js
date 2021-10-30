@@ -8,7 +8,7 @@ fetch("https://api.scse-vietnam.org/API/Interface/GetByNamePortfolios?name=" + f
         const { FullName, Hinhanh, Position, Details } = response
         $('#tbody').html(`
                 <div class="d-flex flex-row">
-                    <img src="${Hinhanh[0].ImagePortfolio}" style="width:300px; height:300px;border-radius:50%;z-index:2">
+                    <img src="${Hinhanh[0].ImagePortfolio}" style="width:300px; height:300px;border-radius:50%;z-index:2;object-fit:cover">
                     <div class="d-flex flex-column ml-5">
                         <div style="width:60rem;clip-path: polygon(80% 0%, 75% 50%, 80% 100%, 25% 100%, 25% 0%);background-color: #DE4439;margin-left:-440px">
                             <h1 class="font-weight-bold mt-1" style="color:#ffffff;margin-left:440px">Giới Thiệu<h1>
@@ -17,7 +17,7 @@ fetch("https://api.scse-vietnam.org/API/Interface/GetByNamePortfolios?name=" + f
                         <h5 class="fw-bolder mb-1 mt-2 font-weight-bold">${Position}</h5>
                     </div>
                 </div>
-                <section>
+                <section class="mt-3">
                     <div>${Details}</div>
                 </section>
             `)

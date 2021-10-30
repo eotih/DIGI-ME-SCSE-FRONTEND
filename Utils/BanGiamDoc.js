@@ -64,6 +64,7 @@ function executeDataInformationPhoGiamDoc(input) {
         `;
     })
     $('#pgd').html(html)
+    $(".loader-wrapper").fadeOut("slow");
 }
 
 function executeDataInformationMember(input) {
@@ -76,12 +77,14 @@ function executeDataInformationMember(input) {
             <div class="card mb-4 rounded-3 shadow-sm"
                 style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
                 <div class="py-3">
-                    <img src="${Hinhanh[0].ImagePortfolio}"
-                        style="width: 300px;height:300px;border-radius: 50%;margin-left:0.5rem;object-fit:contain">
+                    <img src="${Hinhanh[2].ImagePortfolio}"
+                        style="width: 300px;height:300px;border-radius: 50%;margin-left:0.5rem;object-fit:cover">
                 </div>
                 <div class="card-body">
                 <h4 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${FullName}</h4>
-                    <p class="text-blue-scse text-center">${Position}</p>
+                <div class="py-2" style="background-color: #E5E5E5;">
+                    <p class="text-blue-scse text-center mt-3">${Position}</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -106,6 +109,7 @@ function executeDataInformationMember(input) {
             1000: { items: 3 },
         }
     });
+    $(".loader-wrapper").fadeOut("slow");
 }
 const Volunteers = [
     {
