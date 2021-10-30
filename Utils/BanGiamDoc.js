@@ -77,11 +77,11 @@ function executeDataInformationMember(input) {
                 style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
                 <div class="py-3">
                     <img src="${Hinhanh[0].ImagePortfolio}"
-                        style="width: 300px;height:300px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:contain">
+                        style="width: 300px;height:300px;border-radius: 50%;margin-left:0.5rem;object-fit:contain">
                 </div>
                 <div class="card-body">
-                <h4 class="card-title pricing-card-title text-center">${FullName}</h4>
-                    <h5 class="text-blue-scse text-center">${Position}</h5>
+                <h4 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${FullName}</h4>
+                    <p class="text-blue-scse text-center">${Position}</p>
                 </div>
             </div>
         </div>

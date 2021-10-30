@@ -1,7 +1,7 @@
 {
     
     "header": {
-        "home": "Trang chủ",
+        "home": "Trang Chủ",
         "Dropmenuheader1": {
             "AboutSCSE": "Về SCSE",
             "ExecutiveBoard": "Ban Giám Đốc",
@@ -12,7 +12,7 @@
         },
         "News": "Tin Tức",
         "Dropmenuheader2": {
-            "Activities": "Chương trình",
+            "Activities": "Chương Trình",
             "VoluntaryActivities": "Hoạt động thiện nguyện",
             "Project": "Dự Án",
             "PartnerForResearch": "Hợp tác và nghiên cứu"
@@ -108,7 +108,7 @@
         "News": "Tin Tức",
         "Filter": "Bộ lọc danh mục",
         "ByField": "Theo lĩnh vực:",
-        "ResearchTraining": "Đào Tạo - Nghiên Cứu",
+        "ResearchTraining": " Nghiên Cứu Đào Tạo",
         "EnvironmentClimateChange": "Khí hậu - Môi trường",
         "GenderAndGenderEquality": "Giới - Bình đẳng giới",
         "Internship": "Thực tập sinh",
