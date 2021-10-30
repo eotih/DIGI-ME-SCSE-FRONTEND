@@ -168,13 +168,7 @@ const executeData = (data) => {
         className: 'paginationjs-theme-blue',
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
-            if(data.length === 0) {
-                moi = `
-                <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
-                `   
-            }
-            else { moi = data }
-            $('#tbody').html(moi);
+            $('#tbody').html(data);
 
         }
     })
@@ -214,13 +208,7 @@ const executeDataEN = (data) => {
         className: 'paginationjs-theme-blue',
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
-            if(data.length === 0) {
-                moi = `
-                <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
-                `   
-            }
-            else { moi = data }
-            $('#tbody').html(moi);
+            $('#tbody').html(data);
 
         }
     })
