@@ -11,6 +11,12 @@ async function loadHDTN(numb) {
                 return response.json();
             })
             .then(function (response) {
+                
+                if(response.length === 0) {
+                    return html = `
+                    <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
+                    `;
+                }
                 const postApproved = response.filter(e => e.IDState === 2)
                 const sortByNewDate = postApproved.sort(function (a, b) {
                     a = new Date(a.UpdatedByDate);
