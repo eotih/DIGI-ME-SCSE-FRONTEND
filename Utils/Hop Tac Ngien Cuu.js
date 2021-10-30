@@ -49,7 +49,13 @@ async function loadHDNC(numb) {
                     className: 'paginationjs-theme-blue',
                     callback: function (data, pagination) {
                         $(".loader-wrapper").fadeOut("slow");
-                        $('#tbody').html(data);
+                        if(data.length === 0) {
+                            moi = `
+                            <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
+                            `   
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
 
                     }
                 })
@@ -99,7 +105,13 @@ async function loadHDNC(numb) {
                     className: 'paginationjs-theme-blue',
                     callback: function (data, pagination) {
                         $(".loader-wrapper").fadeOut("slow");
-                        $('#tbody').html(data);
+                        if(data.length === 0) {
+                            moi = `
+                            <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
+                            `   
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
 
                     }
                 })
