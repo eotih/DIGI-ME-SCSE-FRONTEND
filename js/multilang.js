@@ -10,8 +10,17 @@ window.addEventListener('load',multilang)
             },function () {
                     $('body').i18n();
             });
-            // Vietnam
-            if(i18n.lng() === "vi") {
+            if(i18n.lng() === "en") {
+                // Set active class
+                $('li').removeClass('active');
+                $('.english').parent().addClass('active');
+                document.getElementById("LogoFooterEN").src = "./images/LogoSCSE_Horizontal_English_Transparent.png";
+                document.getElementById("LogoNav").src = "./images/LogoSCSE_Horizontal_English_Transparent_white.png";
+                document.getElementById("donateimg").src = "./images/Donate.png";
+                // Change language in dropdown
+                document.title = "SCSE - Home";
+            }
+            else {
                 // Set active class
                 $('li').removeClass('active');
                 $('.vietnam').parent().addClass('active');  

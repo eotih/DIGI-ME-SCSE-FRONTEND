@@ -6,7 +6,7 @@
             "ExecutiveBoard": "Executive board",
             "Story": "Story"
         },
-        "title":{
+        "title": {
             "Home": "SCSE-Home"
         },
         "News": "News",
@@ -54,7 +54,7 @@
         "PrivacyPolicy": "Privacy policy",
         "Commitment": "Commitment"
     },
-    "ThanhMauXanh":{
+    "ThanhMauXanh": {
         "HTNC": {
             "Home": "Home >",
             "PFR": " Partner for research",
@@ -86,44 +86,51 @@
             "LoadMore": "Xem Thêm"
         }
     },
-        "Contact": {
-            "Home": "Home >",
-            "Contact1": "Contact",
-            "FN": "Full Name",
-            "PLSFN": "Please fill your name",
-            "Phone": "Phone",
-            "PLSP": "Please fill your phone number",
-            "Email": "Email",
-            "PLSEMail": "Please fill your Email",
-            "Address": "Address",
-            "PLSAddress": "Please fill your Address",
-            "Topic": "Topic",
-            "PLSTopic": "Please fill your Topic",
-            "Content": "Content",
-            "PLSContent": "Please fill your Content"
-        },
-        "News": {
-            "Home": "Home >",
-            "News": "News",
-            "Filter": "Filter",
-            "ByField": "By Field",
-            "ResearchTraining": "Research - Training",
-            "EnvironmentClimateChange": "Environment - Climate",
-            "GenderAndGenderEquality": "Gender - GenderEquality",
-            "Internship": "Internship",
-            "LATESTNEWS": "LATEST NEWS",
-            "LoadMore": "Load More",
-            "NewsDiff": "ANOTHER NEWS"
-        },
-        "Story": {
-            "Home": "Trang Chủ >",
-            "AboutSCSE": "About SCSE",
-            "ABOUTSCSE": "ABOUT SCSE",
-            "NNYTTYN": "ENJOY LOVE FROM SMALL IDEAS",
-            "Content1": "Derived from fragments of the past, childhood is incomplete, happy like many other children, working hard, helping the family from an early age,... But, it's not just a personal story, but a personal story. was the general situation of children in Soc Trang province at that time. Think of yourself and then think of others! Bringing the desire to help more children, educate sex and popularize social knowledge for people and Khmer ethnic minorities in the province,... From there, a journey has been started. to love!",
-            "SMCYT": "MISSION OF LOVE",
-            "Content2": "Going with good beliefs, besides the desire to further improve the quality of life of the people of the province in general and the Khmer people in Soc Trang in particular, the popularization of social knowledge, the on Gender and Gender Equality, LGBTQ+ Community, environment, education,... Soc Trang Provincial Community Connection Center carries on its good responsibilities, with the desire that more and more children and women Women and young people have gradually improved their health status, family and social problems. Hope to bring useful knowledge and activities to help them become more optimistic, stronger and more integrated with the community.",
-            "MKKVDV": "A WISHING FOR THOUSANDS OF THINGS BECAUSE",
-            "Content3": "Thirteen years of rekindling the idea, Ms. Huong, coming out of the ups and downs of her life with the desire to establish a Community Connection Center in the province, was fortunate to find great partners. Starting from the impressive self. Ms. Huong - an active member of the Soc Trang Province Women's Association; Mr. Giang - a teacher with a great heart, has found a lot of faith in his teammates, but perhaps the most common thing in them personally is the desire to establish a Community Connection Center in the province for the sake of life. People's lives here have been somewhat improved, because to see more children going to school, all of them are loved and happy."
-        }
+    "Contact": {
+        "Home": "Home >",
+        "Contact1": "Contact",
+        "FN": "Full Name",
+        "PLSFN": "Please fill your name",
+        "Phone": "Phone",
+        "PLSP": "Please fill your phone number",
+        "Email": "Email",
+        "PLSEMail": "Please fill your Email",
+        "Address": "Address",
+        "PLSAddress": "Please fill your Address",
+        "Topic": "Topic",
+        "PLSTopic": "Please fill your Topic",
+        "Content": "Content",
+        "PLSContent": "Please fill your Content"
+    },
+    "News": {
+        "Home": "Home >",
+        "News": "News",
+        "Filter": "Filter",
+        "ByField": "By Field",
+        "ResearchTraining": "Research - Training",
+        "EnvironmentClimateChange": "Environment - Climate",
+        "GenderAndGenderEquality": "Gender - GenderEquality",
+        "Internship": "Internship",
+        "LATESTNEWS": "LATEST NEWS",
+        "LoadMore": "Load More",
+        "NewsDiff": "ANOTHER NEWS"
+    },
+    "Story": {
+        "Home": "Home >",
+        "AboutSCSE": "About SCSE",
+        "ABOUTSCSE": "ABOUT SCSE",
+        "NNYTTYN": "ENJOY LOVE FROM SMALL IDEAS",
+        "Content1": "Derived from fragments of the past, childhood is incomplete, happy like many other children, working hard, helping the family from an early age,... But, it's not just a personal story, but a personal story. was the general situation of children in Soc Trang province at that time. Think of yourself and then think of others! Bringing the desire to help more children, educate sex and popularize social knowledge for people and Khmer ethnic minorities in the province,... From there, a journey has been started. to love!",
+        "SMCYT": "MISSION OF LOVE",
+        "Content2": "Going with good beliefs, besides the desire to further improve the quality of life of the people of the province in general and the Khmer people in Soc Trang in particular, the popularization of social knowledge, the on Gender and Gender Equality, LGBTQ+ Community, environment, education,... Soc Trang Provincial Community Connection Center carries on its good responsibilities, with the desire that more and more children and women Women and young people have gradually improved their health status, family and social problems. Hope to bring useful knowledge and activities to help them become more optimistic, stronger and more integrated with the community.",
+        "MKKVDV": "A WISHING FOR THOUSANDS OF THINGS BECAUSE",
+        "Content3": "Thirteen years of rekindling the idea, Ms. Huong, coming out of the ups and downs of her life with the desire to establish a Community Connection Center in the province, was fortunate to find great partners. Starting from the impressive self. Ms. Huong - an active member of the Soc Trang Province Women's Association; Mr. Giang - a teacher with a great heart, has found a lot of faith in his teammates, but perhaps the most common thing in them personally is the desire to establish a Community Connection Center in the province for the sake of life. People's lives here have been somewhat improved, because to see more children going to school, all of them are loved and happy."
+    },
+    "BGD": {
+        "Home": "Home >",
+        "BanGiamDoc": "Executive Board",
+        "BANGIAMDOC": "EXECUTIVE BOARD",
+        "THANHVIENKHAC": "OTHER MEMBER",
+        "TINHNGUYENVIEN": "VOLUNTEERS"
+    }
 }

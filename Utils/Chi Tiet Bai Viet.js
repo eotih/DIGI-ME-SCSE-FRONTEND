@@ -16,18 +16,18 @@ async function getBySlug(numb) {
             .then(function (response) {
                 var html = response.map(function (response) {
                     const { IDPost, Title, CreatedByDate, Slug, Details, Image, IDState } = response
-                    if(IDState === 2){
-                    return `
+                    if (IDState === 2) {
+                        return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${convertDate(CreatedByDate)}</p>
                                             <section>
                                                 <div>${Details}</div>
                                             </section>
                                         `;
-                                    }
-                                    else {
-                                        Alert("Bài viết chưa có bản tiếng anh!")
-                                    }
+                    }
+                    else {
+                        Alert("Bài viết chưa có bản tiếng anh!")
+                    }
                 })
                 // đây là hàm trả ra tbody
                 $('#tbody').html(html);
@@ -42,9 +42,9 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { IDPost, Title, Slug, Details, Image,CreatedByDate, IDState } = response
-                        if(IDState === 2){
-                        return `
+                        const { IDPost, Title, Slug, Details, Image, CreatedByDate, IDState } = response
+                        if (IDState === 2) {
+                            return `
                                 <div class="col-md-6 d-flex align-items-stretch">
                                     <div
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -56,7 +56,7 @@ async function getBySlug(numb) {
                                             <h3 class="mb-0">${Title}</h3>
                                             </a>
                                             <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
-                                            <p class="mb-auto">${Details.slice(0, 300)+"..."}</p>
+                                            <p class="mb-auto">${Details.slice(0, 300) + "..."}</p>
                                             <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@ async function getBySlug(numb) {
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
-                    
+
                 })
         }
     }
@@ -73,15 +73,15 @@ async function getBySlug(numb) {
         getBaiVietEN()
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
-        fetch(WEB_API + "Interface/GetPostBySlugEN?slug=" + slugResult)
+        fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult)
             .then(function (response) {
                 return response.json();
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title,  CreatedByDate, Details, Image, IDState } = response
-                    if(IDState === 2){
-                    return `
+                    const { IDPostEN, Title, CreatedByDate, Details, Image, IDState } = response
+                    if (IDState === 2) {
+                        return `
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${CreatedByDate}</p>
                                             <section>
@@ -89,7 +89,7 @@ async function getBySlug(numb) {
                                             </section>
                                         `;
                     }
-                    else { 
+                    else {
                         alert("Bài viết chưa có bản tiếng anh!")
                     }
                 })
@@ -107,9 +107,9 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { IDPostEN, Title, SlugEN, Details, Image,IDState } = response
-                        if(IDState === 2){
-                        return `
+                        const { IDPostEN, Title, SlugEN, Details, Image, IDState } = response
+                        if (IDState === 2) {
+                            return `
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -124,7 +124,7 @@ async function getBySlug(numb) {
 
                         </div>
                     </div> `;
-                }
+                        }
                     })
                     // đây là hàm trả ra tbody
                     $('#content').html(html);
@@ -132,46 +132,46 @@ async function getBySlug(numb) {
                 })
         }
     }
-}   
+}
 function getslug(numb) {
     if (numb == 1) {
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
         fetch(WEB_API + "Management/GetBySlugPostEN?slugen=" + slugResult)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (response) {
-                fetch(WEB_API + "Management/GetByIdPosts?ID="+response.IDPostEN)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                    window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.Slug
-                })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (response) {
+                fetch(WEB_API + "Management/GetByIdPosts?ID=" + response.IDPostEN)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (response) {
+                        window.location.href = "../Chi-Tiet-Bai-Viet/index.html?slug=" + response.Slug
+                    })
             })
     }
     else {
         const urlParams = new URLSearchParams(window.location.search);
         const slugResult = urlParams.get('slug');
         fetch(WEB_API + "Management/GetBySlugPost?slug=" + slugResult)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (response) {
-                fetch(WEB_API + "Management/GetByIdPostsEN?ID="+response.IDPost)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (response) {
-                    if(response === null){
-                        alert("Bài viết chưa có bản tiếng anh!")
-                        window.location.href = "../Chi-Tiet-Bai-Viet/"
-                    }
-                    window.location.href="../Chi-Tiet-Bai-Viet/index.html?slug="+response.SlugEN
-                })
+            .then(function (response) {
+                return response.json();
             })
-        
+            .then(function (response) {
+                fetch(WEB_API + "Management/GetByIdPostsEN?ID=" + response.IDPost)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (response) {
+                        if (response === null) {
+                            alert("Bài viết chưa có bản tiếng anh!")
+                            window.location.href = "../Chi-Tiet-Bai-Viet/"
+                        }
+                        window.location.href = "../Chi-Tiet-Bai-Viet/index.html?slug=" + response.SlugEN
+                    })
+            })
+
     }
 
 }
