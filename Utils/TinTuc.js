@@ -72,7 +72,7 @@ const getFieldBySlug = async () => {
         $('#KHMT').prop('checked', true);
         dataKHMT();
     }
-    if (slugResult === 'Giới và bình đăng giới') {
+    if (slugResult === 'Giới và bình đẳng giới') {
         $('#GBDG').prop('checked', true);
         dataGBDG();
     }
@@ -245,7 +245,8 @@ function changeIdFieldEN(id) {
 
 const dataNCDT = () => {
     var labels = document.getElementById('lblNCDT').textContent;
-    if (labels === 'Đào Tạo - Nghiên Cứu') { getNewsIdField(4) }
+    console.log(labels);
+    if (labels === 'Nghiên cứu Đào tạo') { getNewsIdField(4) }
     else { getNewsIdFieldEN(4) }
 }
 const dataTTS = () => {
@@ -255,11 +256,12 @@ const dataTTS = () => {
 }
 const dataKHMT = () => {
     var labels = document.getElementById('lblKHMT').textContent;
-    if (labels === 'Khí hậu - Môi trường') { getNewsIdField(2) }
+    if (labels === 'Khí hậu - môi trường') { getNewsIdField(2) }
     else { getNewsIdFieldEN(2) }
 }
 const dataGBDG = () => {
     var labels = document.getElementById('lblGBDG').textContent;
-    if (labels === 'Giới - Bình đẳng giới') { getNewsIdField(1) }
+    if (labels === 'Giới và bình đẳng giới') { 
+        getNewsIdField(1) }
     else { getNewsIdFieldEN(1) }
 }
