@@ -223,7 +223,7 @@ const Volunteers = [
         id: 9,
         name: 'Nguyễn Duy Thành',
         team: 'Team Website',
-        image: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/241252673_1500907220281541_4144601654334096569_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=voC_QLTOtPIAX_fDI0d&_nc_ht=scontent.fsgn5-8.fna&oh=56cdf8bb50bbc81008abfaf862bad243&oe=6180C624'
+        image: 'https://media.discordapp.net/attachments/853145810846089227/903923688263540736/unknown.png?width=517&height=559'
     },
 ]
 const getThongTin = () => {
