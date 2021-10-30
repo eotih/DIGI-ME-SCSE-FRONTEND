@@ -11,6 +11,7 @@ async function loadHDTN(numb) {
                 return response.json();
             })
             .then(function (response) {
+
                 const postApproved = response.filter(e => e.IDState === 2)
                 const sortByNewDate = postApproved.sort(function (a, b) {
                     a = new Date(a.UpdatedByDate);
@@ -59,8 +60,13 @@ async function loadHDTN(numb) {
                     className: 'paginationjs-theme-blue',
                     callback: function (data, pagination) {
                         $(".loader-wrapper").fadeOut("slow");
-                        $('#tbody').html(data);
-
+                        if(data.length === 0) {
+                            moi = `
+                            <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
+                            `   
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
                     }
                 })
             })
@@ -120,7 +126,13 @@ async function loadHDTN(numb) {
                     className: 'paginationjs-theme-blue',
                     callback: function (data, pagination) {
                         $(".loader-wrapper").fadeOut("slow");
-                        $('#tbody').html(data);
+                        if(data.length === 0) {
+                            moi = `
+                            <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
+                            `   
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
 
                     }
                 })
