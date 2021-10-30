@@ -142,7 +142,7 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                fetch(WEB_API + "Management/GetByIdPosts?ID=" + response.IDPostEN)
+                fetch(WEB_API + "Management/GetByIdPosts?ID=" + response[0].IDPostEN)
                     .then(function (response) {
                         return response.json();
                     })
@@ -159,7 +159,7 @@ function getslug(numb) {
                 return response.json();
             })
             .then(function (response) {
-                fetch(WEB_API + "Management/GetByIdPostsEN?ID=" + response.IDPost)
+                fetch(WEB_API + "Management/GetByIdPostsEN?ID=" + response[0].IDPost)
                     .then(function (response) {
                         return response.json();
                     })
