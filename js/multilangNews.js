@@ -15,10 +15,9 @@ function multilang() {
         $('.english').parent().addClass('active');
         document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.getElementById("donateimg").src = "../../images/Donate.png";
+        document.getElementById("donateimg").src = "../../images/Donate.png";
         // Change language in dropdown
-        getNewsIdFieldEN(0)
-        getFieldBySlug()
+        getFieldBySlug(2)
         document.title = "SCSE - News";
     }
     // Vietnam
@@ -29,10 +28,9 @@ function multilang() {
         // Change language in dropdown
         document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.getElementById("donateimg").src = "../../images/Group_399.png";
+        document.getElementById("donateimg").src = "../../images/Group_399.png";
         document.title = "SCSE - Tin Tức";
-        getNewsIdField(0)
-        getFieldBySlug()
+        getFieldBySlug(1)
     }
 
     // Change languages when click
@@ -47,10 +45,10 @@ function multilang() {
         $('.english').parent().addClass('active');
         document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.getElementById("donateimg").src = "../../images/Donate.png";
+        document.getElementById("donateimg").src = "../../images/Donate.png";
         document.title = "SCSE - News";
-        getNewsIdFieldEN(0)
-        getFieldBySlug()
+        // getNewsIdFieldEN(0)
+        getFieldBySlug(2)
         // Change name language in dropdown
     });
     // Vietnam
@@ -65,9 +63,9 @@ function multilang() {
         // Change name language in dropdown
         document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.getElementById("donateimg").src = "../../images/Group_399.png";
+        document.getElementById("donateimg").src = "../../images/Group_399.png";
         document.title = "SCSE - Tin Tức";
-        getNewsIdField(0)
-        getFieldBySlug()
+        // getNewsIdField(0)
+        getFieldBySlug(1)
     });
 };

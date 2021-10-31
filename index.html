@@ -24,7 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    
+
 </head>
 
 <body>
@@ -284,10 +284,10 @@
                     <hr class="bg-blue-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class="img-fluid mx-2" src="./images/gioivabinhdanggioi.jpg"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.GenderAndGenderEquality">Giới và
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.GenderAndGenderEquality" id="lblBDG">Giới và
                         bình đẳng giới</p>
-                    <a href="./src/Tin-Tuc/index.html?Field=Giới và bình đẳng giới">
-                        <button type="button"
+                    <a>
+                        <button type="button" onclick="ToUrl('BDG')"
                             class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
                             style="border-radius: 3rem;width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                     </a>
@@ -300,10 +300,10 @@
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
                     <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.EnvironmentClimateChange">Biến đổi
                         khí hậu </p>
-                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.EnvironmentClimateChange1">Môi
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.EnvironmentClimateChange1" id="lblKHMT">Môi
                         trường</p>
-                    <a href="./src/Tin-Tuc/index.html?Field=Biến đổi khí hậu - Môi trường">
-                        <button type="button"
+                    <a>
+                        <button type="button" onclick="ToUrl('KHMT')"
                             class="btn btn-warning btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-yellow-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                     </a>
@@ -314,9 +314,9 @@
                     <hr class="bg-blue-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class="img-fluid mx-2" src="./images/thuctapsinh.png"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.Internship">Thực tập sinh</p>
-                    <a href="./src/Tin-Tuc/index.html?Field=Thực tập sinh">
-                        <button type="button"
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.Internship" id="lblTTS">Thực tập sinh</p>
+                    <a>
+                        <button type="button" onclick="ToUrl('TTS')"
                             class="btn btn-primary btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-blue-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                     </a>
@@ -327,10 +327,11 @@
                     <hr class="bg-red-scse m-0" style="height:0.67rem;width: 100%;">
                     <img class=" img-fluid mx-2" src="./images/nghiencuu.jpg"
                         style="width: 230px;height:230px;object-fit: cover;border-radius: 0.67rem;">
-                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.ResearchTraining">Nghiên cứu - Đào
+                    <p class="h5 font-weight-bold my-2 text-center" data-i18n="Body.ResearchTraining" id="lblNCDT">
+                        Nghiên cứu - Đào
                         tạo</p>
-                    <a href="./src/Tin-Tuc/index.html?Field=Nghiên cứu - Đào tạo">
-                        <button type="button"
+                    <a>
+                        <button type="button" onclick="ToUrl('NCDT')"
                             class="btn btn-danger btn-lg mb-2 py-2 font-weight-bold text-uppercase bg-red-scse"
                             style="border-radius: 3rem; width: 13rem;" data-i18n="Body.MoreInfo">xem thêm</button>
                     </a>
@@ -524,40 +525,24 @@
     <script src="./Utils/Banner.js"></script>
     <script src="./Utils/Partner.js"></script>
     <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
+        function ToUrl(Field) {
+            if (Field === 'NCDT') {
+                var labels = document.getElementById('lblNCDT').textContent;
+                window.location.href = "./src/Tin-Tuc/index.html?Field=" + labels;
+            }
+            if (Field === 'BDG') {
+                var labels = document.getElementById('lblBDG').textContent;
+                window.location.href = "./src/Tin-Tuc/index.html?Field=" + labels;
+            }
+            if (Field === 'TTS') {
+                var labels = document.getElementById('lblTTS').textContent;
+                window.location.href = "./src/Tin-Tuc/index.html?Field=" + labels;
+            }
+            if (Field === 'KHMT') {
+                var labels = document.getElementById('lblKHMT').textContent;
+                window.location.href = "./src/Tin-Tuc/index.html?Field=" + labels;
+            }
         }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

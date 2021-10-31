@@ -133,5 +133,19 @@
         "BANGIAMDOC": "BAN GIÁM ĐỐC",
         "THANHVIENKHAC": "THÀNH VIÊN KHÁC",
         "TINHNGUYENVIEN": "TÌNH NGUYỆN VIÊN"
+    },
+    "Donate": {
+        "Home": "Trang Chủ >",
+        "Donate": "Quyên Góp",
+        "DonateSCSE": "Ủng hộ SCSE",
+        "ContentTop": "Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội, trực thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng.",
+        "ContentMid": {
+            "NDCK": "Nội dung chuyển khoản:",
+            "TenTK": "Tên tài khoản:",
+            "TTKND": "TRUNG TÂM KẾT NỐI DỊCH VỤ KHOA HỌC XÃ HỘI SÓC TRĂNG (SCSE)",
+            "ND": "Nội dung:",
+            "Example": "Họ và tên + tên dự án + số tiền."
+        },
+        "ContentBot": "* Tuyên bố và bảo lãnh Chúng tôi đảm bảo rằng tiền của người quyên góp sẽ được sử dụng cho mục đích chính đáng và đúng ý nghĩa hoạt động của tổ chức. Ngoài ra tiền đã được quyên góp không được hoàn lại và trở thành tài sản của SCSE. *"
     }
 }
