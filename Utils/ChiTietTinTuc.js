@@ -46,6 +46,8 @@ async function getBySlug(numb) {
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                         <div class="col-auto d-none d-lg-block">
                                             <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
+                                            </br></br>
+                                            <a href="../Chi-Tiet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                         <div class="col p-4 d-flex flex-column position-static">
                                             <a href="../Chi-Tiet/index.html?slug=${Slug}">
@@ -53,7 +55,6 @@ async function getBySlug(numb) {
                                             </a>
                                             <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
                                             <p class="mb-auto">${Details.slice(0, 500) + "..."}</p>
-                                            <a href="../Chi-Tiet/index.html?slug=${Slug}">Continue reading</a>
                                         </div>
                                     </div>
                                 </div> `;
@@ -106,12 +107,13 @@ async function getBySlug(numb) {
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                             <div class="col-auto d-none d-lg-block">
                                 <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
+                                </br></br>
+                                <a href="../Chi-Tiet/index.html?slug=${SlugEN}">Continue reading</a>
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h4 class="mb-0">${Title}</h4>
                                 <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
                                 <p class="mb-auto">${Details.slice(0, 200)}</p>
-                                <a href="../Chi-Tiet/index.html?slug=${SlugEN}">Continue reading</a>
                             </div>
 
                         </div>

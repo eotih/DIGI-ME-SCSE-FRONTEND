@@ -44,11 +44,12 @@ function getBaiViet() {
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                             <div class="col-auto d-none d-lg-block">
                                 <img src="${Image}" style="max-width:15rem;height:15rem" alt="">
+                                </br></br>
+                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                             </div>
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">${Title}</h3>
                                 <div class="mb-1 text-muted">${convertDate(CreatedByDate)}</div>
-                                <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">Continue reading</a>
                             </div>
 
                         </div>
