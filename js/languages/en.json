@@ -110,7 +110,7 @@
         "ByField": "By Field",
         "ResearchTraining": "Research - Training",
         "EnvironmentClimateChange": "Environment - Climate",
-        "GenderAndGenderEquality": "Gender - GenderEquality",
+        "GenderAndGenderEquality": "Gender - Gender Equality",
         "Internship": "Internship",
         "LATESTNEWS": "LATEST NEWS",
         "LoadMore": "Load More",
@@ -154,7 +154,7 @@
         "certificate": "CERTIFICATE"
     },
     "DKTNV": {
-        "DKTNV": "ĐĂNG KÝ TÌNH NGUYỆN VIÊN",
+        "DKTNV": "VOLUNTERR REGISTRATION",
         "HO": "First Name",
         "TEN": "Last Name",
         "Phone": "Phone",
