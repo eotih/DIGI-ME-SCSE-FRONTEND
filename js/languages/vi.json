@@ -101,7 +101,8 @@
         "Topic": "Chủ đề",
         "PLSTopic": "Vui lòng nhập Chủ đề",
         "Content": "Nội dung",
-        "PLSContent": "Vui lòng nhập Nội dung"
+        "PLSContent": "Vui lòng nhập Nội dung",
+        "GN": "GỬI NGAY"
     },
     "News": {
         "Home": "Trang Chủ >",
@@ -147,5 +148,22 @@
             "Example": "Họ và tên + tên dự án + số tiền."
         },
         "ContentBot": "* Tuyên bố và bảo lãnh Chúng tôi đảm bảo rằng tiền của người quyên góp sẽ được sử dụng cho mục đích chính đáng và đúng ý nghĩa hoạt động của tổ chức. Ngoài ra tiền đã được quyên góp không được hoàn lại và trở thành tài sản của SCSE. *"
+    },
+    "CSBM": {
+        "CSBM": "CHÍNH SÁCH BẢO MẬT",
+        "Content": "Tại Tổ chức SCSE, chúng tôi rất coi trọng quyền riêng tư. Chúng tôi cam kết bảo vệ quyền riêng tư của những người thụ hưởng chương trình, các nhà tài trợ và những người ủng hộ chúng tôi cũng như bất kỳ ai khác tương tác với chúng tôi. Chính sách Bảo mật này áp dụng cho Tổ chức SCSE. SCSE thu thập, sử dụng và lưu trữ thông tin cá nhân để hỗ trợ chúng tôi trong công việc giúp đỡ những người có nhu cầu. Việc tiết lộ thông tin này chỉ được thực hiện dưới những giới hạn rất nghiêm ngặt và không bao giờ cho bên thứ ba mà không có sự đồng ý của bạn.",
+        "certificate": "GIẤY CHỨNG NHẬN"
+    },
+    "DKTNV": {
+        "DKTNV": "ĐĂNG KÝ TÌNH NGUYỆN VIÊN",
+        "HO": "Họ",
+        "TEN": "Tên",
+        "Phone": "Số điện thoại",
+        "Email": "Email",
+        "Address": "Địa Chỉ",
+        "DOB": "Ngày sinh",
+        "Project": "Dự án muốn tham gia",
+        "Content": "Lí do muốn tham gia",
+        "GN": "GỬI NGAY"
     }
 }
