@@ -48,7 +48,6 @@ function multilang() {
         document.getElementById("donateimg").src = "../../images/Donate.png";
         document.title = "SCSE - News";
         loadURL();
-        getFieldBySlug(2)
         // Change name language in dropdown
     });
     // Vietnam
@@ -66,6 +65,5 @@ function multilang() {
         document.getElementById("donateimg").src = "../../images/Group_399.png";
         document.title = "SCSE - Tin Tức";
         loadURL();
-        getFieldBySlug(1)
     });
 };
