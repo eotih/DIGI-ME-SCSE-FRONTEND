@@ -19,12 +19,13 @@
     .navbar {
         top: 0px;
         opacity: 1;
+        position: static;
     }
     .slogan {
         font-size: 18px;
     }
     .Topnav {
-        font-size: 12px;
+        opacity: 0;
     }
     #partner .carousel-inner {
         font-size: 12px;

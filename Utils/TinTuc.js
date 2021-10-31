@@ -145,8 +145,8 @@ const executeData = (data) => {
                 <div class="card" style="width:100%; height:100%;">
                     <hr class="mt-0 bg-blue-scse" style="height:1rem">
                     <a href="../Chi-Tiet/index.html?slug=${Slug}">
-                        <img style="width:275px;height:155px;object-fit:cover;" src="${Image}"
-                            class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
+                        <img style="width:100%;height:155px;object-fit:cover;" src="${Image}"
+                            class="card-img-top px-2 img-fluid" style="border-radius: 2rem;" alt="...">
                     </a>
                     <div class="card-body">
                         <a style="text-decoration: none; color:black" href="../Chi-Tiet/index.html?slug=${Slug}">
@@ -186,7 +186,7 @@ const executeDataEN = (data) => {
                     <hr class="mt-0 bg-blue-scse" style="height:1rem">
                     <a href="../Chi-Tiet/index.html?slug=${SlugEN}">
                         <img style="width:275px;height:155px;object-fit:cover;" src="${Image}"
-                            class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
+                            class="card-img-top px-2 px-auto" style="border-radius: 2rem;" alt="...">
                     </a>
                     <div class="card-body">
                         <a style="text-decoration: none; color:black" href="../Chi-Tiet/index.html?slug=${SlugEN}">

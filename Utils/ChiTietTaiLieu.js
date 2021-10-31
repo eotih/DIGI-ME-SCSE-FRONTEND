@@ -14,9 +14,10 @@ function getBySlug() {
         })
         .then(function (response) {
             var html = response.map(function (response) {
-                const { IDPost, Title, Slug, Details, Image } = response
+                const { IDPost, Title, Slug, Details, Image,CreatedByDate } = response
                 return `
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
+                <h5 class="mt-1">${convertDate(CreatedByDate)}</h5>
                 <section>
                     <div>${Details}</div>
                 </section>
