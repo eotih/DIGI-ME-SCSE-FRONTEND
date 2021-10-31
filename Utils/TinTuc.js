@@ -4,12 +4,6 @@ const NCDT = $('#NCDT');
 const GBDG = $('#GBDG');
 const WEB_API = "https://api.scse-vietnam.org/API/";
 
-function Uncheck() {
-    unChecked(KHMT);
-    unChecked(TTS);
-    unChecked(GBDG);
-    unChecked(NCDT);
-}
 
 NCDT.on('click', function (e) {
     if (this.checked) {
