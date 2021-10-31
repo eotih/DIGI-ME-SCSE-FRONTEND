@@ -100,7 +100,8 @@
         "Topic": "Subtitle",
         "PLSTopic": "Please fill your Topic",
         "Content": "Content",
-        "PLSContent": "Please fill your Content"
+        "PLSContent": "Please fill your Content",
+        "GN": "SEND"
     },
     "News": {
         "Home": "Home >",
@@ -146,5 +147,22 @@
             "Example": "FULLNAME +  PROJECT NAME + AMOUNT"
         },
         "ContentBot": "* Statements and guarantees We guarantee that the money donated by the donors will be used for the legitimate purposes and for the purpose of the organization's activities. In addition, the money that has been donated is non-refundable and becomes the property of SCSE. *"
+    },
+    "CSBM": {
+        "CSBM": "PRIVACY POLICY",
+        "Content": "At SCSE Foundation, we take privacy very seriously. We are committed to protecting the privacy of our program beneficiaries, sponsors and supporters, and anyone else who interacts with us. This Privacy Policy applies to the SCSE Organization. SCSE collects, uses and stores personal information to assist us in our work of helping people in need. Disclosure of this information is made only under very strict limitations and never to third parties without your consent.",
+        "certificate": "CERTIFICATE"
+    },
+    "DKTNV": {
+        "DKTNV": "ĐĂNG KÝ TÌNH NGUYỆN VIÊN",
+        "HO": "First Name",
+        "TEN": "Last Name",
+        "Phone": "Phone",
+        "Email": "Email",
+        "Address": "Address",
+        "DOB": "Date of birth",
+        "Project": "Projects you want to join",
+        "Content": "Reasons to join",
+        "GN": "Send"
     }
 }
