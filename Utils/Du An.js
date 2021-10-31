@@ -25,8 +25,8 @@ async function loadDA(numb) {
                 <div class="mb-5">
                     <div class="card" style="width:100%; height:100%;">
                         <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
-                        <img style="width:320px;height:220px; border-radius:20px" src="${Image}" 
-                                class=" mt-3 mx-3" alt="...">
+                        <img style="width:100%;height:220px; border-radius:20px" src="${Image}" 
+                                class=" mt-3 px-3" alt="...">
                         </a>
                         <div class="card-body">
                             <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
@@ -82,8 +82,8 @@ async function loadDA(numb) {
                 <div class="mb-5">
                     <div class="card" style="width:100%; height:100%;">
                         <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">
-                        <img style="width:320px;height:220px;" src="${Image}" 
-                                class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
+                        <img style="width:100%;height:220px;" src="${Image}" 
+                                class=" mt-3 px-3" style="border-radius: 2rem;" alt="...">
                         </a>
                         <div class="card-body">
                             <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}">

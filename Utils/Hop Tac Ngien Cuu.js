@@ -23,8 +23,8 @@ async function loadHDNC(numb) {
                         <div class="card mb-3" style="width:100%;">
                             <div class="row g-0">
                             <div class="col-md-4">
-                                    <img style="width:300px;height:220px;border-radius: 2rem;" src="${Image}" 
-                                            class=" mt-3 mx-3" alt="...">
+                                    <img style="width:100%;height:220px;border-radius: 2rem;object-fit:cover" src="${Image}" 
+                                            class=" mt-3 px-3" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -80,7 +80,7 @@ async function loadHDNC(numb) {
                     <div class="card mb-3" style="width:100%;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                            <img style="width:300px;height:220px" src="${Image}" 
+                            <img style="width:100%;height:220px;border-radius: 2rem;object-fit:cover" src="${Image}" 
                                     class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
                         </div>
                         <div class="col-md-8">
