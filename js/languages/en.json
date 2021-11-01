@@ -14,7 +14,7 @@
             "Activities": "Activities",
             "VoluntaryActivities": "Voluntary activities",
             "Project": "Project",
-            "PartnerForResearch": "Partner for research"
+            "PartnerForResearch": "Cooperation for research"
         },
         "Dropmenuheader3": {
             "Library": "Library",
@@ -32,10 +32,10 @@
         "Goal": "GOAL",
         "contentGoal": "We believe that connectivity will create positive changes in society, impulse fairness in access to resources, and contribute to sustainable development.",
         "Vision": "VISION",
-        "contentVision": "SCSE believes that the right connection will create positive changes in society, promote internal strength and increase opportunities to access resources and contribute to sustainable community development.",
+        "contentVision": "SCSE believes that the appropriate connection will create positive changes in society, promote internal strength and increase opportunities to access resources and contribute to sustainable community development.",
         "MissionStatement": "MISSION",
-        "contentMission": "SCSE's mission is to connect resources in society to ensure equal access and development opportunities for disadvantaged groups in society based on science and professional assistance.",
-        "FieldOperations": "FIELD OPERATIONS",
+        "contentMission": "SCSE's mission is to connect resources in the society to ensure equitable access and development opportunities for disadvantaged groups in society based on science and professional assistance.",
+        "FieldOperations": "OPERATION FIELDS",
         "GenderAndGenderEquality": "Gender - Gender equality",
         "EnvironmentClimateChange": "Climate change",
         "EnvironmentClimateChange1": "Environment",
@@ -43,12 +43,12 @@
         "ResearchTraining": "Research - Training",
         "MoreInfo": "More Info",
         "DonateNow": "DONATE NOW",
-        "SIGNUPFORINTERNSHIP": "SIGN UP FOR INTERNSHIP",
+        "SIGNUPFORINTERNSHIP": "SIGN UP FOR VOLUNTEER",
         "SIGNUPFORPARTNERSHIP": "SIGN UP FOR PARTNERSHIP",
         "Sponsors": "SPONSORS"
     },
     "Footer": {
-        "content1": "We are not the ones who make change, but we can engage different resources. This can contribute to the change in society, and create a better life.",
+        "content1": "We are not the ones who make the change, but we can engage different resources. This contribute to the change in society, and create a better life.",
         "ContactInfomation": "CONTACT INFORMATION",
         "TermsOfUse": "TERMS OF USE",
         "PrivacyPolicy": "Privacy policy",
@@ -57,7 +57,7 @@
     "ThanhMauXanh": {
         "HTNC": {
             "Home": "Home >",
-            "PFR": " Partner for research",
+            "PFR": " Cooperation for research",
             "LoadMore": "Load More"
         },
         "DA": {
@@ -120,12 +120,12 @@
         "Home": "Home >",
         "AboutSCSE": "About SCSE",
         "ABOUTSCSE": "ABOUT SCSE",
-        "NNYTTYN": "ENJOY LOVE FROM SMALL IDEAS",
-        "Content1": "Derived from fragments of the past, childhood is incomplete, happy like many other children, working hard, helping the family from an early age,... But, it's not just a personal story, but a personal story. was the general situation of children in Soc Trang province at that time. Think of yourself and then think of others! Bringing the desire to help more children, educate sex and popularize social knowledge for people and Khmer ethnic minorities in the province,... From there, a journey has been started. to love!",
+        "NNYTTYN": "KINDLE LOVE FROM SMALL IDEAS",
+        "Content1": "Starting from fragments of the past, childhood is incomplete, unhappy like many other children,  working hard, helping the family from an early age,... But, it's not just a personal story, it's a common situation of children in Soc Trang province at that time. Think of yourself and then think of others! Bringing a desire to help more children, to educate sex and popularize social knowledge for the people and the Khmer ethnic community in the province,... Since then, a journey to love has started!",
         "SMCYT": "MISSION OF LOVE",
-        "Content2": "Going with good beliefs, besides the desire to further improve the quality of life of the people of the province in general and the Khmer people in Soc Trang in particular, the popularization of social knowledge, the on Gender and Gender Equality, LGBTQ+ Community, environment, education,... Soc Trang Provincial Community Connection Center carries on its good responsibilities, with the desire that more and more children and women Women and young people have gradually improved their health status, family and social problems. Hope to bring useful knowledge and activities to help them become more optimistic, stronger and more integrated with the community.",
-        "MKKVDV": "A WISHING FOR THOUSANDS OF THINGS BECAUSE",
-        "Content3": "Thirteen years of rekindling the idea, Ms. Huong, coming out of the ups and downs of her life with the desire to establish a Community Connection Center in the province, was fortunate to find great partners. Starting from the impressive self. Ms. Huong - an active member of the Soc Trang Province Women's Association; Mr. Giang - a teacher with a great heart, has found a lot of faith in his teammates, but perhaps the most common thing in them personally is the desire to establish a Community Connection Center in the province for the sake of life. People's lives here have been somewhat improved, because to see more children going to school, all of them are loved and happy."
+        "Content2": "Go with kind beliefs, in addition to the desire to improve the life quality of people in the province in general and Khmer people in Soc Trang in particular, the popularization of social knowledge, issues on Gender and Gender Equality, LGBTQ+, Community, environment, education,... Soc Trang Center For Social Science Engagement carries with it good responsibilities, with the desire that more and more children, women, youths gradually improve their health status, family and social problems. Hoping to bring knowledge, useful activities to harmonize themselves, to be more optimistic, stronger and more integrated with the community.",
+        "MKKVDV": "A DESIRE FOR THOUSANDS OF THINGS FOR",
+        "Content3": "13 years of kindling the idea, Mrs. Huong, came out from the rise and fall of her life with the desire to establish Soc Trang Center For Social Science Engagement in the province, lucky to find great partners. Starting from separate impressive ways. Mrs. Huong - an active member of the Soc Trang Province Women's Association; Mr. Giang - the teacher with great heart, has found a lot of faith in his teammates, but perhaps, the most common thing in them personally, is the desire to establish a Community Connection Center in the province for people's lives here are somewhat improved,for to see more children go to school, all of them are loved and happy."
     },
     "BGD": {
         "Home": "Home >",
