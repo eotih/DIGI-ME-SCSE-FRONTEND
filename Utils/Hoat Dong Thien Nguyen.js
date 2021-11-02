@@ -44,7 +44,7 @@ async function loadHDTN(numb) {
                                     <br>
                                     <div class="d-grid gap-2 d-flex justify-content-md-end">
                                     <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"
-                                        class="btn bg-red-scse btn-danger lg">Đăng ký</a>
+                                        class="btn bg-red-scse btn-danger lg">Đăng ký tình nguyện viên</a>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ async function loadHDTN(numb) {
                                 <br>
                                 <div class="d-grid gap-2 d-flex justify-content-md-end">
                                 <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"
-                                    class="btn bg-red-scse btn-danger lg">Sign up</a>
+                                    class="btn bg-red-scse btn-danger lg">Sign up at volunteer</a>
                                 </div>
                         </div>
                     </div>
