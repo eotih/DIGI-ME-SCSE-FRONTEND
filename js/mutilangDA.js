@@ -20,7 +20,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 document.getElementById("donateimg").src = "../../images/Donate.png";
                 // Change language in dropdown
-                loadDA(2)
+                getFieldBySlug(2)
                 document.title = "SCSE - Project";
             }
             // Vietnam
@@ -33,7 +33,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
                 document.getElementById("donateimg").src = "../../images/Group_399.png";
                 document.title = "SCSE - Dự Án";
-                loadDA(1)
+                getFieldBySlug(1)
             }
             
             // Change languages when click
@@ -50,7 +50,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 document.getElementById("donateimg").src = "../../images/Donate.png";
                 document.title = "SCSE - Project";
-                loadDA(2)
+                loadURL();
                 // Change name language in dropdown
             });
             // Vietnam
@@ -67,7 +67,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
                 document.getElementById("donateimg").src = "../../images/Group_399.png";
                 document.title = "SCSE - Dự Án";
-                loadDA(1)
+                loadURL();
             });
         };
         

@@ -1,26 +1,25 @@
-const WEB_API = "https://api.scse-vietnam.org/";
+const WEB_API = "http://localhost:59360/API/";
 // window.addEventListener('load', loadData)
 function convertDate(input) {
     var result = new Date(input)
     return result.toLocaleDateString()
 }
 async function loadDA(numb) {
-    if(numb == 1)
-    {
-        fetch(WEB_API + "API/Management/GetByIdCategory?idcat=1")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (response) {
-            var postApproved = response.filter(e => e.IDState === 2)
-            const sortByNewDate = postApproved.sort(function (a, b) {
-                a = new Date(a.UpdatedByDate);
-                b = new Date(b.UpdatedByDate);
-                return a > b ? -1 : a < b ? 1 : 0;
+    if (numb == 1) {
+        fetch(WEB_API + "Management/GetByIdCategory?idcat=1")
+            .then(function (response) {
+                return response.json();
             })
-            var html = sortByNewDate.map(function (response) {
-                const { IDPost, Title, Slug, Details, Image,CreatedByDate } = response
-                return `
+            .then(function (response) {
+                var postApproved = response.filter(e => e.IDState === 2)
+                const sortByNewDate = postApproved.sort(function (a, b) {
+                    a = new Date(a.UpdatedByDate);
+                    b = new Date(b.UpdatedByDate);
+                    return a > b ? -1 : a < b ? 1 : 0;
+                })
+                var html = sortByNewDate.map(function (response) {
+                    const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
+                    return `
                 <div class="col-lg-4 d-flex align-items-stretch">
                 <div class="mb-5">
                     <div class="card" style="width:100%; height:100%;">
@@ -44,40 +43,40 @@ async function loadDA(numb) {
                 </div>
             </div>
             `;
-            })
-            $('#list').pagination({
-                dataSource: html,
-                pageSize: 6,
-                className: 'paginationjs-theme-blue',
-                callback: function (data, pagination) {
-                    $(".loader-wrapper").fadeOut("slow");
-                    if(data.length === 0) {
-                        moi = `
+                })
+                $('#list').pagination({
+                    dataSource: html,
+                    pageSize: 6,
+                    className: 'paginationjs-theme-blue',
+                    callback: function (data, pagination) {
+                        $(".loader-wrapper").fadeOut("slow");
+                        if (data.length === 0) {
+                            moi = `
                         <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
-                        `   
+                        `
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
+
                     }
-                    else { moi = data }
-                    $('#tbody').html(moi);
-        
-                }
+                })
             })
-        })
     }
-    else{
-        fetch(WEB_API + "API/Management/GetByIdCategoryEN?idcat=1")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (response) {
-            var postApproved = response.filter(e => e.IDState === 2)
-            const sortByNewDate = postApproved.sort(function (a, b) {
-                a = new Date(a.UpdatedByDate);
-                b = new Date(b.UpdatedByDate);
-                return a > b ? -1 : a < b ? 1 : 0;
+    else {
+        fetch(WEB_API + "Management/GetByIdCategoryEN?idcat=1")
+            .then(function (response) {
+                return response.json();
             })
-            var html = sortByNewDate.map(function (response) {
-                const { IDPostEN, Title, SlugEN, Details, Image,CreatedByDate } = response
-                return `
+            .then(function (response) {
+                var postApproved = response.filter(e => e.IDState === 2)
+                const sortByNewDate = postApproved.sort(function (a, b) {
+                    a = new Date(a.UpdatedByDate);
+                    b = new Date(b.UpdatedByDate);
+                    return a > b ? -1 : a < b ? 1 : 0;
+                })
+                var html = sortByNewDate.map(function (response) {
+                    const { IDPostEN, Title, SlugEN, Details, Image, CreatedByDate } = response
+                    return `
                 <div class="col-lg-4 d-flex align-items-stretch">
                 <div class="mb-5">
                     <div class="card" style="width:100%; height:100%;">
@@ -100,23 +99,23 @@ async function loadDA(numb) {
                 </div>
             </div>
             `;
-            })
-            $('#list').pagination({
-                dataSource: html,
-                pageSize: 6,
-                className: 'paginationjs-theme-blue',
-                callback: function (data, pagination) {
-                    $(".loader-wrapper").fadeOut("slow");
-                    if(data.length === 0) {
-                        moi = `
+                })
+                $('#list').pagination({
+                    dataSource: html,
+                    pageSize: 6,
+                    className: 'paginationjs-theme-blue',
+                    callback: function (data, pagination) {
+                        $(".loader-wrapper").fadeOut("slow");
+                        if (data.length === 0) {
+                            moi = `
                         <h1 class="text-center font-weight-bold my-3 mx-auto">Chưa có bài đăng...</h1>
-                        `   
+                        `
+                        }
+                        else { moi = data }
+                        $('#tbody').html(moi);
+
                     }
-                    else { moi = data }
-                    $('#tbody').html(moi);
-        
-                }
+                })
             })
-        })
     }
 }
