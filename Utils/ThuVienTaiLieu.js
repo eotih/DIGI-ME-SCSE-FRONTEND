@@ -11,9 +11,9 @@ async function loadData() {
                 b = new Date(b.UpdatedByDate);
                 return a > b ? -1 : a < b ? 1 : 0;
             })
-            
+
             var html = sortByNewDate.map(function (response) {
-                const {Title, Slug} = response
+                const { Title, Slug } = response
                 return `
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
@@ -23,10 +23,11 @@ async function loadData() {
                                     <img src="../../../images/pdf.jpg"
                                         class="card-img-top my-1 px-1" alt="...">
                                 </a>
+                                <div class="mt-2">
                                 <a style="text-decoration: none; color:black" href="../../Chi-Tiet-Bai-Viet/tailieu.html?slug=${Slug}">
                                     <h5 class="card-title" style="font-size:16px">${Title}</h5>
                                 </a>
-
+                                </div>
                             </div>
                            
                         </div>
