@@ -44,7 +44,8 @@
         "ResearchTraining": "Nghiên cứu - Đào tạo",
         "MoreInfo": "XEM THÊM",
         "DonateNow": "ĐÓNG GÓP NGAY",
-        "SIGNUPFORINTERNSHIP": "ĐĂNG KÝ TÌNH NGUYỆN VIÊN",
+        "SIGNUP": "ĐĂNG KÝ",
+        "FORINTERNSHIP": "TÌNH NGUYỆN VIÊN",
         "SIGNUPFORPARTNERSHIP": "ĐĂNG KÝ ĐỐI TÁC",
         "Sponsors": "NHÀ TÀI TRỢ"
     },
@@ -85,7 +86,21 @@
             "Home": "Trang Chủ >",
             "Files": "Tài liệu",
             "LoadMore": "Xem Thêm"
+        },
+        "DKTD": {
+            "Home": "Trang chủ >",
+            "PARTNER REGISTRATION": "Đăng ký đối tác"
         }
+    },
+    "Partner":{
+        "PARTNER REGISTRATION": "Đăng ký đối tác",
+        "Organization's name": "Tên tổ chức",
+        "Contact person": "Họ và tên người liên hệ",
+        "Address": "Địa chỉ liên lạc",
+        "Email": "Email",
+        "Phone number": "Số điện thoại",
+        "Organization's programes": "Các lĩnh vực hoạt động của tổ chức",
+        "what is the expectation in cooperating with SCSE ?": "Mong đợi hợp tác với SCSE là gì?"
     },
     "Contact": {
         "Home": "Trang Chủ >",

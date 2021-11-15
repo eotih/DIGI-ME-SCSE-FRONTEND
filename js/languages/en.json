@@ -43,7 +43,8 @@
         "ResearchTraining": "Research - Training",
         "MoreInfo": "More Info",
         "DonateNow": "DONATE NOW",
-        "SIGNUPFORINTERNSHIP": "SIGN UP FOR VOLUNTEER",
+        "SIGNUP": "SIGN UP",
+        "FORINTERNSHIP": "FOR VOLUNTEER",
         "SIGNUPFORPARTNERSHIP": "SIGN UP FOR PARTNERSHIP",
         "Sponsors": "SPONSORS"
     },
@@ -84,7 +85,22 @@
             "Home": "Home >",
             "Files": "Files",
             "LoadMore": "Xem Thêm"
+        },
+        "DKTD": {
+            "Home": "Home >",
+            "PARTNER REGISTRATION": "PARTNER REGISTRATION"
         }
+
+    },
+    "Partner":{
+        "PARTNERREGISTRATION": "PARTNER REGISTRATION",
+        "Organization'sname": "Organization's name",
+        "Contactperson": "Contact person",
+        "Address": "Address",
+        "Email": "Email",
+        "Phonenumber": "Phone number",
+        "Organization'sprogrames": "Organization's programes",
+        "whatistheexpectationincooperatingwithSCSE?": "What is the expectation in cooperating with SCSE ?"
     },
     "Contact": {
         "Home": "Home >",

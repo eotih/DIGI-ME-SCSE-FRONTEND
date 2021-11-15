@@ -32,6 +32,7 @@ async function loadDA(numb) {
                             <a style="text-decoration: none; color:black;" href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                 <h4 class="card-title font-weight-bold" style="text-align: justify; text-justify: inter-word font-size:24px">${Title}</h4>
                             </a>
+                            <p>LinhVuc</p>
                             <p>${convertDate(CreatedByDate)}</p>
                             <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}...</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">

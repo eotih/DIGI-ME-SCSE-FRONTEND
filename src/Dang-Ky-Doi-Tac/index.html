@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCSE - Đăng kí tình nguyện viên</title>
+    <title>SCSE - Đăng kí đối tác</title>
     <link rel="icon" sizes="192x192" href="../../images/LogoSCSE_Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -33,6 +33,8 @@
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/style.js"></script>
     <script src="../../Utils/Banner.js"></script>
+    <script src="../../js/multilangDKDT.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
 <body>
@@ -48,41 +50,51 @@
             <div class="textholder">
                 <div class="overlay">
                     <p class="ps-2" id="datetime"></p>
-                    <p class="active">VI</p>
-                    <p>EN</p>
+                    <p class="vietnam">VI</p>
+                    <p class="english">EN</p>
                 </div>
             </div>
         </div>
         <div class="nav-bar">
             <ul id="nav">
-                <li><a class="Roboto" href="../../index.html">Trang Chủ</a></li>
-                <li><a class="Roboto" href="">Về SCSE <i class="fas fa-caret-down"></i></a>
+                <li><a class="" href="../../index.html" data-i18n="header.home">Trang Chủ</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="" data-i18n="header.Dropmenuheader1.AboutSCSE">Về
+                        SCSE</a>
                     <ul>
-                        <li><a class="Roboto" href="../Ban-Giam-Doc/">Ban Giám Đốc</a></li>
-                        <li><a class="Roboto" href="../Cau-Chuyen/">Câu chuyện</a></li>
+                        <li><a class="Roboto" href="../Ban-Giam-Doc/"
+                                data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a></li>
+                        <li><a class="Roboto" href="../Cau-Chuyen/" data-i18n="header.Dropmenuheader1.Story">Câu
+                                chuyện</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="../Tin-Tuc/">Tin tức</a></li>
-                <li><a class="Roboto" href="" onclick="dropdown()">Chương trình <i class="fas fa-caret-down"></i></a>
+                <li><a class="Roboto" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="" onclick="dropdown()"
+                        data-i18n="header.Dropmenuheader2.Activities">Chương trình</a>
                     <ul>
-                        <li><a class="Roboto" href="../Hoat-Dong-Thien-Nguyen/">Hoạt động thiện nguyện</a></li>
-                        <li><a class="Roboto" href="../Du-An/">Dự án</a></li>
-                        <li><a class="Roboto" href="../Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a></li>
+                        <li><a class="Roboto" href="../Hoat-Dong-Thien-Nguyen/"
+                                data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện nguyện</a></li>
+                        <li><a class="Roboto" href="../Du-An/" data-i18n="header.Dropmenuheader2.Project">Dự án</a></li>
+                        <li><a class="Roboto" href="../Hop-Tac-Nghien-Cuu/"
+                                data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="">Thư viện <i class="fas fa-caret-down"></i></a>
+                <li class="dropdown"><a class="dropdown-toggle" href="" data-i18n="header.Dropmenuheader3.Library">Thư
+                        viện</a>
                     <ul>
-                        <li><a class="Roboto" href="../ThuVien/Hinh-Anh/">Hình ảnh</a></li>
-                        <li><a class="Roboto" href="../ThuVien/video/">Video</a></li>
-                        <li><a class="Roboto" href="../ThuVien/Tai-Lieu/">Tài liệu</a></li>
+                        <li><a class="Roboto" href="../ThuVien/Hinh-Anh/" data-i18n="header.Dropmenuheader3.Image">Hình
+                                ảnh</a></li>
+                        <li><a class="Roboto" href="../ThuVien/video/"
+                                data-i18n="header.Dropmenuheader3.Video">Video</a></li>
+                        <li><a class="Roboto" href="../ThuVien/Tai-Lieu/"
+                                data-i18n="header.Dropmenuheader3.Document">Tài liệu</a></li>
                     </ul>
                 </li>
-                <li><a class="Roboto" href="../Lien-He/">Liên hệ</a></li>
+                <li><a class="active" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a></li>
             </ul>
         </div>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="../../index.html"><img class="img-fluid"
+                <a class="navbar-brand" href="../../index.html"><img class="img-fluid" id="LogoNav"
                         src="../../images/LogoSCSE_Horizontal_Vietnamese_white.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
                     <span class="navbar-toggler-icon"></span>
@@ -90,54 +102,65 @@
                 <div class="collapse navbar-collapse" id="navbar1">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../index.html">Trang Chủ</a>
+                            <a class="nav-link" href="../../index.html" data-i18n="header.home">Trang Chủ</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Về
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader1.AboutSCSE">Về
                                 SCSE</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="../Ban-Giam-Doc/">Ban Giám Đốc</a>
+                                    <a class="dropdown-link" href="../Ban-Giam-Doc/"
+                                        data-i18n="header.Dropmenuheader1.ExecutiveBoard">Ban Giám Đốc</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="../Cau-Chuyen/">Câu chuyện</a>
+                                    <a class="dropdown-link" href="../Cau-Chuyen/"
+                                        data-i18n="header.Dropmenuheader1.Story">Câu chuyện</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Tin-Tuc/">Tin tức</a>
+                            <a class="nav-link" href="../Tin-Tuc/" data-i18n="header.News">Tin tức</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Chương trình</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader2.Activities">Chương trình</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="../Hoat-Dong-Thien-Nguyen/">Hoạt động thiện
+                                    <a class="dropdown-link" href="../Hoat-Dong-Thien-Nguyen/"
+                                        data-i18n="header.Dropmenuheader2.VoluntaryActivities">Hoạt động thiện
                                         nguyện</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="../Du-An/">Dự án</a>
+                                    <a class="dropdown-link" href="../Du-An/"
+                                        data-i18n="header.Dropmenuheader2.Project">Dự án</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="../Hop-Tac-Nghien-Cuu/">Hợp tác nghiên cứu</a>
+                                    <a class="dropdown-link" href="../Hop-Tac-Nghien-Cuu/"
+                                        data-i18n="header.Dropmenuheader2.PartnerForResearch">Hợp tác nghiên cứu</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Thư viện</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true"
+                                data-i18n="header.Dropmenuheader3.Library">Thư viện</a>
                             <ul class="dropdown-menu pull-right">
                                 <li>
-                                    <a class="dropdown-link" href="../ThuVien/Hinh-Anh/">Hình ảnh</a>
+                                    <a class="dropdown-link" href="../ThuVien/Hinh-Anh/"
+                                        data-i18n="header.Dropmenuheader3.Image">Hình ảnh</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="../ThuVien/video/">video</a>
+                                    <a class="dropdown-link" href="../ThuVien/video/"
+                                        data-i18n="header.Dropmenuheader3.Video">video</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-link" href="../ThuVien/Tai-Lieu/">Tài liệu</a>
+                                    <a class="dropdown-link" href="../ThuVien/Tai-Lieu/"
+                                        data-i18n="header.Dropmenuheader3.Document">Tài liệu</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Lien-He/">Liên hệ</a>
+                            <a class="nav-link" href="../Lien-He/" data-i18n="header.Contact">Liên hệ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link vietnam">VI</a>
@@ -187,28 +210,35 @@
     <!-- BODY -->
 
     <div class="container">
+        <div style="background-color: #1A94D0;height: 2rem;margin-top:0;" class="d-flex justify-content-start">
+            <a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                data-i18n="ThanhMauXanh.DKTD.Home">Trang chủ > </a>
+            <p class=" my-auto font-weight-bold" style="color: #FFFFFF" data-i18n="ThanhMauXanh.DKTD.PARTNER REGISTRATION"> Đăng ký đối tác
+            </p>
+
+        </div>
         <div class="mt-4 mb-4">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 d-flex justify-content-start">
                             <div class="bg-red-scse mx-2" style="height: 80px;width: 70px; border-radius: 10px;"></div>
-                            <h1 class="m-0 font-weight-bold my-auto text-end">ĐĂNG KÝ ĐỐI TÁC</h1>
+                            <h1 class="m-0 font-weight-bold my-auto text-end" data-i18n="Partner.PARTNERREGISTRATION">ĐĂNG KÝ ĐỐI TÁC</h1>
                         </div>
                         <div class="card-body">
                             <form method="POST" action="/post/store">
                                 <div class="row g-3">
                                     <div class="col-sm-4 mb-2">
-                                        <label for="Họ" class="form-label">Họ</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="Họ" value=""
+                                        <label for="Họ" class="form-label" data-i18n="Partner.Organization'sname">Tên tổ chức</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Tên tổ chức" value=""
                                             required>
                                         <div class="invalid-feedback">
-                                            Vui lòng nhập Họ.
+                                            Vui lòng nhập tên tổ chức.
                                         </div>
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="Tên" class="form-label">Tên</label>
+                                        <label for="Tên" class="form-label" data-i18n="Partner.Contactperson">Họ và tên người liên hệ</label>
                                         <input type="text" class="form-control" id="lastName" placeholder="Tên" value=""
                                             required>
                                         <div class="invalid-feedback">
@@ -217,34 +247,24 @@
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="phone" class="form-label">Số điện thoại</label>
+                                        <label for="phone" class="form-label" data-i18n="Partner.Phonenumber">Số điện thoại tổ chức</label>
                                         <input type="text" class="form-control" id="phone"
                                             placeholder="Vui lòng nhập Số điện thoại." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Số điện thoại.
                                         </div>
                                     </div>
-
-                                    <div class="col-sm-4 mb-2">
-                                        <label for="Ngày sinh" class="form-label">Tổ chức/Đơn Vị</label>
-                                        <input type="text" class="form-control" id="Organization"
-                                            placeholder="Vui lòng nhập tổ chức" value="" required>
-                                        <div class="invalid-feedback">
-                                            Vui lòng nhập tên tổ chức
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 mb-2">
-                                        <label for=">Địa chỉ" class="form-label">Địa chỉ</label>
+                                    <div class="col-sm-8 mb-2">
+                                        <label for=">Địa chỉ" class="form-label" data-i18n="Partner.Address">Địa chỉ</label>
                                         <input type="text" class="form-control" id="lastName"
-                                            placeholder="Vui lòng nhập Địa chỉ" value="" required>
+                                            placeholder="Vui lòng nhập Địa chỉ." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Địa chỉ.
                                         </div>
                                     </div>
 
                                     <div class="col-sm-4 mb-2">
-                                        <label for="email" class="form-label">Email</label>
+                                        <label for="email" class="form-label" data-i18n="Partner.Email">Email</label>
                                         <input type="text" class="form-control" id="email"
                                             placeholder="Vui lòng nhập Email." value="" required>
                                         <div class="invalid-feedback">
@@ -252,24 +272,24 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <label for="username" class="form-label">Chủ để</label>
+                                        <label for="username" class="form-label" data-i18n="Partner.Organization'sprogrames">Các lĩnh vực hoạt động của tổ chức</label>
                                         <div class="input-group has-validation">
-                                            <input type="text" class="form-control" id="username" placeholder="Dự án"
+                                            <input type="text" class="form-control" id="username" placeholder="Các lĩnh vực hoạt động của tổ chức."
                                                 required>
                                             <div class="invalid-feedback">
-                                                Vui lòng nhập chủ đề.
+                                                Vui lòng nhập các lĩnh vực hoạt động của tổ chức.
                                             </div>
 
                                         </div>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <label for="content" class="form-label">Nội dung mong muốn hợp tác</label>
-                                        <div>
-                                            <input type="file" id="file" name="file" multiple>
-                                        </div>
+                                        <input type="file" id="file" name="file" accept=".pdf,.doc">
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="content" class="form-label" data-i18n="Partner.whatistheexpectationincooperatingwithSCSE?">Mong đợi hợp tác với SCSE là gì</label>
                                         <div class="input-group has-validation">
                                             <textarea style="min-height: 325px" type="text" class="form-control"
-                                                id="content" placeholder="Vui lòng nhập Nội dung." required></textarea>
+                                                id="content" placeholder="Vui lòng nhập." required></textarea>
                                             <div class="invalid-feedback">
                                                 Vui lòng nhập Nội dung.
                                             </div>
@@ -304,7 +324,8 @@
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img class="img-fluid" src="../../images/LogoSCSE_Horizontal_Vietnamese.png" alt="">
+                    <img class="img-fluid" id="LogoFooterEN" src="../../images/LogoSCSE_Horizontal_Vietnamese.png"
+                        alt="">
                     <p data-i18n="Footer.content1" style=" text-align: justify; text-justify: inter-word;">Chúng ta
                         không là người tạo ra sự thay đổi, nhưng chúng ta có thể tạo ra sự kết nối các nguồn
                         lực. Điều này góp phần tạo ra sự thay đổi trong xã hội, đem lại một cuộc sống tốt đẹp hơn.</p>
@@ -312,7 +333,8 @@
                 <!-- Grid column -->
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">THÔNG TIN LIÊN HỆ</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.ContactInfomation">THÔNG TIN LIÊN
+                        HỆ</h6>
                     <p class="text-capitalize">
                         <i class="fas fa-home mr-3 text-capitalize"></i>20A An dương vương, Phường 10, TP. Sóc trăng.
                     </p>
@@ -336,12 +358,13 @@
 
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Điều khoản sử dụng</h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="Footer.TermsOfUse">Điều khoản sử dụng
+                    </h6>
                     <p>
-                        <a href="../../src/Chinh-Sach-Bao-Mat/">Chính sách bảo mật</a>
+                        <a href="../../src/Chinh-Sach-Bao-Mat/" data-i18n="Footer.PrivacyPolicy">Chính sách bảo mật</a>
                     </p>
                     <p>
-                        <a href="#!">Thông tin cam kết</a>
+                        <a href="#!" data-i18n="Footer.Commitment">Thông tin cam kết</a>
                     </p>
                 </div>
                 <!-- Grid column -->

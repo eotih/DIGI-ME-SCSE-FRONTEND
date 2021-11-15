@@ -32,7 +32,7 @@ async function loadData() {
 
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">${Category}</small>
+                                <small class="text-muted">Lĩnh vực</small>
                             </div>
                         </div>
                     </div>
