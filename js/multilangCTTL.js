@@ -3,7 +3,7 @@ window.addEventListener('load',multilang)
             // Configuration
             // Add options
             i18n.init({
-                resGetPath: '../../../js/languages/__lng__.json',
+                resGetPath: '../../js/languages/__lng__.json',
                 debug: true,
                 fallbackLng: false,
                 load: 'unspecific'
@@ -16,12 +16,12 @@ window.addEventListener('load',multilang)
                 // Set active class
                 $('li').removeClass('active');
                 $('.english').parent().addClass('active');
-                document.getElementById("LogoFooterEN").src = "../../../images/LogoSCSE_Horizontal_English_Transparent.png";
-                document.getElementById("LogoNav").src = "../../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.getElementById("donateimg").src = "../../../images/Donate.png";
+                // document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
+                // document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
+                // document.getElementById("donateimg").src = "../../images/Donate.png";
                 // Change language in dropdown
-                loadData(2);
-                document.title = "SCSE - Files";
+                document.title = "SCSE - Detail";
+                getBySlug(2)
             }
             // Vietnam
             if(i18n.lng() === "vi") {
@@ -29,11 +29,11 @@ window.addEventListener('load',multilang)
                 $('li').removeClass('active');
                 $('.vietnam').parent().addClass('active');  
                 // Change language in dropdown
-                document.getElementById("LogoFooterEN").src = "../../../images/LogoSCSE_Horizontal_Vietnamese.png";
-                document.getElementById("LogoNav").src = "../../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.getElementById("donateimg").src = "../../../images/Group_399.png";
-                document.title = "SCSE - Tài Liệu";
-                loadData(1);
+                // document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
+                // document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
+                // document.getElementById("donateimg").src = "../../images/Group_399.png";
+                // document.title = "SCSE - Chi Tiết";
+                getBySlug(1)
             }
             
             // Change languages when click
@@ -46,11 +46,11 @@ window.addEventListener('load',multilang)
                 // Set active class
                 $('li').removeClass('active');
                 $('.english').parent().addClass('active');
-                document.getElementById("LogoFooterEN").src = "../../../images/LogoSCSE_Horizontal_English_Transparent.png";
-                document.getElementById("LogoNav").src = "../../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
-                document.getElementById("donateimg").src = "../../../images/Donate.png";
-                document.title = "SCSE - Files";
-                loadData(2);
+                // document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_English_Transparent.png";
+                // document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
+                // document.getElementById("donateimg").src = "../../images/Donate.png";
+                // document.title = "SCSE - Detail";
+                getBySlug(2)
                 // Change name language in dropdown
             });
             // Vietnam
@@ -63,11 +63,11 @@ window.addEventListener('load',multilang)
                 $('li').removeClass('active');
                 $('.vietnam').parent().addClass('active');
                 // Change name language in dropdown
-                document.getElementById("LogoFooterEN").src = "../../../images/LogoSCSE_Horizontal_Vietnamese.png";
-                document.getElementById("LogoNav").src = "../../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
-                document.getElementById("donateimg").src = "../../../images/Group_399.png";
-                document.title = "SCSE - Tài Liệu";
-                loadData(1);
+                // document.getElementById("LogoFooterEN").src = "../../images/LogoSCSE_Horizontal_Vietnamese.png";
+                // document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
+                // document.getElementById("donateimg").src = "../../images/Group_399.png";
+                // document.title = "SCSE - Chi Tiết";
+                getBySlug(1)
             });
         };
         

@@ -34,6 +34,7 @@
     <script src="../../js/style.js"></script>
     <script src="../../Utils/Banner.js"></script>
     <script src="../../js/multilangDKDT.js"></script>
+    <script src="../../Utils/DangKyDoiTac.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/1.11.1/i18next.min.js"></script>
 </head>
 
@@ -230,7 +231,7 @@
                                 <div class="row g-3">
                                     <div class="col-sm-4 mb-2">
                                         <label for="Họ" class="form-label" data-i18n="Partner.Organization'sname">Tên tổ chức</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="Tên tổ chức" value=""
+                                        <input type="text" class="form-control" id="OrganizationName" placeholder="Tên tổ chức" value=""
                                             required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập tên tổ chức.
@@ -239,7 +240,7 @@
 
                                     <div class="col-sm-4 mb-2">
                                         <label for="Tên" class="form-label" data-i18n="Partner.Contactperson">Họ và tên người liên hệ</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Tên" value=""
+                                        <input type="text" class="form-control" id="ContactPerson" placeholder="Tên" value=""
                                             required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Tên.
@@ -248,7 +249,7 @@
 
                                     <div class="col-sm-4 mb-2">
                                         <label for="phone" class="form-label" data-i18n="Partner.Phonenumber">Số điện thoại tổ chức</label>
-                                        <input type="text" class="form-control" id="phone"
+                                        <input type="text" class="form-control" id="Phone"
                                             placeholder="Vui lòng nhập Số điện thoại." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Số điện thoại.
@@ -256,7 +257,7 @@
                                     </div>
                                     <div class="col-sm-8 mb-2">
                                         <label for=">Địa chỉ" class="form-label" data-i18n="Partner.Address">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="lastName"
+                                        <input type="text" class="form-control" id="Address"
                                             placeholder="Vui lòng nhập Địa chỉ." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Địa chỉ.
@@ -265,7 +266,7 @@
 
                                     <div class="col-sm-4 mb-2">
                                         <label for="email" class="form-label" data-i18n="Partner.Email">Email</label>
-                                        <input type="text" class="form-control" id="email"
+                                        <input type="text" class="form-control" id="Email"
                                             placeholder="Vui lòng nhập Email." value="" required>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập Email.
@@ -274,7 +275,7 @@
                                     <div class="col-12 mb-4">
                                         <label for="username" class="form-label" data-i18n="Partner.Organization'sprogrames">Các lĩnh vực hoạt động của tổ chức</label>
                                         <div class="input-group has-validation">
-                                            <input type="text" class="form-control" id="username" placeholder="Các lĩnh vực hoạt động của tổ chức."
+                                            <input type="text" class="form-control" id="OrganizationProgrames" placeholder="Các lĩnh vực hoạt động của tổ chức."
                                                 required>
                                             <div class="invalid-feedback">
                                                 Vui lòng nhập các lĩnh vực hoạt động của tổ chức.
@@ -289,7 +290,7 @@
                                         <label for="content" class="form-label" data-i18n="Partner.whatistheexpectationincooperatingwithSCSE?">Mong đợi hợp tác với SCSE là gì</label>
                                         <div class="input-group has-validation">
                                             <textarea style="min-height: 325px" type="text" class="form-control"
-                                                id="content" placeholder="Vui lòng nhập." required></textarea>
+                                                id="Purpose" placeholder="Vui lòng nhập." required></textarea>
                                             <div class="invalid-feedback">
                                                 Vui lòng nhập Nội dung.
                                             </div>
@@ -301,7 +302,7 @@
                                     <button style="height: 60px;
                                     width: 150px;
                                     border-radius: 10px;
-                                    " class=" bg-red-scse btn btn-danger me-md-2" type="button">GỬI NGAY</button>
+                                    " class=" bg-red-scse btn btn-danger me-md-2" type="button" onclick="doupload()">GỬI NGAY</button>
                                 </div>
                             </form>
                         </div>
