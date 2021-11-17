@@ -23,7 +23,7 @@ KHMT.change(function (e) {
     }
     else {
         var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Khí hậu - môi trường') { getNewsIdField(0) }
+       if (labels === 'Khí hậu-môi trường') { getNewsIdField(0) }
         else { getNewsIdFieldEN(0) }
     }
     unChecked(TTS);
@@ -266,7 +266,7 @@ const dataTTS = () => {
 }
 const dataKHMT = () => {
     var labels = document.getElementById('lblKHMT').textContent;
-    if (labels === 'Khí hậu - môi trường') { getNewsIdField(2) }
+    if (labels === 'Khí hậu-môi trường') { getNewsIdField(2) }
     else { getNewsIdFieldEN(2) }
 }
 const dataGBDG = () => {

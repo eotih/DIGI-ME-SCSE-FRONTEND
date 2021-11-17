@@ -23,7 +23,7 @@ KHMT.change(function (e) {
     }
     else {
         var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Khí hậu - môi trường') { getProjectIdField(0) }
+       if (labels === 'Khí hậu-môi trường') { getProjectIdField(0) }
         else { getProjectIdFieldEN(0) }
     }
     unChecked(TTS);
@@ -78,9 +78,9 @@ const getFieldBySlug = async (numb) => {
         if (slugResult === 'Thực tập sinh') { getProjectIdField(3) }
         else { getProjectIdFieldEN(3) }
     }
-    if (slugResult === 'Môi trường' || slugResult === 'Environment') {
+    if (slugResult === 'Biến đổi khí hậu môi trường' || slugResult === 'Climate change - Environment') {
         $('#KHMT').prop('checked', true);
-        if (slugResult === 'Môi trường') { getProjectIdField(2) }
+        if (slugResult === 'Biến đổi khí hậu môi trường') { getProjectIdField(2) }
         else { getProjectIdFieldEN(2) }
     }
     if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
@@ -276,7 +276,7 @@ const dataTTS = () => {
 }
 const dataKHMT = () => {
     var labels = document.getElementById('lblKHMT').textContent;
-    if (labels === 'Khí hậu - môi trường') { getProjectIdField(2) }
+   if (labels === 'Khí hậu-môi trường') { getProjectIdField(2) }
     else { getProjectIdFieldEN(2) }
 }
 const dataGBDG = () => {
