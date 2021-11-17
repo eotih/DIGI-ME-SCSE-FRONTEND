@@ -220,10 +220,8 @@ const executeDataEN = (data) => {
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
-
         }
     })
-
 }
 const changeIdField = (id) => {
     if (id === 1) {
