@@ -183,7 +183,7 @@ const getThongTin = () => {
                                     style="width: 300px;height:400px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
                             </div>
                             <div class="card-body">
-                            <h4 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${volunteer.name}</h4>
+                            <h5 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${volunteer.name}</h5>
                             <div class="py-2" >
                                 <p class="text-blue-scse text-center mt-3">Thực tập sinh</p>
                             </div>
