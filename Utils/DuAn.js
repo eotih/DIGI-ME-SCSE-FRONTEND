@@ -2,7 +2,7 @@ const KHMT = $('#KHMT');
 const TTS = $('#TTS');
 const NCDT = $('#NCDT');
 const GBDG = $('#GBDG');
-const WEB_API = "http://localhost:59360/API/";
+const WEB_API = "https://api.scse-vietnam.org/API/";
 
 NCDT.on('click', function (e) {
     if (this.checked) {

@@ -1,9 +1,8 @@
-
 // Do something
 const loadPartner = async () => {
-    const res = await fetch("https://api.scse-vietnam.org/API/Interface/ListPartner")
+    const res = await fetch("http://localhost:59360/API/Interface/ListPartner")
     const json = await res.json();
-    const filterData = json.filter(v => v.Image)
+    const filterData = json.filter(v => v.IDState ===2)
     const data = filterData.map(function (response) {
         return `
               <div class="item">

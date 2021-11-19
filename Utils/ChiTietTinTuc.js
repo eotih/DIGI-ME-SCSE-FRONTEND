@@ -20,7 +20,7 @@ async function getBySlug(numb) {
                     <div>
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
-                                            <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                                            <li class="breadcrumb-item mb-2"><a class="my-auto" href="../Tin-Tuc/" style="color: #FFFFFF;margin-left: 1rem;"
                                                 data-i18n="News.Home">Trang chủ</a></li>
                                             <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto" href="../../index.html" style="color: #FFFFFF">Tin tức</a></li>
                                             <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
@@ -94,7 +94,7 @@ async function getBySlug(numb) {
                                         <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
                                             <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
                                                 data-i18n="News.Home">Trang chủ</a></li>
-                                            <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto" href="../../index.html" style="color: #FFFFFF">News</a></li>
+                                            <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto" href="../Tin-Tuc/" style="color: #FFFFFF">News</a></li>
                                             <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
                                         </ol>
                                     </nav>    

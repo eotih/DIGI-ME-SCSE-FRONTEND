@@ -6,24 +6,24 @@ function convertDate(input) {
 }
 function convertCategory(category) {
     if (category === 1) {
-        return 'Dự án'
+        return '<a class="my-auto" href="../Du-An/" style="color: #FFFFFF">Dự Án</a> '
     }
     else if (category === 2) {
-        return 'Hợp tác nghiên cứu'
+        return '<a class="my-auto" href="../Hop-Tac-Nghien-Cuu/" style="color: #FFFFFF">Hợp Tác Ngiên Cứu</a> '
     }
     else if (category === 3) {
-        return 'Hoạt động thiện nguyện'
+        return '<a class="my-auto" href="../Hoat-Dong-Thien-Nguyen/" style="color: #FFFFFF">Hoạt Động Thiện Nguyện</a> '
     }
 }
 function convertCategoryEN(id) {
     if (id === 1) {
-        return 'Project'
+        return '<a class="my-auto" href="../Du-An/" style="color: #FFFFFF">Project</a> '
     }
     if (id === 2) {
-        return 'Cooperation for research'
+        return '<a class="my-auto" href="../Hop-Tac-Nghien-Cuu/" style="color: #FFFFFF">Cooperation for research</a> '
     }
     if (id === 3) {
-        return 'Voluntary Activities'
+        return '<a class="my-auto" href="../Hoat-Dong-Thien-Nguyen/" style="color: #FFFFFF">Voluntary Activities</a> '
     }
 }
 async function getBySlug(numb) {
@@ -45,7 +45,7 @@ async function getBySlug(numb) {
                     <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
                       <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
                         data-i18n="ThanhMauXanh.DA.Home">Trang chủ</a></li>
-                      <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="ThanhMauXanh.DA.Project" aria-current="page">${convertCategory(IDCat)}</li>
+                        <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto"style="color: #FFFFFF">${convertCategory(IDCat)}</a></li>
                       <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
                     </ol>
                 </nav>    

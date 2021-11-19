@@ -1,41 +1,29 @@
 const WEB_API = "http://localhost:59360/API/"
-
-function RegisterPartner(){
-    var $data = {
-        ContactPerson: $('#ContactPerson').val(),
-        OrganizationName: $('#OrganizationName').val(),
-        OrganizationProgrames: $('#OrganizationProgrames').val(),
-        Phone: $('#Phone').val(),
-        Email: $('#Email').val(),
-        Address: $('#Address').val(),
-        Link: $('#Link').val(),
-        Purpose: $('#Purpose').val(),
-        LinkFile: $('#LinkFile').val()
-    };
-    fetch(WEB_API + "Interface/AddOrEditPartner", {
+function uploadFileToAPI() {
+    var formData = new FormData();
+    const inputFile = document.querySelector('#file');
+    const files = inputFile.files[0];
+    formData.append('file', files);
+    formData.append('OrganizationName', $('#OrganizationName').val());
+    formData.append('ContactPerson', $('#ContactPerson').val());
+    formData.append('OrganizationProgrames', $('#OrganizationProgrames').val());
+    formData.append('Phone', $('#Phone').val());
+    formData.append('Email', $('#Email').val());
+    formData.append('Address', $('#Address').val());
+    formData.append('Link', $('#Link').val());
+    formData.append('Purpose', $('#Purpose').val());
+    fetch(WEB_API + "Interface/UploadFileVipPro", {
         method: 'POST',
-        body: JSON.stringify($data),
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-        },
+        body: formData,
     }).then(function (response) {
+        alert("Gửi thông tin thành công")
         return response.json()
-    })
-        .then(function (data) {
-            if (data.Status === 'Success') {
-                alert('Đã Gửi Thông Tin!')
-                window.location.reload();
-            }
-            else {
-                alert('Data not insert')
-            }
-        })
-}
-function doupload() {
-    let data = document.getElementById("file").files[0];
-    let entry = document.getElementById("file").files[0];
-    console.log('doupload',entry,data)
-    fetch(WEB_API + "Interface/UploadFile", 
-    {method:'Post',body:data});
-    RegisterPartner();
+    }
+    ).then(function (data) {
+        console.log(data);
+    }
+    ).catch(function (error) {
+        console.log(error);
+    }
+    );
 }
