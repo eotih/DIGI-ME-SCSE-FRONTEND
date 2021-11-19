@@ -17,6 +17,16 @@ async function getBySlug(numb) {
                 const { Title, Slug, CreatedByDate, Details, Image, IDState } = response
                 if (IDState === 2) {
                     $('#tbody').html(`
+                    <div>
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                                            <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                                                data-i18n="News.Home">Trang chủ</a></li>
+                                            <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto" href="../../index.html" style="color: #FFFFFF">Tin tức</a></li>
+                                            <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
+                                        </ol>
+                                    </nav>    
+                                </div>
                     <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                     <p>${convertDate(CreatedByDate)}<p>
                 <section>
@@ -41,7 +51,8 @@ async function getBySlug(numb) {
                         const { Title, Slug, Details, Image, IDState, CreatedByDate } = response
                         if (IDState === 2) {
                             return `
-                                <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="col-md-6 d-flex align-items-stretch">
+                                
                                     <div
                                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                         <div class="col-auto d-none d-lg-block">
@@ -57,7 +68,7 @@ async function getBySlug(numb) {
                                             <p class="mb-auto">${Details.slice(0, 500) + "..."}</p>
                                         </div>
                                     </div>
-                                </div> `;
+                            </div> `;
                         }
                     })
                     // đây là hàm trả ra tbody
@@ -78,6 +89,16 @@ async function getBySlug(numb) {
                 const { Title, Details, CreatedByDate, Image, IDState } = response
                 if (IDState === 2) {
                     $('#tbody').html(`
+                    <div>
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                                            <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                                                data-i18n="News.Home">Trang chủ</a></li>
+                                            <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto" href="../../index.html" style="color: #FFFFFF">News</a></li>
+                                            <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
+                                        </ol>
+                                    </nav>    
+                                </div>
                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                 <p>${convertDate(CreatedByDate)}</p>
             <section>
@@ -99,7 +120,7 @@ async function getBySlug(numb) {
                     const tron = response.sort(() => 0.5 - Math.random())
                     let random = tron.slice(0, 2)
                     var html = random.map(function (response) {
-                        const { Title, SlugEN, Details, Image, IDState,CreatedByDate } = response
+                        const { Title, SlugEN, Details, Image, IDState, CreatedByDate } = response
                         if (IDState === 2) {
                             return `
                     <div class="col-md-6 d-flex align-items-stretch">

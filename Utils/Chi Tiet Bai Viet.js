@@ -4,6 +4,28 @@ function convertDate(input) {
     var result = new Date(input)
     return result.toLocaleDateString()
 }
+function convertCategory(category) {
+    if (category === 1) {
+        return 'Dự án'
+    }
+    else if (category === 2) {
+        return 'Hợp tác nghiên cứu'
+    }
+    else if (category === 3) {
+        return 'Hoạt động thiện nguyện'
+    }
+}
+function convertCategoryEN(id) {
+    if (id === 1) {
+        return 'Project'
+    }
+    if (id === 2) {
+        return 'Cooperation for research'
+    }
+    if (id === 3) {
+        return 'Voluntary Activities'
+    }
+}
 async function getBySlug(numb) {
     if (numb == 1) {
         getBaiViet()
@@ -15,9 +37,19 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPost, Title, CreatedByDate, Slug, Details, Image, IDState } = response
+                    const {IDCat, IDPost, Title, CreatedByDate, Slug, Details, Image, IDState } = response
                     if (IDState === 2) {
                         return `
+                        <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                      <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                        data-i18n="ThanhMauXanh.DA.Home">Trang chủ</a></li>
+                      <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="ThanhMauXanh.DA.Project" aria-current="page">${convertCategory(IDCat)}</li>
+                      <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
+                    </ol>
+                </nav>    
+            </div>
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${convertDate(CreatedByDate)}</p>
                                             <section>
@@ -80,9 +112,19 @@ async function getBySlug(numb) {
             })
             .then(function (response) {
                 var html = response.map(function (response) {
-                    const { IDPostEN, Title, CreatedByDate, Details, Image, IDState } = response
+                    const {IDCat, IDPostEN, Title, CreatedByDate, Details, Image, IDState } = response
                     if (IDState === 2) {
                         return `
+                        <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                              <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
+                                data-i18n="ThanhMauXanh.DA.Home">Trang chủ</a></li>
+                              <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="ThanhMauXanh.DA.Project" aria-current="page">${convertCategoryEN(IDCat)}</li>
+                              <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
+                            </ol>
+                        </nav>    
+                    </div>
                                                 <h1 class="fw-bolder mb-1 mt-2 font-weight-bold">${Title}</h1>
                                                 <p>${CreatedByDate}</p>
                                             <section>
