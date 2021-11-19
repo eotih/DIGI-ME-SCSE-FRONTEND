@@ -58,37 +58,37 @@
     },
     "ThanhMauXanh":{
         "HTNC": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "PFR": " Hợp tác nghiên cứu",
             "LoadMore": "Xem Thêm"
         },
         "DA": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "Project": " Dự Án",
             "LoadMore": "Xem Thêm"
         },
         "HDTN": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "VA": " Hoạt động thiện nguyện",
             "LoadMore": "Xem Thêm"
         },
         "Hinhanh": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "Images": "Hình ảnh ",
             "LoadMore": "Xem Thêm"
         },
         "Video": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "Videos": "Video",
             "LoadMore": "Xem Thêm"
         },
         "Tailieu": {
-            "Home": "Trang Chủ >",
+            "Home": "Trang Chủ",
             "Files": "Tài liệu",
             "LoadMore": "Xem Thêm"
         },
         "DKTD": {
-            "Home": "Trang chủ >",
+            "Home": "Trang Chủ",
             "PARTNER REGISTRATION": "Đăng ký đối tác"
         }
     },
@@ -103,7 +103,7 @@
         "what is the expectation in cooperating with SCSE ?": "Mong đợi hợp tác với SCSE là gì?"
     },
     "Contact": {
-        "Home": "Trang Chủ >",
+        "Home": "Trang Chủ",
         "Contact": "Liên Hệ",
         "FN": "Họ Và Tên",
         "PLSFN": "Vui lòng nhập Họ và Tên",
@@ -120,7 +120,7 @@
         "GN": "GỬI NGAY"
     },
     "News": {
-        "Home": "Trang Chủ >",
+        "Home": "Trang Chủ",
         "News": "Tin Tức",
         "Filter": "Bộ lọc danh mục",
         "ByField": "Theo lĩnh vực:",
@@ -133,7 +133,7 @@
         "NewsDiff": "CÁC BÀI VIẾT KHÁC"
     },
     "Story": {
-        "Home": "Trang Chủ >",
+        "Home": "Trang Chủ",
         "AboutSCSE": "Về SCSE",
         "ABOUTSCSE": "VỀ SCSE",
         "NNYTTYN": "KHƠI NGUỒN",
@@ -147,14 +147,14 @@
 
     },
     "BGD": {
-        "Home": "Trang Chủ >",
+        "Home": "Trang Chủ",
         "BanGiamDoc": "Ban Giám Đốc",
         "BANGIAMDOC": "BAN GIÁM ĐỐC",
         "THANHVIENKHAC": "THÀNH VIÊN KHÁC",
         "TINHNGUYENVIEN": "TÌNH NGUYỆN VIÊN"
     },
     "Donate": {
-        "Home": "Trang Chủ >",
+        "Home": "Trang Chủ",
         "Donate": "Quyên Góp",
         "DonateSCSE": "Ủng hộ SCSE",
         "ContentTop": "Trung tâm Kết nối Dịch vụ Khoa học xã hội Sóc Trăng (SCSE) là tổ chức phi chính phủ hoạt động trong lĩnh vực khoa học xã hội, trực thuộc Liên Hiệp Các Hội Khoa Học Và Kỹ Thuật Tỉnh Sóc Trăng.",

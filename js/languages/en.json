@@ -57,37 +57,37 @@
     },
     "ThanhMauXanh": {
         "HTNC": {
-            "Home": "Home >",
+            "Home": "Home",
             "PFR": " Cooperation for research",
             "LoadMore": "Load More"
         },
         "DA": {
-            "Home": "Home >",
+            "Home": "Home",
             "Project": " Project",
             "LoadMore": "Load More"
         },
         "HDTN": {
-            "Home": "Home >",
+            "Home": "Home",
             "VA": " Voluntary Activities",
             "LoadMore": "Load More"
         },
         "Hinhanh": {
-            "Home": "Home >",
+            "Home": "Home",
             "Images": "Images ",
             "LoadMore": "Load More"
         },
         "Video": {
-            "Home": "Home >",
+            "Home": "Home",
             "Videos": "Videos",
             "LoadMore": "Load More"
         },
         "Tailieu": {
-            "Home": "Home >",
+            "Home": "Home",
             "Files": "Files",
             "LoadMore": "Load More"
         },
         "DKTD": {
-            "Home": "Home >",
+            "Home": "Home",
             "PARTNER REGISTRATION": "PARTNER REGISTRATION"
         }
 
@@ -103,7 +103,7 @@
         "whatistheexpectationincooperatingwithSCSE?": "What is the expectation in cooperating with SCSE ?"
     },
     "Contact": {
-        "Home": "Home >",
+        "Home": "Home",
         "Contact1": "Contact",
         "FN": "Full Name",
         "PLSFN": "Please fill your name",
@@ -120,7 +120,7 @@
         "GN": "SEND"
     },
     "News": {
-        "Home": "Home >",
+        "Home": "Home",
         "News": "News",
         "Filter": "Filter",
         "ByField": "By Field",
@@ -133,7 +133,7 @@
         "NewsDiff": "ANOTHER NEWS"
     },
     "Story": {
-        "Home": "Home >",
+        "Home": "Home",
         "AboutSCSE": "About SCSE",
         "ABOUTSCSE": "ABOUT SCSE",
         "NNYTTYN": "THE BEGINNING",
@@ -146,14 +146,14 @@
         "Content4": "Responsibility: Aware of the responsibility and value of our organization, we focus on building relationships with the community and partners with a high sense of responsibility in the relationship among members, and between members and the community.Sharing opportunities: SCSE is a platform for personal and community development, spreading the value of professional connections.Sustainability: The community is well aware of its needs and effectively uses its resources in order to change, improve and enhance the quality of life."
     },
     "BGD": {
-        "Home": "Home >",
+        "Home": "Home",
         "BanGiamDoc": "Executive Board",
         "BANGIAMDOC": "EXECUTIVE BOARD",
         "THANHVIENKHAC": "OTHER MEMBER",
         "TINHNGUYENVIEN": "VOLUNTEERS"
     },
     "Donate": {
-        "Home": "Home >",
+        "Home": "Home",
         "Donate": "Donate",
         "DonateSCSE": "Donate SCSE",
         "ContentTop": "Soc Trang Social Science Service Connection Center (SCSE) is a non-governmental organization operating in the field of social sciences, affiliated to the Union of Science and Technology Associations of Soc Trang Province.",
