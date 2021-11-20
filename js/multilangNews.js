@@ -17,8 +17,8 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
         document.getElementById("donateimg").src = "../../images/Donate.png";
         // Change language in dropdown
-        getFieldBySlug(2)
         document.title = "SCSE - News";
+        getData('EN')
     }
     // Vietnam
     if (i18n.lng() === "vi") {
@@ -30,9 +30,8 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
         document.getElementById("donateimg").src = "../../images/Group_399.png";
         document.title = "SCSE - Tin Tức";
-        getFieldBySlug(1)
+        getData('VI')
     }
-
     // Change languages when click
     // English
     $('.english').on('click', function () {
@@ -47,7 +46,7 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
         document.getElementById("donateimg").src = "../../images/Donate.png";
         document.title = "SCSE - News";
-        loadURL();
+        window.location.reload();
         // Change name language in dropdown
     });
     // Vietnam
@@ -64,6 +63,6 @@ function multilang() {
         document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
         document.getElementById("donateimg").src = "../../images/Group_399.png";
         document.title = "SCSE - Tin Tức";
-        loadURL();
+        window.location.reload();
     });
 };

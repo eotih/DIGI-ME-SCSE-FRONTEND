@@ -1,156 +1,99 @@
-const KHMT = $('#KHMT');
-const TTS = $('#TTS');
 const NCDT = $('#NCDT');
+const KHMT = $('#KHMT');
 const GBDG = $('#GBDG');
+const TTS = $('#TTS');
 const WEB_API = "http://localhost:59360/API/";
-// $(window).on('load',function(){
-//     $(".loader-wrapper").fadeOut("slow");
-//   });
-NCDT.on('click', function (e) {
-    if (this.checked) {
-        dataNCDT();
+let root = [];
+const getAllNews = async (url) => {
+    return (await fetch(url)).json();
+}
+// Get all data and filter by checkbox value
+async function getData(language) {
+    const data = await getAllNews(WEB_API + "Interface/ShowAllVideo");
+    const sortByNewDate = data.sort(function (a, b) {
+        a = new Date(a.UpdatedByDate);
+        b = new Date(b.UpdatedByDate);
+        return a > b ? -1 : a < b ? 1 : 0;
+    })
+    const mapping = sortByNewDate.map(news => news);
+    console.log(mapping)
+    root.push(mapping);
+    if (language === 'VI') {
+        renderDataWithPagination("VI", 0);
     }
     else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Nghiên cứu Đào tạo') { getVideosIdField(4) }
-        else { getVideosIdFieldEN(4) }
-    }
-    unChecked(KHMT);
-    unChecked(TTS);
-    unChecked(GBDG);
-})
-KHMT.change(function (e) {
-    if (this.checked) {
-        dataKHMT();
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-       if (labels === 'Khí hậu-môi trường') { getVideosIdField(2) }
-        else { getVideosIdFieldEN(2) }
-    }
-    unChecked(TTS);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
-GBDG.on('click', function (e) {
-    if (this.checked) {
-        dataGBDG()
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Giới và bình đẳng giới') { getVideosIdField(1) }
-        else { getVideosIdFieldEN(1) }
-    }
-    unChecked(KHMT);
-    unChecked(TTS);
-    unChecked(NCDT);
-})
-TTS.on('click', function (e) {
-    if (this.checked) {
-        dataTTS();
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Thực tập sinh') { getVideosIdField(3) }
-        else { getVideosIdFieldEN(3) }
-    }
-    unChecked(KHMT);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
-const getFieldBySlug = async (numb) => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const slugResult = urlParams.get('Field');
-    if (slugResult === null) {
-        if (numb === 1) {
-            getVideosIdField(0)
-        }
-        else {
-            getVideosIdFieldEN(0)
-        }
-    }
-    if (slugResult === 'Nghiên cứu - Đào tạo' || slugResult === 'Research - Training') {
-        $('#NCDT').prop('checked', true);
-        if (slugResult === 'Nghiên cứu - Đào tạo') { getVideosIdField(4) }
-        else { getVideosIdFieldEN(4) }
-    }
-    if (slugResult === 'Thực tập sinh' || slugResult === 'Internship') {
-        $('#TTS').prop('checked', true);
-        if (slugResult === 'Thực tập sinh') { getVideosIdField(3) }
-        else { getVideosIdFieldEN(3) }
-    }
-    if (slugResult === 'Môi trường' || slugResult === 'Environment') {
-        $('#KHMT').prop('checked', true);
-        if (slugResult === 'Môi trường') { getVideosIdField(2) }
-        else { getVideosIdFieldEN(2) }
-    }
-    if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
-        $('#GBDG').prop('checked', true);
-        if (slugResult === 'Giới và bình đẳng giới') {
-            getVideosIdField(1)
-        }
-        else { getVideosIdFieldEN(1) }
+        renderDataWithPagination("EN", 0);
     }
 }
-const getVideosIdField = (IdField) => {
-    fetch(WEB_API + "Interface/ShowAllVideo")
-        .then(function (response) {
-            return response.json();
+// click checkbox and sort by checkbox value
+NCDT.click(async function () {
+    if (NCDT.is(':checked')) {
+        checkLanguage("NCDT", 4, 'Nghiên cứu đào tạo')
+        unChecked(KHMT);
+        unChecked(TTS);
+        unChecked(GBDG);
+    }
+    else { checkLanguage("NCDT", 0, 'Nghiên cứu đào tạo') }
+})
+KHMT.click(async function () {
+    if (KHMT.is(':checked')) {
+        checkLanguage("KHMT", 2, 'Khí hậu - môi trường')
+        unChecked(TTS);
+        unChecked(NCDT);
+        unChecked(GBDG);
+    }
+    else {
+        checkLanguage("KHMT", 0, 'Khí hậu - môi trường')
+    }
+})
+GBDG.click(async function () {
+    if (GBDG.is(':checked')) {
+        checkLanguage("GBDG", 1, 'Giới và bình đẳng giới')
+        unChecked(KHMT);
+        unChecked(TTS);
+        unChecked(NCDT);
+    }
+    else {
+        checkLanguage("GBDG", 0, 'Giới và bình đẳng giới')
+    }
+})
+TTS.click(async function () {
+    if (TTS.is(':checked')) {
+        checkLanguage("TTS", 3, 'Thực tập sinh')
+        unChecked(KHMT);
+        unChecked(NCDT);
+        unChecked(GBDG);
+    }
+    else {
+        checkLanguage("TTS", 0, 'Thực tập sinh')
+    }
+})
+
+const filterByIDField = (idField) => {
+    if (idField === 0) {
+        return root.map(news => {
+            const data = news.filter(news => news);
+            return data;
         })
-        .then(function (data) {
-            if (IdField === 0) {
-                const sortByNewDate = data.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeData(sortByNewDate);
-            } else {
-                const filterFields = data.filter(e => e.IDField === IdField)
-                const sortByNewDate = filterFields.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeData(sortByNewDate);
-            }
+    }
+    else {
+        return root.map(news => {
+            const data = news.filter(news => news.IDField === idField);
+            return data;
         })
+    }
 }
-const getVideosIdFieldEN = (IdFieldEN) => {
-    fetch(WEB_API + "Interface/ShowAllVideo")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            
-            if (IdFieldEN === 0) {
-                const sortByNewDate = data.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeDataEN(sortByNewDate);
-            } else {
-                const filterFields = data.filter(e => e.IDField === IdFieldEN)
-                const sortByNewDate = filterFields.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeDataEN(sortByNewDate);
-            }
-        })
-}
-// getVideosIdField(0)
 const unChecked = (input) => {
     input.prop('checked', false);
 }
-const executeData = (data) => {
-    const html = data.map(function (response) {
-        const { IDField, Title, VideoID, Image } = response
-        const LinhVuc = changeIdField(IDField)
-        return `
-        <div class="col-lg-4 d-flex align-items-stretch">
+const renderDataWithPagination = (data, numb) => {
+    const dataFilter = filterByIDField(numb);
+    const html = dataFilter[0].map(function (response) {
+        if (data === "VI") {
+            const { IDField, Title, VideoID, Image } = response
+            const LinhVuc = changeIdField(IDField)
+            return `
+            <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="mb-5">
                         <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
                             <a href="#">
@@ -173,47 +116,35 @@ const executeData = (data) => {
                     </div>
                 </div>
             `;
-    });
-    $('#list').pagination({
-        dataSource: html,
-        pageSize: 6,
-        className: 'paginationjs-theme-blue',
-        callback: function (data, pagination) {
-            $(".loader-wrapper").fadeOut("slow");
-            $('#tbody').html(data);
-
         }
-    })
-
-}
-const executeDataEN = (data) => {
-    const html = data.map(function (response) {
-        const { IDField, TitleEN, VideoID, Image } = response
+        else if (data === "EN") {
+            const { IDField, TitleEN, VideoID, Image } = response
         const LinhVuc = changeIdFieldEN(IDField)
-        return `
-        <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="mb-5">
-            <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                <a href="#">
-                <iframe class="card-img-top my-2 px-2" src="https://www.youtube.com/embed/${VideoID}"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                          
-                </a>
-                <div class="card-body">
-                    <a style="text-decoration: none; color:black" href="#">
-                        <h5 class="card-title">${TitleEN}</h5>
+            return `
+            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="mb-5">
+                <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
+                    <a href="#">
+                    <iframe class="card-img-top my-2 px-2" src="https://www.youtube.com/embed/${VideoID}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                              
                     </a>
-
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">${LinhVuc}</small>
+                    <div class="card-body">
+                        <a style="text-decoration: none; color:black" href="#">
+                            <h5 class="card-title">${TitleEN}</h5>
+                        </a>
+    
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">${LinhVuc}</small>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-            `;
+                `;
+        }
     });
     $('#list').pagination({
         dataSource: html,
@@ -227,27 +158,26 @@ const executeDataEN = (data) => {
     })
 
 }
-
 const changeIdField = (id) => {
     if (id === 1) {
         return 'Giới và bình đẳng giới'
     }
     if (id === 2) {
-        return 'Biến đổi khí hậu môi trường'
+        return 'Khí hậu - môi trường'
     }
     if (id === 3) {
         return 'Thực tập sinh'
     }
     if (id === 4) {
-        return 'Nghiên cứu Đào tạo'
+        return 'Nghiên cứu đào tạo'
     }
 }
 function changeIdFieldEN(id) {
     if (id === 1) {
-        return 'Gender and gender equality'
+        return 'Gender - Gender Equality'
     }
     if (id === 2) {
-        return 'Climate change - Environment'
+        return 'Environment - Climate'
     }
     if (id === 3) {
         return 'Internship'
@@ -256,53 +186,13 @@ function changeIdFieldEN(id) {
         return 'Research - Training'
     }
 }
-
-const dataNCDT = () => {
-    var labels = document.getElementById('lblNCDT').textContent;
-    if (labels === 'Nghiên cứu Đào tạo') { getVideosIdField(4) }
-    else { getVideosIdFieldEN(4) }
-}
-const dataTTS = () => {
-    var labels = document.getElementById('lblTTS').textContent;
-    if (labels === 'Thực tập sinh') { getVideosIdField(3) }
-    else { getVideosIdFieldEN(3) }
-}
-const dataKHMT = () => {
-    var labels = document.getElementById('lblKHMT').textContent;
-    console.log(labels)
-    if (labels === 'Khí hậu-môi trường') { getVideosIdField(2) }
-    else { getVideosIdFieldEN(2) }
-}
-const dataGBDG = () => {
-    var labels = document.getElementById('lblGBDG').textContent;
-    if (labels === 'Giới và bình đẳng giới') {
-        getVideosIdField(1)
+const checkLanguage = (FieldName, IdField, textContent) => {
+    var labels = document.getElementById('lbl' + FieldName).textContent;
+    if (labels === textContent) {
+        renderDataWithPagination("VI", IdField);
     }
-    else { getVideosIdFieldEN(1) }
+    else { renderDataWithPagination("EN", IdField) }
 }
-function removeParam(key, sourceURL) {
-    var rtn = sourceURL.split("?")[0],
-        param,
-        params_arr = [],
-        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
-    if (queryString !== "") {
-        params_arr = queryString.split("&");
-        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
-            param = params_arr[i].split("=")[0];
-            if (param === key) {
-                params_arr.splice(i, 1);
-            }
-        }
-        if (params_arr.length) rtn = rtn + "?" + params_arr.join("&");
-    }
-    return rtn;
-}
-function loadURL() {
-    var originalURL = window.location.href;
-    var alteredURL = removeParam("Field", originalURL);
-    window.location.href = alteredURL;
-}
-
 function convertDate(input) {
     var result = new Date(input)
     return result.toLocaleDateString()

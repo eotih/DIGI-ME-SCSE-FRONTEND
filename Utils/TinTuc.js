@@ -1,156 +1,107 @@
-const KHMT = $('#KHMT');
-const TTS = $('#TTS');
 const NCDT = $('#NCDT');
+const KHMT = $('#KHMT');
 const GBDG = $('#GBDG');
+const TTS = $('#TTS');
 const WEB_API = "https://api.scse-vietnam.org/API/";
-
-NCDT.on('click', function (e) {
-    if (this.checked) {
-        dataNCDT();
+let root = [];
+const getAllNews = async (url) => {
+    return (await fetch(url)).json();
+}
+// Get all data and filter by checkbox value
+async function getData(language) {
+    if (language === 'VI') {
+        const data = await getAllNews(WEB_API + "Management/ShowAllNewsVN");
+        const approvedNews = data.filter(news => news.IDState === 2);
+        const sortByNewDate = approvedNews.sort(function (a, b) {
+            a = new Date(a.UpdatedByDate);
+            b = new Date(b.UpdatedByDate);
+            return a > b ? -1 : a < b ? 1 : 0;
+        })
+        const mapping = sortByNewDate.map(news => news);
+        root.push(mapping);
+        renderDataWithPagination("VI", 0);
     }
     else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Nghiên cứu Đào tạo') { getNewsIdField(0) }
-        else { getNewsIdFieldEN(0) }
-    }
-    unChecked(KHMT);
-    unChecked(TTS);
-    unChecked(GBDG);
-})
-KHMT.change(function (e) {
-    if (this.checked) {
-        dataKHMT();
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-       if (labels === 'Khí hậu-môi trường') { getNewsIdField(0) }
-        else { getNewsIdFieldEN(0) }
-    }
-    unChecked(TTS);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
-GBDG.on('click', function (e) {
-    if (this.checked) {
-        dataGBDG()
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Giới và bình đẳng giới') { getNewsIdField(0) }
-        else { getNewsIdFieldEN(0) }
-    }
-    unChecked(KHMT);
-    unChecked(TTS);
-    unChecked(NCDT);
-})
-TTS.on('click', function (e) {
-    if (this.checked) {
-        dataTTS();
-    }
-    else {
-        var labels = document.getElementById('lblGBDG').textContent;
-        if (labels === 'Thực tập sinh') { getNewsIdField(0) }
-        else { getNewsIdFieldEN(0) }
-    }
-    unChecked(KHMT);
-    unChecked(NCDT);
-    unChecked(GBDG);
-})
-
-const getFieldBySlug = async (numb) => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const slugResult = urlParams.get('Field');
-    if (slugResult === null) {
-        if (numb === 1) {
-            getNewsIdField(0)
-        }
-        else {
-            getNewsIdFieldEN(0)
-        }
-    }
-    if (slugResult === 'Nghiên cứu - Đào tạo' || slugResult === 'Research - Training') {
-        $('#NCDT').prop('checked', true);
-        if (slugResult === 'Nghiên cứu - Đào tạo') { getNewsIdField(4) }
-        else { getNewsIdFieldEN(4) }
-    }
-    if (slugResult === 'Thực tập sinh' || slugResult === 'Internship') {
-        $('#TTS').prop('checked', true);
-        if (slugResult === 'Thực tập sinh') { getNewsIdField(3) }
-        else { getNewsIdFieldEN(3) }
-    }
-    if (slugResult === 'Môi trường' || slugResult === 'Environment') {
-        $('#KHMT').prop('checked', true);
-        if (slugResult === 'Môi trường') { getNewsIdField(2) }
-        else { getNewsIdFieldEN(2) }
-    }
-    if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
-        $('#GBDG').prop('checked', true);
-        if (slugResult === 'Giới và bình đẳng giới') {
-            getNewsIdField(1)
-        }
-        else { getNewsIdFieldEN(1) }
+        const data = await getAllNews(WEB_API + "Management/ShowAllNewsEN");
+        const approvedNews = data.filter(news => news.IDState === 2);
+        const sortByNewDate = approvedNews.sort(function (a, b) {
+            a = new Date(a.UpdatedByDate);
+            b = new Date(b.UpdatedByDate);
+            return a > b ? -1 : a < b ? 1 : 0;
+        })
+        const mapping = sortByNewDate.map(news => news);
+        root.push(mapping);
+        renderDataWithPagination("EN", 0);
     }
 }
-const getNewsIdField = (IdField) => {
-    fetch(WEB_API + "Management/ShowAllNewsVN")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            const postApproved = data.filter(item => item.IDState === 2)
-            if (IdField === 0) {
-                const sortByNewDate = postApproved.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeData(sortByNewDate);
-            } else {
-                const filterFields = postApproved.filter(e => e.IdField === IdField)
-                const sortByNewDate = filterFields.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeData(sortByNewDate);
-            }
-        })
-}
+// click checkbox and sort by checkbox value
+NCDT.click(async function () {
+    if (NCDT.is(':checked')) {
+        checkLanguage("NCDT", 4, 'Nghiên cứu đào tạo')
+        unChecked(KHMT);
+        unChecked(TTS);
+        unChecked(GBDG);
+    }
+    else { checkLanguage("NCDT", 0, 'Nghiên cứu đào tạo') }
+})
+KHMT.click(async function () {
+    if (KHMT.is(':checked')) {
+        checkLanguage("KHMT", 2, 'Khí hậu - môi trường')
+        unChecked(TTS);
+        unChecked(NCDT);
+        unChecked(GBDG);
+    }
+    else {
+        checkLanguage("KHMT", 0, 'Khí hậu - môi trường')
+    }
+})
+GBDG.click(async function () {
+    if (GBDG.is(':checked')) {
+        checkLanguage("GBDG", 1, 'Giới và bình đẳng giới')
+        unChecked(KHMT);
+        unChecked(TTS);
+        unChecked(NCDT);
+    }
+    else {
+        checkLanguage("GBDG", 0, 'Giới và bình đẳng giới')
+    }
+})
+TTS.click(async function () {
+    if (TTS.is(':checked')) {
+        checkLanguage("TTS", 3, 'Thực tập sinh')
+        unChecked(KHMT);
+        unChecked(NCDT);
+        unChecked(GBDG);
+    }
+    else {
+        checkLanguage("TTS", 0, 'Thực tập sinh')
+    }
+})
 
-const getNewsIdFieldEN = (IdFieldEN) => {
-    fetch(WEB_API + "Management/ShowAllNewsEN")
-        .then(function (response) {
-            return response.json();
+const filterByIDField = (idField) => {
+    if (idField === 0) {
+        return root.map(news => {
+            const data = news.filter(news => news);
+            return data;
         })
-        .then(function (data) {
-            const postApproved = data.filter(item => item.IDState === 2)
-            if (IdFieldEN === 0) {
-                const sortByNewDate = postApproved.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeDataEN(sortByNewDate);
-            } else {
-                const filterFields = postApproved.filter(e => e.IdField === IdFieldEN)
-                const sortByNewDate = filterFields.sort(function (a, b) {
-                    a = new Date(a.UpdatedByDate);
-                    b = new Date(b.UpdatedByDate);
-                    return a > b ? -1 : a < b ? 1 : 0;
-                })
-                executeDataEN(sortByNewDate);
-            }
+    }
+    else {
+        return root.map(news => {
+            const data = news.filter(news => news.IdField === idField);
+            return data;
         })
+    }
 }
-// getNewsIdField(0)
 const unChecked = (input) => {
     input.prop('checked', false);
 }
-const executeData = (data) => {
-    const html = data.map(function (response) {
-        const { Title, Slug, Image, IdField } = response;
-        const LinhVuc = changeIdField(IdField)
-        return `
+const renderDataWithPagination = (data, numb) => {
+    const dataFilter = filterByIDField(numb);
+    const html = dataFilter[0].map(function (response) {
+        if (data === "VI") {
+            const { Title, Slug, Image, IdField } = response;
+            const LinhVuc = changeIdField(IdField)
+            return `
         <div class="col-md-4 d-flex align-items-stretch">
             <div class="mt-5 mb-5">
                 <div class="card" style="width:100%; height:100%;">
@@ -172,32 +123,18 @@ const executeData = (data) => {
             </div>
         </div>                         
             `;
-    });
-    $('#list').pagination({
-        dataSource: html,
-        pageSize: 6,
-        className: 'paginationjs-theme-blue',
-        callback: function (data, pagination) {
-            $(".loader-wrapper").fadeOut("slow");
-            $('#tbody').html(data);
-
         }
-    })
-
-}
-
-const executeDataEN = (data) => {
-    const html = data.map(function (response) {
-        const { Title, SlugEN, Image, IdField } = response;
-        const LinhVuc = changeIdFieldEN(IdField)
-        return `
+        else if (data === "EN") {
+            const { Title, SlugEN, Image, IdField } = response;
+            const LinhVuc = changeIdFieldEN(IdField)
+            return `
         <div class="col-md-4 d-flex align-items-stretch">
             <div class="mt-5 mb-5">
                 <div class="card" style="width:100%; height:100%;">
                     <hr class="mt-0 bg-blue-scse" style="height:1rem">
                     <a href="../Chi-Tiet/index.html?slug=${SlugEN}">
                         <img style="width:100%;height:155px;object-fit:cover;" src="${Image}"
-                            class="card-img-top px-2" style="border-radius: 2rem;" alt="...">
+                            class="card-img-top px-2 img-fluid" style="border-radius: 2rem;" alt="...">
                     </a>
                     <div class="card-body">
                         <a style="text-decoration: none; color:black" href="../Chi-Tiet/index.html?slug=${SlugEN}">
@@ -212,6 +149,7 @@ const executeDataEN = (data) => {
             </div>
         </div>                         
             `;
+        }
     });
     $('#list').pagination({
         dataSource: html,
@@ -220,29 +158,32 @@ const executeDataEN = (data) => {
         callback: function (data, pagination) {
             $(".loader-wrapper").fadeOut("slow");
             $('#tbody').html(data);
+
         }
     })
+
 }
+
 const changeIdField = (id) => {
     if (id === 1) {
         return 'Giới và bình đẳng giới'
     }
     if (id === 2) {
-        return 'Biến đổi khí hậu môi trường'
+        return 'Khí hậu - môi trường'
     }
     if (id === 3) {
         return 'Thực tập sinh'
     }
     if (id === 4) {
-        return 'Nghiên cứu Đào tạo'
+        return 'Nghiên cứu đào tạo'
     }
 }
 function changeIdFieldEN(id) {
     if (id === 1) {
-        return 'Gender and gender equality'
+        return 'Gender - Gender Equality'
     }
     if (id === 2) {
-        return 'Climate change - Environment'
+        return 'Environment - Climate'
     }
     if (id === 3) {
         return 'Internship'
@@ -251,48 +192,10 @@ function changeIdFieldEN(id) {
         return 'Research - Training'
     }
 }
-
-const dataNCDT = () => {
-    var labels = document.getElementById('lblNCDT').textContent;
-    if (labels === 'Nghiên cứu Đào tạo') { getNewsIdField(4) }
-    else { getNewsIdFieldEN(4) }
-}
-const dataTTS = () => {
-    var labels = document.getElementById('lblTTS').textContent;
-    if (labels === 'Thực tập sinh') { getNewsIdField(3) }
-    else { getNewsIdFieldEN(3) }
-}
-const dataKHMT = () => {
-    var labels = document.getElementById('lblKHMT').textContent;
-    if (labels === 'Khí hậu-môi trường') { getNewsIdField(2) }
-    else { getNewsIdFieldEN(2) }
-}
-const dataGBDG = () => {
-    var labels = document.getElementById('lblGBDG').textContent;
-    if (labels === 'Giới và bình đẳng giới') {
-        getNewsIdField(1)
+const checkLanguage = (FieldName, IdField, textContent) => {
+    var labels = document.getElementById('lbl' + FieldName).textContent;
+    if (labels === textContent) {
+        renderDataWithPagination("VI", IdField);
     }
-    else { getNewsIdFieldEN(1) }
-}
-function removeParam(key, sourceURL) {
-    var rtn = sourceURL.split("?")[0],
-        param,
-        params_arr = [],
-        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
-    if (queryString !== "") {
-        params_arr = queryString.split("&");
-        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
-            param = params_arr[i].split("=")[0];
-            if (param === key) {
-                params_arr.splice(i, 1);
-            }
-        }
-        if (params_arr.length) rtn = rtn + "?" + params_arr.join("&");
-    }
-    return rtn;
-}
-function loadURL(){
-    var originalURL = window.location.href;
-    var alteredURL = removeParam("Field", originalURL);
-    window.location.href = alteredURL;
+    else { renderDataWithPagination("EN", IdField) }
 }

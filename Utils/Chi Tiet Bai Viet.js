@@ -42,11 +42,11 @@ async function getBySlug(numb) {
                         return `
                         <div>
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                    <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;margin-top:0; padding:0.5rem 0">
                       <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
                         data-i18n="ThanhMauXanh.DA.Home">Trang chủ</a></li>
                         <li class="breadcrumb-item active font-weight-bold" data-i18n="News.News" aria-current="page"><a class="my-auto"style="color: #FFFFFF">${convertCategory(IDCat)}</a></li>
-                      <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
+                      <li class="breadcrumb-item font-weight-bold" style="color: #FFFFFF" data-i18n="News.News" aria-current="page">${Title}</li>
                     </ol>
                 </nav>    
             </div>
@@ -117,7 +117,7 @@ async function getBySlug(numb) {
                         return `
                         <div>
                         <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;height: 2.5rem;margin-top:0;">
+                            <ol class="breadcrumb d-flex justify-content-start" style="background-color: #1A94D0;margin-top:0;">
                               <li class="breadcrumb-item mb-2"><a class="my-auto" href="../../index.html" style="color: #FFFFFF;margin-left: 1rem;"
                                 data-i18n="ThanhMauXanh.DA.Home">Trang chủ</a></li>
                               <li class="breadcrumb-item active font-weight-bold" style="color: #FFFFFF" data-i18n="ThanhMauXanh.DA.Project" aria-current="page">${convertCategoryEN(IDCat)}</li>
