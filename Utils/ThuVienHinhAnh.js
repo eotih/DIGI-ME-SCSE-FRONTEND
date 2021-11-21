@@ -9,7 +9,7 @@ const getAllNews = async (url) => {
 }
 // Get all data and filter by checkbox value
 async function getData(language) {
-    const data = await getAllNews(WEB_API + "Interface/ListPhoto");
+    const data = await getAllNews(WEB_API + "Management/ListImageTitle");
     const sortByNewDate = data.sort(function (a, b) {
         a = new Date(a.UpdatedByDate);
         b = new Date(b.UpdatedByDate);
