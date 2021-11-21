@@ -1,4 +1,4 @@
-const WEB_API = "http://localhost:59360/API/";
+const WEB_API = "https://api.scse-vietnam.org/";
 // window.addEventListener('load', getBySlug)
 function convertDate(input) {
     var result = new Date(input)

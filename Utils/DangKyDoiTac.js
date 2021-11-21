@@ -1,4 +1,4 @@
-const WEB_API = "http://localhost:59360/API/"
+const WEB_API = "https://api.scse-vietnam.org/"
 function uploadFileToAPI() {
     var formData = new FormData();
     const inputFile = document.querySelector('#file');
