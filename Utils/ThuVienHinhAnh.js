@@ -16,7 +16,6 @@ async function getData(language) {
         return a > b ? -1 : a < b ? 1 : 0;
     })
     const mapping = sortByNewDate.map(news => news);
-    console.log(mapping)
     root.push(mapping);
     if (language === 'VI') {
         renderDataWithPagination("VI", 0);

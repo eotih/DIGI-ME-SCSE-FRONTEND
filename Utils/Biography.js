@@ -5,7 +5,6 @@ fetch("https://api.scse-vietnam.org/Interface/GetByNamePortfolios?name=" + fullN
         return response.json();
     })
     .then(function (response) {
-        console.log(response)
         const { FullName, Hinhanh, Position, Details } = response
         $('#tbody').html(`
                 <div class="d-flex flex-row">

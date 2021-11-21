@@ -20,7 +20,6 @@ async function getData(language) {
         })
         const mapping = sortByNewDate.map(news => news);
         root.push(mapping);
-        console.log(root);
         renderDataWithPagination("VI", 0);
     }
     else {
