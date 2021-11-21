@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const fullName = urlParams.get('slug');
-fetch("https://api.scse-vietnam.org/API/Interface/GetByNamePortfolios?name=" + fullName)
+fetch("https://api.scse-vietnam.org/Interface/GetByNamePortfolios?name=" + fullName)
     .then(function (response) {
         return response.json();
     })

@@ -1,6 +1,6 @@
 
 const loadImage = async () => {
-    const res = await fetch("https://api.scse-vietnam.org/API/Interface/ShowAllBankInfo")
+    const res = await fetch("https://api.scse-vietnam.org/Interface/ShowAllBankInfo")
     const json = await res.json();
     const filterData = json.filter(v => v.ImageQR)
 

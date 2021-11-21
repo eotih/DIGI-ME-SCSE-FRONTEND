@@ -2,7 +2,7 @@ const NCDT = $('#NCDT');
 const KHMT = $('#KHMT');
 const GBDG = $('#GBDG');
 const TTS = $('#TTS');
-const WEB_API = "https://api.scse-vietnam.org/API/";
+const WEB_API = "https://api.scse-vietnam.org/";
 let root = [];
 const getAllNews = async (url) => {
     return (await fetch(url)).json();

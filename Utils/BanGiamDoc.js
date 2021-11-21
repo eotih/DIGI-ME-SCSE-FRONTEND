@@ -1,4 +1,4 @@
-const WEB_API = "https://api.scse-vietnam.org/API/";
+const WEB_API = "https://api.scse-vietnam.org/";
 
 async function loadDataBGD(numb) {
     fetch(WEB_API + "Interface/ShowAllPortfolio")
