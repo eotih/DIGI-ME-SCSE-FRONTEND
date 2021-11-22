@@ -52,10 +52,10 @@ function executeDataInformationGiamDoc(input) {
 }
 function executeDataInformationPhoGiamDoc(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position, Hinhanh } = response;
-        document.getElementById('pic01').src = Hinhanh[0].ImagePortfolio;
-        document.getElementById('pic02').src = Hinhanh[1].ImagePortfolio;
-        document.getElementById('pic03').src = Hinhanh[2].ImagePortfolio;
+        const { Details, FullName, Position, Image1, Image2, Image3 } = response;
+        document.getElementById('pic01').src = Image1;
+        document.getElementById('pic02').src = Image2;
+        document.getElementById('pic03').src = Image3;
         return `
         <div class="text-lg-right text-center">
                     <div class="mr-5">
@@ -75,11 +75,11 @@ function executeDataInformationPhoGiamDoc(input) {
 ////Thông tin BGD english
 function executeDataInformationGiamDocEN(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position, Hinhanh } = response;
+        const { Details, FullName, Position, Image1, Image2, Image3 } = response;
         // Lấy hình ảnh đưa vào slide
-        document.getElementById('picgd1').src = Hinhanh[0].ImagePortfolio;
-        document.getElementById('picgd2').src = Hinhanh[1].ImagePortfolio;
-        document.getElementById('picgd3').src = Hinhanh[2].ImagePortfolio;
+        document.getElementById('picgd1').src = Image1
+        document.getElementById('picgd2').src = Image2;
+        document.getElementById('picgd3').src = Image3;
         // Chỉnh sửa link của ban giám đôc chỉnh trực tiếp trong đây 
         return `
        
@@ -98,10 +98,10 @@ function executeDataInformationGiamDocEN(input) {
 }
 function executeDataInformationPhoGiamDocEN(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position, Hinhanh } = response;
-        document.getElementById('pic01').src = Hinhanh[0].ImagePortfolio;
-        document.getElementById('pic02').src = Hinhanh[1].ImagePortfolio;
-        document.getElementById('pic03').src = Hinhanh[2].ImagePortfolio;
+        const { Details, FullName, Position, Image1, Image2, Image3 } = response;
+        document.getElementById('pic01').src = Image1;
+        document.getElementById('pic02').src = Image2;
+        document.getElementById('pic03').src = Image3;
         return `
         <div class="text-lg-right text-center">
                     <div class="mr-5">
