@@ -105,8 +105,6 @@ const renderDataWithPagination = (data, numb) => {
             const LinhVuc = changeIdField(IDField)
             return `
         <div class="col-md-4 d-flex align-items-stretch">
-            <div class="mt-5 mb-5">
-            <div class="col-lg-4 d-flex align-items-stretch">
             <div class="mb-5">
                 <div class="card" style="width:100%; height:100%;">
                     <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
@@ -125,9 +123,9 @@ const renderDataWithPagination = (data, numb) => {
                                 hộ</a>
                         </div>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">${LinhVuc}</small>
+                    <div class="card-footer">
+                        <small class="text-muted">${LinhVuc}</small>
+                    </div>
                 </div>
             </div>
         </div>                                   
@@ -156,8 +154,8 @@ const renderDataWithPagination = (data, numb) => {
                         </div>
                     </div>
                     <div class="card-footer">
-                    <small class="text-muted">${LinhVuc}</small>
-                </div>
+                        <small class="text-muted">${LinhVuc}</small>
+                    </div>
                 </div>
             </div>
         </div>                            
