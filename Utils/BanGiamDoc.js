@@ -27,11 +27,12 @@ async function loadDataBGD(numb) {
 }
 function executeDataInformationGiamDoc(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position, Hinhanh } = response;
+        console.log(response)
+        const { Details, FullName, Position, Hinhanh, Image1, Image2, Image3 } = response;
         // Lấy hình ảnh đưa vào slide
-        document.getElementById('picgd1').src = Hinhanh[0].ImagePortfolio;
-        document.getElementById('picgd2').src = Hinhanh[1].ImagePortfolio;
-        document.getElementById('picgd3').src = Hinhanh[2].ImagePortfolio;
+        document.getElementById('picgd1').src = Image1;
+        document.getElementById('picgd2').src = Image2;
+        document.getElementById('picgd3').src = Image3;
         // Chỉnh sửa link của ban giám đôc chỉnh trực tiếp trong đây 
         return `
        
@@ -200,7 +201,7 @@ const getThongTin = () => {
 getThongTin()
 function executeDataInformationMember(input) {
     const html = input.map(function (response) {
-        const { Details, FullName, Position, Hinhanh } = response;
+        const { Details, FullName, Position, Hinhanh, Image1 } = response;
         return `
         <div class="item">
         <a href="../Biography/index.html?slug=${FullName}">
@@ -208,7 +209,7 @@ function executeDataInformationMember(input) {
             <div class="card mb-4 rounded-3 shadow-sm"
                 style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
                 <div class="py-3">
-                    <img src="${Hinhanh[2].ImagePortfolio}"
+                    <img src="${Image1}"
                         style="width: 300px;height:300px;border-radius: 50%;margin-left:0.5rem;object-fit:cover">
                 </div>
                 <div class="card-body">
