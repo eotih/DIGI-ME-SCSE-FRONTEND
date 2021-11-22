@@ -182,10 +182,10 @@ const getThongTin = () => {
                                 <img src="${volunteer.image}"
                                     style="width: 300px;height:400px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-0">
                             <h5 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${volunteer.name}</h5>
-                            <div class="py-2" >
-                                <p class="text-blue-scse text-center mt-3">Thực tập sinh</p>
+                            <div class="py-2 w-100" style="background-color: #E5E5E5;">
+                                <h4 class="text-blue-scse text-center my-2 font-weight-bold">Thực tập sinh</h4>
                             </div>
                             </div>
                             
@@ -211,10 +211,10 @@ function executeDataInformationMember(input) {
                     <img src="${Hinhanh[2].ImagePortfolio}"
                         style="width: 300px;height:300px;border-radius: 50%;margin-left:0.5rem;object-fit:cover">
                 </div>
-                <div class="card-body">
-                <h4 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${FullName}</h4>
-                <div class="py-2" style="background-color: #E5E5E5;">
-                    <p class="text-blue-scse text-center mt-3">${Position}</p>
+                <div class="card-body px-0">
+                <h5 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${FullName}</h5>
+                <div class="py-2 w-100" style="background-color: #E5E5E5;">
+                    <h4 class="text-blue-scse text-center my-2 font-weight-bold">${Position}</h4>
                 </div>
                 </div>
             </div>

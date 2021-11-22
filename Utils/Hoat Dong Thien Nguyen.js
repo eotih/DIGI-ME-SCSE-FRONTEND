@@ -40,10 +40,9 @@ async function loadHDTN(numb) {
                                     <h3 class="card-title text-muted">${Title}</h3>
                                     </a>
                                     <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                                    <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}...</p>
                                     <br>
                                     <div class="d-grid gap-2 d-flex justify-content-md-end">
-                                    <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"
+                                    <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff;margin-top:25%" type="button"
                                         class="btn bg-red-scse btn-danger lg">Đăng ký tình nguyện viên</a>
                                     </div>
                                 </div>
@@ -105,7 +104,6 @@ async function loadHDTN(numb) {
                                 <h3 class="card-title text-muted">${Title}</h3>
                                 </a>
                                 <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                                <p class="card-text" style="text-align: justify; text-justify: inter-word">${Details.slice(0, 300)}...</p>
                                 <br>
                                 <div class="d-grid gap-2 d-flex justify-content-md-end">
                                 <a href="../Dang-Ky-Tinh-Nguyen-Vien/" style="color:#ffffff" type="button"

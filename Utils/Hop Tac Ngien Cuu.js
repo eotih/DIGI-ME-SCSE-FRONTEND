@@ -24,7 +24,7 @@ async function loadHDNC(numb) {
                             <div class="row g-0">
                             <div class="col-md-4">
                                     <img style="width:100%;height:220px;border-radius: 2rem;object-fit:cover" src="${Image}" 
-                                            class=" mt-3 px-3" alt="...">
+                                            class=" my-3 px-3" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -32,7 +32,6 @@ async function loadHDNC(numb) {
                                             <h5 class="card-title font-weight-bold">${Title}</h5>
                                         </a>
                                         <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                                        <p class="card-text">${Details.slice(0, 300)}...</p>
 
                                         <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${Slug}">
                                         <button class="btn bg-blue-scse btn-primary lg">Chi tiết</button></a>
@@ -79,9 +78,9 @@ async function loadHDNC(numb) {
                     return `
                     <div class="card mb-3" style="width:100%;">
                     <div class="row g-0">
-                    <div class="col-md-4">
+                        <div class="col-md-4 ">
                             <img style="width:100%;height:220px;border-radius: 2rem;object-fit:cover" src="${Image}" 
-                                    class=" mt-3 mx-3" style="border-radius: 2rem;" alt="...">
+                                    class=" my-3 mx-3" style="border-radius: 2rem;" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -89,7 +88,6 @@ async function loadHDNC(numb) {
                                 <h5 class="card-title font-weight-bold">${Title}</h5>
                                 </a>
                                 <p class="card-text"><small class="text-muted">${convertDate(CreatedByDate)}</small></p>
-                                <p class="card-text">${Details.slice(0, 300)}...</p>
     
                                 <a href="../Chi-Tiet-Bai-Viet/index.html?slug=${SlugEN}"><button class="btn bg-blue-scse btn-primary lg">Chi Tiet</button></a>
                             </div>
