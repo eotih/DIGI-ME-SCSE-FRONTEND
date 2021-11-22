@@ -51,7 +51,6 @@ function executeDataInformationGiamDoc(input) {
 }
 function executeDataInformationPhoGiamDoc(input) {
     const html = input.map(function (response) {
-        console.log(response)
         const { Details, FullName, Position, Image1, Image2, Image3 } = response;
         document.getElementById('pic01').src = Image1;
         document.getElementById('pic02').src = Image2;
