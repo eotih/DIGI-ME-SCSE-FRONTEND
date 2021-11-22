@@ -6,7 +6,7 @@ function convertDate(input) {
 }
 async function loadHDTN(numb) {
     if (numb == 1) {
-        fetch(WEB_API + "API/Management/GetByIdCategory?idcat=3")
+        fetch(WEB_API + "Management/GetByIdCategory?idcat=3")
             .then(function (response) {
                 return response.json();
             })
@@ -71,7 +71,7 @@ async function loadHDTN(numb) {
             })
     }
     else {
-        fetch(WEB_API + "API/Management/GetByIdCategoryEN?idcat=3")
+        fetch(WEB_API + "Management/GetByIdCategoryEN?idcat=3")
             .then(function (response) {
                 return response.json();
             })
