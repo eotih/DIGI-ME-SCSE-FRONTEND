@@ -39,22 +39,22 @@ async function getData(language) {
 // click checkbox and sort by checkbox value
 NCDT.click(async function () {
     if (NCDT.is(':checked')) {
-        checkLanguage("NCDT", 4, 'Nghiên cứu Đào tạo')
+        checkLanguage("NCDT", 4, 'Nghiên cứu đào tạo')
         unChecked(KHMT);
         unChecked(TTS);
         unChecked(GBDG);
     }
-    else { checkLanguage("NCDT", 0, 'Nghiên cứu Đào tạo') }
+    else { checkLanguage("NCDT", 0, 'Nghiên cứu đào tạo') }
 })
 KHMT.click(async function () {
     if (KHMT.is(':checked')) {
-        checkLanguage("KHMT", 2, 'Khí hậu - Môi trường')
+        checkLanguage("KHMT", 2, 'Khí hậu - môi trường')
         unChecked(TTS);
         unChecked(NCDT);
         unChecked(GBDG);
     }
     else {
-        checkLanguage("KHMT", 0, 'Khí hậu - Môi trường')
+        checkLanguage("KHMT", 0, 'Khí hậu - môi trường')
     }
 })
 GBDG.click(async function () {
