@@ -217,7 +217,7 @@ const getFieldBySlug = async () => {
     const slugResult = urlParams.get('Field');
     if (slugResult === 'Nghiên cứu - Đào tạo' || slugResult === 'Research - Training') {
         $('#NCDT').prop('checked', true);
-        checkLanguage("NCDT", 4, 'Nghiên cứu Đào tạo')
+        checkLanguage("NCDT", 4, 'Nghiên cứu đào tạo')
     }
     if (slugResult === 'Thực tập sinh' || slugResult === 'Internship') {
         $('#TTS').prop('checked', true);
@@ -225,7 +225,7 @@ const getFieldBySlug = async () => {
     }
     if (slugResult === 'Môi trường' || slugResult === 'Environment') {
         $('#KHMT').prop('checked', true);
-        checkLanguage("KHMT", 2, 'Khí hậu - Môi trường')
+        checkLanguage("KHMT", 2, 'Khí hậu - môi trường')
     }
     if (slugResult === 'Giới và bình đẳng giới' || slugResult === 'Gender - Gender equality') {
         $('#GBDG').prop('checked', true);
