@@ -90,13 +90,14 @@ const renderDataWithPagination = (data, numb) => {
     const html = dataFilter[0].map(function (response) {
         if (data === "VI") {
             const { IDField, Title, Slug, Details, Image } = response
+            const hinhanh = `<img id="ImgAlbum" onclick="getImage('${Slug}')" src="${WEB_API}${Image}"
+            class="card-img-top my-2 px-2" style="width:100%; height:250px;object-fit:cover" alt="...">`
             const LinhVuc = changeIdField(IDField)
             return `
             <div class="col-lg-4 d-flex align-items-stretch">
             <div class="mb-5">
                 <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                        <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${Image}"
-                            class="card-img-top my-2 px-2" style="width:100%; height:250px;object-fit:cover" alt="...">
+                        ${hinhanh}
                     <div class="card-body">
                         <a style="text-decoration: none; color:black;cursor:pointer" onclick="getImage('${Slug}')">
                             <h5 class="card-title">${Title}</h5>
@@ -118,7 +119,7 @@ const renderDataWithPagination = (data, numb) => {
             <div class="col-lg-4 d-flex align-items-stretch">
             <div class="mb-5">
                 <div class="card" style="width:100%; height:100%;box-shadow: 10px 10px 0px #C4C4C4;">
-                        <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${Image}"
+                        <img id="ImgAlbum" onclick="getImage('${Slug}')" src="${WEB_API}${Image}"
                             class="card-img-top my-2 px-2" style="width:100%; height:250px;object-fit:cover" alt="...">
                     <div class="card-body">
                         <a style="text-decoration: none; color:black;cursor:pointer" onclick="getImage('${Slug}')">
