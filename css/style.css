@@ -289,6 +289,18 @@ i{
     color: #1A94D0;
     border-radius: 1rem;
 }
+.nav-bar .dropdown .dropdown-toggle{
+    cursor: pointer;
+    color: #6B6B6B;
+}
+.nav-bar .dropdown .dropdown-toggle:hover{
+    cursor: pointer;
+    color: #1A94D0;
+}
+.nav-bar .dropdown .active{
+    background-color: #FFFFFF;
+    color: #1A94D0;
+}
 
 .navbar {
     top:-100px;
