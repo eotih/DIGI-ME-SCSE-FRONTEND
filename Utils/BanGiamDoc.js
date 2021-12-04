@@ -36,7 +36,7 @@ function executeDataInformationGiamDoc(input) {
         return `
        
         <div class="text-lg-right text-center">
-                    <div class="ml-5 mb-5">
+                    <div class="mb-5">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
@@ -56,8 +56,8 @@ function executeDataInformationPhoGiamDoc(input) {
         document.getElementById('pic02').src = Image2;
         document.getElementById('pic03').src = Image3;
         return `
-        <div class="text-lg-right text-center">
-                    <div class="mr-5">
+        <div class="text-lg-left text-center">
+                    <div class="">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">GIỚI THIỆU</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>${Position}</p>
@@ -83,7 +83,7 @@ function executeDataInformationGiamDocEN(input) {
         return `
        
         <div class="text-lg-right text-center">
-                    <div class="ml-5 mb-5">
+                    <div class=" mb-5">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">INTRODUCTION</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>Director</p>
@@ -102,8 +102,8 @@ function executeDataInformationPhoGiamDocEN(input) {
         document.getElementById('pic02').src = Image2;
         document.getElementById('pic03').src = Image3;
         return `
-        <div class="text-lg-right text-center">
-                    <div class="mr-5">
+        <div class="text-lg-left text-center">
+                    <div class="">
                         <h6 class="font-weight-bold text-red-scse" style="font-size: 1.5rem;">INTRODUCTION</h6>
                         <h3 class="text-uppercase">${FullName}</h3>
                         <p>Deputy Director</p>
@@ -121,16 +121,16 @@ function executeDataInformationMember(input) {
         return `
         <div class="item">
         <a href="../Biography/index.html?slug=${FullName}">
-        <div class="col-lg-4">
-            <div class="card mb-4 rounded-3 shadow-sm"
-                style="background-color: #F6F6F6;border-radius: 1.875rem;width:320px;">
+        <div class="col">
+            <div class="card rounded-3 shadow-sm"
+                style="background-color: #F6F6F6;border-radius: 1.875rem;width:300px;">
                 <div class="py-3">
                     <img src="${Image1}"
-                        style="width: 300px;height:400px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
+                        style="width: 280px;height:380px;border-radius: 1.875rem;margin-left:0.5rem;object-fit:cover;">
                 </div>
                 <div class="card-body px-0">
                 <h5 style="color:black" class="card-title pricing-card-title font-weight-bold text-center">${FullName}</h5>
-                <div class="py-2 w-100" style="background-color: #E5E5E5;">
+                <div class="py-2" style="background-color: #E5E5E5;">
                     <h4 class="text-blue-scse text-center my-2 font-weight-bold">${Position}</h4>
                 </div>
                 </div>
@@ -153,8 +153,8 @@ function executeDataInformationMember(input) {
         autoplayTimeout: 2000,
         responsive: {
             0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 3 },
+            700: { items: 2 },
+            1200: { items: 3 },
         }
     });
     $(".loader-wrapper").fadeOut("slow");
