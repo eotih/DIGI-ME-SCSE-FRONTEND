@@ -21,6 +21,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("donateimg").src = "../../images/Donate.png";
                 // Change language in dropdown
                 document.title = "SCSE - Executive Board";
+                loadData("EN")
             }
             // Vietnam
             if(i18n.lng() === "vi") {
@@ -32,6 +33,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
                 document.getElementById("donateimg").src = "../../images/Group_399.png";
                 document.title = "SCSE - Ban Giám Đốc";
+                loadData("VI")
             }
             
             // Change languages when click
@@ -48,6 +50,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_English_Transparent_white.png";
                 document.getElementById("donateimg").src = "../../images/Donate.png";
                 document.title = "SCSE - Executive Board";
+                loadData("EN")
                 // Change name language in dropdown
             });
             // Vietnam
@@ -64,6 +67,7 @@ window.addEventListener('load',multilang)
                 document.getElementById("LogoNav").src = "../../images/LogoSCSE_Horizontal_Vietnamese_white.png";
                 document.getElementById("donateimg").src = "../../images/Group_399.png";
                 document.title = "SCSE - Ban Giám Đốc";
+                loadData("VI")
             });
         };
         
