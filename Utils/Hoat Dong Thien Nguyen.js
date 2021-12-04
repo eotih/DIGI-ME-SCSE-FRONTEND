@@ -20,17 +20,13 @@ async function loadHDTN(numb) {
                 const html = sortByNewDate.map(function (response) {
                     const { IDPost, Title, Slug, Details, Image, CreatedByDate } = response
                     return `
-                <div class="card mb-3" style="background-color: #F0F0F0">
+                <div class="card mb-3" style="background-color: #F0F0F0; border-left: 20px solid #DE4439">
                         <div class="row" >
                             <div class="col-lg-4">
                                 <div class="d-flex justify-content">
-                                    <div class="bg-red-scse" style="
-                                    padding-right:20px;
-                                        height: 400px;
-                                    "></div>
                                     <img src="${Image}"
-                                        style="width: 100%;height: 370px;border-radius: 30px;object-fit: cover;"
-                                        class="img-fluid my-3" alt="...">
+                                        style="width: 90%;height: 370px;border-radius: 30px;object-fit: cover;"
+                                        class="img-fluid my-3 ml-2" alt="...">
                                 </div>
                             </div>
         
