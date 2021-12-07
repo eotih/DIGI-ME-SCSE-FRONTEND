@@ -17,6 +17,7 @@ function uploadFileToAPI() {
         body: formData,
     }).then(function (response) {
         alert("Gửi thông tin thành công")
+        window.location.reload();
         return response.json()
     }
     ).then(function (data) {
